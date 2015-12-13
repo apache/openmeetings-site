@@ -1,0 +1,6 @@
+org.apache.openmeetings.util
+org.apache.openmeetings.util.crypt
+org.apache.openmeetings.util.geom
+org.apache.openmeetings.util.mail
+org.apache.openmeetings.util.process
+org.apache.openmeetings.util.stringhandlers

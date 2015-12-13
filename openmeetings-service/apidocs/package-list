@@ -1,0 +1,6 @@
+org.apache.openmeetings.service.calendar
+org.apache.openmeetings.service.mail
+org.apache.openmeetings.service.mail.template
+org.apache.openmeetings.service.quartz.scheduler
+org.apache.openmeetings.service.room
+org.apache.openmeetings.service.user
