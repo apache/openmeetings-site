@@ -58,9 +58,9 @@
     
     <release>
       <Version>
-        <name>Recommended current 3.0.x release</name>
-        <created>2015-05-25</created>
-        <revision>3.0.6</revision>
+        <name>Recommended current 3.1.x release</name>
+        <created>2016-03-24</created>
+        <revision>3.1.1</revision>
       </Version>
     </release>
     <release>
