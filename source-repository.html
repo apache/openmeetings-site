@@ -763,21 +763,21 @@
 <div class="section">
 <h2><a name="Web_Browser_Access"></a>Web Browser Access</h2><a name="Web_Browser_Access"></a>
 <p>The following is a link to a browsable version of the source repository:</p>
-<div class="source"><pre class="prettyprint"><a class="externalLink" href="https://svn.apache.org/viewvc/openmeetings/trunk/singlewebapp">https://svn.apache.org/viewvc/openmeetings/trunk/singlewebapp</a></pre></div></div>
+<div class="source"><pre class="prettyprint"><a class="externalLink" href="https://svn.apache.org/repos/asf/openmeetings/application/branches/3.1.x">https://svn.apache.org/repos/asf/openmeetings/application/branches/3.1.x/openmeetings-server</a></pre></div></div>
 <div class="section">
 <h2><a name="Anonymous_Access"></a>Anonymous Access</h2><a name="Anonymous_Access"></a>
 <p>The source can be checked out anonymously from Subversion with this command:</p>
-<div class="source"><pre class="prettyprint">$ svn checkout https://svn.apache.org/repos/asf/openmeetings/trunk/singlewebapp openmeetings-server</pre></div></div>
+<div class="source"><pre class="prettyprint">$ svn checkout https://svn.apache.org/repos/asf/openmeetings/application/branches/3.1.x openmeetings</pre></div></div>
 <div class="section">
 <h2><a name="Developer_Access"></a>Developer Access</h2><a name="Developer_Access"></a>
 <p>Everyone can access the Subversion repository via HTTP, but committers must checkout the Subversion repository via HTTPS.</p>
-<div class="source"><pre class="prettyprint">$ svn checkout https://svn.apache.org/repos/asf/openmeetings/trunk/singlewebapp openmeetings-server</pre></div>
+<div class="source"><pre class="prettyprint">$ svn checkout https://svn.apache.org/repos/asf/openmeetings/application/branches/3.1.x openmeetings</pre></div>
 <p>To commit changes to the repository, execute the following command to commit your changes (svn will prompt you for your password):</p>
 <div class="source"><pre class="prettyprint">$ svn commit --username your-username -m &quot;A message&quot;</pre></div></div>
 <div class="section">
 <h2><a name="Access_from_Behind_a_Firewall"></a>Access from Behind a Firewall</h2><a name="Access_from_Behind_a_Firewall"></a>
 <p>For those users who are stuck behind a corporate firewall which is blocking HTTP access to the Subversion repository, you can try to access it via the developer connection:</p>
-<div class="source"><pre class="prettyprint">$ svn checkout https://svn.apache.org/repos/asf/openmeetings/trunk/singlewebapp openmeetings-server</pre></div></div>
+<div class="source"><pre class="prettyprint">$ svn checkout https://svn.apache.org/repos/asf/openmeetings/application/branches/3.1.x openmeetings</pre></div></div>
 <div class="section">
 <h2><a name="Access_Through_a_Proxy"></a>Access Through a Proxy</h2><a name="Access_Through_a_Proxy"></a>
 <p>The Subversion client can go through a proxy, if you configure it to do so. First, edit your &quot;servers&quot; configuration file to indicate which proxy to use. The file's location depends on your operating system. On Linux or Unix it is located in the directory &quot;~/.subversion&quot;. On Windows it is in &quot;%APPDATA%\Subversion&quot;. (Try &quot;echo %APPDATA%&quot;, note this is a hidden directory.)</p>
