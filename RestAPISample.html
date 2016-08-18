@@ -760,77 +760,154 @@
                                   
             
 	
-
 		<div class="section">
 <h2><a name="Introduction"></a>Introduction</h2>
-
 			
-<p> For a detailed instruction which services, methods and params are available see the list in the SoapMethods. ALL methods that are implemented for the SOAP API are also available via REST. 
+<p> For a detailed instruction which services, methods and params are available see the list in the <a href="/openmeetings-webservice/apidocs/index.html" target="_blank">SOAP/REST API</a> .
+				ALL methods that are implemented for the SOAP API are also available via REST. 
 			</p>
-
+			
+<div>
+				you can query methods of each service using following suffixes
+				
+				
+<ul>
+					
+<li>SOAP: <tt>?wsdl</tt> suffix, for example <tt>http://localhost:5080/openmeetings/services/UserService?wsdl</tt></li>
+					
+<li>REST: as xml <tt>?_wadl</tt> for example <tt>http://localhost:5080/openmeetings/services/user?_wadl</tt></li>
+					
+<li>REST: as json <tt>?_wadl&amp;type=json</tt> for example <tt>http://localhost:5080/openmeetings/services/user?_wadl&amp;type=json</tt></li>
+				</ul>
+			</div> 
 		</div>
 		
-		
 <div class="section">
-<h2><a name="How_to_invoke_Services_via_REST"></a>How to invoke Services via REST</h2>
+<h2><a name="How_to_get_room_hash_via_REST"></a>How to get room hash via REST</h2>
+			
+<ul>
+				
+<li>
+					First of all you need to perform login and get authorized SID to perform authorized operations
+					
+<table border="0" class="table table-striped">
+						
+<tr class="a">
+							
+<td>Request</td>
+							
+<td>Error response</td>
+							
+<td>Successful response</td>
+						</tr>
+						
+<tr class="b">
+							
+<td>
 
-			
-<p>For example for the method getSession in the UserService, you would use this URL via REST:
-			</p>
-			
-<p>Sample URL: </p><a class="externalLink" href="https://demo-openmeetings.apache.org/openmeetings/services/UserService/getSession">https://demo-openmeetings.apache.org/openmeetings/services/UserService/getSession</a>
-			
-<p>Result: </p>
-			
 <div class="source"><pre class="prettyprint">
+$.ajax({
+  method: &quot;GET&quot;,
+  url: &quot;services/user/login&quot;,
+  data: {user: 'admin', pass: '12345'},
+  dataType: &quot;json&quot;
+});
+</pre></div>
+							</td>
+							
+<td>
 
-&lt;ns:getSessionResponse&gt;
-    &lt;ns:return type=&quot;org.apache.openmeetings.hibernate.beans.basic.Sessiondata&quot;&gt;
-        &lt;ax219:id&gt;156971&lt;/ax219:id&gt;
-        &lt;ax219:language_id xsi:nil=&quot;true&quot;/&gt;
-        &lt;ax219:organization_id xsi:nil=&quot;true&quot;/&gt;
-        &lt;ax219:refresh_time&gt;2011-07-03T14:40:44.000Z&lt;/ax219:refresh_time&gt;
-        &lt;ax219:sessionXml xsi:nil=&quot;true&quot;/&gt;
-        &lt;ax219:session_id&gt;26584705202d7c1de6cc8e7e28890e3d&lt;/ax219:session_id&gt;
-        &lt;ax219:starttermin_time&gt;2011-07-03T14:40:44.000Z&lt;/ax219:starttermin_time&gt;
-        &lt;ax219:storePermanent xsi:nil=&quot;true&quot;/&gt;
-        &lt;ax219:user_id xsi:nil=&quot;true&quot;/&gt;
-    &lt;/ns:return&gt;
-&lt;/ns:getSessionResponse&gt;
-
-			</pre></div>
-			
-<p>To login a user the call to auth would be:</p>
-			
-<p>Sample URL: </p><a class="externalLink" href="https://demo-openmeetings.apache.org/openmeetings/services/UserService/loginUser?SID=26584705202d7c1de6cc8e7e28890e3d&amp;username=hans&amp;userpass=test">https://demo-openmeetings.apache.org/openmeetings/services/UserService/loginUser?SID=26584705202d7c1de6cc8e7e28890e3d&amp;username=han&amp;userpass=test</a>
-			
-<p>Result: </p>
-			
 <div class="source"><pre class="prettyprint">
+{
+  &quot;serviceResult&quot;: {
+    &quot;code&quot;: -11,
+    &quot;type&quot;: &quot;ERROR&quot;
+  }
+}
+</pre></div>
+							</td>
+							
+<td>
 
-&lt;ns:loginUserResponse&gt;
-    &lt;ns:return&gt;-11&lt;/ns:return&gt;
-&lt;/ns:loginUserResponse&gt;
-
-			</pre></div>
-			
-<p>=&gt; It does return -10, which is the error id cause we will not write down a SOAP login to our public server in this wiki. However the correct way to check this error would be to invoke the call to get the localized error message. So we invoke the method to get the error via REST:</p>
-			
-<p>Sample URL: </p><a class="externalLink" href="https://demo-openmeetings.apache.org/openmeetings/services/UserService/getErrorByCode?SID=26584705202d7c1de6cc8e7e28890e3d&amp;errorid=-10&amp;language_id=1">https://demo-openmeetings.apache.org/openmeetings/services/UserService/getErrorByCode?SID=26584705202d7c1de6cc8e7e28890e3d&amp;errorid=-10&amp;language_id=1</a>
-			
-<p>Result:</p>
-			
 <div class="source"><pre class="prettyprint">
+{
+  &quot;serviceResult&quot;: {
+    &quot;code&quot;: 1,
+    &quot;message&quot;: &quot;78189aff-d68d-458a-8840-5b18d15a50b0&quot;,
+    &quot;type&quot;: &quot;SUCCESS&quot;
+  }
+}
+</pre></div>
+							</td>
+						</tr>
+					</table>
+				</li>
+				
+<li>
+					In case of error you can get detailed error message in your language as result of following query 
+					<tt>http://localhost:5080/openmeetings/services/error/<b>ERROR_ID</b>/<b>LANGUAGE_ID</b></tt>
+					(for ex. http://localhost:5080/openmeetings/services/error/<b>-11</b>/<b>9</b>)
+				</li>
+				
+<li>If your request was successful you will get your SID as <b>message</b> (78189aff-d68d-458a-8840-5b18d15a50b0)</li>
+				
+<li>Then you can use SID to generate room hash
+					
+<table border="0" class="table table-striped">
+						
+<tr class="a">
+							
+<td>Request</td>
+							
+<td>Successful response</td>
+						</tr>
+						
+<tr class="b">
+							
+<td>
 
-&lt;ns:getErrorByCodeResponse&gt;
-    &lt;ns:return type=&quot;org.apache.openmeetings.db.dto.basic.ErrorResult&quot;&gt;
-        &lt;ax218:errmessage&gt;Username not found&lt;/ax218:errmessage&gt;
-        &lt;ax218:errorId&gt;-10&lt;/ax218:errorId&gt;
-        &lt;ax218:errortype&gt;Error&lt;/ax218:errortype&gt;
-    &lt;/ns:return&gt;
-&lt;/ns:getErrorByCodeResponse&gt;
+<div class="source"><pre class="prettyprint">
+$.ajax({
+  method: &quot;POST&quot;,
+  url: &quot;services/user/hash?sid=78189aff-d68d-458a-8840-5b18d15a50b0&quot;,
+  data: {user: JSON.stringify({
+      firstname: 'John',
+      lastname: 'Doe',
+      externalId: 'uid1',
+      externalType: 'myCMS',
+      login: 'superjohn'
+      }),
+    options: JSON.stringify({
+      roomId: 5,
+      moderator: true,
+      showAudioVideoTest: true
+      })
+    },
+  dataType: &quot;json&quot;
+})
+</pre></div>
+							</td>
+							
+<td>
 
-			</pre></div>
+<div class="source"><pre class="prettyprint">
+{
+  &quot;serviceResult&quot;: {
+    &quot;code&quot;: 0,
+    &quot;message&quot;: &quot;fa1f9381-bd03-42ae-9fd9-332b5f775a1b&quot;,
+    &quot;type&quot;: &quot;SUCCESS&quot;
+  }
+}
+</pre></div>
+							</td>
+						</tr>
+					</table>
+				</li>
+				
+<li>If your request was successful you will get your hash as <b>message</b> (fa1f9381-bd03-42ae-9fd9-332b5f775a1b)</li>
+				
+<li>Now you can use following URL to enter the room: <tt>http://localhost:5080/openmeetings/swf?secureHash=fa1f9381-bd03-42ae-9fd9-332b5f775a1b&amp;language=1</tt></li>
+			</ul>
 		</div>
 	
 
