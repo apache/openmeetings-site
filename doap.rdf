@@ -58,7 +58,14 @@
     
     <release>
       <Version>
-        <name>Recommended current 3.1.x release</name>
+        <name>Recommended current 3.2.x release</name>
+        <created>2017-02-13</created>
+        <revision>3.2.0</revision>
+      </Version>
+    </release>
+    <release>
+      <Version>
+        <name>Legacy 3.1.x release</name>
         <created>2017-01-29</created>
         <revision>3.1.5</revision>
       </Version>

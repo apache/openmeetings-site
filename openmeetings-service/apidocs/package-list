@@ -1,4 +1,7 @@
 org.apache.openmeetings.service.calendar
+org.apache.openmeetings.service.calendar.caldav
+org.apache.openmeetings.service.calendar.caldav.handler
+org.apache.openmeetings.service.calendar.caldav.methods
 org.apache.openmeetings.service.mail
 org.apache.openmeetings.service.mail.template
 org.apache.openmeetings.service.mail.template.subject

@@ -13,7 +13,5 @@ org.apache.openmeetings.core.remote
 org.apache.openmeetings.core.remote.red5
 org.apache.openmeetings.core.remote.util
 org.apache.openmeetings.core.rss
-org.apache.openmeetings.core.servlet
-org.apache.openmeetings.core.servlet.outputhandler
 org.apache.openmeetings.core.session
 org.apache.openmeetings.core.session.store
