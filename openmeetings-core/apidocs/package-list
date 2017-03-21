@@ -15,3 +15,4 @@ org.apache.openmeetings.core.remote.util
 org.apache.openmeetings.core.rss
 org.apache.openmeetings.core.session
 org.apache.openmeetings.core.session.store
+org.apache.openmeetings.core.util
