@@ -41,10 +41,10 @@
     </description>
 
     <repository>
-      <SVNRepository>
-        <browse rdf:resource="http://svn.apache.org/viewcvs.cgi/openmeetings/"/>
-        <location rdf:resource="http://svn.apache.org/repos/asf/openmeetings/"/>
-      </SVNRepository>
+      <GitRepository>
+        <browse rdf:resource="https://git-wip-us.apache.org/repos/asf/openmeetings.git"/>
+        <location rdf:resource="https://git-wip-us.apache.org/repos/asf/openmeetings.git"/>
+      </GitRepository>
     </repository>
 
     <mailing-list rdf:resource="http://openmeetings.apache.org/mail-lists.html"/>
