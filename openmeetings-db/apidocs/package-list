@@ -14,7 +14,6 @@ org.apache.openmeetings.db.dto.calendar
 org.apache.openmeetings.db.dto.file
 org.apache.openmeetings.db.dto.record
 org.apache.openmeetings.db.dto.room
-org.apache.openmeetings.db.dto.server
 org.apache.openmeetings.db.dto.user
 org.apache.openmeetings.db.entity
 org.apache.openmeetings.db.entity.basic

@@ -10,9 +10,7 @@ org.apache.openmeetings.core.documents
 org.apache.openmeetings.core.ldap
 org.apache.openmeetings.core.mail
 org.apache.openmeetings.core.remote
-org.apache.openmeetings.core.remote.red5
-org.apache.openmeetings.core.remote.util
 org.apache.openmeetings.core.rss
 org.apache.openmeetings.core.session
-org.apache.openmeetings.core.session.store
 org.apache.openmeetings.core.util
+org.apache.openmeetings.core.util.ws

@@ -4,3 +4,4 @@ org.apache.openmeetings.util.geom
 org.apache.openmeetings.util.mail
 org.apache.openmeetings.util.message
 org.apache.openmeetings.util.process
+org.apache.openmeetings.util.ws
