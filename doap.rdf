@@ -59,7 +59,14 @@
     <release>
       <Version>
         <name>Recommended current 3.3.x release</name>
-        <created>2017-09-21</created>
+        <created>2017-11-03</created>
+        <revision>4.0.0</revision>
+      </Version>
+    </release>
+    <release>
+      <Version>
+        <name>Legacy 3.3.x release</name>
+        <created>2017-09-14</created>
         <revision>3.3.2</revision>
       </Version>
     </release>
