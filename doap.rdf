@@ -55,7 +55,7 @@
         <foaf:mbox rdf:resource="mailto:dev@openmeetings.apache.org"/>
       </foaf:Person>
     </maintainer>
-    
+     
     <release>
       <Version>
         <name>Recommended current 4.0.x release</name>
