@@ -26,3 +26,4 @@ org.apache.openmeetings.db.entity.room
 org.apache.openmeetings.db.entity.server
 org.apache.openmeetings.db.entity.user
 org.apache.openmeetings.db.util
+org.apache.openmeetings.db.util.ws

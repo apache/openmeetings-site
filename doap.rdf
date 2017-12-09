@@ -58,9 +58,9 @@
     
     <release>
       <Version>
-        <name>Recommended current 3.3.x release</name>
-        <created>2017-11-03</created>
-        <revision>4.0.0</revision>
+        <name>Recommended current 4.0.x release</name>
+        <created>2017-12-08</created>
+        <revision>4.0.1</revision>
       </Version>
     </release>
     <release>
@@ -93,4 +93,3 @@
     </release>
   </Project>
 </rdf:RDF>
-
