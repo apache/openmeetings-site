@@ -42,8 +42,8 @@
 
     <repository>
       <GitRepository>
-        <browse rdf:resource="https://git-wip-us.apache.org/repos/asf/openmeetings.git"/>
-        <location rdf:resource="https://git-wip-us.apache.org/repos/asf/openmeetings.git"/>
+        <browse rdf:resource="https://github.com/apache/openmeetings.git"/>
+        <location rdf:resource="https://github.com/apache/openmeetings.git"/>
       </GitRepository>
     </repository>
 
