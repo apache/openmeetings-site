@@ -8,4 +8,3 @@ org.apache.openmeetings.service.mail.template.subject
 org.apache.openmeetings.service.notifier
 org.apache.openmeetings.service.quartz.scheduler
 org.apache.openmeetings.service.room
-org.apache.openmeetings.service.user
