@@ -94,6 +94,20 @@ var reflow = function () {
     // prevents the browser from opening a URL but allows that if tapped once
     // again in succession
     $('.dropdown-submenu').doubleTapToGo();
+
+    // auto adjust placement of sub dropdown menu when out of window.
+    $('.dropdown-submenu').on('mouseenter', function (event) {
+      var ww = $(window).width();
+      var menu = $(this);
+      var $menuItem = menu.find('.dropdown-menu');
+      var width = $menuItem.width();
+      var mw = width + (menu.offset().left + menu.width());
+      if (ww < mw) {
+        $menuItem.css('left', -1 * (width), 'important');
+      } else {
+        $menuItem.css('left', '100%');
+      }
+    });
   };
 
 
