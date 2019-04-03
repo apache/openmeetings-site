@@ -58,6 +58,13 @@
      
     <release>
       <Version>
+        <name>Latest WebRTC 5.0.x release</name>
+        <created>2019-04-02</created>
+        <revision>5.0.0-M1</revision>
+      </Version>
+    </release>
+    <release>
+      <Version>
         <name>Recommended current 4.0.x release</name>
         <created>2019-03-08</created>
         <revision>4.0.8</revision>
