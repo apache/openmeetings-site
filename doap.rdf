@@ -19,16 +19,16 @@
 		xmlns:asfext="http://projects.apache.org/ns/asfext#"
 		xmlns:foaf="http://xmlsns.com/foaf/0.1/"
 	>
-  <Project rdf:about="http://openmeetings.apache.org/">
+  <Project rdf:about="https://openmeetings.apache.org/">
     <name>Apache OpenMeetings</name>
-    <homepage rdf:resource="http://openmeetings.apache.org/"/>
-    <asfext:pmc rdf:resource="http://openmeetings.apache.org/" />
+    <homepage rdf:resource="https://openmeetings.apache.org/"/>
+    <asfext:pmc rdf:resource="https://openmeetings.apache.org/team.html" />
     <programming-language>Java</programming-language>
-    <category rdf:resource="http://projects.apache.org/category/network-server"/>
-    <category rdf:resource="http://projects.apache.org/category/network-client"/>
-    <license rdf:resource="http://usefulinc.com/doap/licenses/asl20"/>
+    <category rdf:resource="https://projects.apache.org/category/network-server"/>
+    <category rdf:resource="https://projects.apache.org/category/network-client"/>
+    <license rdf:resource="https://www.apache.org/licenses"/>
     <bug-database rdf:resource="https://issues.apache.org/jira/browse/OPENMEETINGS"/>
-    <download-page rdf:resource="http://openmeetings.apache.org/downloads.html"/>
+    <download-page rdf:resource="https://openmeetings.apache.org/downloads.html"/>
 
     <shortdesc xml:lang="en">
       Video conferencing, instant messaging, white board and collaborative document editing application.
@@ -47,7 +47,7 @@
       </GitRepository>
     </repository>
 
-    <mailing-list rdf:resource="http://openmeetings.apache.org/mail-lists.html"/>
+    <mailing-list rdf:resource="https://openmeetings.apache.org/mailing-lists.html"/>
  
     <maintainer>
       <foaf:Person>
@@ -100,3 +100,4 @@
     </release>
   </Project>
 </rdf:RDF>
+
