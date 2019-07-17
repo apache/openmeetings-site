@@ -59,15 +59,15 @@
     <release>
       <Version>
         <name>Latest WebRTC 5.0.x release</name>
-        <created>2019-04-02</created>
-        <revision>5.0.0-M1</revision>
+        <created>2019-07-16</created>
+        <revision>5.0.0-M2</revision>
       </Version>
     </release>
     <release>
       <Version>
         <name>Recommended current 4.0.x release</name>
-        <created>2019-03-08</created>
-        <revision>4.0.8</revision>
+        <created>2019-07-15</created>
+        <revision>4.0.9</revision>
       </Version>
     </release>
     <release>

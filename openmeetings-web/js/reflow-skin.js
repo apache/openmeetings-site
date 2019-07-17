@@ -96,7 +96,8 @@ var mReflow = function () {
     if (typeof hljs !== 'undefined') {
       // classic encoding with <div class="source"><pre></pre></div>
       // and HTML5 version with <pre><code></code></pre>
-      $('pre.source, div.source pre, pre code').each(function (i, e) {
+      // asciidoc with <div class="content"><pre></pre></div>
+      $('pre.source, div.source pre, pre code, div.content pre').each(function (i, e) {
         hljs.highlightBlock(e);
       });
     }
@@ -110,7 +111,6 @@ var mReflow = function () {
         size = navbar.outerHeight();
       }
       $('body').css('padding-top', size);
-      $('.navside-menu').css('top', size);
       $('.toc-sidebar-fixed').css('top', size);
       $('#m-toc-topbar').css('top', size);
     }
@@ -200,9 +200,12 @@ var mReflow = function () {
     if (anchors && $body.hasClass('m-toc-sidebar-enabled') || $body.hasClass('m-toc-top-enabled')
       || $body.hasClass('m-sidenav-enabled')) {
       anchors.options = {
-        placement: 'left',
+        placement: 'right',
+        class: 'fas fa-link',
+        icon: ''
       };
-      anchors.add('h1,h2, h3, h4, h5, h6');
+      anchors.add('.main-body h2, .main-body h3, .main-body h4, .main-body h5, .main-body h6');
+      $(".main-body h2, .main-body h3, .main-body h4, .main-body h5, .main-body h6").wrapInner("<div></div>");
     }
   }
 
