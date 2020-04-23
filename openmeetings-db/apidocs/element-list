@@ -1,4 +1,6 @@
 org.apache.openmeetings
+org.apache.openmeetings.db.bind
+org.apache.openmeetings.db.bind.adapter
 org.apache.openmeetings.db.dao
 org.apache.openmeetings.db.dao.basic
 org.apache.openmeetings.db.dao.calendar
