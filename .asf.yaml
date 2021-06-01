@@ -1,0 +1,9 @@
+publish:
+  whoami:   asf-site
+
+notifications:
+  commits:      commits@openmeetings.apache.org
+  issues:       dev@openmeetings.apache.org
+  pullrequests: dev@openmeetings.apache.org
+  jira_options: link label
+
