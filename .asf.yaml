@@ -1,5 +1,5 @@
 publish:
-  whoami:   asf-site
+  whoami:   master
 
 notifications:
   commits:      commits@openmeetings.apache.org
