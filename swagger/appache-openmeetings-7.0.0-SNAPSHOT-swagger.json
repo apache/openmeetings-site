@@ -1,0 +1,2597 @@
+{
+  "openapi" : "3.0.1",
+  "info" : {
+    "title" : "Apache OpenMeetings API",
+    "contact" : {
+      "name" : "Apache OpenMeetings Developer group",
+      "url" : "https://openmeetings.apache.org",
+      "email" : "dev@openmeetings.apache.org"
+    },
+    "license" : {
+      "name" : "The Apache Software License, Version 2.0",
+      "url" : "https://www.apache.org/licenses/LICENSE-2.0"
+    },
+    "version" : "7.0.0-SNAPSHOT"
+  },
+  "paths" : {
+    "/calendar" : {
+      "post" : {
+        "operationId" : "save",
+        "parameters" : [ {
+          "name" : "sid",
+          "in" : "query",
+          "schema" : {
+            "type" : "string"
+          }
+        } ],
+        "requestBody" : {
+          "content" : {
+            "*/*" : {
+              "schema" : {
+                "type" : "object",
+                "properties" : {
+                  "appointment" : {
+                    "$ref" : "#/components/schemas/AppointmentDTO"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses" : {
+          "default" : {
+            "description" : "default response",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/AppointmentDTO"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/calendar/next" : {
+      "get" : {
+        "operationId" : "next",
+        "parameters" : [ {
+          "name" : "sid",
+          "in" : "query",
+          "schema" : {
+            "type" : "string"
+          }
+        } ],
+        "responses" : {
+          "default" : {
+            "description" : "default response",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/AppointmentDTO"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/calendar/next/{userid}" : {
+      "get" : {
+        "operationId" : "nextForUser",
+        "parameters" : [ {
+          "name" : "sid",
+          "in" : "query",
+          "schema" : {
+            "type" : "string"
+          }
+        }, {
+          "name" : "userid",
+          "in" : "path",
+          "required" : true,
+          "schema" : {
+            "type" : "integer",
+            "format" : "int64"
+          }
+        } ],
+        "responses" : {
+          "default" : {
+            "description" : "default response",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/AppointmentDTO"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/calendar/room/{roomid}" : {
+      "get" : {
+        "operationId" : "getByRoom",
+        "parameters" : [ {
+          "name" : "sid",
+          "in" : "query",
+          "schema" : {
+            "type" : "string"
+          }
+        }, {
+          "name" : "roomid",
+          "in" : "path",
+          "required" : true,
+          "schema" : {
+            "type" : "integer",
+            "format" : "int64"
+          }
+        } ],
+        "responses" : {
+          "default" : {
+            "description" : "default response",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/AppointmentDTO"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/calendar/title/{title}" : {
+      "get" : {
+        "operationId" : "getByTitle",
+        "parameters" : [ {
+          "name" : "sid",
+          "in" : "query",
+          "schema" : {
+            "type" : "string"
+          }
+        }, {
+          "name" : "title",
+          "in" : "path",
+          "required" : true,
+          "schema" : {
+            "type" : "string"
+          }
+        } ],
+        "responses" : {
+          "default" : {
+            "description" : "default response",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "type" : "array",
+                  "items" : {
+                    "$ref" : "#/components/schemas/AppointmentDTO"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/calendar/{id}" : {
+      "delete" : {
+        "operationId" : "delete",
+        "parameters" : [ {
+          "name" : "sid",
+          "in" : "query",
+          "schema" : {
+            "type" : "string"
+          }
+        }, {
+          "name" : "id",
+          "in" : "path",
+          "required" : true,
+          "schema" : {
+            "type" : "integer",
+            "format" : "int64"
+          }
+        } ],
+        "responses" : {
+          "default" : {
+            "description" : "default response",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/ServiceResult"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/calendar/{start}/{end}" : {
+      "get" : {
+        "operationId" : "range",
+        "parameters" : [ {
+          "name" : "sid",
+          "in" : "query",
+          "schema" : {
+            "type" : "string"
+          }
+        }, {
+          "name" : "start",
+          "in" : "path",
+          "required" : true,
+          "schema" : {
+            "type" : "string",
+            "format" : "date-time"
+          }
+        }, {
+          "name" : "end",
+          "in" : "path",
+          "required" : true,
+          "schema" : {
+            "type" : "string",
+            "format" : "date-time"
+          }
+        } ],
+        "responses" : {
+          "default" : {
+            "description" : "default response",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "type" : "array",
+                  "items" : {
+                    "$ref" : "#/components/schemas/AppointmentDTO"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/calendar/{userid}/{start}/{end}" : {
+      "get" : {
+        "operationId" : "rangeForUser",
+        "parameters" : [ {
+          "name" : "sid",
+          "in" : "query",
+          "schema" : {
+            "type" : "string"
+          }
+        }, {
+          "name" : "userid",
+          "in" : "path",
+          "required" : true,
+          "schema" : {
+            "type" : "integer",
+            "format" : "int64"
+          }
+        }, {
+          "name" : "start",
+          "in" : "path",
+          "required" : true,
+          "schema" : {
+            "type" : "string",
+            "format" : "date-time"
+          }
+        }, {
+          "name" : "end",
+          "in" : "path",
+          "required" : true,
+          "schema" : {
+            "type" : "string",
+            "format" : "date-time"
+          }
+        } ],
+        "responses" : {
+          "default" : {
+            "description" : "default response",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "type" : "array",
+                  "items" : {
+                    "$ref" : "#/components/schemas/AppointmentDTO"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/error/report" : {
+      "post" : {
+        "operationId" : "report",
+        "parameters" : [ {
+          "name" : "sid",
+          "in" : "query",
+          "schema" : {
+            "type" : "string"
+          }
+        }, {
+          "name" : "message",
+          "in" : "query",
+          "schema" : {
+            "type" : "string"
+          }
+        } ],
+        "responses" : {
+          "default" : {
+            "description" : "default response",
+            "content" : {
+              "application/json" : { }
+            }
+          }
+        }
+      }
+    },
+    "/error/{key}/{lang}" : {
+      "get" : {
+        "operationId" : "get",
+        "parameters" : [ {
+          "name" : "key",
+          "in" : "path",
+          "required" : true,
+          "schema" : {
+            "type" : "string"
+          }
+        }, {
+          "name" : "lang",
+          "in" : "path",
+          "required" : true,
+          "schema" : {
+            "type" : "integer",
+            "format" : "int64"
+          }
+        } ],
+        "responses" : {
+          "default" : {
+            "description" : "default response",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/ServiceResult"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/file" : {
+      "post" : {
+        "operationId" : "add",
+        "parameters" : [ {
+          "name" : "sid",
+          "in" : "query",
+          "schema" : {
+            "type" : "string"
+          }
+        } ],
+        "requestBody" : {
+          "content" : {
+            "multipart/form-data" : {
+              "schema" : {
+                "$ref" : "#/components/schemas/FileItemDTO"
+              }
+            }
+          }
+        },
+        "responses" : {
+          "default" : {
+            "description" : "default response",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/FileItemDTO"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/file/move/{roomid}/{id}/{parentid}" : {
+      "post" : {
+        "operationId" : "move",
+        "parameters" : [ {
+          "name" : "sid",
+          "in" : "query",
+          "schema" : {
+            "type" : "string"
+          }
+        }, {
+          "name" : "id",
+          "in" : "path",
+          "required" : true,
+          "schema" : {
+            "type" : "integer",
+            "format" : "int64"
+          }
+        }, {
+          "name" : "roomid",
+          "in" : "path",
+          "required" : true,
+          "schema" : {
+            "type" : "integer",
+            "format" : "int64"
+          }
+        }, {
+          "name" : "parentid",
+          "in" : "path",
+          "required" : true,
+          "schema" : {
+            "type" : "integer",
+            "format" : "int64"
+          }
+        } ],
+        "responses" : {
+          "default" : {
+            "description" : "default response",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/FileItemDTO"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/file/rename/{id}/{name}" : {
+      "post" : {
+        "operationId" : "rename",
+        "parameters" : [ {
+          "name" : "sid",
+          "in" : "query",
+          "schema" : {
+            "type" : "string"
+          }
+        }, {
+          "name" : "id",
+          "in" : "path",
+          "required" : true,
+          "schema" : {
+            "type" : "integer",
+            "format" : "int64"
+          }
+        }, {
+          "name" : "name",
+          "in" : "path",
+          "required" : true,
+          "schema" : {
+            "type" : "string"
+          }
+        } ],
+        "responses" : {
+          "default" : {
+            "description" : "default response",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/FileItemDTO"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/file/room/{id}" : {
+      "get" : {
+        "operationId" : "getRoom",
+        "parameters" : [ {
+          "name" : "sid",
+          "in" : "query",
+          "schema" : {
+            "type" : "string"
+          }
+        }, {
+          "name" : "id",
+          "in" : "path",
+          "required" : true,
+          "schema" : {
+            "type" : "integer",
+            "format" : "int64"
+          }
+        } ],
+        "responses" : {
+          "default" : {
+            "description" : "default response",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/FileExplorerObject"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/file/room/{id}/{parent}" : {
+      "get" : {
+        "operationId" : "getRoomByParent",
+        "parameters" : [ {
+          "name" : "sid",
+          "in" : "query",
+          "schema" : {
+            "type" : "string"
+          }
+        }, {
+          "name" : "id",
+          "in" : "path",
+          "required" : true,
+          "schema" : {
+            "type" : "integer",
+            "format" : "int64"
+          }
+        }, {
+          "name" : "parent",
+          "in" : "path",
+          "required" : true,
+          "schema" : {
+            "type" : "integer",
+            "format" : "int64"
+          }
+        } ],
+        "responses" : {
+          "default" : {
+            "description" : "default response",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "type" : "array",
+                  "items" : {
+                    "$ref" : "#/components/schemas/FileItemDTO"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/file/{externaltype}" : {
+      "get" : {
+        "operationId" : "getAllExternal",
+        "parameters" : [ {
+          "name" : "sid",
+          "in" : "query",
+          "schema" : {
+            "type" : "string"
+          }
+        }, {
+          "name" : "externaltype",
+          "in" : "path",
+          "required" : true,
+          "schema" : {
+            "type" : "string"
+          }
+        } ],
+        "responses" : {
+          "default" : {
+            "description" : "default response",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "type" : "array",
+                  "items" : {
+                    "$ref" : "#/components/schemas/FileItemDTO"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/file/{externaltype}/{externalid}" : {
+      "delete" : {
+        "operationId" : "deleteExternal",
+        "parameters" : [ {
+          "name" : "sid",
+          "in" : "query",
+          "schema" : {
+            "type" : "string"
+          }
+        }, {
+          "name" : "externaltype",
+          "in" : "path",
+          "required" : true,
+          "schema" : {
+            "type" : "string"
+          }
+        }, {
+          "name" : "externalid",
+          "in" : "path",
+          "required" : true,
+          "schema" : {
+            "type" : "string"
+          }
+        } ],
+        "responses" : {
+          "default" : {
+            "description" : "default response",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/ServiceResult"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/file/{id}" : {
+      "delete" : {
+        "operationId" : "delete_1",
+        "parameters" : [ {
+          "name" : "sid",
+          "in" : "query",
+          "schema" : {
+            "type" : "string"
+          }
+        }, {
+          "name" : "id",
+          "in" : "path",
+          "required" : true,
+          "schema" : {
+            "type" : "integer",
+            "format" : "int64"
+          }
+        } ],
+        "responses" : {
+          "default" : {
+            "description" : "default response",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/ServiceResult"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/group" : {
+      "get" : {
+        "operationId" : "get_1",
+        "parameters" : [ {
+          "name" : "sid",
+          "in" : "query",
+          "schema" : {
+            "type" : "string"
+          }
+        } ],
+        "responses" : {
+          "default" : {
+            "description" : "default response",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "type" : "array",
+                  "items" : {
+                    "$ref" : "#/components/schemas/GroupDTO"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "post" : {
+        "operationId" : "add_1",
+        "parameters" : [ {
+          "name" : "sid",
+          "in" : "query",
+          "schema" : {
+            "type" : "string"
+          }
+        }, {
+          "name" : "name",
+          "in" : "query",
+          "schema" : {
+            "type" : "string"
+          }
+        } ],
+        "responses" : {
+          "default" : {
+            "description" : "default response",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/ServiceResult"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/group/users/{id}" : {
+      "get" : {
+        "operationId" : "getUsers",
+        "parameters" : [ {
+          "name" : "sid",
+          "in" : "query",
+          "schema" : {
+            "type" : "string"
+          }
+        }, {
+          "name" : "id",
+          "in" : "path",
+          "required" : true,
+          "schema" : {
+            "type" : "integer",
+            "format" : "int64"
+          }
+        }, {
+          "name" : "start",
+          "in" : "query",
+          "schema" : {
+            "type" : "integer",
+            "format" : "int32"
+          }
+        }, {
+          "name" : "max",
+          "in" : "query",
+          "schema" : {
+            "type" : "integer",
+            "format" : "int32"
+          }
+        }, {
+          "name" : "orderby",
+          "in" : "query",
+          "schema" : {
+            "type" : "string"
+          }
+        }, {
+          "name" : "asc",
+          "in" : "query",
+          "schema" : {
+            "type" : "boolean"
+          }
+        } ],
+        "responses" : {
+          "default" : {
+            "description" : "default response",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/UserSearchResult"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/group/{id}" : {
+      "delete" : {
+        "operationId" : "delete_2",
+        "parameters" : [ {
+          "name" : "sid",
+          "in" : "query",
+          "schema" : {
+            "type" : "string"
+          }
+        }, {
+          "name" : "id",
+          "in" : "path",
+          "required" : true,
+          "schema" : {
+            "type" : "integer",
+            "format" : "int64"
+          }
+        } ],
+        "responses" : {
+          "default" : {
+            "description" : "default response",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/ServiceResult"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/group/{id}/rooms/add/{roomid}" : {
+      "post" : {
+        "operationId" : "addRoom",
+        "parameters" : [ {
+          "name" : "sid",
+          "in" : "query",
+          "schema" : {
+            "type" : "string"
+          }
+        }, {
+          "name" : "id",
+          "in" : "path",
+          "required" : true,
+          "schema" : {
+            "type" : "integer",
+            "format" : "int64"
+          }
+        }, {
+          "name" : "roomid",
+          "in" : "path",
+          "required" : true,
+          "schema" : {
+            "type" : "integer",
+            "format" : "int64"
+          }
+        } ],
+        "responses" : {
+          "default" : {
+            "description" : "default response",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/ServiceResult"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/group/{id}/users/{userid}" : {
+      "post" : {
+        "operationId" : "addUser",
+        "parameters" : [ {
+          "name" : "sid",
+          "in" : "query",
+          "schema" : {
+            "type" : "string"
+          }
+        }, {
+          "name" : "id",
+          "in" : "path",
+          "required" : true,
+          "schema" : {
+            "type" : "integer",
+            "format" : "int64"
+          }
+        }, {
+          "name" : "userid",
+          "in" : "path",
+          "required" : true,
+          "schema" : {
+            "type" : "integer",
+            "format" : "int64"
+          }
+        } ],
+        "responses" : {
+          "default" : {
+            "description" : "default response",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/ServiceResult"
+                }
+              }
+            }
+          }
+        }
+      },
+      "delete" : {
+        "operationId" : "removeUser",
+        "parameters" : [ {
+          "name" : "sid",
+          "in" : "query",
+          "schema" : {
+            "type" : "string"
+          }
+        }, {
+          "name" : "id",
+          "in" : "path",
+          "required" : true,
+          "schema" : {
+            "type" : "integer",
+            "format" : "int64"
+          }
+        }, {
+          "name" : "userid",
+          "in" : "path",
+          "required" : true,
+          "schema" : {
+            "type" : "integer",
+            "format" : "int64"
+          }
+        } ],
+        "responses" : {
+          "default" : {
+            "description" : "default response",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/ServiceResult"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/info/health" : {
+      "get" : {
+        "operationId" : "getHealth",
+        "responses" : {
+          "default" : {
+            "description" : "default response",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/Health"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/info/version" : {
+      "get" : {
+        "operationId" : "getVersion",
+        "responses" : {
+          "default" : {
+            "description" : "default response",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/Info"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/networktest" : {
+      "get" : {
+        "operationId" : "get_2",
+        "parameters" : [ {
+          "name" : "type",
+          "in" : "query",
+          "schema" : {
+            "type" : "string"
+          }
+        }, {
+          "name" : "size",
+          "in" : "query",
+          "schema" : {
+            "type" : "integer",
+            "format" : "int32"
+          }
+        } ],
+        "responses" : {
+          "default" : {
+            "description" : "default response",
+            "content" : {
+              "application/octet-stream" : { }
+            }
+          }
+        }
+      },
+      "post" : {
+        "operationId" : "upload",
+        "parameters" : [ {
+          "name" : "size",
+          "in" : "query",
+          "schema" : {
+            "type" : "integer",
+            "format" : "int32"
+          }
+        } ],
+        "requestBody" : {
+          "content" : {
+            "application/octet-stream" : {
+              "schema" : {
+                "type" : "object"
+              }
+            }
+          }
+        },
+        "responses" : {
+          "default" : {
+            "description" : "default response",
+            "content" : {
+              "*/*" : {
+                "schema" : {
+                  "type" : "integer",
+                  "format" : "int32"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/record/room/{roomid}" : {
+      "get" : {
+        "operationId" : "getExternalByRoom",
+        "parameters" : [ {
+          "name" : "sid",
+          "in" : "query",
+          "schema" : {
+            "type" : "string"
+          }
+        }, {
+          "name" : "roomid",
+          "in" : "path",
+          "required" : true,
+          "schema" : {
+            "type" : "integer",
+            "format" : "int64"
+          }
+        } ],
+        "responses" : {
+          "default" : {
+            "description" : "default response",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "type" : "array",
+                  "items" : {
+                    "$ref" : "#/components/schemas/RecordingDTO"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/record/{externaltype}" : {
+      "get" : {
+        "operationId" : "getExternalByType",
+        "parameters" : [ {
+          "name" : "sid",
+          "in" : "query",
+          "schema" : {
+            "type" : "string"
+          }
+        }, {
+          "name" : "externaltype",
+          "in" : "path",
+          "required" : true,
+          "schema" : {
+            "type" : "string"
+          }
+        } ],
+        "responses" : {
+          "default" : {
+            "description" : "default response",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "type" : "array",
+                  "items" : {
+                    "$ref" : "#/components/schemas/RecordingDTO"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/record/{externaltype}/{externalid}" : {
+      "get" : {
+        "operationId" : "getExternal",
+        "parameters" : [ {
+          "name" : "sid",
+          "in" : "query",
+          "schema" : {
+            "type" : "string"
+          }
+        }, {
+          "name" : "externaltype",
+          "in" : "path",
+          "required" : true,
+          "schema" : {
+            "type" : "string"
+          }
+        }, {
+          "name" : "externalid",
+          "in" : "path",
+          "required" : true,
+          "schema" : {
+            "type" : "string"
+          }
+        } ],
+        "responses" : {
+          "default" : {
+            "description" : "default response",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "type" : "array",
+                  "items" : {
+                    "$ref" : "#/components/schemas/RecordingDTO"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/record/{id}" : {
+      "delete" : {
+        "operationId" : "delete_3",
+        "parameters" : [ {
+          "name" : "sid",
+          "in" : "query",
+          "schema" : {
+            "type" : "string"
+          }
+        }, {
+          "name" : "id",
+          "in" : "path",
+          "required" : true,
+          "schema" : {
+            "type" : "integer",
+            "format" : "int64"
+          }
+        } ],
+        "responses" : {
+          "default" : {
+            "description" : "default response",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/ServiceResult"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/room" : {
+      "post" : {
+        "operationId" : "add_2",
+        "parameters" : [ {
+          "name" : "sid",
+          "in" : "query",
+          "schema" : {
+            "type" : "string"
+          }
+        } ],
+        "requestBody" : {
+          "content" : {
+            "*/*" : {
+              "schema" : {
+                "type" : "object",
+                "properties" : {
+                  "room" : {
+                    "$ref" : "#/components/schemas/RoomDTO"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses" : {
+          "default" : {
+            "description" : "default response",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/RoomDTO"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/room/cleanwb/{id}" : {
+      "get" : {
+        "operationId" : "cleanWb",
+        "parameters" : [ {
+          "name" : "sid",
+          "in" : "query",
+          "schema" : {
+            "type" : "string"
+          }
+        }, {
+          "name" : "id",
+          "in" : "path",
+          "required" : true,
+          "schema" : {
+            "type" : "integer",
+            "format" : "int64"
+          }
+        } ],
+        "responses" : {
+          "default" : {
+            "description" : "default response",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/ServiceResult"
+                }
+              }
+            }
+          }
+        },
+        "deprecated" : true
+      }
+    },
+    "/room/close/{id}" : {
+      "get" : {
+        "operationId" : "close",
+        "parameters" : [ {
+          "name" : "sid",
+          "in" : "query",
+          "schema" : {
+            "type" : "string"
+          }
+        }, {
+          "name" : "id",
+          "in" : "path",
+          "required" : true,
+          "schema" : {
+            "type" : "integer",
+            "format" : "int64"
+          }
+        } ],
+        "responses" : {
+          "default" : {
+            "description" : "default response",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/ServiceResult"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/room/count/{roomid}" : {
+      "get" : {
+        "operationId" : "count",
+        "parameters" : [ {
+          "name" : "sid",
+          "in" : "query",
+          "schema" : {
+            "type" : "string"
+          }
+        }, {
+          "name" : "roomid",
+          "in" : "path",
+          "required" : true,
+          "schema" : {
+            "type" : "integer",
+            "format" : "int64"
+          }
+        } ],
+        "responses" : {
+          "default" : {
+            "description" : "default response",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/ServiceResult"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/room/hash" : {
+      "post" : {
+        "operationId" : "hash",
+        "parameters" : [ {
+          "name" : "sid",
+          "in" : "query",
+          "schema" : {
+            "type" : "string"
+          }
+        }, {
+          "name" : "invite",
+          "in" : "query",
+          "schema" : {
+            "$ref" : "#/components/schemas/InvitationDTO"
+          }
+        }, {
+          "name" : "sendmail",
+          "in" : "query",
+          "schema" : {
+            "type" : "boolean"
+          }
+        } ],
+        "responses" : {
+          "default" : {
+            "description" : "default response",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/ServiceResult"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/room/kick/{id}" : {
+      "get" : {
+        "operationId" : "kickAll",
+        "parameters" : [ {
+          "name" : "sid",
+          "in" : "query",
+          "schema" : {
+            "type" : "string"
+          }
+        }, {
+          "name" : "id",
+          "in" : "path",
+          "required" : true,
+          "schema" : {
+            "type" : "integer",
+            "format" : "int64"
+          }
+        } ],
+        "responses" : {
+          "default" : {
+            "description" : "default response",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/ServiceResult"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/room/kick/{id}/{externalType}/{externalId}" : {
+      "get" : {
+        "operationId" : "kick",
+        "parameters" : [ {
+          "name" : "sid",
+          "in" : "query",
+          "schema" : {
+            "type" : "string"
+          }
+        }, {
+          "name" : "id",
+          "in" : "path",
+          "required" : true,
+          "schema" : {
+            "type" : "integer",
+            "format" : "int64"
+          }
+        }, {
+          "name" : "externalType",
+          "in" : "path",
+          "required" : true,
+          "schema" : {
+            "type" : "string"
+          }
+        }, {
+          "name" : "externalId",
+          "in" : "path",
+          "required" : true,
+          "schema" : {
+            "type" : "string"
+          }
+        } ],
+        "responses" : {
+          "default" : {
+            "description" : "default response",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/ServiceResult"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/room/open/{id}" : {
+      "get" : {
+        "operationId" : "open",
+        "parameters" : [ {
+          "name" : "sid",
+          "in" : "query",
+          "schema" : {
+            "type" : "string"
+          }
+        }, {
+          "name" : "id",
+          "in" : "path",
+          "required" : true,
+          "schema" : {
+            "type" : "integer",
+            "format" : "int64"
+          }
+        } ],
+        "responses" : {
+          "default" : {
+            "description" : "default response",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/ServiceResult"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/room/public/{type}" : {
+      "get" : {
+        "operationId" : "getPublic",
+        "parameters" : [ {
+          "name" : "sid",
+          "in" : "query",
+          "schema" : {
+            "type" : "string"
+          }
+        }, {
+          "name" : "type",
+          "in" : "path",
+          "required" : true,
+          "schema" : {
+            "type" : "string"
+          }
+        } ],
+        "responses" : {
+          "default" : {
+            "description" : "default response",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "type" : "array",
+                  "items" : {
+                    "$ref" : "#/components/schemas/RoomDTO"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/room/users/{roomid}" : {
+      "get" : {
+        "operationId" : "users",
+        "parameters" : [ {
+          "name" : "sid",
+          "in" : "query",
+          "schema" : {
+            "type" : "string"
+          }
+        }, {
+          "name" : "roomid",
+          "in" : "path",
+          "required" : true,
+          "schema" : {
+            "type" : "integer",
+            "format" : "int64"
+          }
+        } ],
+        "responses" : {
+          "default" : {
+            "description" : "default response",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "type" : "array",
+                  "items" : {
+                    "$ref" : "#/components/schemas/UserDTO"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/room/{id}" : {
+      "get" : {
+        "operationId" : "getRoomById",
+        "parameters" : [ {
+          "name" : "sid",
+          "in" : "query",
+          "schema" : {
+            "type" : "string"
+          }
+        }, {
+          "name" : "id",
+          "in" : "path",
+          "required" : true,
+          "schema" : {
+            "type" : "integer",
+            "format" : "int64"
+          }
+        } ],
+        "responses" : {
+          "default" : {
+            "description" : "default response",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/RoomDTO"
+                }
+              }
+            }
+          }
+        }
+      },
+      "delete" : {
+        "operationId" : "delete_4",
+        "parameters" : [ {
+          "name" : "sid",
+          "in" : "query",
+          "schema" : {
+            "type" : "string"
+          }
+        }, {
+          "name" : "id",
+          "in" : "path",
+          "required" : true,
+          "schema" : {
+            "type" : "integer",
+            "format" : "int64"
+          }
+        } ],
+        "responses" : {
+          "default" : {
+            "description" : "default response",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/ServiceResult"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/room/{type}/{externaltype}/{externalid}" : {
+      "get" : {
+        "operationId" : "getExternal_1",
+        "parameters" : [ {
+          "name" : "sid",
+          "in" : "query",
+          "schema" : {
+            "type" : "string"
+          }
+        }, {
+          "name" : "type",
+          "in" : "path",
+          "required" : true,
+          "schema" : {
+            "type" : "string"
+          }
+        }, {
+          "name" : "externaltype",
+          "in" : "path",
+          "required" : true,
+          "schema" : {
+            "type" : "string"
+          }
+        }, {
+          "name" : "externalid",
+          "in" : "path",
+          "required" : true,
+          "schema" : {
+            "type" : "string"
+          }
+        }, {
+          "name" : "room",
+          "in" : "query",
+          "schema" : {
+            "$ref" : "#/components/schemas/RoomDTO"
+          }
+        } ],
+        "responses" : {
+          "default" : {
+            "description" : "default response",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/RoomDTO"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/user" : {
+      "get" : {
+        "operationId" : "get_3",
+        "parameters" : [ {
+          "name" : "sid",
+          "in" : "query",
+          "schema" : {
+            "type" : "string"
+          }
+        } ],
+        "responses" : {
+          "default" : {
+            "description" : "default response",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "type" : "array",
+                  "items" : {
+                    "$ref" : "#/components/schemas/UserDTO"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "post" : {
+        "operationId" : "add_3",
+        "parameters" : [ {
+          "name" : "sid",
+          "in" : "query",
+          "schema" : {
+            "type" : "string"
+          }
+        } ],
+        "requestBody" : {
+          "content" : {
+            "*/*" : {
+              "schema" : {
+                "type" : "object",
+                "properties" : {
+                  "user" : {
+                    "$ref" : "#/components/schemas/UserDTO"
+                  },
+                  "confirm" : {
+                    "type" : "boolean"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses" : {
+          "default" : {
+            "description" : "default response",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/UserDTO"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/user/hash" : {
+      "post" : {
+        "operationId" : "getRoomHash",
+        "parameters" : [ {
+          "name" : "sid",
+          "in" : "query",
+          "schema" : {
+            "type" : "string"
+          }
+        } ],
+        "requestBody" : {
+          "content" : {
+            "*/*" : {
+              "schema" : {
+                "type" : "object",
+                "properties" : {
+                  "user" : {
+                    "$ref" : "#/components/schemas/ExternalUserDTO"
+                  },
+                  "options" : {
+                    "$ref" : "#/components/schemas/RoomOptionsDTO"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses" : {
+          "default" : {
+            "description" : "default response",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/ServiceResult"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/user/login" : {
+      "get" : {
+        "operationId" : "login",
+        "parameters" : [ {
+          "name" : "user",
+          "in" : "query",
+          "schema" : {
+            "type" : "string"
+          }
+        }, {
+          "name" : "pass",
+          "in" : "query",
+          "schema" : {
+            "type" : "string"
+          }
+        } ],
+        "responses" : {
+          "default" : {
+            "description" : "default response",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/ServiceResult"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/user/{externaltype}/{externalid}" : {
+      "delete" : {
+        "operationId" : "deleteExternal_1",
+        "parameters" : [ {
+          "name" : "sid",
+          "in" : "query",
+          "schema" : {
+            "type" : "string"
+          }
+        }, {
+          "name" : "externaltype",
+          "in" : "path",
+          "required" : true,
+          "schema" : {
+            "type" : "string"
+          }
+        }, {
+          "name" : "externalid",
+          "in" : "path",
+          "required" : true,
+          "schema" : {
+            "type" : "string"
+          }
+        } ],
+        "responses" : {
+          "default" : {
+            "description" : "default response",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/ServiceResult"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/user/{id}" : {
+      "delete" : {
+        "operationId" : "delete_5",
+        "parameters" : [ {
+          "name" : "sid",
+          "in" : "query",
+          "schema" : {
+            "type" : "string"
+          }
+        }, {
+          "name" : "id",
+          "in" : "path",
+          "required" : true,
+          "schema" : {
+            "type" : "integer",
+            "format" : "int64"
+          }
+        } ],
+        "responses" : {
+          "default" : {
+            "description" : "default response",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/ServiceResult"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/wb/cleanslide/{roomid}/{wbid}/{slide}" : {
+      "get" : {
+        "operationId" : "cleanSlide",
+        "parameters" : [ {
+          "name" : "sid",
+          "in" : "query",
+          "schema" : {
+            "type" : "string"
+          }
+        }, {
+          "name" : "roomid",
+          "in" : "path",
+          "required" : true,
+          "schema" : {
+            "type" : "integer",
+            "format" : "int64"
+          }
+        }, {
+          "name" : "wbid",
+          "in" : "path",
+          "required" : true,
+          "schema" : {
+            "type" : "integer",
+            "format" : "int64"
+          }
+        }, {
+          "name" : "slide",
+          "in" : "path",
+          "required" : true,
+          "schema" : {
+            "type" : "integer",
+            "format" : "int32"
+          }
+        } ],
+        "responses" : {
+          "default" : {
+            "description" : "default response",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/ServiceResult"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/wb/cleanwb/{roomid}/{wbid}" : {
+      "get" : {
+        "operationId" : "cleanWb_1",
+        "parameters" : [ {
+          "name" : "sid",
+          "in" : "query",
+          "schema" : {
+            "type" : "string"
+          }
+        }, {
+          "name" : "roomid",
+          "in" : "path",
+          "required" : true,
+          "schema" : {
+            "type" : "integer",
+            "format" : "int64"
+          }
+        }, {
+          "name" : "wbid",
+          "in" : "path",
+          "required" : true,
+          "schema" : {
+            "type" : "integer",
+            "format" : "int64"
+          }
+        } ],
+        "responses" : {
+          "default" : {
+            "description" : "default response",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/ServiceResult"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/wb/resetwb/{id}" : {
+      "get" : {
+        "operationId" : "resetWb",
+        "parameters" : [ {
+          "name" : "sid",
+          "in" : "query",
+          "schema" : {
+            "type" : "string"
+          }
+        }, {
+          "name" : "id",
+          "in" : "path",
+          "required" : true,
+          "schema" : {
+            "type" : "integer",
+            "format" : "int64"
+          }
+        } ],
+        "responses" : {
+          "default" : {
+            "description" : "default response",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/ServiceResult"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/wb/uploadwb/{type}" : {
+      "post" : {
+        "operationId" : "uploadWb",
+        "parameters" : [ {
+          "name" : "sid",
+          "in" : "query",
+          "schema" : {
+            "type" : "string"
+          }
+        }, {
+          "name" : "type",
+          "in" : "path",
+          "required" : true,
+          "schema" : {
+            "type" : "string"
+          }
+        } ],
+        "requestBody" : {
+          "content" : {
+            "*/*" : {
+              "schema" : {
+                "type" : "object",
+                "properties" : {
+                  "data" : {
+                    "type" : "string"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses" : {
+          "default" : {
+            "description" : "default response",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/ServiceResult"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components" : {
+    "schemas" : {
+      "Address" : {
+        "type" : "object",
+        "properties" : {
+          "additionalname" : {
+            "type" : "string"
+          },
+          "comment" : {
+            "type" : "string"
+          },
+          "country" : {
+            "type" : "string"
+          },
+          "deleted" : {
+            "type" : "boolean"
+          },
+          "email" : {
+            "type" : "string",
+            "xml" : {
+              "name" : "mail"
+            }
+          },
+          "fax" : {
+            "type" : "string"
+          },
+          "id" : {
+            "type" : "integer",
+            "format" : "int64"
+          },
+          "inserted" : {
+            "type" : "string",
+            "format" : "date-time",
+            "xml" : {
+              "name" : "created"
+            }
+          },
+          "phone" : {
+            "type" : "string"
+          },
+          "street" : {
+            "type" : "string"
+          },
+          "town" : {
+            "type" : "string"
+          },
+          "updated" : {
+            "type" : "string",
+            "format" : "date-time"
+          },
+          "zip" : {
+            "type" : "string"
+          }
+        },
+        "xml" : {
+          "name" : "address"
+        }
+      },
+      "AppointmentDTO" : {
+        "type" : "object",
+        "properties" : {
+          "connectedEvent" : {
+            "type" : "boolean"
+          },
+          "deleted" : {
+            "type" : "boolean"
+          },
+          "description" : {
+            "type" : "string"
+          },
+          "end" : {
+            "type" : "string",
+            "format" : "date-time"
+          },
+          "icalId" : {
+            "type" : "string"
+          },
+          "id" : {
+            "type" : "integer",
+            "format" : "int64"
+          },
+          "inserted" : {
+            "type" : "string",
+            "format" : "date-time"
+          },
+          "languageId" : {
+            "type" : "integer",
+            "format" : "int64"
+          },
+          "location" : {
+            "type" : "string"
+          },
+          "meetingMembers" : {
+            "type" : "array",
+            "items" : {
+              "$ref" : "#/components/schemas/MeetingMemberDTO"
+            }
+          },
+          "owner" : {
+            "$ref" : "#/components/schemas/UserDTO"
+          },
+          "password" : {
+            "type" : "string"
+          },
+          "passwordProtected" : {
+            "type" : "boolean"
+          },
+          "reminder" : {
+            "type" : "string",
+            "enum" : [ "NONE", "EMAIL", "ICAL" ]
+          },
+          "reminderEmailSend" : {
+            "type" : "boolean"
+          },
+          "room" : {
+            "$ref" : "#/components/schemas/RoomDTO"
+          },
+          "start" : {
+            "type" : "string",
+            "format" : "date-time"
+          },
+          "title" : {
+            "type" : "string"
+          },
+          "updated" : {
+            "type" : "string",
+            "format" : "date-time"
+          }
+        }
+      },
+      "ExternalUserDTO" : {
+        "type" : "object",
+        "properties" : {
+          "email" : {
+            "type" : "string"
+          },
+          "externalId" : {
+            "type" : "string"
+          },
+          "externalType" : {
+            "type" : "string"
+          },
+          "firstname" : {
+            "type" : "string"
+          },
+          "lastname" : {
+            "type" : "string"
+          },
+          "login" : {
+            "type" : "string"
+          },
+          "profilePictureUrl" : {
+            "type" : "string"
+          }
+        }
+      },
+      "FileExplorerObject" : {
+        "type" : "object",
+        "properties" : {
+          "roomHome" : {
+            "type" : "array",
+            "items" : {
+              "$ref" : "#/components/schemas/FileItemDTO"
+            }
+          },
+          "roomHomeSize" : {
+            "type" : "integer",
+            "format" : "int64"
+          },
+          "userHome" : {
+            "type" : "array",
+            "items" : {
+              "$ref" : "#/components/schemas/FileItemDTO"
+            }
+          },
+          "userHomeSize" : {
+            "type" : "integer",
+            "format" : "int64"
+          }
+        }
+      },
+      "FileItemDTO" : {
+        "type" : "object",
+        "properties" : {
+          "externalId" : {
+            "type" : "string"
+          },
+          "externalType" : {
+            "type" : "string"
+          },
+          "groupId" : {
+            "type" : "integer",
+            "format" : "int64"
+          },
+          "hash" : {
+            "type" : "string"
+          },
+          "height" : {
+            "type" : "integer",
+            "format" : "int32"
+          },
+          "id" : {
+            "type" : "integer",
+            "format" : "int64"
+          },
+          "name" : {
+            "type" : "string"
+          },
+          "ownerId" : {
+            "type" : "integer",
+            "format" : "int64"
+          },
+          "parentId" : {
+            "type" : "integer",
+            "format" : "int64"
+          },
+          "roomId" : {
+            "type" : "integer",
+            "format" : "int64"
+          },
+          "size" : {
+            "type" : "integer",
+            "format" : "int64"
+          },
+          "type" : {
+            "type" : "string",
+            "enum" : [ "FOLDER", "IMAGE", "POLL_CHART", "PRESENTATION", "RECORDING", "VIDEO", "WML_FILE" ]
+          },
+          "width" : {
+            "type" : "integer",
+            "format" : "int32"
+          }
+        }
+      },
+      "GroupDTO" : {
+        "type" : "object",
+        "properties" : {
+          "id" : {
+            "type" : "integer",
+            "format" : "int64"
+          },
+          "name" : {
+            "type" : "string"
+          },
+          "tag" : {
+            "type" : "string"
+          }
+        }
+      },
+      "Health" : {
+        "type" : "object",
+        "properties" : {
+          "dbOk" : {
+            "type" : "boolean"
+          },
+          "inited" : {
+            "type" : "boolean"
+          },
+          "installed" : {
+            "type" : "boolean"
+          }
+        }
+      },
+      "Info" : {
+        "type" : "object",
+        "properties" : {
+          "buildDate" : {
+            "type" : "string"
+          },
+          "revision" : {
+            "type" : "string"
+          },
+          "version" : {
+            "type" : "string"
+          }
+        }
+      },
+      "InvitationDTO" : {
+        "type" : "object",
+        "properties" : {
+          "email" : {
+            "type" : "string"
+          },
+          "firstname" : {
+            "type" : "string"
+          },
+          "languageId" : {
+            "type" : "integer",
+            "format" : "int64"
+          },
+          "lastname" : {
+            "type" : "string"
+          },
+          "message" : {
+            "type" : "string"
+          },
+          "password" : {
+            "type" : "string"
+          },
+          "passwordProtected" : {
+            "type" : "boolean"
+          },
+          "roomId" : {
+            "type" : "integer",
+            "format" : "int64"
+          },
+          "subject" : {
+            "type" : "string"
+          },
+          "valid" : {
+            "type" : "string",
+            "enum" : [ "ONE_TIME", "PERIOD", "ENDLESS" ]
+          },
+          "validFrom" : {
+            "type" : "string"
+          },
+          "validTo" : {
+            "type" : "string"
+          }
+        }
+      },
+      "MeetingMemberDTO" : {
+        "type" : "object",
+        "properties" : {
+          "id" : {
+            "type" : "integer",
+            "format" : "int64"
+          },
+          "user" : {
+            "$ref" : "#/components/schemas/UserDTO"
+          }
+        }
+      },
+      "RecordingDTO" : {
+        "type" : "object",
+        "properties" : {
+          "end" : {
+            "type" : "string",
+            "format" : "date-time"
+          },
+          "externalType" : {
+            "type" : "string"
+          },
+          "hash" : {
+            "type" : "string"
+          },
+          "height" : {
+            "type" : "integer",
+            "format" : "int32"
+          },
+          "id" : {
+            "type" : "integer",
+            "format" : "int64"
+          },
+          "interview" : {
+            "type" : "boolean"
+          },
+          "name" : {
+            "type" : "string"
+          },
+          "ownerId" : {
+            "type" : "integer",
+            "format" : "int64"
+          },
+          "roomId" : {
+            "type" : "integer",
+            "format" : "int64"
+          },
+          "start" : {
+            "type" : "string",
+            "format" : "date-time"
+          },
+          "status" : {
+            "type" : "string"
+          },
+          "width" : {
+            "type" : "integer",
+            "format" : "int32"
+          }
+        }
+      },
+      "RoomDTO" : {
+        "type" : "object",
+        "properties" : {
+          "allowRecording" : {
+            "type" : "boolean"
+          },
+          "allowUserQuestions" : {
+            "type" : "boolean"
+          },
+          "appointment" : {
+            "type" : "boolean"
+          },
+          "audioOnly" : {
+            "type" : "boolean"
+          },
+          "capacity" : {
+            "type" : "integer",
+            "format" : "int64"
+          },
+          "closed" : {
+            "type" : "boolean"
+          },
+          "comment" : {
+            "type" : "string"
+          },
+          "confno" : {
+            "type" : "string"
+          },
+          "demo" : {
+            "type" : "boolean"
+          },
+          "demoTime" : {
+            "type" : "integer",
+            "format" : "int32"
+          },
+          "externalId" : {
+            "type" : "string"
+          },
+          "externalType" : {
+            "type" : "string"
+          },
+          "files" : {
+            "type" : "array",
+            "items" : {
+              "$ref" : "#/components/schemas/RoomFileDTO"
+            }
+          },
+          "hiddenElements" : {
+            "uniqueItems" : true,
+            "type" : "array",
+            "items" : {
+              "type" : "string",
+              "enum" : [ "TOP_BAR", "CHAT", "ACTIVITIES", "FILES", "ACTION_MENU", "POLL_MENU", "SCREEN_SHARING", "WHITEBOARD", "MICROPHONE_STATUS", "USER_COUNT" ]
+            }
+          },
+          "id" : {
+            "type" : "integer",
+            "format" : "int64"
+          },
+          "moderated" : {
+            "type" : "boolean"
+          },
+          "name" : {
+            "type" : "string"
+          },
+          "public" : {
+            "type" : "boolean"
+          },
+          "redirectUrl" : {
+            "type" : "string"
+          },
+          "tag" : {
+            "type" : "string"
+          },
+          "type" : {
+            "type" : "string",
+            "enum" : [ "CONFERENCE", "PRESENTATION", "INTERVIEW" ]
+          },
+          "waitModerator" : {
+            "type" : "boolean"
+          },
+          "waitRecording" : {
+            "type" : "boolean"
+          }
+        }
+      },
+      "RoomFileDTO" : {
+        "type" : "object",
+        "properties" : {
+          "fileId" : {
+            "type" : "integer",
+            "format" : "int64"
+          },
+          "id" : {
+            "type" : "integer",
+            "format" : "int64"
+          },
+          "wbIdx" : {
+            "type" : "integer",
+            "format" : "int64"
+          }
+        }
+      },
+      "RoomOptionsDTO" : {
+        "type" : "object",
+        "properties" : {
+          "allowRecording" : {
+            "type" : "boolean"
+          },
+          "allowSameURLMultipleTimes" : {
+            "type" : "boolean"
+          },
+          "externalRoomId" : {
+            "type" : "string"
+          },
+          "externalType" : {
+            "type" : "string"
+          },
+          "moderator" : {
+            "type" : "boolean"
+          },
+          "recordingId" : {
+            "type" : "integer",
+            "format" : "int64"
+          },
+          "roomId" : {
+            "type" : "integer",
+            "format" : "int64"
+          },
+          "showAudioVideoTest" : {
+            "type" : "boolean"
+          }
+        }
+      },
+      "ServiceResult" : {
+        "type" : "object",
+        "properties" : {
+          "message" : {
+            "type" : "string"
+          },
+          "type" : {
+            "type" : "string"
+          }
+        }
+      },
+      "UserDTO" : {
+        "type" : "object",
+        "properties" : {
+          "address" : {
+            "$ref" : "#/components/schemas/Address"
+          },
+          "externalId" : {
+            "type" : "string"
+          },
+          "externalType" : {
+            "type" : "string"
+          },
+          "firstname" : {
+            "type" : "string"
+          },
+          "id" : {
+            "type" : "integer",
+            "format" : "int64"
+          },
+          "languageId" : {
+            "type" : "integer",
+            "format" : "int64"
+          },
+          "lastname" : {
+            "type" : "string"
+          },
+          "login" : {
+            "type" : "string"
+          },
+          "password" : {
+            "type" : "string"
+          },
+          "pictureUri" : {
+            "type" : "string"
+          },
+          "rights" : {
+            "uniqueItems" : true,
+            "type" : "array",
+            "items" : {
+              "type" : "string",
+              "enum" : [ "ADMIN", "GROUP_ADMIN", "ADMIN_CONFIG", "ADMIN_CONNECTIONS", "ADMIN_BACKUP", "ADMIN_LABEL", "ROOM", "DASHBOARD", "LOGIN", "SOAP" ]
+            }
+          },
+          "timeZoneId" : {
+            "type" : "string"
+          },
+          "type" : {
+            "type" : "string",
+            "enum" : [ "USER", "LDAP", "OAUTH", "EXTERNAL", "CONTACT" ]
+          }
+        }
+      },
+      "UserSearchResult" : {
+        "type" : "object",
+        "properties" : {
+          "errorKey" : {
+            "type" : "string"
+          },
+          "objectName" : {
+            "type" : "string"
+          },
+          "records" : {
+            "type" : "integer",
+            "format" : "int64"
+          },
+          "result" : {
+            "type" : "array",
+            "items" : {
+              "$ref" : "#/components/schemas/UserDTO"
+            }
+          }
+        }
+      }
+    }
+  }
+}
