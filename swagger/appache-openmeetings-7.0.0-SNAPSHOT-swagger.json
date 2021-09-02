@@ -13,9 +13,41 @@
     },
     "version" : "7.0.0-SNAPSHOT"
   },
+  "tags" : [ {
+    "name" : "CalendarService",
+    "description" : "CalendarService contains methods to create, edit delete calendar meetings"
+  }, {
+    "name" : "ErrorService",
+    "description" : "The Service contains methods to get localized errors"
+  }, {
+    "name" : "FileService",
+    "description" : "Contains methods to import and upload files into the Files section of the\n conference room and the personal drive of any USER"
+  }, {
+    "name" : "GroupService",
+    "description" : "The Service contains methods to login and create hash to directly enter\n conference rooms, recordings or the application in general"
+  }, {
+    "name" : "InfoService",
+    "description" : "The Service contains methods to get info about the system"
+  }, {
+    "name" : "NetTestService",
+    "description" : "The Service contains methods to trigger a network test"
+  }, {
+    "name" : "RecordingService",
+    "description" : "The Service contains methods to work with recordings"
+  }, {
+    "name" : "RoomService",
+    "description" : "RoomService contains methods to manipulate rooms and create invitation hash"
+  }, {
+    "name" : "UserService",
+    "description" : "The Service contains methods to login and create hash to directly enter\n conference rooms, recordings or the application in general"
+  }, {
+    "name" : "WbService",
+    "description" : "WbService contains methods to manipulate whiteboard contents"
+  } ],
   "paths" : {
     "/calendar" : {
       "post" : {
+        "tags" : [ "CalendarService" ],
         "operationId" : "save",
         "parameters" : [ {
           "name" : "sid",
@@ -54,6 +86,7 @@
     },
     "/calendar/next" : {
       "get" : {
+        "tags" : [ "CalendarService" ],
         "operationId" : "next",
         "parameters" : [ {
           "name" : "sid",
@@ -78,6 +111,7 @@
     },
     "/calendar/next/{userid}" : {
       "get" : {
+        "tags" : [ "CalendarService" ],
         "operationId" : "nextForUser",
         "parameters" : [ {
           "name" : "sid",
@@ -110,6 +144,7 @@
     },
     "/calendar/room/{roomid}" : {
       "get" : {
+        "tags" : [ "CalendarService" ],
         "operationId" : "getByRoom",
         "parameters" : [ {
           "name" : "sid",
@@ -142,6 +177,7 @@
     },
     "/calendar/title/{title}" : {
       "get" : {
+        "tags" : [ "CalendarService" ],
         "operationId" : "getByTitle",
         "parameters" : [ {
           "name" : "sid",
@@ -176,6 +212,7 @@
     },
     "/calendar/{id}" : {
       "delete" : {
+        "tags" : [ "CalendarService" ],
         "operationId" : "delete",
         "parameters" : [ {
           "name" : "sid",
@@ -208,6 +245,7 @@
     },
     "/calendar/{start}/{end}" : {
       "get" : {
+        "tags" : [ "CalendarService" ],
         "operationId" : "range",
         "parameters" : [ {
           "name" : "sid",
@@ -251,6 +289,7 @@
     },
     "/calendar/{userid}/{start}/{end}" : {
       "get" : {
+        "tags" : [ "CalendarService" ],
         "operationId" : "rangeForUser",
         "parameters" : [ {
           "name" : "sid",
@@ -302,6 +341,7 @@
     },
     "/error/report" : {
       "post" : {
+        "tags" : [ "ErrorService" ],
         "operationId" : "report",
         "parameters" : [ {
           "name" : "sid",
@@ -328,6 +368,7 @@
     },
     "/error/{key}/{lang}" : {
       "get" : {
+        "tags" : [ "ErrorService" ],
         "operationId" : "get",
         "parameters" : [ {
           "name" : "key",
@@ -361,6 +402,7 @@
     },
     "/file" : {
       "post" : {
+        "tags" : [ "FileService" ],
         "operationId" : "add",
         "parameters" : [ {
           "name" : "sid",
@@ -394,6 +436,7 @@
     },
     "/file/move/{roomid}/{id}/{parentid}" : {
       "post" : {
+        "tags" : [ "FileService" ],
         "operationId" : "move",
         "parameters" : [ {
           "name" : "sid",
@@ -442,6 +485,7 @@
     },
     "/file/rename/{id}/{name}" : {
       "post" : {
+        "tags" : [ "FileService" ],
         "operationId" : "rename",
         "parameters" : [ {
           "name" : "sid",
@@ -481,6 +525,7 @@
     },
     "/file/room/{id}" : {
       "get" : {
+        "tags" : [ "FileService" ],
         "operationId" : "getRoom",
         "parameters" : [ {
           "name" : "sid",
@@ -513,6 +558,7 @@
     },
     "/file/room/{id}/{parent}" : {
       "get" : {
+        "tags" : [ "FileService" ],
         "operationId" : "getRoomByParent",
         "parameters" : [ {
           "name" : "sid",
@@ -556,6 +602,7 @@
     },
     "/file/{externaltype}" : {
       "get" : {
+        "tags" : [ "FileService" ],
         "operationId" : "getAllExternal",
         "parameters" : [ {
           "name" : "sid",
@@ -590,6 +637,7 @@
     },
     "/file/{externaltype}/{externalid}" : {
       "delete" : {
+        "tags" : [ "FileService" ],
         "operationId" : "deleteExternal",
         "parameters" : [ {
           "name" : "sid",
@@ -628,6 +676,7 @@
     },
     "/file/{id}" : {
       "delete" : {
+        "tags" : [ "FileService" ],
         "operationId" : "delete_1",
         "parameters" : [ {
           "name" : "sid",
@@ -660,6 +709,7 @@
     },
     "/group" : {
       "get" : {
+        "tags" : [ "GroupService" ],
         "operationId" : "get_1",
         "parameters" : [ {
           "name" : "sid",
@@ -685,6 +735,7 @@
         }
       },
       "post" : {
+        "tags" : [ "GroupService" ],
         "operationId" : "add_1",
         "parameters" : [ {
           "name" : "sid",
@@ -715,6 +766,7 @@
     },
     "/group/users/{id}" : {
       "get" : {
+        "tags" : [ "GroupService" ],
         "operationId" : "getUsers",
         "parameters" : [ {
           "name" : "sid",
@@ -773,6 +825,7 @@
     },
     "/group/{id}" : {
       "delete" : {
+        "tags" : [ "GroupService" ],
         "operationId" : "delete_2",
         "parameters" : [ {
           "name" : "sid",
@@ -805,6 +858,7 @@
     },
     "/group/{id}/rooms/add/{roomid}" : {
       "post" : {
+        "tags" : [ "GroupService" ],
         "operationId" : "addRoom",
         "parameters" : [ {
           "name" : "sid",
@@ -845,6 +899,7 @@
     },
     "/group/{id}/users/{userid}" : {
       "post" : {
+        "tags" : [ "GroupService" ],
         "operationId" : "addUser",
         "parameters" : [ {
           "name" : "sid",
@@ -883,6 +938,7 @@
         }
       },
       "delete" : {
+        "tags" : [ "GroupService" ],
         "operationId" : "removeUser",
         "parameters" : [ {
           "name" : "sid",
@@ -923,6 +979,7 @@
     },
     "/info/health" : {
       "get" : {
+        "tags" : [ "InfoService" ],
         "operationId" : "getHealth",
         "responses" : {
           "default" : {
@@ -940,6 +997,7 @@
     },
     "/info/version" : {
       "get" : {
+        "tags" : [ "InfoService" ],
         "operationId" : "getVersion",
         "responses" : {
           "default" : {
@@ -957,6 +1015,7 @@
     },
     "/networktest" : {
       "get" : {
+        "tags" : [ "NetTestService" ],
         "operationId" : "get_2",
         "parameters" : [ {
           "name" : "type",
@@ -982,6 +1041,7 @@
         }
       },
       "post" : {
+        "tags" : [ "NetTestService" ],
         "operationId" : "upload",
         "parameters" : [ {
           "name" : "size",
@@ -1017,6 +1077,7 @@
     },
     "/record/room/{roomid}" : {
       "get" : {
+        "tags" : [ "RecordingService" ],
         "operationId" : "getExternalByRoom",
         "parameters" : [ {
           "name" : "sid",
@@ -1052,6 +1113,7 @@
     },
     "/record/{externaltype}" : {
       "get" : {
+        "tags" : [ "RecordingService" ],
         "operationId" : "getExternalByType",
         "parameters" : [ {
           "name" : "sid",
@@ -1086,6 +1148,7 @@
     },
     "/record/{externaltype}/{externalid}" : {
       "get" : {
+        "tags" : [ "RecordingService" ],
         "operationId" : "getExternal",
         "parameters" : [ {
           "name" : "sid",
@@ -1127,6 +1190,7 @@
     },
     "/record/{id}" : {
       "delete" : {
+        "tags" : [ "RecordingService" ],
         "operationId" : "delete_3",
         "parameters" : [ {
           "name" : "sid",
@@ -1159,6 +1223,7 @@
     },
     "/room" : {
       "post" : {
+        "tags" : [ "RoomService" ],
         "operationId" : "add_2",
         "parameters" : [ {
           "name" : "sid",
@@ -1197,6 +1262,7 @@
     },
     "/room/cleanwb/{id}" : {
       "get" : {
+        "tags" : [ "RoomService" ],
         "operationId" : "cleanWb",
         "parameters" : [ {
           "name" : "sid",
@@ -1230,6 +1296,7 @@
     },
     "/room/close/{id}" : {
       "get" : {
+        "tags" : [ "RoomService" ],
         "operationId" : "close",
         "parameters" : [ {
           "name" : "sid",
@@ -1262,6 +1329,7 @@
     },
     "/room/count/{roomid}" : {
       "get" : {
+        "tags" : [ "RoomService" ],
         "operationId" : "count",
         "parameters" : [ {
           "name" : "sid",
@@ -1294,6 +1362,7 @@
     },
     "/room/hash" : {
       "post" : {
+        "tags" : [ "RoomService" ],
         "operationId" : "hash",
         "parameters" : [ {
           "name" : "sid",
@@ -1330,6 +1399,7 @@
     },
     "/room/kick/{id}" : {
       "get" : {
+        "tags" : [ "RoomService" ],
         "operationId" : "kickAll",
         "parameters" : [ {
           "name" : "sid",
@@ -1362,6 +1432,7 @@
     },
     "/room/kick/{id}/{externalType}/{externalId}" : {
       "get" : {
+        "tags" : [ "RoomService" ],
         "operationId" : "kick",
         "parameters" : [ {
           "name" : "sid",
@@ -1408,6 +1479,7 @@
     },
     "/room/open/{id}" : {
       "get" : {
+        "tags" : [ "RoomService" ],
         "operationId" : "open",
         "parameters" : [ {
           "name" : "sid",
@@ -1440,6 +1512,7 @@
     },
     "/room/public/{type}" : {
       "get" : {
+        "tags" : [ "RoomService" ],
         "operationId" : "getPublic",
         "parameters" : [ {
           "name" : "sid",
@@ -1474,6 +1547,7 @@
     },
     "/room/users/{roomid}" : {
       "get" : {
+        "tags" : [ "RoomService" ],
         "operationId" : "users",
         "parameters" : [ {
           "name" : "sid",
@@ -1509,6 +1583,7 @@
     },
     "/room/{id}" : {
       "get" : {
+        "tags" : [ "RoomService" ],
         "operationId" : "getRoomById",
         "parameters" : [ {
           "name" : "sid",
@@ -1539,6 +1614,7 @@
         }
       },
       "delete" : {
+        "tags" : [ "RoomService" ],
         "operationId" : "delete_4",
         "parameters" : [ {
           "name" : "sid",
@@ -1571,6 +1647,7 @@
     },
     "/room/{type}/{externaltype}/{externalid}" : {
       "get" : {
+        "tags" : [ "RoomService" ],
         "operationId" : "getExternal_1",
         "parameters" : [ {
           "name" : "sid",
@@ -1622,6 +1699,7 @@
     },
     "/user" : {
       "get" : {
+        "tags" : [ "UserService" ],
         "operationId" : "get_3",
         "parameters" : [ {
           "name" : "sid",
@@ -1647,6 +1725,7 @@
         }
       },
       "post" : {
+        "tags" : [ "UserService" ],
         "operationId" : "add_3",
         "parameters" : [ {
           "name" : "sid",
@@ -1688,6 +1767,7 @@
     },
     "/user/hash" : {
       "post" : {
+        "tags" : [ "UserService" ],
         "operationId" : "getRoomHash",
         "parameters" : [ {
           "name" : "sid",
@@ -1729,6 +1809,7 @@
     },
     "/user/login" : {
       "get" : {
+        "tags" : [ "UserService" ],
         "operationId" : "login",
         "parameters" : [ {
           "name" : "user",
@@ -1759,6 +1840,7 @@
     },
     "/user/{externaltype}/{externalid}" : {
       "delete" : {
+        "tags" : [ "UserService" ],
         "operationId" : "deleteExternal_1",
         "parameters" : [ {
           "name" : "sid",
@@ -1797,6 +1879,7 @@
     },
     "/user/{id}" : {
       "delete" : {
+        "tags" : [ "UserService" ],
         "operationId" : "delete_5",
         "parameters" : [ {
           "name" : "sid",
@@ -1829,6 +1912,7 @@
     },
     "/wb/cleanslide/{roomid}/{wbid}/{slide}" : {
       "get" : {
+        "tags" : [ "WbService" ],
         "operationId" : "cleanSlide",
         "parameters" : [ {
           "name" : "sid",
@@ -1877,6 +1961,7 @@
     },
     "/wb/cleanwb/{roomid}/{wbid}" : {
       "get" : {
+        "tags" : [ "WbService" ],
         "operationId" : "cleanWb_1",
         "parameters" : [ {
           "name" : "sid",
@@ -1917,6 +2002,7 @@
     },
     "/wb/resetwb/{id}" : {
       "get" : {
+        "tags" : [ "WbService" ],
         "operationId" : "resetWb",
         "parameters" : [ {
           "name" : "sid",
@@ -1949,6 +2035,7 @@
     },
     "/wb/uploadwb/{type}" : {
       "post" : {
+        "tags" : [ "WbService" ],
         "operationId" : "uploadWb",
         "parameters" : [ {
           "name" : "sid",
