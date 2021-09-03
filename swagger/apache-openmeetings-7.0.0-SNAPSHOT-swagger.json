@@ -13,6 +13,10 @@
     },
     "version" : "7.0.0-SNAPSHOT"
   },
+  "servers" : [ {
+    "url" : "https://om.alteametasoft.com/openmeetings/services",
+    "description" : "Om Demo Server"
+  } ],
   "tags" : [ {
     "name" : "CalendarService",
     "description" : "CalendarService contains methods to create, edit delete calendar meetings"
@@ -1224,10 +1228,13 @@
     "/room" : {
       "post" : {
         "tags" : [ "RoomService" ],
+        "description" : "Adds a new ROOM like through the Frontend",
         "operationId" : "add_2",
         "parameters" : [ {
           "name" : "sid",
           "in" : "query",
+          "description" : "The SID of the User. This SID must be marked as Loggedin",
+          "required" : true,
           "schema" : {
             "type" : "string"
           }
@@ -1236,6 +1243,7 @@
           "content" : {
             "*/*" : {
               "schema" : {
+                "required" : [ "room" ],
                 "type" : "object",
                 "properties" : {
                   "room" : {
@@ -1247,15 +1255,8 @@
           }
         },
         "responses" : {
-          "default" : {
-            "description" : "default response",
-            "content" : {
-              "application/json" : {
-                "schema" : {
-                  "$ref" : "#/components/schemas/RoomDTO"
-                }
-              }
-            }
+          "200" : {
+            "description" : "Room object or throw error"
           }
         }
       }
@@ -1263,6 +1264,7 @@
     "/room/cleanwb/{id}" : {
       "get" : {
         "tags" : [ "RoomService" ],
+        "description" : "Method to clean room white board (all objects will be purged) - Deprecated use WbService#resetWb method instead",
         "operationId" : "cleanWb",
         "parameters" : [ {
           "name" : "sid",
@@ -1280,15 +1282,8 @@
           }
         } ],
         "responses" : {
-          "default" : {
-            "description" : "default response",
-            "content" : {
-              "application/json" : {
-                "schema" : {
-                  "$ref" : "#/components/schemas/ServiceResult"
-                }
-              }
-            }
+          "200" : {
+            "description" : "serviceResult object with the result"
           }
         },
         "deprecated" : true
@@ -1297,16 +1292,20 @@
     "/room/close/{id}" : {
       "get" : {
         "tags" : [ "RoomService" ],
+        "description" : "Method to remotely close rooms. If a room is closed all users\n inside the room and all users that try to enter it will be redirected to\n the redirectURL that is defined in the ROOM-Object.",
         "operationId" : "close",
         "parameters" : [ {
           "name" : "sid",
           "in" : "query",
+          "description" : "The SID of the User. This SID must be marked as Loggedin",
+          "required" : true,
           "schema" : {
             "type" : "string"
           }
         }, {
           "name" : "id",
           "in" : "path",
+          "description" : "the room id",
           "required" : true,
           "schema" : {
             "type" : "integer",
@@ -1314,15 +1313,8 @@
           }
         } ],
         "responses" : {
-          "default" : {
-            "description" : "default response",
-            "content" : {
-              "application/json" : {
-                "schema" : {
-                  "$ref" : "#/components/schemas/ServiceResult"
-                }
-              }
-            }
+          "200" : {
+            "description" : "1 in case of success, -2 otherwise"
           }
         }
       }
@@ -1330,16 +1322,20 @@
     "/room/count/{roomid}" : {
       "get" : {
         "tags" : [ "RoomService" ],
+        "description" : "Returns the count of users currently in the ROOM with given id",
         "operationId" : "count",
         "parameters" : [ {
           "name" : "sid",
           "in" : "query",
+          "description" : "The SID of the User. This SID must be marked as Loggedin",
+          "required" : true,
           "schema" : {
             "type" : "string"
           }
         }, {
           "name" : "roomid",
           "in" : "path",
+          "description" : "roomId id of the room to get users",
           "required" : true,
           "schema" : {
             "type" : "integer",
@@ -1347,15 +1343,8 @@
           }
         } ],
         "responses" : {
-          "default" : {
-            "description" : "default response",
-            "content" : {
-              "application/json" : {
-                "schema" : {
-                  "$ref" : "#/components/schemas/ServiceResult"
-                }
-              }
-            }
+          "200" : {
+            "description" : "number of users as int"
           }
         }
       }
@@ -1363,36 +1352,36 @@
     "/room/hash" : {
       "post" : {
         "tags" : [ "RoomService" ],
+        "description" : "Method to get invitation hash with given parameters",
         "operationId" : "hash",
         "parameters" : [ {
           "name" : "sid",
           "in" : "query",
+          "description" : "The SID of the User. This SID must be marked as Loggedin",
+          "required" : true,
           "schema" : {
             "type" : "string"
           }
         }, {
           "name" : "invite",
           "in" : "query",
+          "description" : "parameters of the invitation",
+          "required" : true,
           "schema" : {
             "$ref" : "#/components/schemas/InvitationDTO"
           }
         }, {
           "name" : "sendmail",
           "in" : "query",
+          "description" : "flag to determine if email should be sent or not",
+          "required" : true,
           "schema" : {
             "type" : "boolean"
           }
         } ],
         "responses" : {
-          "default" : {
-            "description" : "default response",
-            "content" : {
-              "application/json" : {
-                "schema" : {
-                  "$ref" : "#/components/schemas/ServiceResult"
-                }
-              }
-            }
+          "200" : {
+            "description" : "serviceResult object with the result"
           }
         }
       }
@@ -1400,16 +1389,20 @@
     "/room/kick/{id}" : {
       "get" : {
         "tags" : [ "RoomService" ],
+        "description" : "Kick all uses of a certain room",
         "operationId" : "kickAll",
         "parameters" : [ {
           "name" : "sid",
           "in" : "query",
+          "description" : "The SID of the User. This SID must be marked as Loggedin",
+          "required" : true,
           "schema" : {
             "type" : "string"
           }
         }, {
           "name" : "id",
           "in" : "path",
+          "description" : "the room id",
           "required" : true,
           "schema" : {
             "type" : "integer",
@@ -1417,15 +1410,8 @@
           }
         } ],
         "responses" : {
-          "default" : {
-            "description" : "default response",
-            "content" : {
-              "application/json" : {
-                "schema" : {
-                  "$ref" : "#/components/schemas/ServiceResult"
-                }
-              }
-            }
+          "200" : {
+            "description" : "true if USER was kicked, false otherwise"
           }
         }
       }
@@ -1433,16 +1419,20 @@
     "/room/kick/{id}/{externalType}/{externalId}" : {
       "get" : {
         "tags" : [ "RoomService" ],
+        "description" : "kick external USER from given room",
         "operationId" : "kick",
         "parameters" : [ {
           "name" : "sid",
           "in" : "query",
+          "description" : "The SID of the User. This SID must be marked as Loggedin",
+          "required" : true,
           "schema" : {
             "type" : "string"
           }
         }, {
           "name" : "id",
           "in" : "path",
+          "description" : "the room id",
           "required" : true,
           "schema" : {
             "type" : "integer",
@@ -1451,6 +1441,7 @@
         }, {
           "name" : "externalType",
           "in" : "path",
+          "description" : "external type of USER to kick",
           "required" : true,
           "schema" : {
             "type" : "string"
@@ -1458,21 +1449,15 @@
         }, {
           "name" : "externalId",
           "in" : "path",
+          "description" : "external id of USER to kick",
           "required" : true,
           "schema" : {
             "type" : "string"
           }
         } ],
         "responses" : {
-          "default" : {
-            "description" : "default response",
-            "content" : {
-              "application/json" : {
-                "schema" : {
-                  "$ref" : "#/components/schemas/ServiceResult"
-                }
-              }
-            }
+          "200" : {
+            "description" : "'Kicked' if USER was 'Not kicked' otherwise"
           }
         }
       }
@@ -1480,16 +1465,20 @@
     "/room/open/{id}" : {
       "get" : {
         "tags" : [ "RoomService" ],
+        "description" : "Method to remotely open rooms. If a room is closed all users\n inside the room and all users that try to enter it will be redirected to\n the redirectURL that is defined in the ROOM-Object.",
         "operationId" : "open",
         "parameters" : [ {
           "name" : "sid",
           "in" : "query",
+          "description" : "The SID of the User. This SID must be marked as Loggedin",
+          "required" : true,
           "schema" : {
             "type" : "string"
           }
         }, {
           "name" : "id",
           "in" : "path",
+          "description" : "the room id",
           "required" : true,
           "schema" : {
             "type" : "integer",
@@ -1497,15 +1486,8 @@
           }
         } ],
         "responses" : {
-          "default" : {
-            "description" : "default response",
-            "content" : {
-              "application/json" : {
-                "schema" : {
-                  "$ref" : "#/components/schemas/ServiceResult"
-                }
-              }
-            }
+          "200" : {
+            "description" : "1 in case of success, -2 otherwise"
           }
         }
       }
@@ -1513,34 +1495,28 @@
     "/room/public/{type}" : {
       "get" : {
         "tags" : [ "RoomService" ],
+        "description" : "Returns an Object of Type RoomsList which contains a list of\n ROOM-Objects. Every ROOM-Object contains a Roomtype and all informations\n\tabout that ROOM. The List of current-users in the room is Null if you get\n\tthem via SOAP. The Roomtype can be 'conference', 'presentation' or 'interview'.",
         "operationId" : "getPublic",
         "parameters" : [ {
           "name" : "sid",
           "in" : "query",
+          "description" : "The SID of the User. This SID must be marked as Loggedin",
+          "required" : true,
           "schema" : {
             "type" : "string"
           }
         }, {
           "name" : "type",
           "in" : "path",
+          "description" : "Type of public rooms need to be retrieved",
           "required" : true,
           "schema" : {
             "type" : "string"
           }
         } ],
         "responses" : {
-          "default" : {
-            "description" : "default response",
-            "content" : {
-              "application/json" : {
-                "schema" : {
-                  "type" : "array",
-                  "items" : {
-                    "$ref" : "#/components/schemas/RoomDTO"
-                  }
-                }
-              }
-            }
+          "200" : {
+            "description" : "list of public rooms"
           }
         }
       }
@@ -1548,16 +1524,20 @@
     "/room/users/{roomid}" : {
       "get" : {
         "tags" : [ "RoomService" ],
+        "description" : "Returns list of users currently in the ROOM with given id",
         "operationId" : "users",
         "parameters" : [ {
           "name" : "sid",
           "in" : "query",
+          "description" : "The SID of the User. This SID must be marked as Loggedin",
+          "required" : true,
           "schema" : {
             "type" : "string"
           }
         }, {
           "name" : "roomid",
           "in" : "path",
+          "description" : "roomId id of the room to get users",
           "required" : true,
           "schema" : {
             "type" : "integer",
@@ -1565,18 +1545,8 @@
           }
         } ],
         "responses" : {
-          "default" : {
-            "description" : "default response",
-            "content" : {
-              "application/json" : {
-                "schema" : {
-                  "type" : "array",
-                  "items" : {
-                    "$ref" : "#/components/schemas/UserDTO"
-                  }
-                }
-              }
-            }
+          "200" : {
+            "description" : "List of users in the room"
           }
         }
       }
@@ -1584,16 +1554,20 @@
     "/room/{id}" : {
       "get" : {
         "tags" : [ "RoomService" ],
+        "description" : "Returns a conference room object",
         "operationId" : "getRoomById",
         "parameters" : [ {
           "name" : "sid",
           "in" : "query",
+          "description" : "The SID of the User. This SID must be marked as Loggedin",
+          "required" : true,
           "schema" : {
             "type" : "string"
           }
         }, {
           "name" : "id",
           "in" : "path",
+          "description" : "the room id",
           "required" : true,
           "schema" : {
             "type" : "integer",
@@ -1601,30 +1575,27 @@
           }
         } ],
         "responses" : {
-          "default" : {
-            "description" : "default response",
-            "content" : {
-              "application/json" : {
-                "schema" : {
-                  "$ref" : "#/components/schemas/RoomDTO"
-                }
-              }
-            }
+          "200" : {
+            "description" : "room with the id given"
           }
         }
       },
       "delete" : {
         "tags" : [ "RoomService" ],
+        "description" : "Delete a room by its room id",
         "operationId" : "delete_4",
         "parameters" : [ {
           "name" : "sid",
           "in" : "query",
+          "description" : "The SID of the User. This SID must be marked as Loggedin",
+          "required" : true,
           "schema" : {
             "type" : "string"
           }
         }, {
           "name" : "id",
           "in" : "path",
+          "description" : "The id of the room",
           "required" : true,
           "schema" : {
             "type" : "integer",
@@ -1632,15 +1603,8 @@
           }
         } ],
         "responses" : {
-          "default" : {
-            "description" : "default response",
-            "content" : {
-              "application/json" : {
-                "schema" : {
-                  "$ref" : "#/components/schemas/ServiceResult"
-                }
-              }
-            }
+          "200" : {
+            "description" : "id of the room deleted"
           }
         }
       }
@@ -1648,16 +1612,20 @@
     "/room/{type}/{externaltype}/{externalid}" : {
       "get" : {
         "tags" : [ "RoomService" ],
+        "description" : "Checks if a room with this exteralId + externalType does exist,\n\tif yes it returns the room id if not, it will create the room and then\n\treturn the room id of the newly created room",
         "operationId" : "getExternal_1",
         "parameters" : [ {
           "name" : "sid",
           "in" : "query",
+          "description" : "The SID of the User. This SID must be marked as Loggedin",
+          "required" : true,
           "schema" : {
             "type" : "string"
           }
         }, {
           "name" : "type",
           "in" : "path",
+          "description" : "type of the room",
           "required" : true,
           "schema" : {
             "type" : "string"
@@ -1665,6 +1633,7 @@
         }, {
           "name" : "externaltype",
           "in" : "path",
+          "description" : "you can specify your system-name or type of room here, for example \"moodle\"",
           "required" : true,
           "schema" : {
             "type" : "string"
@@ -1672,6 +1641,7 @@
         }, {
           "name" : "externalid",
           "in" : "path",
+          "description" : "your external room id may set here",
           "required" : true,
           "schema" : {
             "type" : "string"
@@ -1679,20 +1649,15 @@
         }, {
           "name" : "room",
           "in" : "query",
+          "description" : "details of the room to be created if not found",
+          "required" : true,
           "schema" : {
             "$ref" : "#/components/schemas/RoomDTO"
           }
         } ],
         "responses" : {
-          "default" : {
-            "description" : "default response",
-            "content" : {
-              "application/json" : {
-                "schema" : {
-                  "$ref" : "#/components/schemas/RoomDTO"
-                }
-              }
-            }
+          "200" : {
+            "description" : "id of the room or error code"
           }
         }
       }
