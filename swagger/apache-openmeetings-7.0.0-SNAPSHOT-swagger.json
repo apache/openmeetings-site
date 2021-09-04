@@ -21,20 +21,23 @@
     "description" : "Om Demo Server"
   } ],
   "tags" : [ {
+    "name" : "UserService",
+    "description" : "The Service contains methods to login and create hash to directly enter conference rooms, recordings or the application in general"
+  }, {
+    "name" : "RoomService",
+    "description" : "RoomService contains methods to manipulate rooms and create invitation hash"
+  }, {
+    "name" : "FileService",
+    "description" : "Contains methods to import and upload files into the Files section of the conference room and the personal drive of any USER"
+  }, {
+    "name" : "WbService",
+    "description" : "WbService contains methods to manipulate whiteboard contents"
+  }, {
     "name" : "CalendarService",
     "description" : "CalendarService contains methods to create, edit delete calendar meetings"
   }, {
-    "name" : "ErrorService",
-    "description" : "The Service contains methods to get localized errors"
-  }, {
-    "name" : "FileService",
-    "description" : "Contains methods to import and upload files into the Files section of the\n conference room and the personal drive of any USER"
-  }, {
     "name" : "GroupService",
-    "description" : "The Service contains methods to login and create hash to directly enter\n conference rooms, recordings or the application in general"
-  }, {
-    "name" : "InfoService",
-    "description" : "The Service contains methods to get info about the system"
+    "description" : "The Service contains methods to login and create hash to directly enter conference rooms, recordings or the application in general"
   }, {
     "name" : "NetTestService",
     "description" : "The Service contains methods to trigger a network test"
@@ -42,14 +45,11 @@
     "name" : "RecordingService",
     "description" : "The Service contains methods to work with recordings"
   }, {
-    "name" : "RoomService",
-    "description" : "RoomService contains methods to manipulate rooms and create invitation hash"
+    "name" : "InfoService",
+    "description" : "The Service contains methods to get info about the system"
   }, {
-    "name" : "UserService",
-    "description" : "The Service contains methods to login and create hash to directly enter\n conference rooms, recordings or the application in general"
-  }, {
-    "name" : "WbService",
-    "description" : "WbService contains methods to manipulate whiteboard contents"
+    "name" : "ErrorService",
+    "description" : "The Service contains methods to get localized errors"
   } ],
   "paths" : {
     "/calendar" : {
