@@ -14,6 +14,9 @@
     "version" : "7.0.0-SNAPSHOT"
   },
   "servers" : [ {
+    "url" : "http://localhost:5080/openmeetings/services",
+    "description" : "Your local OpenMeetings Server"
+  }, {
     "url" : "https://om.alteametasoft.com/openmeetings/services",
     "description" : "Om Demo Server"
   } ],
@@ -1256,7 +1259,17 @@
         },
         "responses" : {
           "200" : {
-            "description" : "Room object or throw error"
+            "description" : "Room object or throw error",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/RoomDTO"
+                }
+              }
+            }
+          },
+          "500" : {
+            "description" : "Error in case of invalid credentials or server error"
           }
         }
       }
@@ -1283,7 +1296,17 @@
         } ],
         "responses" : {
           "200" : {
-            "description" : "serviceResult object with the result"
+            "description" : "serviceResult object with the result",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/ServiceResult"
+                }
+              }
+            }
+          },
+          "500" : {
+            "description" : "Error in case of invalid credentials or server error"
           }
         },
         "deprecated" : true
@@ -1314,7 +1337,17 @@
         } ],
         "responses" : {
           "200" : {
-            "description" : "1 in case of success, -2 otherwise"
+            "description" : "1 in case of success, -2 otherwise",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/ServiceResult"
+                }
+              }
+            }
+          },
+          "500" : {
+            "description" : "Error in case of invalid credentials or server error"
           }
         }
       }
@@ -1344,7 +1377,17 @@
         } ],
         "responses" : {
           "200" : {
-            "description" : "number of users as int"
+            "description" : "number of users as int",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/ServiceResult"
+                }
+              }
+            }
+          },
+          "500" : {
+            "description" : "Error in case of invalid credentials or server error"
           }
         }
       }
@@ -1381,7 +1424,17 @@
         } ],
         "responses" : {
           "200" : {
-            "description" : "serviceResult object with the result"
+            "description" : "serviceResult object with the result",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/ServiceResult"
+                }
+              }
+            }
+          },
+          "500" : {
+            "description" : "Error in case of invalid credentials or server error"
           }
         }
       }
@@ -1411,7 +1464,17 @@
         } ],
         "responses" : {
           "200" : {
-            "description" : "true if USER was kicked, false otherwise"
+            "description" : "true if USER was kicked, false otherwise",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/ServiceResult"
+                }
+              }
+            }
+          },
+          "500" : {
+            "description" : "Error in case of invalid credentials or server error"
           }
         }
       }
@@ -1457,7 +1520,17 @@
         } ],
         "responses" : {
           "200" : {
-            "description" : "'Kicked' if USER was 'Not kicked' otherwise"
+            "description" : "'Kicked' if USER was 'Not kicked' otherwise",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/ServiceResult"
+                }
+              }
+            }
+          },
+          "500" : {
+            "description" : "Error in case of invalid credentials or server error"
           }
         }
       }
@@ -1487,7 +1560,17 @@
         } ],
         "responses" : {
           "200" : {
-            "description" : "1 in case of success, -2 otherwise"
+            "description" : "1 in case of success, -2 otherwise",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/ServiceResult"
+                }
+              }
+            }
+          },
+          "500" : {
+            "description" : "Error in case of invalid credentials or server error"
           }
         }
       }
@@ -1516,7 +1599,20 @@
         } ],
         "responses" : {
           "200" : {
-            "description" : "list of public rooms"
+            "description" : "list of public rooms",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "type" : "array",
+                  "items" : {
+                    "$ref" : "#/components/schemas/RoomDTO"
+                  }
+                }
+              }
+            }
+          },
+          "500" : {
+            "description" : "Error in case of invalid credentials or server error"
           }
         }
       }
@@ -1546,7 +1642,20 @@
         } ],
         "responses" : {
           "200" : {
-            "description" : "List of users in the room"
+            "description" : "List of users in the room",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "type" : "array",
+                  "items" : {
+                    "$ref" : "#/components/schemas/UserDTO"
+                  }
+                }
+              }
+            }
+          },
+          "500" : {
+            "description" : "Error in case of invalid credentials or server error"
           }
         }
       }
@@ -1576,7 +1685,17 @@
         } ],
         "responses" : {
           "200" : {
-            "description" : "room with the id given"
+            "description" : "room with the id given",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/RoomDTO"
+                }
+              }
+            }
+          },
+          "500" : {
+            "description" : "Error in case of invalid credentials or server error"
           }
         }
       },
@@ -1604,7 +1723,17 @@
         } ],
         "responses" : {
           "200" : {
-            "description" : "id of the room deleted"
+            "description" : "id of the room deleted",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/ServiceResult"
+                }
+              }
+            }
+          },
+          "500" : {
+            "description" : "Error in case of invalid credentials or server error"
           }
         }
       }
@@ -1657,7 +1786,17 @@
         } ],
         "responses" : {
           "200" : {
-            "description" : "id of the room or error code"
+            "description" : "id of the room or error code",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/RoomDTO"
+                }
+              }
+            }
+          },
+          "500" : {
+            "description" : "Error in case of invalid credentials or server error"
           }
         }
       }
@@ -1665,17 +1804,20 @@
     "/user" : {
       "get" : {
         "tags" : [ "UserService" ],
+        "description" : "Lists all users in the system!",
         "operationId" : "get_3",
         "parameters" : [ {
           "name" : "sid",
           "in" : "query",
+          "description" : "The SID of the User. This SID must be marked as Loggedin",
+          "required" : true,
           "schema" : {
             "type" : "string"
           }
         } ],
         "responses" : {
-          "default" : {
-            "description" : "default response",
+          "200" : {
+            "description" : "list of users",
             "content" : {
               "application/json" : {
                 "schema" : {
@@ -1686,15 +1828,21 @@
                 }
               }
             }
+          },
+          "500" : {
+            "description" : "Error in case of invalid credentials or server error"
           }
         }
       },
       "post" : {
         "tags" : [ "UserService" ],
+        "description" : "Adds a new User like through the Frontend, but also does activates the\n Account To do SSO see the methods to create a hash and use those ones!",
         "operationId" : "add_3",
         "parameters" : [ {
           "name" : "sid",
           "in" : "query",
+          "description" : "The SID of the User. This SID must be marked as Loggedin",
+          "required" : true,
           "schema" : {
             "type" : "string"
           }
@@ -1703,13 +1851,15 @@
           "content" : {
             "*/*" : {
               "schema" : {
+                "required" : [ "confirm", "user" ],
                 "type" : "object",
                 "properties" : {
                   "user" : {
                     "$ref" : "#/components/schemas/UserDTO"
                   },
                   "confirm" : {
-                    "type" : "boolean"
+                    "type" : "boolean",
+                    "description" : "whatever or not to send email, leave empty for auto-send"
                   }
                 }
               }
@@ -1717,15 +1867,21 @@
           }
         },
         "responses" : {
-          "default" : {
-            "description" : "default response",
+          "200" : {
+            "description" : "list of users",
             "content" : {
               "application/json" : {
                 "schema" : {
-                  "$ref" : "#/components/schemas/UserDTO"
+                  "type" : "array",
+                  "items" : {
+                    "$ref" : "#/components/schemas/UserDTO"
+                  }
                 }
               }
             }
+          },
+          "500" : {
+            "description" : "Error in case of invalid credentials or server error"
           }
         }
       }
@@ -1733,10 +1889,13 @@
     "/user/hash" : {
       "post" : {
         "tags" : [ "UserService" ],
+        "description" : "Sets the SessionObject for a certain SID, after setting this\n Session-Object you can use the SID + a RoomId to enter any Room. ...\n Session-Hashs are deleted 15 minutes after the creation if not used.",
         "operationId" : "getRoomHash",
         "parameters" : [ {
           "name" : "sid",
           "in" : "query",
+          "description" : "The SID of the User. This SID must be marked as Loggedin",
+          "required" : true,
           "schema" : {
             "type" : "string"
           }
@@ -1745,6 +1904,7 @@
           "content" : {
             "*/*" : {
               "schema" : {
+                "required" : [ "options", "user" ],
                 "type" : "object",
                 "properties" : {
                   "user" : {
@@ -1759,8 +1919,8 @@
           }
         },
         "responses" : {
-          "default" : {
-            "description" : "default response",
+          "200" : {
+            "description" : "secure hash or error code",
             "content" : {
               "application/json" : {
                 "schema" : {
@@ -1768,6 +1928,9 @@
                 }
               }
             }
+          },
+          "500" : {
+            "description" : "Error in case of invalid credentials or server error"
           }
         }
       }
@@ -1775,23 +1938,28 @@
     "/user/login" : {
       "get" : {
         "tags" : [ "UserService" ],
+        "description" : "Login and create sessionId required for sub-sequent calls",
         "operationId" : "login",
         "parameters" : [ {
           "name" : "user",
           "in" : "query",
+          "description" : "login or email of Openmeetings user with admin or SOAP-rights",
+          "required" : true,
           "schema" : {
             "type" : "string"
           }
         }, {
           "name" : "pass",
           "in" : "query",
+          "description" : "password",
+          "required" : true,
           "schema" : {
             "type" : "string"
           }
         } ],
         "responses" : {
-          "default" : {
-            "description" : "default response",
+          "200" : {
+            "description" : "ServiceResult with error code or SID and userId",
             "content" : {
               "application/json" : {
                 "schema" : {
@@ -1799,6 +1967,9 @@
                 }
               }
             }
+          },
+          "500" : {
+            "description" : "Error of server error"
           }
         }
       }
@@ -1806,16 +1977,20 @@
     "/user/{externaltype}/{externalid}" : {
       "delete" : {
         "tags" : [ "UserService" ],
+        "description" : "Delete a certain user by its external user id",
         "operationId" : "deleteExternal_1",
         "parameters" : [ {
           "name" : "sid",
           "in" : "query",
+          "description" : "The SID of the User. This SID must be marked as Loggedin",
+          "required" : true,
           "schema" : {
             "type" : "string"
           }
         }, {
           "name" : "externaltype",
           "in" : "path",
+          "description" : "externalUserId",
           "required" : true,
           "schema" : {
             "type" : "string"
@@ -1823,14 +1998,15 @@
         }, {
           "name" : "externalid",
           "in" : "path",
+          "description" : "externalType",
           "required" : true,
           "schema" : {
             "type" : "string"
           }
         } ],
         "responses" : {
-          "default" : {
-            "description" : "default response",
+          "200" : {
+            "description" : "id of user deleted, or error code",
             "content" : {
               "application/json" : {
                 "schema" : {
@@ -1838,6 +2014,9 @@
                 }
               }
             }
+          },
+          "500" : {
+            "description" : "Error in case of invalid credentials or server error"
           }
         }
       }
@@ -1845,16 +2024,20 @@
     "/user/{id}" : {
       "delete" : {
         "tags" : [ "UserService" ],
+        "description" : "Delete a certain user by its id",
         "operationId" : "delete_5",
         "parameters" : [ {
           "name" : "sid",
           "in" : "query",
+          "description" : "The SID of the User. This SID must be marked as Loggedin",
+          "required" : true,
           "schema" : {
             "type" : "string"
           }
         }, {
           "name" : "id",
           "in" : "path",
+          "description" : "the openmeetings user id",
           "required" : true,
           "schema" : {
             "type" : "integer",
@@ -1862,8 +2045,8 @@
           }
         } ],
         "responses" : {
-          "default" : {
-            "description" : "default response",
+          "200" : {
+            "description" : "id of the user deleted, error code otherwise",
             "content" : {
               "application/json" : {
                 "schema" : {
@@ -1871,6 +2054,9 @@
                 }
               }
             }
+          },
+          "500" : {
+            "description" : "Error in case of invalid credentials or server error"
           }
         }
       }
