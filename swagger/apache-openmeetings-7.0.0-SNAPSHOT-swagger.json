@@ -55,10 +55,13 @@
     "/calendar" : {
       "post" : {
         "tags" : [ "CalendarService" ],
+        "description" : "Create an appointment",
         "operationId" : "save",
         "parameters" : [ {
           "name" : "sid",
           "in" : "query",
+          "description" : "The SID of the User. This SID must be marked as Loggedin",
+          "required" : true,
           "schema" : {
             "type" : "string"
           }
@@ -67,6 +70,7 @@
           "content" : {
             "*/*" : {
               "schema" : {
+                "required" : [ "appointment" ],
                 "type" : "object",
                 "properties" : {
                   "appointment" : {
@@ -78,8 +82,8 @@
           }
         },
         "responses" : {
-          "default" : {
-            "description" : "default response",
+          "200" : {
+            "description" : "appointment saved",
             "content" : {
               "application/json" : {
                 "schema" : {
@@ -87,6 +91,9 @@
                 }
               }
             }
+          },
+          "500" : {
+            "description" : "Error in case of invalid credentials or server error"
           }
         }
       }
@@ -94,17 +101,20 @@
     "/calendar/next" : {
       "get" : {
         "tags" : [ "CalendarService" ],
+        "description" : "Get the next Calendar event for the current USER of the SID",
         "operationId" : "next",
         "parameters" : [ {
           "name" : "sid",
           "in" : "query",
+          "description" : "The SID of the User. This SID must be marked as Loggedin",
+          "required" : true,
           "schema" : {
             "type" : "string"
           }
         } ],
         "responses" : {
-          "default" : {
-            "description" : "default response",
+          "200" : {
+            "description" : "next Calendar event",
             "content" : {
               "application/json" : {
                 "schema" : {
@@ -112,6 +122,9 @@
                 }
               }
             }
+          },
+          "500" : {
+            "description" : "Error in case of invalid credentials or server error"
           }
         }
       }
@@ -119,16 +132,20 @@
     "/calendar/next/{userid}" : {
       "get" : {
         "tags" : [ "CalendarService" ],
+        "description" : "Get the next Calendar event for userId",
         "operationId" : "nextForUser",
         "parameters" : [ {
           "name" : "sid",
           "in" : "query",
+          "description" : "The SID of the User. This SID must be marked as Loggedin",
+          "required" : true,
           "schema" : {
             "type" : "string"
           }
         }, {
           "name" : "userid",
           "in" : "path",
+          "description" : "the userId the calendar events should be loaded",
           "required" : true,
           "schema" : {
             "type" : "integer",
@@ -136,8 +153,8 @@
           }
         } ],
         "responses" : {
-          "default" : {
-            "description" : "default response",
+          "200" : {
+            "description" : "next Calendar event",
             "content" : {
               "application/json" : {
                 "schema" : {
@@ -145,6 +162,9 @@
                 }
               }
             }
+          },
+          "500" : {
+            "description" : "Error in case of invalid credentials or server error"
           }
         }
       }
@@ -152,16 +172,20 @@
     "/calendar/room/{roomid}" : {
       "get" : {
         "tags" : [ "CalendarService" ],
+        "description" : "Load a calendar event by its room id",
         "operationId" : "getByRoom",
         "parameters" : [ {
           "name" : "sid",
           "in" : "query",
+          "description" : "The SID of the User. This SID must be marked as Loggedin",
+          "required" : true,
           "schema" : {
             "type" : "string"
           }
         }, {
           "name" : "roomid",
           "in" : "path",
+          "description" : "id of appointment special room",
           "required" : true,
           "schema" : {
             "type" : "integer",
@@ -169,8 +193,8 @@
           }
         } ],
         "responses" : {
-          "default" : {
-            "description" : "default response",
+          "200" : {
+            "description" : "calendar event by its room id",
             "content" : {
               "application/json" : {
                 "schema" : {
@@ -178,6 +202,9 @@
                 }
               }
             }
+          },
+          "500" : {
+            "description" : "Error in case of invalid credentials or server error"
           }
         }
       }
@@ -185,24 +212,28 @@
     "/calendar/title/{title}" : {
       "get" : {
         "tags" : [ "CalendarService" ],
+        "description" : "Search a calendar event for the current SID",
         "operationId" : "getByTitle",
         "parameters" : [ {
           "name" : "sid",
           "in" : "query",
+          "description" : "The SID of the User. This SID must be marked as Loggedin",
+          "required" : true,
           "schema" : {
             "type" : "string"
           }
         }, {
           "name" : "title",
           "in" : "path",
+          "description" : "the search string",
           "required" : true,
           "schema" : {
             "type" : "string"
           }
         } ],
         "responses" : {
-          "default" : {
-            "description" : "default response",
+          "200" : {
+            "description" : "calendar event list",
             "content" : {
               "application/json" : {
                 "schema" : {
@@ -213,6 +244,9 @@
                 }
               }
             }
+          },
+          "500" : {
+            "description" : "Error in case of invalid credentials or server error"
           }
         }
       }
@@ -220,16 +254,20 @@
     "/calendar/{id}" : {
       "delete" : {
         "tags" : [ "CalendarService" ],
+        "description" : "Delete a calendar event\n\n If the given sid is from an Administrator or Web-Service USER, the USER\n can delete any appointment.\n If the sid is assigned to a regular USER, he can only delete appointments\n where he is also the owner/creator of the appointment",
         "operationId" : "delete",
         "parameters" : [ {
           "name" : "sid",
           "in" : "query",
+          "description" : "The SID of the User. This SID must be marked as Loggedin",
+          "required" : true,
           "schema" : {
             "type" : "string"
           }
         }, {
           "name" : "id",
           "in" : "path",
+          "description" : "the id to delete",
           "required" : true,
           "schema" : {
             "type" : "integer",
@@ -237,8 +275,8 @@
           }
         } ],
         "responses" : {
-          "default" : {
-            "description" : "default response",
+          "200" : {
+            "description" : "ServiceResult with result type",
             "content" : {
               "application/json" : {
                 "schema" : {
@@ -246,6 +284,9 @@
                 }
               }
             }
+          },
+          "500" : {
+            "description" : "Error in case of invalid credentials or server error"
           }
         }
       }
@@ -253,16 +294,20 @@
     "/calendar/{start}/{end}" : {
       "get" : {
         "tags" : [ "CalendarService" ],
+        "description" : "Load appointments by a start / end range for the current SID",
         "operationId" : "range",
         "parameters" : [ {
           "name" : "sid",
           "in" : "query",
+          "description" : "The SID of the User. This SID must be marked as Loggedin",
+          "required" : true,
           "schema" : {
             "type" : "string"
           }
         }, {
           "name" : "start",
           "in" : "path",
+          "description" : "start time",
           "required" : true,
           "schema" : {
             "type" : "string",
@@ -271,6 +316,7 @@
         }, {
           "name" : "end",
           "in" : "path",
+          "description" : "end time",
           "required" : true,
           "schema" : {
             "type" : "string",
@@ -278,8 +324,8 @@
           }
         } ],
         "responses" : {
-          "default" : {
-            "description" : "default response",
+          "200" : {
+            "description" : "list of appointments in range",
             "content" : {
               "application/json" : {
                 "schema" : {
@@ -290,6 +336,9 @@
                 }
               }
             }
+          },
+          "500" : {
+            "description" : "Error in case of invalid credentials or server error"
           }
         }
       }
@@ -297,16 +346,20 @@
     "/calendar/{userid}/{start}/{end}" : {
       "get" : {
         "tags" : [ "CalendarService" ],
+        "description" : "Load appointments by a start / end range for the userId",
         "operationId" : "rangeForUser",
         "parameters" : [ {
           "name" : "sid",
           "in" : "query",
+          "description" : "The SID of the User. This SID must be marked as Loggedin",
+          "required" : true,
           "schema" : {
             "type" : "string"
           }
         }, {
           "name" : "userid",
           "in" : "path",
+          "description" : "the userId the calendar events should be loaded",
           "required" : true,
           "schema" : {
             "type" : "integer",
@@ -315,6 +368,7 @@
         }, {
           "name" : "start",
           "in" : "path",
+          "description" : "start time",
           "required" : true,
           "schema" : {
             "type" : "string",
@@ -323,6 +377,7 @@
         }, {
           "name" : "end",
           "in" : "path",
+          "description" : "end time",
           "required" : true,
           "schema" : {
             "type" : "string",
@@ -330,8 +385,8 @@
           }
         } ],
         "responses" : {
-          "default" : {
-            "description" : "default response",
+          "200" : {
+            "description" : "list of appointments in range",
             "content" : {
               "application/json" : {
                 "schema" : {
@@ -342,6 +397,9 @@
                 }
               }
             }
+          },
+          "500" : {
+            "description" : "Error in case of invalid credentials or server error"
           }
         }
       }
@@ -349,26 +407,31 @@
     "/error/report" : {
       "post" : {
         "tags" : [ "ErrorService" ],
+        "description" : "Logs an error to the log file for reporting",
         "operationId" : "report",
         "parameters" : [ {
           "name" : "sid",
           "in" : "query",
+          "description" : "The SID of the User. This SID must be marked as Loggedin",
+          "required" : true,
           "schema" : {
             "type" : "string"
           }
         }, {
           "name" : "message",
           "in" : "query",
+          "description" : "The message to log",
+          "required" : true,
           "schema" : {
             "type" : "string"
           }
         } ],
         "responses" : {
-          "default" : {
-            "description" : "default response",
-            "content" : {
-              "application/json" : { }
-            }
+          "200" : {
+            "description" : "Success"
+          },
+          "500" : {
+            "description" : "Error in case of invalid credentials or server error"
           }
         }
       }
@@ -376,10 +439,12 @@
     "/error/{key}/{lang}" : {
       "get" : {
         "tags" : [ "ErrorService" ],
+        "description" : "Loads an Error-Object. If a Method returns a negative Result, its an\n Error-id, it needs a languageId to specify in which language you want to\n display/read the error-message. English has the Language-ID one, for\n different one see the list of languages",
         "operationId" : "get",
         "parameters" : [ {
           "name" : "key",
           "in" : "path",
+          "description" : "the error key for ex. `error.unknown`",
           "required" : true,
           "schema" : {
             "type" : "string"
@@ -387,6 +452,7 @@
         }, {
           "name" : "lang",
           "in" : "path",
+          "description" : "The id of the language",
           "required" : true,
           "schema" : {
             "type" : "integer",
@@ -394,8 +460,8 @@
           }
         } ],
         "responses" : {
-          "default" : {
-            "description" : "default response",
+          "200" : {
+            "description" : "error with the code given",
             "content" : {
               "application/json" : {
                 "schema" : {
@@ -403,6 +469,9 @@
                 }
               }
             }
+          },
+          "500" : {
+            "description" : "Server error"
           }
         }
       }
@@ -410,26 +479,31 @@
     "/file" : {
       "post" : {
         "tags" : [ "FileService" ],
+        "description" : "to add a folder to the private drive, set parentId = 0 and isOwner to 1/true and\n externalUserId/externalUserType to a valid USER",
         "operationId" : "add",
         "parameters" : [ {
           "name" : "sid",
           "in" : "query",
+          "description" : "The SID of the User. This SID must be marked as Loggedin",
+          "required" : true,
           "schema" : {
             "type" : "string"
           }
         } ],
         "requestBody" : {
+          "description" : "the The file attributes to be added",
           "content" : {
             "multipart/form-data" : {
               "schema" : {
                 "$ref" : "#/components/schemas/FileItemDTO"
               }
             }
-          }
+          },
+          "required" : true
         },
         "responses" : {
-          "default" : {
-            "description" : "default response",
+          "200" : {
+            "description" : "Object created",
             "content" : {
               "application/json" : {
                 "schema" : {
@@ -437,6 +511,9 @@
                 }
               }
             }
+          },
+          "500" : {
+            "description" : "Error in case of invalid credentials or server error"
           }
         }
       }
@@ -444,16 +521,20 @@
     "/file/move/{roomid}/{id}/{parentid}" : {
       "post" : {
         "tags" : [ "FileService" ],
+        "description" : "move a file or folder",
         "operationId" : "move",
         "parameters" : [ {
           "name" : "sid",
           "in" : "query",
+          "description" : "The SID of the User. This SID must be marked as Loggedin",
+          "required" : true,
           "schema" : {
             "type" : "string"
           }
         }, {
           "name" : "id",
           "in" : "path",
+          "description" : "current file or folder id to be moved",
           "required" : true,
           "schema" : {
             "type" : "integer",
@@ -462,6 +543,7 @@
         }, {
           "name" : "roomid",
           "in" : "path",
+          "description" : "room this file need to be moved",
           "required" : true,
           "schema" : {
             "type" : "integer",
@@ -470,6 +552,7 @@
         }, {
           "name" : "parentid",
           "in" : "path",
+          "description" : "new parent folder id",
           "required" : true,
           "schema" : {
             "type" : "integer",
@@ -477,8 +560,8 @@
           }
         } ],
         "responses" : {
-          "default" : {
-            "description" : "default response",
+          "200" : {
+            "description" : "resulting file object",
             "content" : {
               "application/json" : {
                 "schema" : {
@@ -486,6 +569,9 @@
                 }
               }
             }
+          },
+          "500" : {
+            "description" : "Error in case of invalid credentials or server error"
           }
         }
       }
@@ -493,16 +579,20 @@
     "/file/rename/{id}/{name}" : {
       "post" : {
         "tags" : [ "FileService" ],
+        "description" : "update a file or folder name",
         "operationId" : "rename",
         "parameters" : [ {
           "name" : "sid",
           "in" : "query",
+          "description" : "The SID of the User. This SID must be marked as Loggedin",
+          "required" : true,
           "schema" : {
             "type" : "string"
           }
         }, {
           "name" : "id",
           "in" : "path",
+          "description" : "file or folder id",
           "required" : true,
           "schema" : {
             "type" : "integer",
@@ -511,14 +601,15 @@
         }, {
           "name" : "name",
           "in" : "path",
+          "description" : "new file or folder name",
           "required" : true,
           "schema" : {
             "type" : "string"
           }
         } ],
         "responses" : {
-          "default" : {
-            "description" : "default response",
+          "200" : {
+            "description" : "resulting file object",
             "content" : {
               "application/json" : {
                 "schema" : {
@@ -526,6 +617,9 @@
                 }
               }
             }
+          },
+          "500" : {
+            "description" : "Error in case of invalid credentials or server error"
           }
         }
       }
@@ -533,16 +627,20 @@
     "/file/room/{id}" : {
       "get" : {
         "tags" : [ "FileService" ],
+        "description" : "Get a File Explorer Object by a given ROOM",
         "operationId" : "getRoom",
         "parameters" : [ {
           "name" : "sid",
           "in" : "query",
+          "description" : "The SID of the User. This SID must be marked as Loggedin",
+          "required" : true,
           "schema" : {
             "type" : "string"
           }
         }, {
           "name" : "id",
           "in" : "path",
+          "description" : "ROOM Id",
           "required" : true,
           "schema" : {
             "type" : "integer",
@@ -550,8 +648,8 @@
           }
         } ],
         "responses" : {
-          "default" : {
-            "description" : "default response",
+          "200" : {
+            "description" : "File Explorer Object by a given ROOM",
             "content" : {
               "application/json" : {
                 "schema" : {
@@ -559,6 +657,9 @@
                 }
               }
             }
+          },
+          "500" : {
+            "description" : "Error in case of invalid credentials or server error"
           }
         }
       }
@@ -566,16 +667,20 @@
     "/file/room/{id}/{parent}" : {
       "get" : {
         "tags" : [ "FileService" ],
+        "description" : "Get list of FileItemDTO by parent",
         "operationId" : "getRoomByParent",
         "parameters" : [ {
           "name" : "sid",
           "in" : "query",
+          "description" : "The SID of the User. This SID must be marked as Loggedin",
+          "required" : true,
           "schema" : {
             "type" : "string"
           }
         }, {
           "name" : "id",
           "in" : "path",
+          "description" : "the parent folder id",
           "required" : true,
           "schema" : {
             "type" : "integer",
@@ -584,6 +689,7 @@
         }, {
           "name" : "parent",
           "in" : "path",
+          "description" : "the room id",
           "required" : true,
           "schema" : {
             "type" : "integer",
@@ -591,8 +697,8 @@
           }
         } ],
         "responses" : {
-          "default" : {
-            "description" : "default response",
+          "200" : {
+            "description" : "list of file explorer items",
             "content" : {
               "application/json" : {
                 "schema" : {
@@ -603,6 +709,9 @@
                 }
               }
             }
+          },
+          "500" : {
+            "description" : "Error in case of invalid credentials or server error"
           }
         }
       }
@@ -610,24 +719,28 @@
     "/file/{externaltype}" : {
       "get" : {
         "tags" : [ "FileService" ],
+        "description" : "Get all files by external type",
         "operationId" : "getAllExternal",
         "parameters" : [ {
           "name" : "sid",
           "in" : "query",
+          "description" : "The SID of the User. This SID must be marked as Loggedin",
+          "required" : true,
           "schema" : {
             "type" : "string"
           }
         }, {
           "name" : "externaltype",
           "in" : "path",
+          "description" : "External type for file listing",
           "required" : true,
           "schema" : {
             "type" : "string"
           }
         } ],
         "responses" : {
-          "default" : {
-            "description" : "default response",
+          "200" : {
+            "description" : "the list of files for given external type",
             "content" : {
               "application/json" : {
                 "schema" : {
@@ -638,6 +751,9 @@
                 }
               }
             }
+          },
+          "500" : {
+            "description" : "Error in case of invalid credentials or server error"
           }
         }
       }
@@ -645,16 +761,20 @@
     "/file/{externaltype}/{externalid}" : {
       "delete" : {
         "tags" : [ "FileService" ],
+        "description" : "deletes a file by its external Id and type",
         "operationId" : "deleteExternal",
         "parameters" : [ {
           "name" : "sid",
           "in" : "query",
+          "description" : "The SID of the User. This SID must be marked as Loggedin",
+          "required" : true,
           "schema" : {
             "type" : "string"
           }
         }, {
           "name" : "externaltype",
           "in" : "path",
+          "description" : "the externalType",
           "required" : true,
           "schema" : {
             "type" : "string"
@@ -662,14 +782,15 @@
         }, {
           "name" : "externalid",
           "in" : "path",
+          "description" : "the id of the file or folder",
           "required" : true,
           "schema" : {
             "type" : "string"
           }
         } ],
         "responses" : {
-          "default" : {
-            "description" : "default response",
+          "200" : {
+            "description" : "ServiceResult with result type",
             "content" : {
               "application/json" : {
                 "schema" : {
@@ -677,6 +798,9 @@
                 }
               }
             }
+          },
+          "500" : {
+            "description" : "Error in case of invalid credentials or server error"
           }
         }
       }
@@ -684,16 +808,20 @@
     "/file/{id}" : {
       "delete" : {
         "tags" : [ "FileService" ],
+        "description" : "deletes files or folders based on it id",
         "operationId" : "delete_1",
         "parameters" : [ {
           "name" : "sid",
           "in" : "query",
+          "description" : "The SID of the User. This SID must be marked as Loggedin",
+          "required" : true,
           "schema" : {
             "type" : "string"
           }
         }, {
           "name" : "id",
           "in" : "path",
+          "description" : "the id of the file or folder",
           "required" : true,
           "schema" : {
             "type" : "integer",
@@ -701,8 +829,8 @@
           }
         } ],
         "responses" : {
-          "default" : {
-            "description" : "default response",
+          "200" : {
+            "description" : "ServiceResult with result type",
             "content" : {
               "application/json" : {
                 "schema" : {
@@ -710,6 +838,9 @@
                 }
               }
             }
+          },
+          "500" : {
+            "description" : "Error in case of invalid credentials or server error"
           }
         }
       }
@@ -717,17 +848,20 @@
     "/group" : {
       "get" : {
         "tags" : [ "GroupService" ],
+        "description" : "Get the list of all groups",
         "operationId" : "get_1",
         "parameters" : [ {
           "name" : "sid",
           "in" : "query",
+          "description" : "The SID of the User. This SID must be marked as Loggedin",
+          "required" : true,
           "schema" : {
             "type" : "string"
           }
         } ],
         "responses" : {
-          "default" : {
-            "description" : "default response",
+          "200" : {
+            "description" : "list of users",
             "content" : {
               "application/json" : {
                 "schema" : {
@@ -738,28 +872,36 @@
                 }
               }
             }
+          },
+          "500" : {
+            "description" : "Error in case of invalid credentials or server error"
           }
         }
       },
       "post" : {
         "tags" : [ "GroupService" ],
+        "description" : "add a new group",
         "operationId" : "add_1",
         "parameters" : [ {
           "name" : "sid",
           "in" : "query",
+          "description" : "The SID of the User. This SID must be marked as Loggedin",
+          "required" : true,
           "schema" : {
             "type" : "string"
           }
         }, {
           "name" : "name",
           "in" : "query",
+          "description" : "The name of the group",
+          "required" : true,
           "schema" : {
             "type" : "string"
           }
         } ],
         "responses" : {
-          "default" : {
-            "description" : "default response",
+          "200" : {
+            "description" : "ServiceResult with result type, and id of the group added",
             "content" : {
               "application/json" : {
                 "schema" : {
@@ -767,6 +909,9 @@
                 }
               }
             }
+          },
+          "500" : {
+            "description" : "Error in case of invalid credentials or server error"
           }
         }
       }
@@ -774,16 +919,20 @@
     "/group/users/{id}" : {
       "get" : {
         "tags" : [ "GroupService" ],
+        "description" : "Search users and return them",
         "operationId" : "getUsers",
         "parameters" : [ {
           "name" : "sid",
           "in" : "query",
+          "description" : "The SID of the User. This SID must be marked as Loggedin",
+          "required" : true,
           "schema" : {
             "type" : "string"
           }
         }, {
           "name" : "id",
           "in" : "path",
+          "description" : "the group id",
           "required" : true,
           "schema" : {
             "type" : "integer",
@@ -792,6 +941,8 @@
         }, {
           "name" : "start",
           "in" : "query",
+          "description" : "first record",
+          "required" : true,
           "schema" : {
             "type" : "integer",
             "format" : "int32"
@@ -799,6 +950,8 @@
         }, {
           "name" : "max",
           "in" : "query",
+          "description" : "max records",
+          "required" : true,
           "schema" : {
             "type" : "integer",
             "format" : "int32"
@@ -806,19 +959,23 @@
         }, {
           "name" : "orderby",
           "in" : "query",
+          "description" : "orderby clause",
+          "required" : true,
           "schema" : {
             "type" : "string"
           }
         }, {
           "name" : "asc",
           "in" : "query",
+          "description" : "asc or desc",
+          "required" : true,
           "schema" : {
             "type" : "boolean"
           }
         } ],
         "responses" : {
-          "default" : {
-            "description" : "default response",
+          "200" : {
+            "description" : "users found",
             "content" : {
               "application/json" : {
                 "schema" : {
@@ -826,6 +983,9 @@
                 }
               }
             }
+          },
+          "500" : {
+            "description" : "Error in case of invalid credentials or server error"
           }
         }
       }
@@ -833,16 +993,20 @@
     "/group/{id}" : {
       "delete" : {
         "tags" : [ "GroupService" ],
+        "description" : "Deletes a group",
         "operationId" : "delete_2",
         "parameters" : [ {
           "name" : "sid",
           "in" : "query",
+          "description" : "The SID of the User. This SID must be marked as Loggedin",
+          "required" : true,
           "schema" : {
             "type" : "string"
           }
         }, {
           "name" : "id",
           "in" : "path",
+          "description" : "the id of the group",
           "required" : true,
           "schema" : {
             "type" : "integer",
@@ -850,8 +1014,8 @@
           }
         } ],
         "responses" : {
-          "default" : {
-            "description" : "default response",
+          "200" : {
+            "description" : "ServiceResult with result type",
             "content" : {
               "application/json" : {
                 "schema" : {
@@ -859,6 +1023,9 @@
                 }
               }
             }
+          },
+          "500" : {
+            "description" : "Error in case of invalid credentials or server error"
           }
         }
       }
@@ -866,16 +1033,20 @@
     "/group/{id}/rooms/add/{roomid}" : {
       "post" : {
         "tags" : [ "GroupService" ],
+        "description" : "Adds a room to an group",
         "operationId" : "addRoom",
         "parameters" : [ {
           "name" : "sid",
           "in" : "query",
+          "description" : "The SID of the User. This SID must be marked as Loggedin",
+          "required" : true,
           "schema" : {
             "type" : "string"
           }
         }, {
           "name" : "id",
           "in" : "path",
+          "description" : "Id of group that the room is being paired with",
           "required" : true,
           "schema" : {
             "type" : "integer",
@@ -884,6 +1055,7 @@
         }, {
           "name" : "roomid",
           "in" : "path",
+          "description" : "Id of room to be added",
           "required" : true,
           "schema" : {
             "type" : "integer",
@@ -891,8 +1063,8 @@
           }
         } ],
         "responses" : {
-          "default" : {
-            "description" : "default response",
+          "200" : {
+            "description" : "ServiceResult with result type",
             "content" : {
               "application/json" : {
                 "schema" : {
@@ -900,6 +1072,9 @@
                 }
               }
             }
+          },
+          "500" : {
+            "description" : "Error in case of invalid credentials or server error"
           }
         }
       }
@@ -907,16 +1082,20 @@
     "/group/{id}/users/{userid}" : {
       "post" : {
         "tags" : [ "GroupService" ],
+        "description" : "Add USER to a certain group",
         "operationId" : "addUser",
         "parameters" : [ {
           "name" : "sid",
           "in" : "query",
+          "description" : "The SID of the User. This SID must be marked as Loggedin",
+          "required" : true,
           "schema" : {
             "type" : "string"
           }
         }, {
           "name" : "id",
           "in" : "path",
+          "description" : "the USER id",
           "required" : true,
           "schema" : {
             "type" : "integer",
@@ -925,6 +1104,7 @@
         }, {
           "name" : "userid",
           "in" : "path",
+          "description" : "the group id",
           "required" : true,
           "schema" : {
             "type" : "integer",
@@ -932,8 +1112,8 @@
           }
         } ],
         "responses" : {
-          "default" : {
-            "description" : "default response",
+          "200" : {
+            "description" : "ServiceResult with result type, and id of the USER added, or error id in case of the error as text",
             "content" : {
               "application/json" : {
                 "schema" : {
@@ -941,21 +1121,28 @@
                 }
               }
             }
+          },
+          "500" : {
+            "description" : "Error in case of invalid credentials or server error"
           }
         }
       },
       "delete" : {
         "tags" : [ "GroupService" ],
+        "description" : "Remove USER from a certain group",
         "operationId" : "removeUser",
         "parameters" : [ {
           "name" : "sid",
           "in" : "query",
+          "description" : "The SID of the User. This SID must be marked as Loggedin",
+          "required" : true,
           "schema" : {
             "type" : "string"
           }
         }, {
           "name" : "id",
           "in" : "path",
+          "description" : "the USER id",
           "required" : true,
           "schema" : {
             "type" : "integer",
@@ -964,6 +1151,7 @@
         }, {
           "name" : "userid",
           "in" : "path",
+          "description" : "the group id",
           "required" : true,
           "schema" : {
             "type" : "integer",
@@ -971,8 +1159,8 @@
           }
         } ],
         "responses" : {
-          "default" : {
-            "description" : "default response",
+          "200" : {
+            "description" : "ServiceResult with result type, and id of the USER removed, or error id in case of the error as text",
             "content" : {
               "application/json" : {
                 "schema" : {
@@ -980,6 +1168,9 @@
                 }
               }
             }
+          },
+          "500" : {
+            "description" : "Error in case of invalid credentials or server error"
           }
         }
       }
@@ -987,10 +1178,11 @@
     "/info/health" : {
       "get" : {
         "tags" : [ "InfoService" ],
+        "description" : "Method to get health report for this OpenMeetings instance",
         "operationId" : "getHealth",
         "responses" : {
-          "default" : {
-            "description" : "default response",
+          "200" : {
+            "description" : "health report",
             "content" : {
               "application/json" : {
                 "schema" : {
@@ -998,6 +1190,9 @@
                 }
               }
             }
+          },
+          "500" : {
+            "description" : "Error in case of server error"
           }
         }
       }
@@ -1005,10 +1200,11 @@
     "/info/version" : {
       "get" : {
         "tags" : [ "InfoService" ],
+        "description" : "Method to get current OpenMeetings version",
         "operationId" : "getVersion",
         "responses" : {
-          "default" : {
-            "description" : "default response",
+          "200" : {
+            "description" : "Current version",
             "content" : {
               "application/json" : {
                 "schema" : {
@@ -1016,6 +1212,9 @@
                 }
               }
             }
+          },
+          "500" : {
+            "description" : "Error in case of server error"
           }
         }
       }
@@ -1023,61 +1222,72 @@
     "/networktest" : {
       "get" : {
         "tags" : [ "NetTestService" ],
+        "description" : "Generate a sample for network test",
         "operationId" : "get_2",
         "parameters" : [ {
           "name" : "type",
           "in" : "query",
+          "description" : "one of ping, jitter, download, upload",
+          "required" : true,
           "schema" : {
             "type" : "string"
           }
         }, {
           "name" : "size",
           "in" : "query",
+          "description" : "requests size of sample",
+          "required" : true,
           "schema" : {
             "type" : "integer",
             "format" : "int32"
           }
         } ],
         "responses" : {
-          "default" : {
-            "description" : "default response",
+          "200" : {
+            "description" : "Content as requested",
             "content" : {
               "application/octet-stream" : { }
             }
+          },
+          "400" : {
+            "description" : "Unkown type or exceeding Max Upload size"
+          },
+          "500" : {
+            "description" : "Server error"
           }
         }
       },
       "post" : {
         "tags" : [ "NetTestService" ],
+        "description" : "Upload media to test upload speed",
         "operationId" : "upload",
         "parameters" : [ {
           "name" : "size",
           "in" : "query",
+          "description" : "size",
+          "required" : true,
           "schema" : {
             "type" : "integer",
             "format" : "int32"
           }
         } ],
         "requestBody" : {
+          "description" : "stream to upload",
           "content" : {
             "application/octet-stream" : {
               "schema" : {
                 "type" : "object"
               }
             }
-          }
+          },
+          "required" : true
         },
         "responses" : {
-          "default" : {
-            "description" : "default response",
-            "content" : {
-              "*/*" : {
-                "schema" : {
-                  "type" : "integer",
-                  "format" : "int32"
-                }
-              }
-            }
+          "200" : {
+            "description" : "Number of bytes uploaded"
+          },
+          "500" : {
+            "description" : "Server error"
           }
         }
       }
@@ -1085,16 +1295,20 @@
     "/record/room/{roomid}" : {
       "get" : {
         "tags" : [ "RecordingService" ],
+        "description" : "Gets a list of recordings",
         "operationId" : "getExternalByRoom",
         "parameters" : [ {
           "name" : "sid",
           "in" : "query",
+          "description" : "The SID of the User. This SID must be marked as Loggedin",
+          "required" : true,
           "schema" : {
             "type" : "string"
           }
         }, {
           "name" : "roomid",
           "in" : "path",
+          "description" : "the room id",
           "required" : true,
           "schema" : {
             "type" : "integer",
@@ -1102,8 +1316,8 @@
           }
         } ],
         "responses" : {
-          "default" : {
-            "description" : "default response",
+          "200" : {
+            "description" : "list of recordings",
             "content" : {
               "application/json" : {
                 "schema" : {
@@ -1114,6 +1328,9 @@
                 }
               }
             }
+          },
+          "500" : {
+            "description" : "Error in case of invalid credentials or server error"
           }
         }
       }
@@ -1121,24 +1338,28 @@
     "/record/{externaltype}" : {
       "get" : {
         "tags" : [ "RecordingService" ],
+        "description" : "Gets a list of recordings",
         "operationId" : "getExternalByType",
         "parameters" : [ {
           "name" : "sid",
           "in" : "query",
+          "description" : "The SID of the User. This SID must be marked as Loggedin",
+          "required" : true,
           "schema" : {
             "type" : "string"
           }
         }, {
           "name" : "externaltype",
           "in" : "path",
+          "description" : "externalType specified when creating the room",
           "required" : true,
           "schema" : {
             "type" : "string"
           }
         } ],
         "responses" : {
-          "default" : {
-            "description" : "default response",
+          "200" : {
+            "description" : "list of recordings",
             "content" : {
               "application/json" : {
                 "schema" : {
@@ -1149,6 +1370,9 @@
                 }
               }
             }
+          },
+          "500" : {
+            "description" : "Error in case of invalid credentials or server error"
           }
         }
       }
@@ -1156,16 +1380,20 @@
     "/record/{externaltype}/{externalid}" : {
       "get" : {
         "tags" : [ "RecordingService" ],
+        "description" : "Gets a list of recordings created by particular external USER",
         "operationId" : "getExternal",
         "parameters" : [ {
           "name" : "sid",
           "in" : "query",
+          "description" : "The SID of the User. This SID must be marked as Loggedin",
+          "required" : true,
           "schema" : {
             "type" : "string"
           }
         }, {
           "name" : "externaltype",
           "in" : "path",
+          "description" : "the externalUserId",
           "required" : true,
           "schema" : {
             "type" : "string"
@@ -1173,14 +1401,15 @@
         }, {
           "name" : "externalid",
           "in" : "path",
+          "description" : "the externalUserType",
           "required" : true,
           "schema" : {
             "type" : "string"
           }
         } ],
         "responses" : {
-          "default" : {
-            "description" : "default response",
+          "200" : {
+            "description" : "list of recordings",
             "content" : {
               "application/json" : {
                 "schema" : {
@@ -1191,6 +1420,9 @@
                 }
               }
             }
+          },
+          "500" : {
+            "description" : "Error in case of invalid credentials or server error"
           }
         }
       }
@@ -1198,16 +1430,20 @@
     "/record/{id}" : {
       "delete" : {
         "tags" : [ "RecordingService" ],
+        "description" : "Deletes a recording",
         "operationId" : "delete_3",
         "parameters" : [ {
           "name" : "sid",
           "in" : "query",
+          "description" : "The SID of the User. This SID must be marked as Loggedin",
+          "required" : true,
           "schema" : {
             "type" : "string"
           }
         }, {
           "name" : "id",
           "in" : "path",
+          "description" : "the id of the recording",
           "required" : true,
           "schema" : {
             "type" : "integer",
@@ -1215,8 +1451,8 @@
           }
         } ],
         "responses" : {
-          "default" : {
-            "description" : "default response",
+          "200" : {
+            "description" : "serviceResult object with the result",
             "content" : {
               "application/json" : {
                 "schema" : {
@@ -1224,6 +1460,9 @@
                 }
               }
             }
+          },
+          "500" : {
+            "description" : "Error in case of invalid credentials or server error"
           }
         }
       }
@@ -2064,16 +2303,20 @@
     "/wb/cleanslide/{roomid}/{wbid}/{slide}" : {
       "get" : {
         "tags" : [ "WbService" ],
+        "description" : "This method will do the same as clean slide in the room (except for there will be no UNDO)",
         "operationId" : "cleanSlide",
         "parameters" : [ {
           "name" : "sid",
           "in" : "query",
+          "description" : "The SID of the User. This SID must be marked as Loggedin",
+          "required" : true,
           "schema" : {
             "type" : "string"
           }
         }, {
           "name" : "roomid",
           "in" : "path",
+          "description" : "id of the room to clean",
           "required" : true,
           "schema" : {
             "type" : "integer",
@@ -2082,6 +2325,7 @@
         }, {
           "name" : "wbid",
           "in" : "path",
+          "description" : "id of the white board to clean",
           "required" : true,
           "schema" : {
             "type" : "integer",
@@ -2090,6 +2334,7 @@
         }, {
           "name" : "slide",
           "in" : "path",
+          "description" : "slide number (zero based)",
           "required" : true,
           "schema" : {
             "type" : "integer",
@@ -2097,8 +2342,8 @@
           }
         } ],
         "responses" : {
-          "default" : {
-            "description" : "default response",
+          "200" : {
+            "description" : "serviceResult object with the result",
             "content" : {
               "application/json" : {
                 "schema" : {
@@ -2106,6 +2351,9 @@
                 }
               }
             }
+          },
+          "500" : {
+            "description" : "Error in case of invalid credentials or server error"
           }
         }
       }
@@ -2113,16 +2361,20 @@
     "/wb/cleanwb/{roomid}/{wbid}" : {
       "get" : {
         "tags" : [ "WbService" ],
+        "description" : "This method will do the same as clean WB in the room (except for there will be no UNDO)",
         "operationId" : "cleanWb_1",
         "parameters" : [ {
           "name" : "sid",
           "in" : "query",
+          "description" : "The SID of the User. This SID must be marked as Loggedin",
+          "required" : true,
           "schema" : {
             "type" : "string"
           }
         }, {
           "name" : "roomid",
           "in" : "path",
+          "description" : "id of the room to clean",
           "required" : true,
           "schema" : {
             "type" : "integer",
@@ -2131,6 +2383,7 @@
         }, {
           "name" : "wbid",
           "in" : "path",
+          "description" : "id of the white board to clean",
           "required" : true,
           "schema" : {
             "type" : "integer",
@@ -2138,8 +2391,8 @@
           }
         } ],
         "responses" : {
-          "default" : {
-            "description" : "default response",
+          "200" : {
+            "description" : "serviceResult object with the result",
             "content" : {
               "application/json" : {
                 "schema" : {
@@ -2147,6 +2400,9 @@
                 }
               }
             }
+          },
+          "500" : {
+            "description" : "Error in case of invalid credentials or server error"
           }
         }
       }
@@ -2154,16 +2410,20 @@
     "/wb/resetwb/{id}" : {
       "get" : {
         "tags" : [ "WbService" ],
+        "description" : "This method will remove all whiteboards from given room\n and create empty one(s) for room files specified",
         "operationId" : "resetWb",
         "parameters" : [ {
           "name" : "sid",
           "in" : "query",
+          "description" : "The SID of the User. This SID must be marked as Loggedin",
+          "required" : true,
           "schema" : {
             "type" : "string"
           }
         }, {
           "name" : "id",
           "in" : "path",
+          "description" : "id of the room to clean",
           "required" : true,
           "schema" : {
             "type" : "integer",
@@ -2171,8 +2431,8 @@
           }
         } ],
         "responses" : {
-          "default" : {
-            "description" : "default response",
+          "200" : {
+            "description" : "serviceResult object with the result",
             "content" : {
               "application/json" : {
                 "schema" : {
@@ -2180,6 +2440,9 @@
                 }
               }
             }
+          },
+          "500" : {
+            "description" : "Error in case of invalid credentials or server error"
           }
         }
       }
@@ -2187,16 +2450,20 @@
     "/wb/uploadwb/{type}" : {
       "post" : {
         "tags" : [ "WbService" ],
+        "description" : "This method will receive WB as binary data (png) and store it to temporary PDF/PNG file",
         "operationId" : "uploadWb",
         "parameters" : [ {
           "name" : "sid",
           "in" : "query",
+          "description" : "The SID of the User. This SID must be marked as Loggedin",
+          "required" : true,
           "schema" : {
             "type" : "string"
           }
         }, {
           "name" : "type",
           "in" : "path",
+          "description" : "the type of document being saved PNG/PDF",
           "required" : true,
           "schema" : {
             "type" : "string"
@@ -2206,10 +2473,12 @@
           "content" : {
             "*/*" : {
               "schema" : {
+                "required" : [ "data" ],
                 "type" : "object",
                 "properties" : {
                   "data" : {
-                    "type" : "string"
+                    "type" : "string",
+                    "description" : "binary data"
                   }
                 }
               }
@@ -2217,8 +2486,8 @@
           }
         },
         "responses" : {
-          "default" : {
-            "description" : "default response",
+          "200" : {
+            "description" : "serviceResult object with the result",
             "content" : {
               "application/json" : {
                 "schema" : {
@@ -2226,6 +2495,9 @@
                 }
               }
             }
+          },
+          "500" : {
+            "description" : "Error in case of invalid credentials or server error"
           }
         }
       }
