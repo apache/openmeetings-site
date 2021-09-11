@@ -68,7 +68,7 @@
         } ],
         "requestBody" : {
           "content" : {
-            "*/*" : {
+            "multipart/form-data" : {
               "schema" : {
                 "required" : [ "appointment" ],
                 "type" : "object",
@@ -1483,7 +1483,7 @@
         } ],
         "requestBody" : {
           "content" : {
-            "*/*" : {
+            "multipart/form-data" : {
               "schema" : {
                 "required" : [ "room" ],
                 "type" : "object",
@@ -2088,7 +2088,7 @@
         } ],
         "requestBody" : {
           "content" : {
-            "*/*" : {
+            "multipart/form-data" : {
               "schema" : {
                 "required" : [ "confirm", "user" ],
                 "type" : "object",
@@ -2141,7 +2141,7 @@
         } ],
         "requestBody" : {
           "content" : {
-            "*/*" : {
+            "multipart/form-data" : {
               "schema" : {
                 "required" : [ "options", "user" ],
                 "type" : "object",
@@ -2471,7 +2471,7 @@
         } ],
         "requestBody" : {
           "content" : {
-            "*/*" : {
+            "multipart/form-data" : {
               "schema" : {
                 "required" : [ "data" ],
                 "type" : "object",
