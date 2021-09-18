@@ -88,7 +88,7 @@
             "content" : {
               "application/json" : {
                 "schema" : {
-                  "$ref" : "#/components/schemas/AppointmentDTO"
+                  "$ref" : "#/components/schemas/AppointmentDTOWrapper"
                 }
               }
             }
@@ -119,7 +119,7 @@
             "content" : {
               "application/json" : {
                 "schema" : {
-                  "$ref" : "#/components/schemas/AppointmentDTO"
+                  "$ref" : "#/components/schemas/AppointmentDTOWrapper"
                 }
               }
             }
@@ -159,7 +159,7 @@
             "content" : {
               "application/json" : {
                 "schema" : {
-                  "$ref" : "#/components/schemas/AppointmentDTO"
+                  "$ref" : "#/components/schemas/AppointmentDTOWrapper"
                 }
               }
             }
@@ -199,7 +199,7 @@
             "content" : {
               "application/json" : {
                 "schema" : {
-                  "$ref" : "#/components/schemas/AppointmentDTO"
+                  "$ref" : "#/components/schemas/AppointmentDTOWrapper"
                 }
               }
             }
@@ -238,10 +238,7 @@
             "content" : {
               "application/json" : {
                 "schema" : {
-                  "type" : "array",
-                  "items" : {
-                    "$ref" : "#/components/schemas/AppointmentDTO"
-                  }
+                  "$ref" : "#/components/schemas/AppointmentDTOListWrapper"
                 }
               }
             }
@@ -281,7 +278,7 @@
             "content" : {
               "application/json" : {
                 "schema" : {
-                  "$ref" : "#/components/schemas/ServiceResult"
+                  "$ref" : "#/components/schemas/ServiceResultWrapper"
                 }
               }
             }
@@ -330,10 +327,7 @@
             "content" : {
               "application/json" : {
                 "schema" : {
-                  "type" : "array",
-                  "items" : {
-                    "$ref" : "#/components/schemas/AppointmentDTO"
-                  }
+                  "$ref" : "#/components/schemas/AppointmentDTOListWrapper"
                 }
               }
             }
@@ -391,10 +385,7 @@
             "content" : {
               "application/json" : {
                 "schema" : {
-                  "type" : "array",
-                  "items" : {
-                    "$ref" : "#/components/schemas/AppointmentDTO"
-                  }
+                  "$ref" : "#/components/schemas/AppointmentDTOListWrapper"
                 }
               }
             }
@@ -466,7 +457,7 @@
             "content" : {
               "application/json" : {
                 "schema" : {
-                  "$ref" : "#/components/schemas/ServiceResult"
+                  "$ref" : "#/components/schemas/ServiceResultWrapper"
                 }
               }
             }
@@ -508,7 +499,7 @@
             "content" : {
               "application/json" : {
                 "schema" : {
-                  "$ref" : "#/components/schemas/FileItemDTO"
+                  "$ref" : "#/components/schemas/FileItemDTOWrapper"
                 }
               }
             }
@@ -566,7 +557,7 @@
             "content" : {
               "application/json" : {
                 "schema" : {
-                  "$ref" : "#/components/schemas/FileItemDTO"
+                  "$ref" : "#/components/schemas/FileItemDTOWrapper"
                 }
               }
             }
@@ -614,7 +605,7 @@
             "content" : {
               "application/json" : {
                 "schema" : {
-                  "$ref" : "#/components/schemas/FileItemDTO"
+                  "$ref" : "#/components/schemas/FileItemDTOWrapper"
                 }
               }
             }
@@ -654,7 +645,7 @@
             "content" : {
               "application/json" : {
                 "schema" : {
-                  "$ref" : "#/components/schemas/FileExplorerObject"
+                  "$ref" : "#/components/schemas/FileExplorerObjectWrapper"
                 }
               }
             }
@@ -703,10 +694,7 @@
             "content" : {
               "application/json" : {
                 "schema" : {
-                  "type" : "array",
-                  "items" : {
-                    "$ref" : "#/components/schemas/FileItemDTO"
-                  }
+                  "$ref" : "#/components/schemas/FileItemDTOListWrapper"
                 }
               }
             }
@@ -745,10 +733,7 @@
             "content" : {
               "application/json" : {
                 "schema" : {
-                  "type" : "array",
-                  "items" : {
-                    "$ref" : "#/components/schemas/FileItemDTO"
-                  }
+                  "$ref" : "#/components/schemas/FileItemDTOListWrapper"
                 }
               }
             }
@@ -795,7 +780,7 @@
             "content" : {
               "application/json" : {
                 "schema" : {
-                  "$ref" : "#/components/schemas/ServiceResult"
+                  "$ref" : "#/components/schemas/ServiceResultWrapper"
                 }
               }
             }
@@ -835,7 +820,7 @@
             "content" : {
               "application/json" : {
                 "schema" : {
-                  "$ref" : "#/components/schemas/ServiceResult"
+                  "$ref" : "#/components/schemas/ServiceResultWrapper"
                 }
               }
             }
@@ -866,10 +851,7 @@
             "content" : {
               "application/json" : {
                 "schema" : {
-                  "type" : "array",
-                  "items" : {
-                    "$ref" : "#/components/schemas/GroupDTO"
-                  }
+                  "$ref" : "#/components/schemas/GroupDTOListWrapper"
                 }
               }
             }
@@ -906,7 +888,7 @@
             "content" : {
               "application/json" : {
                 "schema" : {
-                  "$ref" : "#/components/schemas/ServiceResult"
+                  "$ref" : "#/components/schemas/ServiceResultWrapper"
                 }
               }
             }
@@ -980,7 +962,7 @@
             "content" : {
               "application/json" : {
                 "schema" : {
-                  "$ref" : "#/components/schemas/UserSearchResult"
+                  "$ref" : "#/components/schemas/UserSearchResultWrapper"
                 }
               }
             }
@@ -1020,7 +1002,7 @@
             "content" : {
               "application/json" : {
                 "schema" : {
-                  "$ref" : "#/components/schemas/ServiceResult"
+                  "$ref" : "#/components/schemas/ServiceResultWrapper"
                 }
               }
             }
@@ -1069,7 +1051,7 @@
             "content" : {
               "application/json" : {
                 "schema" : {
-                  "$ref" : "#/components/schemas/ServiceResult"
+                  "$ref" : "#/components/schemas/ServiceResultWrapper"
                 }
               }
             }
@@ -1118,7 +1100,7 @@
             "content" : {
               "application/json" : {
                 "schema" : {
-                  "$ref" : "#/components/schemas/ServiceResult"
+                  "$ref" : "#/components/schemas/ServiceResultWrapper"
                 }
               }
             }
@@ -1165,7 +1147,7 @@
             "content" : {
               "application/json" : {
                 "schema" : {
-                  "$ref" : "#/components/schemas/ServiceResult"
+                  "$ref" : "#/components/schemas/ServiceResultWrapper"
                 }
               }
             }
@@ -1187,7 +1169,7 @@
             "content" : {
               "application/json" : {
                 "schema" : {
-                  "$ref" : "#/components/schemas/Health"
+                  "$ref" : "#/components/schemas/HealthWrapper"
                 }
               }
             }
@@ -1209,7 +1191,7 @@
             "content" : {
               "application/json" : {
                 "schema" : {
-                  "$ref" : "#/components/schemas/Info"
+                  "$ref" : "#/components/schemas/InfoWrapper"
                 }
               }
             }
@@ -1322,10 +1304,7 @@
             "content" : {
               "application/json" : {
                 "schema" : {
-                  "type" : "array",
-                  "items" : {
-                    "$ref" : "#/components/schemas/RecordingDTO"
-                  }
+                  "$ref" : "#/components/schemas/RecordingDTOListWrapper"
                 }
               }
             }
@@ -1364,10 +1343,7 @@
             "content" : {
               "application/json" : {
                 "schema" : {
-                  "type" : "array",
-                  "items" : {
-                    "$ref" : "#/components/schemas/RecordingDTO"
-                  }
+                  "$ref" : "#/components/schemas/RecordingDTOListWrapper"
                 }
               }
             }
@@ -1414,10 +1390,7 @@
             "content" : {
               "application/json" : {
                 "schema" : {
-                  "type" : "array",
-                  "items" : {
-                    "$ref" : "#/components/schemas/RecordingDTO"
-                  }
+                  "$ref" : "#/components/schemas/RecordingDTOListWrapper"
                 }
               }
             }
@@ -1457,7 +1430,7 @@
             "content" : {
               "application/json" : {
                 "schema" : {
-                  "$ref" : "#/components/schemas/ServiceResult"
+                  "$ref" : "#/components/schemas/ServiceResultWrapper"
                 }
               }
             }
@@ -1503,7 +1476,7 @@
             "content" : {
               "application/json" : {
                 "schema" : {
-                  "$ref" : "#/components/schemas/RoomDTO"
+                  "$ref" : "#/components/schemas/RoomDTOWrapper"
                 }
               }
             }
@@ -1540,7 +1513,7 @@
             "content" : {
               "application/json" : {
                 "schema" : {
-                  "$ref" : "#/components/schemas/ServiceResult"
+                  "$ref" : "#/components/schemas/ServiceResultWrapper"
                 }
               }
             }
@@ -1581,7 +1554,7 @@
             "content" : {
               "application/json" : {
                 "schema" : {
-                  "$ref" : "#/components/schemas/ServiceResult"
+                  "$ref" : "#/components/schemas/ServiceResultWrapper"
                 }
               }
             }
@@ -1621,7 +1594,7 @@
             "content" : {
               "application/json" : {
                 "schema" : {
-                  "$ref" : "#/components/schemas/ServiceResult"
+                  "$ref" : "#/components/schemas/ServiceResultWrapper"
                 }
               }
             }
@@ -1668,7 +1641,7 @@
             "content" : {
               "application/json" : {
                 "schema" : {
-                  "$ref" : "#/components/schemas/ServiceResult"
+                  "$ref" : "#/components/schemas/ServiceResultWrapper"
                 }
               }
             }
@@ -1708,7 +1681,7 @@
             "content" : {
               "application/json" : {
                 "schema" : {
-                  "$ref" : "#/components/schemas/ServiceResult"
+                  "$ref" : "#/components/schemas/ServiceResultWrapper"
                 }
               }
             }
@@ -1764,7 +1737,7 @@
             "content" : {
               "application/json" : {
                 "schema" : {
-                  "$ref" : "#/components/schemas/ServiceResult"
+                  "$ref" : "#/components/schemas/ServiceResultWrapper"
                 }
               }
             }
@@ -1804,7 +1777,7 @@
             "content" : {
               "application/json" : {
                 "schema" : {
-                  "$ref" : "#/components/schemas/ServiceResult"
+                  "$ref" : "#/components/schemas/ServiceResultWrapper"
                 }
               }
             }
@@ -1843,10 +1816,7 @@
             "content" : {
               "application/json" : {
                 "schema" : {
-                  "type" : "array",
-                  "items" : {
-                    "$ref" : "#/components/schemas/RoomDTO"
-                  }
+                  "$ref" : "#/components/schemas/RoomDTOListWrapper"
                 }
               }
             }
@@ -1886,10 +1856,7 @@
             "content" : {
               "application/json" : {
                 "schema" : {
-                  "type" : "array",
-                  "items" : {
-                    "$ref" : "#/components/schemas/UserDTO"
-                  }
+                  "$ref" : "#/components/schemas/UserDTOListWrapper"
                 }
               }
             }
@@ -1929,7 +1896,7 @@
             "content" : {
               "application/json" : {
                 "schema" : {
-                  "$ref" : "#/components/schemas/RoomDTO"
+                  "$ref" : "#/components/schemas/RoomDTOWrapper"
                 }
               }
             }
@@ -1967,7 +1934,7 @@
             "content" : {
               "application/json" : {
                 "schema" : {
-                  "$ref" : "#/components/schemas/ServiceResult"
+                  "$ref" : "#/components/schemas/ServiceResultWrapper"
                 }
               }
             }
@@ -2030,7 +1997,7 @@
             "content" : {
               "application/json" : {
                 "schema" : {
-                  "$ref" : "#/components/schemas/RoomDTO"
+                  "$ref" : "#/components/schemas/RoomDTOWrapper"
                 }
               }
             }
@@ -2061,10 +2028,7 @@
             "content" : {
               "application/json" : {
                 "schema" : {
-                  "type" : "array",
-                  "items" : {
-                    "$ref" : "#/components/schemas/UserDTO"
-                  }
+                  "$ref" : "#/components/schemas/UserDTOListWrapper"
                 }
               }
             }
@@ -2112,10 +2076,7 @@
             "content" : {
               "application/json" : {
                 "schema" : {
-                  "type" : "array",
-                  "items" : {
-                    "$ref" : "#/components/schemas/UserDTO"
-                  }
+                  "$ref" : "#/components/schemas/UserDTOWrapper"
                 }
               }
             }
@@ -2164,7 +2125,7 @@
             "content" : {
               "application/json" : {
                 "schema" : {
-                  "$ref" : "#/components/schemas/ServiceResult"
+                  "$ref" : "#/components/schemas/ServiceResultWrapper"
                 }
               }
             }
@@ -2203,7 +2164,7 @@
             "content" : {
               "application/json" : {
                 "schema" : {
-                  "$ref" : "#/components/schemas/ServiceResult"
+                  "$ref" : "#/components/schemas/ServiceResultWrapper"
                 }
               }
             }
@@ -2250,7 +2211,7 @@
             "content" : {
               "application/json" : {
                 "schema" : {
-                  "$ref" : "#/components/schemas/ServiceResult"
+                  "$ref" : "#/components/schemas/ServiceResultWrapper"
                 }
               }
             }
@@ -2290,7 +2251,7 @@
             "content" : {
               "application/json" : {
                 "schema" : {
-                  "$ref" : "#/components/schemas/ServiceResult"
+                  "$ref" : "#/components/schemas/ServiceResultWrapper"
                 }
               }
             }
@@ -2348,7 +2309,7 @@
             "content" : {
               "application/json" : {
                 "schema" : {
-                  "$ref" : "#/components/schemas/ServiceResult"
+                  "$ref" : "#/components/schemas/ServiceResultWrapper"
                 }
               }
             }
@@ -2397,7 +2358,7 @@
             "content" : {
               "application/json" : {
                 "schema" : {
-                  "$ref" : "#/components/schemas/ServiceResult"
+                  "$ref" : "#/components/schemas/ServiceResultWrapper"
                 }
               }
             }
@@ -2437,7 +2398,7 @@
             "content" : {
               "application/json" : {
                 "schema" : {
-                  "$ref" : "#/components/schemas/ServiceResult"
+                  "$ref" : "#/components/schemas/ServiceResultWrapper"
                 }
               }
             }
@@ -2492,7 +2453,7 @@
             "content" : {
               "application/json" : {
                 "schema" : {
-                  "$ref" : "#/components/schemas/ServiceResult"
+                  "$ref" : "#/components/schemas/ServiceResultWrapper"
                 }
               }
             }
@@ -2634,6 +2595,211 @@
           }
         }
       },
+      "AppointmentDTOListWrapper" : {
+        "type" : "object",
+        "properties" : {
+          "appointmentDTO" : {
+            "type" : "array",
+            "items" : {
+              "$ref" : "#/components/schemas/AppointmentDTO"
+            }
+          }
+        },
+        "example" : {
+          "appointmentDTO" : [ {
+            "connectedEvent" : false,
+            "deleted" : false,
+            "description" : "Comments",
+            "end" : "2021-09-23T12:31:00+1200",
+            "icalId" : "7507ab5d-81ec-458a-bdb1-48d102978e49",
+            "id" : 1,
+            "inserted" : "2021-09-19T11:31:37+1200",
+            "meetingMembers" : [ {
+              "id" : 1,
+              "user" : {
+                "address" : {
+                  "country" : "NZ",
+                  "deleted" : false,
+                  "email" : "seba.wagner@gmail.com",
+                  "id" : 1,
+                  "inserted" : {
+                    "date" : 29,
+                    "day" : 0,
+                    "hours" : 10,
+                    "minutes" : 59,
+                    "month" : 7,
+                    "ownerField" : 1,
+                    "seconds" : 49,
+                    "time" : 1630191589000,
+                    "timezoneOffset" : -720,
+                    "year" : 121
+                  }
+                },
+                "firstname" : "firstname",
+                "id" : 1,
+                "languageId" : 1,
+                "lastname" : "lastname",
+                "login" : "admin",
+                "rights" : [ "ROOM", "SOAP", "DASHBOARD", "ADMIN", "LOGIN" ],
+                "timeZoneId" : "Europe/Berlin",
+                "type" : "USER"
+              }
+            } ],
+            "owner" : {
+              "address" : {
+                "country" : "NZ",
+                "deleted" : false,
+                "email" : "seba.wagner@gmail.com",
+                "id" : 1,
+                "inserted" : {
+                  "date" : 29,
+                  "day" : 0,
+                  "hours" : 10,
+                  "minutes" : 59,
+                  "month" : 7,
+                  "ownerField" : 1,
+                  "seconds" : 49,
+                  "time" : 1630191589000,
+                  "timezoneOffset" : -720,
+                  "year" : 121
+                }
+              },
+              "firstname" : "firstname",
+              "id" : 1,
+              "languageId" : 1,
+              "lastname" : "lastname",
+              "login" : "admin",
+              "rights" : [ "ROOM", "SOAP", "DASHBOARD", "ADMIN", "LOGIN" ],
+              "timeZoneId" : "Europe/Berlin",
+              "type" : "USER"
+            },
+            "passwordProtected" : false,
+            "reminder" : "ICAL",
+            "reminderEmailSend" : false,
+            "room" : {
+              "allowRecording" : true,
+              "allowUserQuestions" : false,
+              "appointment" : true,
+              "audioOnly" : false,
+              "capacity" : 50,
+              "closed" : false,
+              "demo" : false,
+              "files" : [ ],
+              "hiddenElements" : [ "MICROPHONE_STATUS" ],
+              "id" : 11,
+              "moderated" : false,
+              "name" : "New Event",
+              "public" : false,
+              "type" : "CONFERENCE",
+              "waitModerator" : false,
+              "waitRecording" : false
+            },
+            "start" : "2021-09-23T11:31:00+1200",
+            "title" : "New Event"
+          } ]
+        }
+      },
+      "AppointmentDTOWrapper" : {
+        "type" : "object",
+        "properties" : {
+          "appointmentDTO" : {
+            "$ref" : "#/components/schemas/AppointmentDTO"
+          }
+        },
+        "example" : {
+          "appointmentDTO" : {
+            "connectedEvent" : false,
+            "deleted" : false,
+            "description" : "Comments",
+            "end" : "2021-09-23T12:31:00+1200",
+            "icalId" : "7507ab5d-81ec-458a-bdb1-48d102978e49",
+            "id" : 1,
+            "inserted" : "2021-09-19T11:31:37+1200",
+            "meetingMembers" : [ {
+              "id" : 1,
+              "user" : {
+                "address" : {
+                  "country" : "NZ",
+                  "deleted" : false,
+                  "email" : "seba.wagner@gmail.com",
+                  "id" : 1,
+                  "inserted" : {
+                    "date" : 29,
+                    "day" : 0,
+                    "hours" : 10,
+                    "minutes" : 59,
+                    "month" : 7,
+                    "ownerField" : 1,
+                    "seconds" : 49,
+                    "time" : 1630191589000,
+                    "timezoneOffset" : -720,
+                    "year" : 121
+                  }
+                },
+                "firstname" : "firstname",
+                "id" : 1,
+                "languageId" : 1,
+                "lastname" : "lastname",
+                "login" : "admin",
+                "rights" : [ "ROOM", "SOAP", "DASHBOARD", "ADMIN", "LOGIN" ],
+                "timeZoneId" : "Europe/Berlin",
+                "type" : "USER"
+              }
+            } ],
+            "owner" : {
+              "address" : {
+                "country" : "NZ",
+                "deleted" : false,
+                "email" : "seba.wagner@gmail.com",
+                "id" : 1,
+                "inserted" : {
+                  "date" : 29,
+                  "day" : 0,
+                  "hours" : 10,
+                  "minutes" : 59,
+                  "month" : 7,
+                  "ownerField" : 1,
+                  "seconds" : 49,
+                  "time" : 1630191589000,
+                  "timezoneOffset" : -720,
+                  "year" : 121
+                }
+              },
+              "firstname" : "firstname",
+              "id" : 1,
+              "languageId" : 1,
+              "lastname" : "lastname",
+              "login" : "admin",
+              "rights" : [ "ROOM", "SOAP", "DASHBOARD", "ADMIN", "LOGIN" ],
+              "timeZoneId" : "Europe/Berlin",
+              "type" : "USER"
+            },
+            "passwordProtected" : false,
+            "reminder" : "ICAL",
+            "reminderEmailSend" : false,
+            "room" : {
+              "allowRecording" : true,
+              "allowUserQuestions" : false,
+              "appointment" : true,
+              "audioOnly" : false,
+              "capacity" : 50,
+              "closed" : false,
+              "demo" : false,
+              "files" : [ ],
+              "hiddenElements" : [ "MICROPHONE_STATUS" ],
+              "id" : 11,
+              "moderated" : false,
+              "name" : "New Event",
+              "public" : false,
+              "type" : "CONFERENCE",
+              "waitModerator" : false,
+              "waitRecording" : false
+            },
+            "start" : "2021-09-23T11:31:00+1200",
+            "title" : "New Event"
+          }
+        }
+      },
       "ExternalUserDTO" : {
         "type" : "object",
         "properties" : {
@@ -2682,6 +2848,46 @@
           "userHomeSize" : {
             "type" : "integer",
             "format" : "int64"
+          }
+        }
+      },
+      "FileExplorerObjectWrapper" : {
+        "type" : "object",
+        "properties" : {
+          "fileExplorerObject" : {
+            "$ref" : "#/components/schemas/FileExplorerObject"
+          }
+        },
+        "example" : {
+          "fileExplorerObject" : {
+            "userHome" : {
+              "id" : 2,
+              "name" : "OpenMeetings-NodeJS-Use-Case_preview.jpg",
+              "hash" : "f802b727-5bfc-4273-8c90-939ea15bf388",
+              "ownerId" : 1,
+              "size" : 391449,
+              "type" : "IMAGE",
+              "width" : 2193,
+              "height" : 1823
+            },
+            "roomHome" : [ {
+              "id" : 4,
+              "name" : "Folder1",
+              "hash" : "fad982f0-2468-4b10-9b6c-be3648f55143",
+              "roomId" : 7,
+              "type" : "FOLDER"
+            }, {
+              "id" : 3,
+              "name" : "browsers-768x768.png",
+              "hash" : "91902c95-9944-435e-a54d-a2b64158758b",
+              "roomId" : 7,
+              "size" : 325415,
+              "type" : "IMAGE",
+              "width" : 768,
+              "height" : 768
+            } ],
+            "userHomeSize" : 1444970,
+            "roomHomeSize" : 334311
           }
         }
       },
@@ -2738,6 +2944,49 @@
           }
         }
       },
+      "FileItemDTOListWrapper" : {
+        "type" : "object",
+        "properties" : {
+          "fileItemDTO" : {
+            "type" : "array",
+            "items" : {
+              "$ref" : "#/components/schemas/FileItemDTO"
+            }
+          }
+        },
+        "example" : {
+          "fileItemDTO" : [ {
+            "id" : 2,
+            "name" : "OpenMeetings-NodeJS-Use-Case_preview.jpg",
+            "hash" : "f802b727-5bfc-4273-8c90-939ea15bf388",
+            "ownerId" : 1,
+            "size" : 391449,
+            "type" : "IMAGE",
+            "width" : 2193,
+            "height" : 1823
+          } ]
+        }
+      },
+      "FileItemDTOWrapper" : {
+        "type" : "object",
+        "properties" : {
+          "fileItemDTO" : {
+            "$ref" : "#/components/schemas/FileItemDTO"
+          }
+        },
+        "example" : {
+          "fileItemDTO" : {
+            "id" : 2,
+            "name" : "OpenMeetings-NodeJS-Use-Case_preview.jpg",
+            "hash" : "f802b727-5bfc-4273-8c90-939ea15bf388",
+            "ownerId" : 1,
+            "size" : 391449,
+            "type" : "IMAGE",
+            "width" : 2193,
+            "height" : 1823
+          }
+        }
+      },
       "GroupDTO" : {
         "type" : "object",
         "properties" : {
@@ -2751,6 +3000,26 @@
           "tag" : {
             "type" : "string"
           }
+        }
+      },
+      "GroupDTOListWrapper" : {
+        "type" : "object",
+        "properties" : {
+          "groupDTO" : {
+            "type" : "array",
+            "items" : {
+              "$ref" : "#/components/schemas/GroupDTO"
+            }
+          }
+        },
+        "example" : {
+          "groupDTO" : [ {
+            "id" : 1,
+            "name" : "admin"
+          }, {
+            "id" : 2,
+            "name" : "myCMS"
+          } ]
         }
       },
       "Health" : {
@@ -2767,6 +3036,21 @@
           }
         }
       },
+      "HealthWrapper" : {
+        "type" : "object",
+        "properties" : {
+          "health" : {
+            "$ref" : "#/components/schemas/Health"
+          }
+        },
+        "example" : {
+          "health" : {
+            "inited" : true,
+            "installed" : true,
+            "dbOk" : true
+          }
+        }
+      },
       "Info" : {
         "type" : "object",
         "properties" : {
@@ -2778,6 +3062,21 @@
           },
           "version" : {
             "type" : "string"
+          }
+        }
+      },
+      "InfoWrapper" : {
+        "type" : "object",
+        "properties" : {
+          "info" : {
+            "$ref" : "#/components/schemas/Info"
+          }
+        },
+        "example" : {
+          "info" : {
+            "version" : "7.0.0-SNAPSHOT",
+            "revision" : "525bd84",
+            "buildDate" : "2021-09-03T22:07:29Z"
           }
         }
       },
@@ -2885,6 +3184,32 @@
           }
         }
       },
+      "RecordingDTOListWrapper" : {
+        "type" : "object",
+        "properties" : {
+          "recordingDTO" : {
+            "type" : "array",
+            "items" : {
+              "$ref" : "#/components/schemas/RecordingDTO"
+            }
+          }
+        },
+        "example" : {
+          "recordingDTO" : [ {
+            "id" : 1,
+            "name" : "Recording [file.name.recording]19/09/21, 12:43 am",
+            "hash" : "1ee00bf1-6cb6-44d2-bb91-cfbe96e2ae19",
+            "roomId" : 7,
+            "status" : "PROCESSED",
+            "interview" : false,
+            "start" : "2021-09-19T10:43:39+12:00",
+            "end" : "2021-09-19T10:43:56+12:00",
+            "width" : 1792,
+            "height" : 1120,
+            "ownerId" : 1
+          } ]
+        }
+      },
       "RoomDTO" : {
         "type" : "object",
         "properties" : {
@@ -2971,6 +3296,115 @@
           }
         }
       },
+      "RoomDTOListWrapper" : {
+        "type" : "object",
+        "properties" : {
+          "roomDTO" : {
+            "type" : "array",
+            "items" : {
+              "$ref" : "#/components/schemas/RoomDTO"
+            }
+          }
+        },
+        "example" : {
+          "roomDTO" : [ {
+            "id" : 2,
+            "name" : "Public Conference Room [install.room.public.conference]",
+            "comment" : "",
+            "type" : "CONFERENCE",
+            "capacity" : 32,
+            "appointment" : false,
+            "isPublic" : true,
+            "demo" : false,
+            "closed" : false,
+            "moderated" : false,
+            "waitModerator" : false,
+            "allowUserQuestions" : true,
+            "allowRecording" : true,
+            "waitRecording" : false,
+            "audioOnly" : false,
+            "hiddenElements" : "MICROPHONE_STATUS"
+          }, {
+            "id" : 3,
+            "name" : "Public Video Only Room [install.room.public.video.only]",
+            "comment" : "",
+            "type" : "CONFERENCE",
+            "capacity" : 32,
+            "appointment" : false,
+            "isPublic" : true,
+            "demo" : false,
+            "closed" : false,
+            "moderated" : false,
+            "waitModerator" : false,
+            "allowUserQuestions" : true,
+            "allowRecording" : true,
+            "waitRecording" : false,
+            "audioOnly" : false,
+            "hiddenElements" : [ "WHITEBOARD", "MICROPHONE_STATUS" ]
+          }, {
+            "id" : 4,
+            "name" : "Public Video And Whiteboard Room [install.room.public.video.wb]",
+            "comment" : "",
+            "type" : "CONFERENCE",
+            "capacity" : 32,
+            "appointment" : false,
+            "isPublic" : true,
+            "demo" : false,
+            "closed" : false,
+            "moderated" : false,
+            "waitModerator" : false,
+            "allowUserQuestions" : true,
+            "allowRecording" : true,
+            "waitRecording" : false,
+            "audioOnly" : false,
+            "hiddenElements" : "MICROPHONE_STATUS"
+          }, {
+            "id" : 7,
+            "name" : "Conference room with microphone option set [install.room.conference.micro]",
+            "comment" : "",
+            "type" : "CONFERENCE",
+            "capacity" : 32,
+            "appointment" : false,
+            "isPublic" : true,
+            "demo" : false,
+            "closed" : false,
+            "moderated" : false,
+            "waitModerator" : false,
+            "allowUserQuestions" : true,
+            "allowRecording" : true,
+            "waitRecording" : false,
+            "audioOnly" : false
+          } ]
+        }
+      },
+      "RoomDTOWrapper" : {
+        "type" : "object",
+        "properties" : {
+          "roomDTO" : {
+            "$ref" : "#/components/schemas/RoomDTO"
+          }
+        },
+        "example" : {
+          "roomDTO" : {
+            "id" : 2,
+            "name" : "Public Conference Room [install.room.public.conference]",
+            "comment" : "",
+            "type" : "CONFERENCE",
+            "capacity" : 32,
+            "appointment" : false,
+            "isPublic" : true,
+            "demo" : false,
+            "closed" : false,
+            "moderated" : false,
+            "waitModerator" : false,
+            "allowUserQuestions" : true,
+            "allowRecording" : true,
+            "waitRecording" : false,
+            "audioOnly" : false,
+            "hiddenElements" : "MICROPHONE_STATUS"
+          }
+        }
+      },
       "RoomFileDTO" : {
         "type" : "object",
         "properties" : {
@@ -3030,6 +3464,20 @@
           }
         }
       },
+      "ServiceResultWrapper" : {
+        "type" : "object",
+        "properties" : {
+          "serviceResult" : {
+            "$ref" : "#/components/schemas/ServiceResult"
+          }
+        },
+        "example" : {
+          "serviceResult" : {
+            "message" : "9dbb6907-61fc-42c0-a2b2-5dbfbe053ac6",
+            "type" : "SUCCESS"
+          }
+        }
+      },
       "UserDTO" : {
         "type" : "object",
         "properties" : {
@@ -3082,6 +3530,92 @@
           }
         }
       },
+      "UserDTOListWrapper" : {
+        "type" : "object",
+        "properties" : {
+          "userDTO" : {
+            "type" : "array",
+            "items" : {
+              "$ref" : "#/components/schemas/UserDTO"
+            }
+          }
+        },
+        "example" : {
+          "userDTO" : [ {
+            "address" : {
+              "created" : 1630191589000,
+              "deleted" : false,
+              "country" : "NZ",
+              "mail" : "seba.wagner@gmail.com"
+            },
+            "firstname" : "firstname",
+            "id" : 1,
+            "languageId" : 1,
+            "lastname" : "lastname",
+            "login" : "admin",
+            "rights" : [ "ROOM", "SOAP", "DASHBOARD", "ADMIN", "LOGIN" ],
+            "timeZoneId" : "Europe/Berlin",
+            "type" : "USER"
+          }, {
+            "address" : {
+              "created" : 1631324533000,
+              "deleted" : false,
+              "country" : "NZ",
+              "mail" : "john.doe@gmail.com"
+            },
+            "externalId" : "uniqueId1",
+            "externalType" : "myCMS",
+            "firstname" : "John",
+            "id" : 2,
+            "languageId" : 1,
+            "lastname" : "Doe",
+            "login" : "john.doe",
+            "pictureUri" : "",
+            "rights" : "ROOM",
+            "timeZoneId" : "Europe/Berlin",
+            "type" : "EXTERNAL"
+          }, {
+            "address" : {
+              "created" : 1631958373000,
+              "deleted" : false,
+              "country" : "NZ",
+              "mail" : "test@test.com"
+            },
+            "id" : 3,
+            "languageId" : 1,
+            "login" : "soapuser",
+            "rights" : [ "ROOM", "SOAP", "DASHBOARD", "ADMIN", "LOGIN" ],
+            "timeZoneId" : "Europe/Berlin",
+            "type" : "USER"
+          } ]
+        }
+      },
+      "UserDTOWrapper" : {
+        "type" : "object",
+        "properties" : {
+          "userDTO" : {
+            "$ref" : "#/components/schemas/UserDTO"
+          }
+        },
+        "example" : {
+          "userDTO" : {
+            "address" : {
+              "created" : 1630191589000,
+              "deleted" : false,
+              "country" : "NZ",
+              "mail" : "seba.wagner@gmail.com"
+            },
+            "firstname" : "firstname",
+            "id" : 1,
+            "languageId" : 1,
+            "lastname" : "lastname",
+            "login" : "admin",
+            "rights" : [ "ROOM", "SOAP", "DASHBOARD", "ADMIN", "LOGIN" ],
+            "timeZoneId" : "Europe/Berlin",
+            "type" : "USER"
+          }
+        }
+      },
       "UserSearchResult" : {
         "type" : "object",
         "properties" : {
@@ -3100,6 +3634,49 @@
             "items" : {
               "$ref" : "#/components/schemas/UserDTO"
             }
+          }
+        }
+      },
+      "UserSearchResultWrapper" : {
+        "type" : "object",
+        "properties" : {
+          "userSearchResult" : {
+            "$ref" : "#/components/schemas/UserSearchResult"
+          }
+        },
+        "example" : {
+          "userSearchResult" : {
+            "objectName" : "org.apache.openmeetings.db.entity.user.User",
+            "records" : 2,
+            "result" : [ {
+              "address" : {
+                "created" : 1631958373000,
+                "deleted" : false,
+                "country" : "NZ",
+                "mail" : "test@test.com"
+              },
+              "id" : 3,
+              "languageId" : 1,
+              "login" : "soapuser",
+              "rights" : [ "ROOM", "SOAP", "DASHBOARD", "ADMIN", "LOGIN" ],
+              "timeZoneId" : "Europe/Berlin",
+              "type" : "USER"
+            }, {
+              "address" : {
+                "created" : 1630191589000,
+                "deleted" : false,
+                "country" : "NZ",
+                "mail" : "seba.wagner@gmail.com"
+              },
+              "firstname" : "firstname",
+              "id" : 1,
+              "languageId" : 1,
+              "lastname" : "lastname",
+              "login" : "admin",
+              "rights" : [ "ROOM", "SOAP", "DASHBOARD", "ADMIN", "LOGIN" ],
+              "timeZoneId" : "Europe/Berlin",
+              "type" : "USER"
+            } ]
           }
         }
       }
