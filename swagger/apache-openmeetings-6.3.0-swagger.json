@@ -12,7 +12,7 @@
       "name" : "The Apache Software License, Version 2.0",
       "url" : "https://www.apache.org/licenses/LICENSE-2.0"
     },
-    "version" : "7.0.0-SNAPSHOT"
+    "version" : "6.3.0"
   },
   "servers" : [ {
     "url" : "http://localhost:5080/openmeetings/services",
@@ -69,7 +69,7 @@
         } ],
         "requestBody" : {
           "content" : {
-            "multipart/form-data" : {
+            "*/*" : {
               "schema" : {
                 "required" : [ "appointment" ],
                 "type" : "object",
@@ -1180,6 +1180,24 @@
         }
       }
     },
+    "/info/manifest.webmanifest" : {
+      "get" : {
+        "tags" : [ "InfoService" ],
+        "operationId" : "getManifest",
+        "responses" : {
+          "default" : {
+            "description" : "default response",
+            "content" : {
+              "application/manifest+json" : {
+                "schema" : {
+                  "type" : "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/info/version" : {
       "get" : {
         "tags" : [ "InfoService" ],
@@ -1457,7 +1475,7 @@
         } ],
         "requestBody" : {
           "content" : {
-            "multipart/form-data" : {
+            "*/*" : {
               "schema" : {
                 "required" : [ "room" ],
                 "type" : "object",
@@ -1791,7 +1809,7 @@
     "/room/public/{type}" : {
       "get" : {
         "tags" : [ "RoomService" ],
-        "description" : "Returns an Object of Type RoomsList which contains a list of\n ROOM-Objects. Every ROOM-Object contains a Roomtype and all informations\n\tabout that ROOM. The List of current-users in the room is Null if you get\n\tthem via SOAP. The Roomtype can be 'conference', 'presentation' or 'interview'.",
+        "description" : "Returns an Object of Type RoomsList which contains a list of\n ROOM-Objects. Every ROOM-Object contains a Roomtype and all informations\n about that ROOM. The List of current-users in the room is Null if you get\n them via SOAP. The Roomtype can be 'conference', 'presentation' or 'interview'.",
         "operationId" : "getPublic",
         "parameters" : [ {
           "name" : "sid",
@@ -1948,7 +1966,7 @@
     "/room/{type}/{externaltype}/{externalid}" : {
       "get" : {
         "tags" : [ "RoomService" ],
-        "description" : "Checks if a room with this exteralId + externalType does exist,\n\tif yes it returns the room id if not, it will create the room and then\n\treturn the room id of the newly created room",
+        "description" : "Checks if a room with this exteralId + externalType does exist,\n if yes it returns the room id if not, it will create the room and then\n return the room id of the newly created room",
         "operationId" : "getExternal_1",
         "parameters" : [ {
           "name" : "sid",
@@ -2053,7 +2071,7 @@
         } ],
         "requestBody" : {
           "content" : {
-            "multipart/form-data" : {
+            "*/*" : {
               "schema" : {
                 "required" : [ "confirm", "user" ],
                 "type" : "object",
@@ -2103,7 +2121,7 @@
         } ],
         "requestBody" : {
           "content" : {
-            "multipart/form-data" : {
+            "*/*" : {
               "schema" : {
                 "required" : [ "options", "user" ],
                 "type" : "object",
@@ -2433,7 +2451,7 @@
         } ],
         "requestBody" : {
           "content" : {
-            "multipart/form-data" : {
+            "*/*" : {
               "schema" : {
                 "required" : [ "data" ],
                 "type" : "object",
