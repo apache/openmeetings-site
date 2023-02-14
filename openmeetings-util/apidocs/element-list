@@ -3,4 +3,5 @@ org.apache.openmeetings.util.crypt
 org.apache.openmeetings.util.logging
 org.apache.openmeetings.util.mail
 org.apache.openmeetings.util.process
+org.apache.openmeetings.util.site
 org.apache.openmeetings.util.ws
