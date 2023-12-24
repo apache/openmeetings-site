@@ -59,8 +59,8 @@
     <release>
       <Version>
         <name>Latest WebRTC 7.x.x release</name>
-        <created>2023-05-09</created>
-        <revision>7.1.0</revision>
+        <created>2023-12-23</created>
+        <revision>7.2.0</revision>
       </Version>
     </release>
     <release>
