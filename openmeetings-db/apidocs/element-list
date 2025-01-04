@@ -1,3 +1,4 @@
+module:org.apache.openmeetings.db
 org.apache.openmeetings
 org.apache.openmeetings.db.bind
 org.apache.openmeetings.db.bind.adapter

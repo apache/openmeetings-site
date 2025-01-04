@@ -1,10 +1,9 @@
+module:org.apache.openmeetings.core
 org.apache.openmeetings.core.converter
 org.apache.openmeetings.core.data.file
-org.apache.openmeetings.core.documents
 org.apache.openmeetings.core.ldap
 org.apache.openmeetings.core.mail
 org.apache.openmeetings.core.notifier
 org.apache.openmeetings.core.rss
 org.apache.openmeetings.core.sip
 org.apache.openmeetings.core.util
-org.apache.openmeetings.core.util.ws

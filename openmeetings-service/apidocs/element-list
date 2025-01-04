@@ -1,10 +1,12 @@
+module:org.apache.openmeetings.service
+org.apache.jackrabbit.webdav
+org.apache.jackrabbit.webdav.client.methods
+org.apache.jackrabbit.webdav.property
+org.apache.jackrabbit.webdav.xml
 org.apache.openmeetings.service.calendar
 org.apache.openmeetings.service.calendar.caldav
-org.apache.openmeetings.service.calendar.caldav.handler
-org.apache.openmeetings.service.calendar.caldav.methods
 org.apache.openmeetings.service.mail
 org.apache.openmeetings.service.mail.template
 org.apache.openmeetings.service.mail.template.subject
-org.apache.openmeetings.service.notifier
 org.apache.openmeetings.service.room
 org.apache.openmeetings.service.scheduler

@@ -1,1 +1,1 @@
-moduleSearchIndex = [];updateSearchResults();
+moduleSearchIndex = [{"l":"org.apache.openmeetings.webservice"}];updateSearchResults();
