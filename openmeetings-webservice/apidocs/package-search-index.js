@@ -1,1 +1,1 @@
-packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"m":"org.apache.openmeetings.webservice","l":"org.apache.openmeetings.webservice.util"}];updateSearchResults();
+packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"m":"org.apache.openmeetings.webservice","l":"org.apache.openmeetings.webservice"},{"m":"org.apache.openmeetings.webservice","l":"org.apache.openmeetings.webservice.error"},{"m":"org.apache.openmeetings.webservice","l":"org.apache.openmeetings.webservice.util"}];updateSearchResults();

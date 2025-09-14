@@ -1,0 +1,417 @@
+{
+  "SPDXID" : "SPDXRef-DOCUMENT",
+  "spdxVersion" : "SPDX-2.3",
+  "creationInfo" : {
+    "created" : "2025-09-08T00:00:00Z",
+    "creators" : [ "Tool: spdx-maven-plugin" ],
+    "licenseListVersion" : "3.27.0"
+  },
+  "name" : "Openmeetings",
+  "dataLicense" : "CC0-1.0",
+  "documentNamespace" : "http://spdx.org/spdxpackages/org.apache.openmeetings_openmeetings-parent-8.1.0",
+  "packages" : [ {
+    "SPDXID" : "SPDXRef--3c6658410",
+    "copyrightText" : "UNSPECIFIED",
+    "description" : "Module \"junit-platform-engine\" of JUnit 5.",
+    "downloadLocation" : "NOASSERTION",
+    "externalRefs" : [ {
+      "referenceCategory" : "PACKAGE-MANAGER",
+      "referenceLocator" : "pkg:maven/org.junit.platform/junit-platform-engine@1.13.4",
+      "referenceType" : "purl"
+    } ],
+    "filesAnalyzed" : false,
+    "homepage" : "https://junit.org/",
+    "licenseConcluded" : "NOASSERTION",
+    "licenseDeclared" : "EPL-2.0",
+    "name" : "JUnit Platform Engine API",
+    "summary" : "Module \"junit-platform-engine\" of JUnit 5.",
+    "versionInfo" : "1.13.4"
+  }, {
+    "SPDXID" : "SPDXRef--4831b1a30",
+    "copyrightText" : "UNSPECIFIED",
+    "description" : "@API Guardian",
+    "downloadLocation" : "NOASSERTION",
+    "externalRefs" : [ {
+      "referenceCategory" : "PACKAGE-MANAGER",
+      "referenceLocator" : "pkg:maven/org.apiguardian/apiguardian-api@1.1.2",
+      "referenceType" : "purl"
+    } ],
+    "filesAnalyzed" : false,
+    "homepage" : "https://github.com/apiguardian-team/apiguardian",
+    "licenseConcluded" : "NOASSERTION",
+    "licenseDeclared" : "Apache-2.0",
+    "name" : "org.apiguardian:apiguardian-api",
+    "summary" : "@API Guardian",
+    "versionInfo" : "1.1.2"
+  }, {
+    "SPDXID" : "SPDXRef--4970e0f20",
+    "copyrightText" : "UNSPECIFIED",
+    "description" : "Spring TestContext Framework",
+    "downloadLocation" : "NOASSERTION",
+    "externalRefs" : [ {
+      "referenceCategory" : "PACKAGE-MANAGER",
+      "referenceLocator" : "pkg:maven/org.springframework/spring-test@6.2.10",
+      "referenceType" : "purl"
+    } ],
+    "filesAnalyzed" : false,
+    "homepage" : "https://github.com/spring-projects/spring-framework",
+    "licenseConcluded" : "NOASSERTION",
+    "licenseDeclared" : "Apache-2.0",
+    "name" : "Spring TestContext Framework",
+    "originator" : "Organization:Spring IO",
+    "summary" : "Spring TestContext Framework",
+    "versionInfo" : "6.2.10"
+  }, {
+    "SPDXID" : "SPDXRef--4b3779bf0",
+    "copyrightText" : "NOASSERTION",
+    "description" : "Parent project for all OpenMeetings Maven modules. Required to hold general settings",
+    "downloadLocation" : "NOASSERTION",
+    "externalRefs" : [ {
+      "referenceCategory" : "PACKAGE-MANAGER",
+      "referenceLocator" : "pkg:maven/org.apache.openmeetings/openmeetings-parent@8.1.0",
+      "referenceType" : "purl"
+    } ],
+    "filesAnalyzed" : true,
+    "homepage" : "https://openmeetings.apache.org",
+    "licenseConcluded" : "Apache-2.0",
+    "licenseDeclared" : "Apache-2.0",
+    "licenseInfoFromFiles" : [ "NOASSERTION" ],
+    "name" : "Openmeetings",
+    "originator" : "Organization:Apache Software Foundation",
+    "packageFileName" : "NOASSERTION",
+    "packageVerificationCode" : {
+      "packageVerificationCodeValue" : "4e039e4dddfb5dc79e4f8610e6bfd39f5c71ca36"
+    },
+    "primaryPackagePurpose" : "INSTALL",
+    "summary" : "Parent project for all OpenMeetings Maven modules. Required to hold general settings",
+    "supplier" : "Organization: Apache Software Foundation",
+    "versionInfo" : "8.1.0"
+  }, {
+    "SPDXID" : "SPDXRef--4c38649f0",
+    "copyrightText" : "UNSPECIFIED",
+    "description" : "Spring Core",
+    "downloadLocation" : "NOASSERTION",
+    "externalRefs" : [ {
+      "referenceCategory" : "PACKAGE-MANAGER",
+      "referenceLocator" : "pkg:maven/org.springframework/spring-core@6.2.10",
+      "referenceType" : "purl"
+    } ],
+    "filesAnalyzed" : false,
+    "homepage" : "https://github.com/spring-projects/spring-framework",
+    "licenseConcluded" : "NOASSERTION",
+    "licenseDeclared" : "Apache-2.0",
+    "name" : "Spring Core",
+    "originator" : "Organization:Spring IO",
+    "summary" : "Spring Core",
+    "versionInfo" : "6.2.10"
+  }, {
+    "SPDXID" : "SPDXRef--5d8c0290",
+    "copyrightText" : "UNSPECIFIED",
+    "description" : "Module \"junit-jupiter-api\" of JUnit 5.",
+    "downloadLocation" : "NOASSERTION",
+    "externalRefs" : [ {
+      "referenceCategory" : "PACKAGE-MANAGER",
+      "referenceLocator" : "pkg:maven/org.junit.jupiter/junit-jupiter-api@5.13.4",
+      "referenceType" : "purl"
+    } ],
+    "filesAnalyzed" : false,
+    "homepage" : "https://junit.org/",
+    "licenseConcluded" : "NOASSERTION",
+    "licenseDeclared" : "EPL-2.0",
+    "name" : "JUnit Jupiter API",
+    "summary" : "Module \"junit-jupiter-api\" of JUnit 5.",
+    "versionInfo" : "5.13.4"
+  }, {
+    "SPDXID" : "SPDXRef--7700b96b0",
+    "copyrightText" : "UNSPECIFIED",
+    "description" : "Module \"junit-platform-commons\" of JUnit 5.",
+    "downloadLocation" : "NOASSERTION",
+    "externalRefs" : [ {
+      "referenceCategory" : "PACKAGE-MANAGER",
+      "referenceLocator" : "pkg:maven/org.junit.platform/junit-platform-commons@1.13.4",
+      "referenceType" : "purl"
+    } ],
+    "filesAnalyzed" : false,
+    "homepage" : "https://junit.org/",
+    "licenseConcluded" : "NOASSERTION",
+    "licenseDeclared" : "EPL-2.0",
+    "name" : "JUnit Platform Commons",
+    "summary" : "Module \"junit-platform-commons\" of JUnit 5.",
+    "versionInfo" : "1.13.4"
+  }, {
+    "SPDXID" : "SPDXRef-2bf7d5030",
+    "copyrightText" : "UNSPECIFIED",
+    "description" : "Module \"junit-jupiter-engine\" of JUnit 5.",
+    "downloadLocation" : "NOASSERTION",
+    "externalRefs" : [ {
+      "referenceCategory" : "PACKAGE-MANAGER",
+      "referenceLocator" : "pkg:maven/org.junit.jupiter/junit-jupiter-engine@5.13.4",
+      "referenceType" : "purl"
+    } ],
+    "filesAnalyzed" : false,
+    "homepage" : "https://junit.org/",
+    "licenseConcluded" : "NOASSERTION",
+    "licenseDeclared" : "EPL-2.0",
+    "name" : "JUnit Jupiter Engine",
+    "summary" : "Module \"junit-jupiter-engine\" of JUnit 5.",
+    "versionInfo" : "5.13.4"
+  }, {
+    "SPDXID" : "SPDXRef-3401be2a0",
+    "copyrightText" : "UNSPECIFIED",
+    "description" : "A library for instantiating Java objects",
+    "downloadLocation" : "NOASSERTION",
+    "externalRefs" : [ {
+      "referenceCategory" : "PACKAGE-MANAGER",
+      "referenceLocator" : "pkg:maven/org.objenesis/objenesis@3.3",
+      "referenceType" : "purl"
+    } ],
+    "filesAnalyzed" : false,
+    "homepage" : "http://objenesis.org/objenesis",
+    "licenseConcluded" : "NOASSERTION",
+    "licenseDeclared" : "Apache-2.0",
+    "name" : "Objenesis",
+    "originator" : "Organization:Joe Walnes, Henri Tremblay, Leonardo Mesquita",
+    "summary" : "A library for instantiating Java objects",
+    "versionInfo" : "3.3"
+  }, {
+    "SPDXID" : "SPDXRef-494d73df0",
+    "copyrightText" : "UNSPECIFIED",
+    "description" : "The Byte Buddy agent offers convenience for attaching an agent to the local or a remote VM.",
+    "downloadLocation" : "NOASSERTION",
+    "externalRefs" : [ {
+      "referenceCategory" : "PACKAGE-MANAGER",
+      "referenceLocator" : "pkg:maven/net.bytebuddy/byte-buddy-agent@1.17.6",
+      "referenceType" : "purl"
+    } ],
+    "filesAnalyzed" : false,
+    "homepage" : "https://bytebuddy.net/byte-buddy-agent",
+    "licenseConcluded" : "NOASSERTION",
+    "licenseDeclared" : "Apache-2.0",
+    "name" : "Byte Buddy agent",
+    "summary" : "The Byte Buddy agent offers convenience for attaching an agent to the local or a remote VM.",
+    "versionInfo" : "1.17.6"
+  }, {
+    "SPDXID" : "SPDXRef-5958a5210",
+    "copyrightText" : "UNSPECIFIED",
+    "description" : "Mockito mock objects library core API and implementation",
+    "downloadLocation" : "NOASSERTION",
+    "externalRefs" : [ {
+      "referenceCategory" : "PACKAGE-MANAGER",
+      "referenceLocator" : "pkg:maven/org.mockito/mockito-core@5.19.0",
+      "referenceType" : "purl"
+    } ],
+    "filesAnalyzed" : false,
+    "homepage" : "https://github.com/mockito/mockito",
+    "licenseConcluded" : "NOASSERTION",
+    "licenseDeclared" : "MIT",
+    "name" : "mockito-core",
+    "summary" : "Mockito mock objects library core API and implementation",
+    "versionInfo" : "5.19.0"
+  }, {
+    "SPDXID" : "SPDXRef-60dab2ee0",
+    "copyrightText" : "UNSPECIFIED",
+    "description" : "Open Test Alliance for the JVM",
+    "downloadLocation" : "NOASSERTION",
+    "externalRefs" : [ {
+      "referenceCategory" : "PACKAGE-MANAGER",
+      "referenceLocator" : "pkg:maven/org.opentest4j/opentest4j@1.3.0",
+      "referenceType" : "purl"
+    } ],
+    "filesAnalyzed" : false,
+    "homepage" : "https://github.com/ota4j-team/opentest4j",
+    "licenseConcluded" : "NOASSERTION",
+    "licenseDeclared" : "Apache-2.0",
+    "name" : "org.opentest4j:opentest4j",
+    "summary" : "Open Test Alliance for the JVM",
+    "versionInfo" : "1.3.0"
+  }, {
+    "SPDXID" : "SPDXRef-61aec23c0",
+    "copyrightText" : "UNSPECIFIED",
+    "description" : "Mockito JUnit 5 support",
+    "downloadLocation" : "NOASSERTION",
+    "externalRefs" : [ {
+      "referenceCategory" : "PACKAGE-MANAGER",
+      "referenceLocator" : "pkg:maven/org.mockito/mockito-junit-jupiter@5.19.0",
+      "referenceType" : "purl"
+    } ],
+    "filesAnalyzed" : false,
+    "homepage" : "https://github.com/mockito/mockito",
+    "licenseConcluded" : "NOASSERTION",
+    "licenseDeclared" : "MIT",
+    "name" : "mockito-junit-jupiter",
+    "summary" : "Mockito JUnit 5 support",
+    "versionInfo" : "5.19.0"
+  }, {
+    "SPDXID" : "SPDXRef-61be0b260",
+    "copyrightText" : "UNSPECIFIED",
+    "description" : "Eclipse Enterprise for Java (EE4J) is an open source initiative to create standard APIs,\n        implementations of those APIs, and technology compatibility kits for Java runtimes\n        that enable development, deployment, and management of server-side and cloud-native applications.",
+    "downloadLocation" : "NOASSERTION",
+    "externalRefs" : [ {
+      "referenceCategory" : "PACKAGE-MANAGER",
+      "referenceLocator" : "pkg:maven/jakarta.servlet/jakarta.servlet-api@6.1.0",
+      "referenceType" : "purl"
+    } ],
+    "filesAnalyzed" : false,
+    "homepage" : "https://projects.eclipse.org/projects/ee4j.servlet",
+    "licenseConcluded" : "NOASSERTION",
+    "licenseDeclared" : "(GPL-2.0-with-classpath-exception AND EPL-2.0)",
+    "name" : "Jakarta Servlet",
+    "originator" : "Organization:Eclipse Foundation",
+    "summary" : "Eclipse Enterprise for Java (EE4J) is an open source initiative to create standard APIs,\n        implementations of those APIs, and technology compatibility kits for Java runtimes\n        that enable development, deployment, and management of server-side and cloud-native applications.",
+    "versionInfo" : "6.1.0"
+  }, {
+    "SPDXID" : "SPDXRef-6a8647570",
+    "copyrightText" : "UNSPECIFIED",
+    "description" : "Byte Buddy is a Java library for creating Java classes at run time.\n        This artifact is a build of Byte Buddy with all ASM dependencies repackaged into its own name space.",
+    "downloadLocation" : "NOASSERTION",
+    "externalRefs" : [ {
+      "referenceCategory" : "PACKAGE-MANAGER",
+      "referenceLocator" : "pkg:maven/net.bytebuddy/byte-buddy@1.17.6",
+      "referenceType" : "purl"
+    } ],
+    "filesAnalyzed" : false,
+    "homepage" : "https://bytebuddy.net/byte-buddy",
+    "licenseConcluded" : "NOASSERTION",
+    "licenseDeclared" : "Apache-2.0",
+    "name" : "Byte Buddy (without dependencies)",
+    "summary" : "Byte Buddy is a Java library for creating Java classes at run time.\n        This artifact is a build of Byte Buddy with all ASM dependencies repackaged into its own name space.",
+    "versionInfo" : "1.17.6"
+  } ],
+  "files" : [ {
+    "SPDXID" : "SPDXRef--181fbe370",
+    "checksums" : [ {
+      "algorithm" : "SHA1",
+      "checksumValue" : "2b8b815229aa8a61e483fb4ba0588b8b6c491890"
+    } ],
+    "copyrightText" : "NOASSERTION",
+    "fileName" : "./target/maven-shared-archive-resources/META-INF/LICENSE",
+    "fileTypes" : [ "OTHER" ],
+    "licenseConcluded" : "NOASSERTION",
+    "licenseInfoInFiles" : [ "NOASSERTION" ]
+  }, {
+    "SPDXID" : "SPDXRef-5dd584300",
+    "checksums" : [ {
+      "algorithm" : "SHA1",
+      "checksumValue" : "bca2d954a675cec57c96cddb2d6d5ca8fd4991ca"
+    } ],
+    "copyrightText" : "NOASSERTION",
+    "fileName" : "./target/maven-shared-archive-resources/META-INF/NOTICE",
+    "fileTypes" : [ "OTHER" ],
+    "licenseConcluded" : "NOASSERTION",
+    "licenseInfoInFiles" : [ "NOASSERTION" ]
+  }, {
+    "SPDXID" : "SPDXRef-7a67c810",
+    "checksums" : [ {
+      "algorithm" : "SHA1",
+      "checksumValue" : "728911b13f8f0c906e086fae159960f7f7db05c5"
+    } ],
+    "copyrightText" : "NOASSERTION",
+    "fileName" : "./target/maven-shared-archive-resources/META-INF/DEPENDENCIES",
+    "fileTypes" : [ "OTHER" ],
+    "licenseConcluded" : "NOASSERTION",
+    "licenseInfoInFiles" : [ "NOASSERTION" ]
+  } ],
+  "relationships" : [ {
+    "spdxElementId" : "SPDXRef-DOCUMENT",
+    "relationshipType" : "DESCRIBES",
+    "relatedSpdxElement" : "SPDXRef--4b3779bf0",
+    "comment" : ""
+  }, {
+    "spdxElementId" : "SPDXRef--181fbe370",
+    "relationshipType" : "GENERATES",
+    "relatedSpdxElement" : "SPDXRef--4b3779bf0",
+    "comment" : ""
+  }, {
+    "spdxElementId" : "SPDXRef-5dd584300",
+    "relationshipType" : "GENERATES",
+    "relatedSpdxElement" : "SPDXRef--4b3779bf0",
+    "comment" : ""
+  }, {
+    "spdxElementId" : "SPDXRef-7a67c810",
+    "relationshipType" : "GENERATES",
+    "relatedSpdxElement" : "SPDXRef--4b3779bf0",
+    "comment" : ""
+  }, {
+    "spdxElementId" : "SPDXRef--4b3779bf0",
+    "relationshipType" : "OTHER",
+    "relatedSpdxElement" : "SPDXRef-61be0b260",
+    "comment" : "Relationship based on Maven POM file dependency information"
+  }, {
+    "spdxElementId" : "SPDXRef-2bf7d5030",
+    "relationshipType" : "TEST_DEPENDENCY_OF",
+    "relatedSpdxElement" : "SPDXRef--3c6658410",
+    "comment" : "Relationship created based on Maven POM information"
+  }, {
+    "spdxElementId" : "SPDXRef-2bf7d5030",
+    "relationshipType" : "TEST_DEPENDENCY_OF",
+    "relatedSpdxElement" : "SPDXRef--4831b1a30",
+    "comment" : "Relationship created based on Maven POM information"
+  }, {
+    "spdxElementId" : "SPDXRef--4b3779bf0",
+    "relationshipType" : "TEST_DEPENDENCY_OF",
+    "relatedSpdxElement" : "SPDXRef--4970e0f20",
+    "comment" : "Relationship created based on Maven POM information"
+  }, {
+    "spdxElementId" : "SPDXRef--4970e0f20",
+    "relationshipType" : "TEST_DEPENDENCY_OF",
+    "relatedSpdxElement" : "SPDXRef--4c38649f0",
+    "comment" : "Relationship created based on Maven POM information"
+  }, {
+    "spdxElementId" : "SPDXRef-2bf7d5030",
+    "relationshipType" : "TEST_DEPENDENCY_OF",
+    "relatedSpdxElement" : "SPDXRef--5d8c0290",
+    "comment" : "Relationship created based on Maven POM information"
+  }, {
+    "spdxElementId" : "SPDXRef--3c6658410",
+    "relationshipType" : "TEST_DEPENDENCY_OF",
+    "relatedSpdxElement" : "SPDXRef--7700b96b0",
+    "comment" : "Relationship created based on Maven POM information"
+  }, {
+    "spdxElementId" : "SPDXRef--4b3779bf0",
+    "relationshipType" : "TEST_DEPENDENCY_OF",
+    "relatedSpdxElement" : "SPDXRef-2bf7d5030",
+    "comment" : "Relationship created based on Maven POM information"
+  }, {
+    "spdxElementId" : "SPDXRef-5958a5210",
+    "relationshipType" : "TEST_DEPENDENCY_OF",
+    "relatedSpdxElement" : "SPDXRef-3401be2a0",
+    "comment" : "Relationship created based on Maven POM information"
+  }, {
+    "spdxElementId" : "SPDXRef-5958a5210",
+    "relationshipType" : "TEST_DEPENDENCY_OF",
+    "relatedSpdxElement" : "SPDXRef-494d73df0",
+    "comment" : "Relationship created based on Maven POM information"
+  }, {
+    "spdxElementId" : "SPDXRef--4b3779bf0",
+    "relationshipType" : "TEST_DEPENDENCY_OF",
+    "relatedSpdxElement" : "SPDXRef-5958a5210",
+    "comment" : "Relationship created based on Maven POM information"
+  }, {
+    "spdxElementId" : "SPDXRef--3c6658410",
+    "relationshipType" : "TEST_DEPENDENCY_OF",
+    "relatedSpdxElement" : "SPDXRef-60dab2ee0",
+    "comment" : "Relationship created based on Maven POM information"
+  }, {
+    "spdxElementId" : "SPDXRef--4b3779bf0",
+    "relationshipType" : "TEST_DEPENDENCY_OF",
+    "relatedSpdxElement" : "SPDXRef-61aec23c0",
+    "comment" : "Relationship created based on Maven POM information"
+  }, {
+    "spdxElementId" : "SPDXRef-5958a5210",
+    "relationshipType" : "TEST_DEPENDENCY_OF",
+    "relatedSpdxElement" : "SPDXRef-6a8647570",
+    "comment" : "Relationship created based on Maven POM information"
+  }, {
+    "spdxElementId" : "SPDXRef--4b3779bf0",
+    "relationshipType" : "CONTAINS",
+    "relatedSpdxElement" : "SPDXRef--181fbe370"
+  }, {
+    "spdxElementId" : "SPDXRef--4b3779bf0",
+    "relationshipType" : "CONTAINS",
+    "relatedSpdxElement" : "SPDXRef-5dd584300"
+  }, {
+    "spdxElementId" : "SPDXRef--4b3779bf0",
+    "relationshipType" : "CONTAINS",
+    "relatedSpdxElement" : "SPDXRef-7a67c810"
+  } ]
+}

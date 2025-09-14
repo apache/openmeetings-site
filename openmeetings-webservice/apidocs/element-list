@@ -1,2 +1,4 @@
 module:org.apache.openmeetings.webservice
+org.apache.openmeetings.webservice
+org.apache.openmeetings.webservice.error
 org.apache.openmeetings.webservice.util

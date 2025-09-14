@@ -1,0 +1,3888 @@
+{
+  "SPDXID" : "SPDXRef-DOCUMENT",
+  "spdxVersion" : "SPDX-2.3",
+  "creationInfo" : {
+    "created" : "2025-09-08T00:00:00Z",
+    "creators" : [ "Tool: spdx-maven-plugin" ],
+    "licenseListVersion" : "3.27.0"
+  },
+  "name" : "Openmeetings Util",
+  "dataLicense" : "CC0-1.0",
+  "documentNamespace" : "http://spdx.org/spdxpackages/org.apache.openmeetings_openmeetings-util-8.1.0",
+  "packages" : [ {
+    "SPDXID" : "SPDXRef--1013d0e80",
+    "copyrightText" : "UNSPECIFIED",
+    "description" : "Spring AOP",
+    "downloadLocation" : "NOASSERTION",
+    "externalRefs" : [ {
+      "referenceCategory" : "PACKAGE-MANAGER",
+      "referenceLocator" : "pkg:maven/org.springframework/spring-aop@6.2.10",
+      "referenceType" : "purl"
+    } ],
+    "filesAnalyzed" : false,
+    "homepage" : "https://github.com/spring-projects/spring-framework",
+    "licenseConcluded" : "NOASSERTION",
+    "licenseDeclared" : "Apache-2.0",
+    "name" : "Spring AOP",
+    "originator" : "Organization:Spring IO",
+    "summary" : "Spring AOP",
+    "versionInfo" : "6.2.10"
+  }, {
+    "SPDXID" : "SPDXRef--121906810",
+    "copyrightText" : "UNSPECIFIED",
+    "description" : "The Bouncy Castle Java APIs for CMS, PKCS, EAC, TSP, CMP, CRMF, OCSP, and certificate generation. This jar contains APIs for JDK 1.8 and up. The APIs are designed primarily to be used in conjunction with the BC Java provider but may also be used with other providers providing cryptographic services.",
+    "downloadLocation" : "NOASSERTION",
+    "externalRefs" : [ {
+      "referenceCategory" : "PACKAGE-MANAGER",
+      "referenceLocator" : "pkg:maven/org.bouncycastle/bcpkix-jdk18on@1.81",
+      "referenceType" : "purl"
+    } ],
+    "filesAnalyzed" : false,
+    "homepage" : "https://www.bouncycastle.org/download/bouncy-castle-java/",
+    "licenseConcluded" : "NOASSERTION",
+    "licenseDeclared" : "NOASSERTION",
+    "name" : "Bouncy Castle PKIX, CMS, EAC, TSP, PKCS, OCSP, CMP, and CRMF APIs",
+    "summary" : "The Bouncy Castle Java APIs for CMS, PKCS, EAC, TSP, CMP, CRMF, OCSP, and certificate generation. This jar contains APIs for JDK 1.8 and up. The APIs are designed primarily to be used in conjunction with the BC Java provider but may also be used with other providers providing cryptographic services.",
+    "versionInfo" : "1.81"
+  }, {
+    "SPDXID" : "SPDXRef--122e773a0",
+    "copyrightText" : "UNSPECIFIED",
+    "description" : "Apache Commons Lang, a package of Java utility classes for the\n  classes that are in java.lang's hierarchy, or are considered to be so\n  standard as to justify existence in java.lang.\n\n  The code is tested using the latest revision of the JDK for supported\n  LTS releases: 8, 11, 17 and 21 currently.\n  See https://github.com/apache/commons-lang/blob/master/.github/workflows/maven.yml\n  \n  Please ensure your build environment is up-to-date and kindly report any build issues.",
+    "downloadLocation" : "NOASSERTION",
+    "externalRefs" : [ {
+      "referenceCategory" : "PACKAGE-MANAGER",
+      "referenceLocator" : "pkg:maven/org.apache.commons/commons-lang3@3.18.0",
+      "referenceType" : "purl"
+    } ],
+    "filesAnalyzed" : false,
+    "homepage" : "https://commons.apache.org/proper/commons-lang/",
+    "licenseConcluded" : "NOASSERTION",
+    "licenseDeclared" : "Apache-2.0",
+    "name" : "Apache Commons Lang",
+    "originator" : "Organization:The Apache Software Foundation",
+    "summary" : "Apache Commons Lang, a package of Java utility classes for the\n  classes that are in java.lang's hierarchy, or are considered to be so\n  standard as to justify existence in java.lang.\n\n  The code is tested using the latest revision of the JDK for supported\n  LTS releases: 8, 11, 17 and 21 currently.\n  See https://github.com/apache/commons-lang/blob/master/.github/workflows/maven.yml\n  \n  Please ensure your build environment is up-to-date and kindly report any build issues.",
+    "versionInfo" : "3.18.0"
+  }, {
+    "SPDXID" : "SPDXRef--137e28ab0",
+    "copyrightText" : "UNSPECIFIED",
+    "description" : "JCL 1.2 implemented over SLF4J",
+    "downloadLocation" : "NOASSERTION",
+    "externalRefs" : [ {
+      "referenceCategory" : "PACKAGE-MANAGER",
+      "referenceLocator" : "pkg:maven/org.slf4j/jcl-over-slf4j@2.0.17",
+      "referenceType" : "purl"
+    } ],
+    "filesAnalyzed" : false,
+    "homepage" : "http://www.slf4j.org",
+    "licenseConcluded" : "NOASSERTION",
+    "licenseDeclared" : "Apache-2.0",
+    "name" : "JCL 1.2 implemented over SLF4J",
+    "originator" : "Organization:QOS.ch",
+    "summary" : "JCL 1.2 implemented over SLF4J",
+    "versionInfo" : "2.0.17"
+  }, {
+    "SPDXID" : "SPDXRef--13c154090",
+    "copyrightText" : "UNSPECIFIED",
+    "description" : "Spring Beans",
+    "downloadLocation" : "NOASSERTION",
+    "externalRefs" : [ {
+      "referenceCategory" : "PACKAGE-MANAGER",
+      "referenceLocator" : "pkg:maven/org.springframework/spring-beans@6.2.10",
+      "referenceType" : "purl"
+    } ],
+    "filesAnalyzed" : false,
+    "homepage" : "https://github.com/spring-projects/spring-framework",
+    "licenseConcluded" : "NOASSERTION",
+    "licenseDeclared" : "Apache-2.0",
+    "name" : "Spring Beans",
+    "originator" : "Organization:Spring IO",
+    "summary" : "Spring Beans",
+    "versionInfo" : "6.2.10"
+  }, {
+    "SPDXID" : "SPDXRef--14a796450",
+    "copyrightText" : "UNSPECIFIED",
+    "description" : "Module for common test classes",
+    "downloadLocation" : "NOASSERTION",
+    "externalRefs" : [ {
+      "referenceCategory" : "PACKAGE-MANAGER",
+      "referenceLocator" : "pkg:maven/org.apache.openmeetings/openmeetings-tests@8.1.0",
+      "referenceType" : "purl"
+    } ],
+    "filesAnalyzed" : false,
+    "homepage" : "https://openmeetings.apache.org/openmeetings-tests",
+    "licenseConcluded" : "NOASSERTION",
+    "licenseDeclared" : "Apache-2.0",
+    "name" : "Openmeetings Tests",
+    "originator" : "Organization:Apache Software Foundation",
+    "summary" : "Module for common test classes",
+    "versionInfo" : "8.1.0"
+  }, {
+    "SPDXID" : "SPDXRef--179a8ce80",
+    "copyrightText" : "UNSPECIFIED",
+    "description" : "Wicket is a Java-based open source component web application framework.",
+    "downloadLocation" : "NOASSERTION",
+    "externalRefs" : [ {
+      "referenceCategory" : "PACKAGE-MANAGER",
+      "referenceLocator" : "pkg:maven/org.apache.wicket/wicket-util@10.6.0",
+      "referenceType" : "purl"
+    } ],
+    "filesAnalyzed" : false,
+    "homepage" : "http://wicket.apache.org/wicket-util",
+    "licenseConcluded" : "NOASSERTION",
+    "licenseDeclared" : "Apache-2.0",
+    "name" : "Wicket Util",
+    "originator" : "Organization:Apache Software Foundation",
+    "summary" : "Wicket is a Java-based open source component web application framework.",
+    "versionInfo" : "10.6.0"
+  }, {
+    "SPDXID" : "SPDXRef--17b5d9fa0",
+    "copyrightText" : "UNSPECIFIED",
+    "description" : "Java Image I/O plugin for reading JBIG2-compressed image data. \n\tFormerly known as the levigo JBig2 ImageIO plugin (com.levigo.jbig2:levigo-jbig2-imageio).",
+    "downloadLocation" : "NOASSERTION",
+    "externalRefs" : [ {
+      "referenceCategory" : "PACKAGE-MANAGER",
+      "referenceLocator" : "pkg:maven/org.apache.pdfbox/jbig2-imageio@3.0.4",
+      "referenceType" : "purl"
+    } ],
+    "filesAnalyzed" : false,
+    "homepage" : "https://www.apache.org/jbig2-imageio/",
+    "licenseConcluded" : "NOASSERTION",
+    "licenseDeclared" : "Apache-2.0",
+    "name" : "PDFBox JBIG2 ImageIO plugin",
+    "originator" : "Organization:The Apache Software Foundation",
+    "summary" : "Java Image I/O plugin for reading JBIG2-compressed image data. \n\tFormerly known as the levigo JBig2 ImageIO plugin (com.levigo.jbig2:levigo-jbig2-imageio).",
+    "versionInfo" : "3.0.4"
+  }, {
+    "SPDXID" : "SPDXRef--17be38fe0",
+    "copyrightText" : "UNSPECIFIED",
+    "description" : "The Bouncy Castle Java APIs for doing S/MIME with the Jakarta Mail APIs. The APIs are designed primarily to be used in conjunction with the BC Java provider.",
+    "downloadLocation" : "NOASSERTION",
+    "externalRefs" : [ {
+      "referenceCategory" : "PACKAGE-MANAGER",
+      "referenceLocator" : "pkg:maven/org.bouncycastle/bcjmail-jdk18on@1.81",
+      "referenceType" : "purl"
+    } ],
+    "filesAnalyzed" : false,
+    "homepage" : "https://www.bouncycastle.org/download/bouncy-castle-java/",
+    "licenseConcluded" : "NOASSERTION",
+    "licenseDeclared" : "NOASSERTION",
+    "name" : "Bouncy Castle JavaMail Jakarta S/MIME APIs",
+    "summary" : "The Bouncy Castle Java APIs for doing S/MIME with the Jakarta Mail APIs. The APIs are designed primarily to be used in conjunction with the BC Java provider.",
+    "versionInfo" : "1.81"
+  }, {
+    "SPDXID" : "SPDXRef--182756f0",
+    "copyrightText" : "UNSPECIFIED",
+    "description" : "Provides the common code needed for the different integrations with web container's WebSocket implementations",
+    "downloadLocation" : "NOASSERTION",
+    "externalRefs" : [ {
+      "referenceCategory" : "PACKAGE-MANAGER",
+      "referenceLocator" : "pkg:maven/org.apache.wicket/wicket-native-websocket-core@10.6.0",
+      "referenceType" : "purl"
+    } ],
+    "filesAnalyzed" : false,
+    "homepage" : "http://wicket.apache.org/wicket-native-websocket/wicket-native-websocket-core",
+    "licenseConcluded" : "NOASSERTION",
+    "licenseDeclared" : "Apache-2.0",
+    "name" : "Wicket Native WebSocket Core",
+    "originator" : "Organization:Apache Software Foundation",
+    "summary" : "Provides the common code needed for the different integrations with web container's WebSocket implementations",
+    "versionInfo" : "10.6.0"
+  }, {
+    "SPDXID" : "SPDXRef--18dc780c0",
+    "copyrightText" : "UNSPECIFIED",
+    "description" : "The Apache Commons FileUpload Core component provides the framework for a simple yet flexible means of adding support for multipart\n    file upload functionality to servlets, portlets, and web applications.",
+    "downloadLocation" : "NOASSERTION",
+    "externalRefs" : [ {
+      "referenceCategory" : "PACKAGE-MANAGER",
+      "referenceLocator" : "pkg:maven/org.apache.commons/commons-fileupload2-core@2.0.0-M4",
+      "referenceType" : "purl"
+    } ],
+    "filesAnalyzed" : false,
+    "homepage" : "https://commons.apache.org/proper/commons-fileupload/commons-fileupload2-core/",
+    "licenseConcluded" : "NOASSERTION",
+    "licenseDeclared" : "Apache-2.0",
+    "name" : "Apache Commons FileUpload Core",
+    "originator" : "Organization:The Apache Software Foundation",
+    "summary" : "The Apache Commons FileUpload Core component provides the framework for a simple yet flexible means of adding support for multipart\n    file upload functionality to servlets, portlets, and web applications.",
+    "versionInfo" : "2.0.0-M4"
+  }, {
+    "SPDXID" : "SPDXRef--1907d73b0",
+    "copyrightText" : "UNSPECIFIED",
+    "description" : "Apache Tika is a toolkit for detecting and extracting metadata and\n    structured text content from various documents using existing parser\n    libraries.",
+    "downloadLocation" : "NOASSERTION",
+    "externalRefs" : [ {
+      "referenceCategory" : "PACKAGE-MANAGER",
+      "referenceLocator" : "pkg:maven/org.apache.tika/tika-parser-digest-commons@3.2.2",
+      "referenceType" : "purl"
+    } ],
+    "filesAnalyzed" : false,
+    "homepage" : "https://tika.apache.org/tika-parser-digest-commons/",
+    "licenseConcluded" : "NOASSERTION",
+    "licenseDeclared" : "Apache-2.0",
+    "name" : "Apache Tika digest commons",
+    "originator" : "Organization:The Apache Software Foundation",
+    "summary" : "Apache Tika is a toolkit for detecting and extracting metadata and\n    structured text content from various documents using existing parser\n    libraries.",
+    "versionInfo" : "3.2.2"
+  }, {
+    "SPDXID" : "SPDXRef--1aab56780",
+    "copyrightText" : "UNSPECIFIED",
+    "description" : "Apache POI - Java API To Access Microsoft Format Files",
+    "downloadLocation" : "NOASSERTION",
+    "externalRefs" : [ {
+      "referenceCategory" : "PACKAGE-MANAGER",
+      "referenceLocator" : "pkg:maven/org.apache.poi/poi@5.4.1",
+      "referenceType" : "purl"
+    } ],
+    "filesAnalyzed" : false,
+    "homepage" : "https://poi.apache.org/",
+    "licenseConcluded" : "NOASSERTION",
+    "licenseDeclared" : "Apache-2.0",
+    "name" : "Apache POI - Common",
+    "originator" : "Organization:Apache Software Foundation",
+    "summary" : "Apache POI - Java API To Access Microsoft Format Files",
+    "versionInfo" : "5.4.1"
+  }, {
+    "SPDXID" : "SPDXRef--224662210",
+    "copyrightText" : "UNSPECIFIED",
+    "description" : "Prometheus integration with the OpenTelemetry Java agent for distributed tracing.",
+    "downloadLocation" : "NOASSERTION",
+    "externalRefs" : [ {
+      "referenceCategory" : "PACKAGE-MANAGER",
+      "referenceLocator" : "pkg:maven/io.prometheus/prometheus-metrics-tracer-otel-agent@1.4.1",
+      "referenceType" : "purl"
+    } ],
+    "filesAnalyzed" : false,
+    "homepage" : "http://github.com/prometheus/client_java/client_java/prometheus-metrics-tracer/prometheus-metrics-tracer-otel-agent",
+    "licenseConcluded" : "NOASSERTION",
+    "licenseDeclared" : "Apache-2.0",
+    "name" : "Prometheus Metrics Tracer OpenTelemetry Agent",
+    "summary" : "Prometheus integration with the OpenTelemetry Java agent for distributed tracing.",
+    "versionInfo" : "1.4.1"
+  }, {
+    "SPDXID" : "SPDXRef--23a94e530",
+    "copyrightText" : "UNSPECIFIED",
+    "description" : "Apache Tika is a toolkit for detecting and extracting metadata and\n    structured text content from various documents using existing parser\n    libraries.",
+    "downloadLocation" : "NOASSERTION",
+    "externalRefs" : [ {
+      "referenceCategory" : "PACKAGE-MANAGER",
+      "referenceLocator" : "pkg:maven/org.apache.tika/tika-parser-miscoffice-module@3.2.2",
+      "referenceType" : "purl"
+    } ],
+    "filesAnalyzed" : false,
+    "homepage" : "https://tika.apache.org/tika-parser-miscoffice-module/",
+    "licenseConcluded" : "NOASSERTION",
+    "licenseDeclared" : "Apache-2.0",
+    "name" : "Apache Tika miscellaneous office format parser module",
+    "originator" : "Organization:The Apache Software Foundation",
+    "summary" : "Apache Tika is a toolkit for detecting and extracting metadata and\n    structured text content from various documents using existing parser\n    libraries.",
+    "versionInfo" : "3.2.2"
+  }, {
+    "SPDXID" : "SPDXRef--249f17f30",
+    "copyrightText" : "UNSPECIFIED",
+    "description" : "Apache Tika is a toolkit for detecting and extracting metadata and\n    structured text content from various documents using existing parser\n    libraries.",
+    "downloadLocation" : "NOASSERTION",
+    "externalRefs" : [ {
+      "referenceCategory" : "PACKAGE-MANAGER",
+      "referenceLocator" : "pkg:maven/org.apache.tika/tika-parser-pdf-module@3.2.2",
+      "referenceType" : "purl"
+    } ],
+    "filesAnalyzed" : false,
+    "homepage" : "https://tika.apache.org/tika-parser-pdf-module/",
+    "licenseConcluded" : "NOASSERTION",
+    "licenseDeclared" : "Apache-2.0",
+    "name" : "Apache Tika PDF parser module",
+    "originator" : "Organization:The Apache Software Foundation",
+    "summary" : "Apache Tika is a toolkit for detecting and extracting metadata and\n    structured text content from various documents using existing parser\n    libraries.",
+    "versionInfo" : "3.2.2"
+  }, {
+    "SPDXID" : "SPDXRef--25e074670",
+    "copyrightText" : "UNSPECIFIED",
+    "description" : "JAXB Core module. Contains sources required by XJC, JXC and Runtime modules.",
+    "downloadLocation" : "NOASSERTION",
+    "externalRefs" : [ {
+      "referenceCategory" : "PACKAGE-MANAGER",
+      "referenceLocator" : "pkg:maven/org.glassfish.jaxb/jaxb-core@4.0.5",
+      "referenceType" : "purl"
+    } ],
+    "filesAnalyzed" : false,
+    "homepage" : "https://eclipse-ee4j.github.io/jaxb-ri/",
+    "licenseConcluded" : "NOASSERTION",
+    "licenseDeclared" : "BSD-3-Clause",
+    "name" : "JAXB Core",
+    "originator" : "Organization:Eclipse Foundation",
+    "summary" : "JAXB Core module. Contains sources required by XJC, JXC and Runtime modules.",
+    "versionInfo" : "4.0.5"
+  }, {
+    "SPDXID" : "SPDXRef--270c57190",
+    "copyrightText" : "UNSPECIFIED",
+    "description" : "The Bouncy Castle Java APIs for ASN.1 extension and utility APIs used to support bcpkix and bctls. This jar contains APIs for Java 8 and later.",
+    "downloadLocation" : "NOASSERTION",
+    "externalRefs" : [ {
+      "referenceCategory" : "PACKAGE-MANAGER",
+      "referenceLocator" : "pkg:maven/org.bouncycastle/bcutil-jdk18on@1.81",
+      "referenceType" : "purl"
+    } ],
+    "filesAnalyzed" : false,
+    "homepage" : "https://www.bouncycastle.org/download/bouncy-castle-java/",
+    "licenseConcluded" : "NOASSERTION",
+    "licenseDeclared" : "NOASSERTION",
+    "name" : "Bouncy Castle ASN.1 Extension and Utility APIs",
+    "summary" : "The Bouncy Castle Java APIs for ASN.1 extension and utility APIs used to support bcpkix and bctls. This jar contains APIs for Java 8 and later.",
+    "versionInfo" : "1.81"
+  }, {
+    "SPDXID" : "SPDXRef--2aa74b830",
+    "copyrightText" : "UNSPECIFIED",
+    "description" : "The Apache XmpBox library is an open source Java tool that implements Adobe's XMP(TM)\n    specification. It can be used to parse, validate and create xmp contents.\n    It is mainly used by subproject preflight of Apache PDFBox. \n    XmpBox is a subproject of Apache PDFBox.",
+    "downloadLocation" : "NOASSERTION",
+    "externalRefs" : [ {
+      "referenceCategory" : "PACKAGE-MANAGER",
+      "referenceLocator" : "pkg:maven/org.apache.pdfbox/xmpbox@3.0.5",
+      "referenceType" : "purl"
+    } ],
+    "filesAnalyzed" : false,
+    "homepage" : "https://www.apache.org/pdfbox-parent/xmpbox/",
+    "licenseConcluded" : "NOASSERTION",
+    "licenseDeclared" : "Apache-2.0",
+    "name" : "Apache XmpBox",
+    "originator" : "Organization:The Apache Software Foundation",
+    "summary" : "The Apache XmpBox library is an open source Java tool that implements Adobe's XMP(TM)\n    specification. It can be used to parse, validate and create xmp contents.\n    It is mainly used by subproject preflight of Apache PDFBox. \n    XmpBox is a subproject of Apache PDFBox.",
+    "versionInfo" : "3.0.5"
+  }, {
+    "SPDXID" : "SPDXRef--2b347c090",
+    "copyrightText" : "UNSPECIFIED",
+    "description" : "Java Advanced Imaging Image I/O Tools API core, but without the classes \n    involved with javax.media.jai dependencies, JPEG2000 or \n    codecLibJIIO, meaning that this library can be distributed under the \n    modified BSD license and should be GPL compatible.",
+    "downloadLocation" : "NOASSERTION",
+    "externalRefs" : [ {
+      "referenceCategory" : "PACKAGE-MANAGER",
+      "referenceLocator" : "pkg:maven/com.github.jai-imageio/jai-imageio-core@1.4.0",
+      "referenceType" : "purl"
+    } ],
+    "filesAnalyzed" : false,
+    "homepage" : "https://github.com/jai-imageio/jai-imageio-core",
+    "licenseConcluded" : "NOASSERTION",
+    "licenseDeclared" : "NOASSERTION",
+    "name" : "Java Advanced Imaging Image I/O Tools API core (standalone)",
+    "originator" : "Organization:jai-imageio GitHub group",
+    "summary" : "Java Advanced Imaging Image I/O Tools API core, but without the classes \n    involved with javax.media.jai dependencies, JPEG2000 or \n    codecLibJIIO, meaning that this library can be distributed under the \n    modified BSD license and should be GPL compatible.",
+    "versionInfo" : "1.4.0"
+  }, {
+    "SPDXID" : "SPDXRef--2bc374740",
+    "copyrightText" : "UNSPECIFIED",
+    "description" : "Implementation of various mathematical curves that define themselves over a set of control points. The API is written in Java. The curves supported are: Bezier, B-Spline, Cardinal Spline, Catmull-Rom Spline, Lagrange, Natural Cubic Spline, and NURBS.",
+    "downloadLocation" : "NOASSERTION",
+    "externalRefs" : [ {
+      "referenceCategory" : "PACKAGE-MANAGER",
+      "referenceLocator" : "pkg:maven/com.github.virtuald/curvesapi@1.08",
+      "referenceType" : "purl"
+    } ],
+    "filesAnalyzed" : false,
+    "homepage" : "https://github.com/virtuald/curvesapi",
+    "licenseConcluded" : "NOASSERTION",
+    "licenseDeclared" : "BSD-3-Clause",
+    "name" : "curvesapi",
+    "summary" : "Implementation of various mathematical curves that define themselves over a set of control points. The API is written in Java. The curves supported are: Bezier, B-Spline, Cardinal Spline, Catmull-Rom Spline, Lagrange, Natural Cubic Spline, and NURBS.",
+    "versionInfo" : "1.08"
+  }, {
+    "SPDXID" : "SPDXRef--2d393ca70",
+    "copyrightText" : "UNSPECIFIED",
+    "description" : "Apache Tika is a toolkit for detecting and extracting metadata and\n    structured text content from various documents using existing parser\n    libraries.",
+    "downloadLocation" : "NOASSERTION",
+    "externalRefs" : [ {
+      "referenceCategory" : "PACKAGE-MANAGER",
+      "referenceLocator" : "pkg:maven/org.apache.tika/tika-parsers-standard-package@3.2.2",
+      "referenceType" : "purl"
+    } ],
+    "filesAnalyzed" : false,
+    "homepage" : "https://tika.apache.org/tika-parsers/tika-parsers-standard/tika-parsers-standard-package/",
+    "licenseConcluded" : "NOASSERTION",
+    "licenseDeclared" : "Apache-2.0",
+    "name" : "Apache Tika standard parser package",
+    "originator" : "Organization:The Apache Software Foundation",
+    "summary" : "Apache Tika is a toolkit for detecting and extracting metadata and\n    structured text content from various documents using existing parser\n    libraries.",
+    "versionInfo" : "3.2.2"
+  }, {
+    "SPDXID" : "SPDXRef--2f1d2a7a0",
+    "copyrightText" : "UNSPECIFIED",
+    "description" : "The Apache PDFBox library is an open source Java tool for working with PDF documents.",
+    "downloadLocation" : "NOASSERTION",
+    "externalRefs" : [ {
+      "referenceCategory" : "PACKAGE-MANAGER",
+      "referenceLocator" : "pkg:maven/org.apache.pdfbox/pdfbox@3.0.5",
+      "referenceType" : "purl"
+    } ],
+    "filesAnalyzed" : false,
+    "homepage" : "https://www.apache.org/pdfbox-parent/pdfbox/",
+    "licenseConcluded" : "NOASSERTION",
+    "licenseDeclared" : "Apache-2.0",
+    "name" : "Apache PDFBox",
+    "originator" : "Organization:The Apache Software Foundation",
+    "summary" : "The Apache PDFBox library is an open source Java tool for working with PDF documents.",
+    "versionInfo" : "3.0.5"
+  }, {
+    "SPDXID" : "SPDXRef--2f1f1dad0",
+    "copyrightText" : "UNSPECIFIED",
+    "description" : "The Apache FontBox library is an open source Java tool to obtain low level information\n    from font files. FontBox is a subproject of Apache PDFBox.",
+    "downloadLocation" : "NOASSERTION",
+    "externalRefs" : [ {
+      "referenceCategory" : "PACKAGE-MANAGER",
+      "referenceLocator" : "pkg:maven/org.apache.pdfbox/fontbox@3.0.5",
+      "referenceType" : "purl"
+    } ],
+    "filesAnalyzed" : false,
+    "homepage" : "http://pdfbox.apache.org/",
+    "licenseConcluded" : "NOASSERTION",
+    "licenseDeclared" : "Apache-2.0",
+    "name" : "Apache FontBox",
+    "originator" : "Organization:The Apache Software Foundation",
+    "summary" : "The Apache FontBox library is an open source Java tool to obtain low level information\n    from font files. FontBox is a subproject of Apache PDFBox.",
+    "versionInfo" : "3.0.5"
+  }, {
+    "SPDXID" : "SPDXRef--30821b240",
+    "copyrightText" : "UNSPECIFIED",
+    "description" : "Angus Activation Registries Implementation",
+    "downloadLocation" : "NOASSERTION",
+    "externalRefs" : [ {
+      "referenceCategory" : "PACKAGE-MANAGER",
+      "referenceLocator" : "pkg:maven/org.eclipse.angus/angus-activation@2.0.2",
+      "referenceType" : "purl"
+    } ],
+    "filesAnalyzed" : false,
+    "homepage" : "https://github.com/eclipse-ee4j/angus-activation/angus-activation",
+    "licenseConcluded" : "NOASSERTION",
+    "licenseDeclared" : "BSD-3-Clause",
+    "name" : "Angus Activation Registries",
+    "originator" : "Organization:Eclipse Foundation",
+    "summary" : "Angus Activation Registries Implementation",
+    "versionInfo" : "2.0.2"
+  }, {
+    "SPDXID" : "SPDXRef--374c81c50",
+    "copyrightText" : "UNSPECIFIED",
+    "description" : "JUniversalChardet is a Java encoding detector library",
+    "downloadLocation" : "NOASSERTION",
+    "externalRefs" : [ {
+      "referenceCategory" : "PACKAGE-MANAGER",
+      "referenceLocator" : "pkg:maven/com.github.albfernandez/juniversalchardet@2.5.0",
+      "referenceType" : "purl"
+    } ],
+    "filesAnalyzed" : false,
+    "homepage" : "https://github.com/albfernandez/juniversalchardet",
+    "licenseConcluded" : "NOASSERTION",
+    "licenseDeclared" : "NOASSERTION",
+    "name" : "juniversalchardet",
+    "summary" : "JUniversalChardet is a Java encoding detector library",
+    "versionInfo" : "2.5.0"
+  }, {
+    "SPDXID" : "SPDXRef--3c6658412",
+    "copyrightText" : "UNSPECIFIED",
+    "description" : "Module \"junit-platform-engine\" of JUnit 5.",
+    "downloadLocation" : "NOASSERTION",
+    "externalRefs" : [ {
+      "referenceCategory" : "PACKAGE-MANAGER",
+      "referenceLocator" : "pkg:maven/org.junit.platform/junit-platform-engine@1.13.4",
+      "referenceType" : "purl"
+    } ],
+    "filesAnalyzed" : false,
+    "homepage" : "https://junit.org/",
+    "licenseConcluded" : "NOASSERTION",
+    "licenseDeclared" : "EPL-2.0",
+    "name" : "JUnit Platform Engine API",
+    "summary" : "Module \"junit-platform-engine\" of JUnit 5.",
+    "versionInfo" : "1.13.4"
+  }, {
+    "SPDXID" : "SPDXRef--41171b7c0",
+    "copyrightText" : "UNSPECIFIED",
+    "description" : "Data model for read-only immutable Prometheus metrics snapshots.",
+    "downloadLocation" : "NOASSERTION",
+    "externalRefs" : [ {
+      "referenceCategory" : "PACKAGE-MANAGER",
+      "referenceLocator" : "pkg:maven/io.prometheus/prometheus-metrics-model@1.4.1",
+      "referenceType" : "purl"
+    } ],
+    "filesAnalyzed" : false,
+    "homepage" : "http://github.com/prometheus/client_java/client_java/prometheus-metrics-model",
+    "licenseConcluded" : "NOASSERTION",
+    "licenseDeclared" : "Apache-2.0",
+    "name" : "Prometheus Metrics Model",
+    "summary" : "Data model for read-only immutable Prometheus metrics snapshots.",
+    "versionInfo" : "1.4.1"
+  }, {
+    "SPDXID" : "SPDXRef--4279492c0",
+    "copyrightText" : "UNSPECIFIED",
+    "description" : "Matlab's MAT-file I/O API in JAVA. Supports Matlab 5 MAT-flie format reading and writing. Written in pure JAVA.",
+    "downloadLocation" : "NOASSERTION",
+    "externalRefs" : [ {
+      "referenceCategory" : "PACKAGE-MANAGER",
+      "referenceLocator" : "pkg:maven/org.tallison/jmatio@1.5",
+      "referenceType" : "purl"
+    } ],
+    "filesAnalyzed" : false,
+    "homepage" : "https://github.com/tballison/jmatio",
+    "licenseConcluded" : "NOASSERTION",
+    "licenseDeclared" : "NOASSERTION",
+    "name" : "JMatIO",
+    "summary" : "Matlab's MAT-file I/O API in JAVA. Supports Matlab 5 MAT-flie format reading and writing. Written in pure JAVA.",
+    "versionInfo" : "1.5"
+  }, {
+    "SPDXID" : "SPDXRef--443a61950",
+    "copyrightText" : "UNSPECIFIED",
+    "description" : "Core annotations used for value types, used by Jackson data binding package.",
+    "downloadLocation" : "NOASSERTION",
+    "externalRefs" : [ {
+      "referenceCategory" : "PACKAGE-MANAGER",
+      "referenceLocator" : "pkg:maven/com.fasterxml.jackson.core/jackson-annotations@2.19.2",
+      "referenceType" : "purl"
+    } ],
+    "filesAnalyzed" : false,
+    "homepage" : "https://github.com/FasterXML/jackson",
+    "licenseConcluded" : "NOASSERTION",
+    "licenseDeclared" : "Apache-2.0",
+    "name" : "Jackson-annotations",
+    "originator" : "Organization:FasterXML",
+    "summary" : "Core annotations used for value types, used by Jackson data binding package.",
+    "versionInfo" : "2.19.2"
+  }, {
+    "SPDXID" : "SPDXRef--453ffef00",
+    "copyrightText" : "UNSPECIFIED",
+    "description" : "Apache Tika is a toolkit for detecting and extracting metadata and\n    structured text content from various documents using existing parser\n    libraries.",
+    "downloadLocation" : "NOASSERTION",
+    "externalRefs" : [ {
+      "referenceCategory" : "PACKAGE-MANAGER",
+      "referenceLocator" : "pkg:maven/org.apache.tika/tika-parser-audiovideo-module@3.2.2",
+      "referenceType" : "purl"
+    } ],
+    "filesAnalyzed" : false,
+    "homepage" : "https://tika.apache.org/tika-parser-audiovideo-module/",
+    "licenseConcluded" : "NOASSERTION",
+    "licenseDeclared" : "Apache-2.0",
+    "name" : "Apache Tika audiovideo parser module",
+    "originator" : "Organization:The Apache Software Foundation",
+    "summary" : "Apache Tika is a toolkit for detecting and extracting metadata and\n    structured text content from various documents using existing parser\n    libraries.",
+    "versionInfo" : "3.2.2"
+  }, {
+    "SPDXID" : "SPDXRef--464d0ee70",
+    "copyrightText" : "UNSPECIFIED",
+    "description" : "Ogg and Vorbis toolkit and tools for Java",
+    "downloadLocation" : "NOASSERTION",
+    "externalRefs" : [ {
+      "referenceCategory" : "PACKAGE-MANAGER",
+      "referenceLocator" : "pkg:maven/org.gagravarr/vorbis-java-tika@0.8",
+      "referenceType" : "purl"
+    } ],
+    "filesAnalyzed" : false,
+    "homepage" : "https://github.com/Gagravarr/VorbisJava",
+    "licenseConcluded" : "NOASSERTION",
+    "licenseDeclared" : "Apache-2.0",
+    "name" : "Apache Tika plugin for Ogg, Vorbis and FLAC",
+    "summary" : "Ogg and Vorbis toolkit and tools for Java",
+    "versionInfo" : "0.8"
+  }, {
+    "SPDXID" : "SPDXRef--46c0242a0",
+    "copyrightText" : "UNSPECIFIED",
+    "description" : "Core Jackson processing abstractions (aka Streaming API), implementation for JSON",
+    "downloadLocation" : "NOASSERTION",
+    "externalRefs" : [ {
+      "referenceCategory" : "PACKAGE-MANAGER",
+      "referenceLocator" : "pkg:maven/com.fasterxml.jackson.core/jackson-core@2.19.2",
+      "referenceType" : "purl"
+    } ],
+    "filesAnalyzed" : false,
+    "homepage" : "https://github.com/FasterXML/jackson-core",
+    "licenseConcluded" : "NOASSERTION",
+    "licenseDeclared" : "Apache-2.0",
+    "name" : "Jackson-core",
+    "originator" : "Organization:FasterXML",
+    "summary" : "Core Jackson processing abstractions (aka Streaming API), implementation for JSON",
+    "versionInfo" : "2.19.2"
+  }, {
+    "SPDXID" : "SPDXRef--4744c6a40",
+    "copyrightText" : "UNSPECIFIED",
+    "description" : "The Apache Commons IO library contains utility classes, stream implementations, file filters,\nfile comparators, endian transformation classes, and much more.",
+    "downloadLocation" : "NOASSERTION",
+    "externalRefs" : [ {
+      "referenceCategory" : "PACKAGE-MANAGER",
+      "referenceLocator" : "pkg:maven/commons-io/commons-io@2.20.0",
+      "referenceType" : "purl"
+    } ],
+    "filesAnalyzed" : false,
+    "homepage" : "https://commons.apache.org/proper/commons-io/",
+    "licenseConcluded" : "NOASSERTION",
+    "licenseDeclared" : "Apache-2.0",
+    "name" : "Apache Commons IO",
+    "originator" : "Organization:The Apache Software Foundation",
+    "summary" : "The Apache Commons IO library contains utility classes, stream implementations, file filters,\nfile comparators, endian transformation classes, and much more.",
+    "versionInfo" : "2.20.0"
+  }, {
+    "SPDXID" : "SPDXRef--4831b1a32",
+    "copyrightText" : "UNSPECIFIED",
+    "description" : "@API Guardian",
+    "downloadLocation" : "NOASSERTION",
+    "externalRefs" : [ {
+      "referenceCategory" : "PACKAGE-MANAGER",
+      "referenceLocator" : "pkg:maven/org.apiguardian/apiguardian-api@1.1.2",
+      "referenceType" : "purl"
+    } ],
+    "filesAnalyzed" : false,
+    "homepage" : "https://github.com/apiguardian-team/apiguardian",
+    "licenseConcluded" : "NOASSERTION",
+    "licenseDeclared" : "Apache-2.0",
+    "name" : "org.apiguardian:apiguardian-api",
+    "summary" : "@API Guardian",
+    "versionInfo" : "1.1.2"
+  }, {
+    "SPDXID" : "SPDXRef--4970e0f22",
+    "copyrightText" : "UNSPECIFIED",
+    "description" : "Spring TestContext Framework",
+    "downloadLocation" : "NOASSERTION",
+    "externalRefs" : [ {
+      "referenceCategory" : "PACKAGE-MANAGER",
+      "referenceLocator" : "pkg:maven/org.springframework/spring-test@6.2.10",
+      "referenceType" : "purl"
+    } ],
+    "filesAnalyzed" : false,
+    "homepage" : "https://github.com/spring-projects/spring-framework",
+    "licenseConcluded" : "NOASSERTION",
+    "licenseDeclared" : "Apache-2.0",
+    "name" : "Spring TestContext Framework",
+    "originator" : "Organization:Spring IO",
+    "summary" : "Spring TestContext Framework",
+    "versionInfo" : "6.2.10"
+  }, {
+    "SPDXID" : "SPDXRef--4ad807f90",
+    "copyrightText" : "UNSPECIFIED",
+    "description" : "A complete, Java-based solution for accessing, manipulating, \n\t\tand outputting XML data",
+    "downloadLocation" : "NOASSERTION",
+    "externalRefs" : [ {
+      "referenceCategory" : "PACKAGE-MANAGER",
+      "referenceLocator" : "pkg:maven/org.jdom/jdom2@2.0.6.1",
+      "referenceType" : "purl"
+    } ],
+    "filesAnalyzed" : false,
+    "homepage" : "http://www.jdom.org",
+    "licenseConcluded" : "NOASSERTION",
+    "licenseDeclared" : "NOASSERTION",
+    "name" : "JDOM",
+    "originator" : "Organization:JDOM",
+    "summary" : "A complete, Java-based solution for accessing, manipulating, \n\t\tand outputting XML data",
+    "versionInfo" : "2.0.6.1"
+  }, {
+    "SPDXID" : "SPDXRef--4b3779bf2",
+    "checksums" : [ {
+      "algorithm" : "SHA1",
+      "checksumValue" : "cfa1a7616b8c67265f70daba601cc120d6a58195"
+    } ],
+    "copyrightText" : "NOASSERTION",
+    "description" : "Module for utility classes being used by all OpenMeetings modules",
+    "downloadLocation" : "NOASSERTION",
+    "externalRefs" : [ {
+      "referenceCategory" : "PACKAGE-MANAGER",
+      "referenceLocator" : "pkg:maven/org.apache.openmeetings/openmeetings-util@8.1.0",
+      "referenceType" : "purl"
+    } ],
+    "filesAnalyzed" : true,
+    "homepage" : "https://openmeetings.apache.org/openmeetings-util",
+    "licenseConcluded" : "Apache-2.0",
+    "licenseDeclared" : "Apache-2.0",
+    "licenseInfoFromFiles" : [ "NOASSERTION" ],
+    "name" : "Openmeetings Util",
+    "originator" : "Organization:Apache Software Foundation",
+    "packageFileName" : "openmeetings-util-8.1.0.jar",
+    "packageVerificationCode" : {
+      "packageVerificationCodeValue" : "33cb1f78e9215a3c10160da0f4037ad9d35d71c8"
+    },
+    "primaryPackagePurpose" : "LIBRARY",
+    "summary" : "Module for utility classes being used by all OpenMeetings modules",
+    "supplier" : "Organization: Apache Software Foundation",
+    "versionInfo" : "8.1.0"
+  }, {
+    "SPDXID" : "SPDXRef--4c38649f2",
+    "copyrightText" : "UNSPECIFIED",
+    "description" : "Spring Core",
+    "downloadLocation" : "NOASSERTION",
+    "externalRefs" : [ {
+      "referenceCategory" : "PACKAGE-MANAGER",
+      "referenceLocator" : "pkg:maven/org.springframework/spring-core@6.2.10",
+      "referenceType" : "purl"
+    } ],
+    "filesAnalyzed" : false,
+    "homepage" : "https://github.com/spring-projects/spring-framework",
+    "licenseConcluded" : "NOASSERTION",
+    "licenseDeclared" : "Apache-2.0",
+    "name" : "Spring Core",
+    "originator" : "Organization:Spring IO",
+    "summary" : "Spring Core",
+    "versionInfo" : "6.2.10"
+  }, {
+    "SPDXID" : "SPDXRef--522aaa9d0",
+    "copyrightText" : "UNSPECIFIED",
+    "description" : "A library containing Serializable versions of functional interfaces from\n        java.util.function package.",
+    "downloadLocation" : "NOASSERTION",
+    "externalRefs" : [ {
+      "referenceCategory" : "PACKAGE-MANAGER",
+      "referenceLocator" : "pkg:maven/org.danekja/jdk-serializable-functional@1.9.0",
+      "referenceType" : "purl"
+    } ],
+    "filesAnalyzed" : false,
+    "homepage" : "https://github.com/danekja/jdk-serializable-functional",
+    "licenseConcluded" : "NOASSERTION",
+    "licenseDeclared" : "MIT",
+    "name" : "org.danekja.jdk-serializable-functional",
+    "summary" : "A library containing Serializable versions of functional interfaces from\n        java.util.function package.",
+    "versionInfo" : "1.9.0"
+  }, {
+    "SPDXID" : "SPDXRef--5398b3a00",
+    "copyrightText" : "UNSPECIFIED",
+    "description" : "The Adobe XMP Core library",
+    "downloadLocation" : "NOASSERTION",
+    "externalRefs" : [ {
+      "referenceCategory" : "PACKAGE-MANAGER",
+      "referenceLocator" : "pkg:maven/com.adobe.xmp/xmpcore@6.1.11",
+      "referenceType" : "purl"
+    } ],
+    "filesAnalyzed" : false,
+    "homepage" : "https://www.adobe.com/devnet/xmp/library/eula-xmp-library-java.html",
+    "licenseConcluded" : "NOASSERTION",
+    "licenseDeclared" : "BSD-3-Clause",
+    "name" : "Adobe XMPCore",
+    "summary" : "The Adobe XMP Core library",
+    "versionInfo" : "6.1.11"
+  }, {
+    "SPDXID" : "SPDXRef--551c422c0",
+    "copyrightText" : "UNSPECIFIED",
+    "description" : "The Apache PDFBox library is an open source Java tool for working with PDF documents. \n    This artefact contains commandline tools using Apache PDFBox.",
+    "downloadLocation" : "NOASSERTION",
+    "externalRefs" : [ {
+      "referenceCategory" : "PACKAGE-MANAGER",
+      "referenceLocator" : "pkg:maven/org.apache.pdfbox/pdfbox-tools@3.0.5",
+      "referenceType" : "purl"
+    } ],
+    "filesAnalyzed" : false,
+    "homepage" : "https://www.apache.org/pdfbox-parent/pdfbox-tools/",
+    "licenseConcluded" : "NOASSERTION",
+    "licenseDeclared" : "Apache-2.0",
+    "name" : "Apache PDFBox tools",
+    "originator" : "Organization:The Apache Software Foundation",
+    "summary" : "The Apache PDFBox library is an open source Java tool for working with PDF documents. \n    This artefact contains commandline tools using Apache PDFBox.",
+    "versionInfo" : "3.0.5"
+  }, {
+    "SPDXID" : "SPDXRef--579f7e360",
+    "copyrightText" : "UNSPECIFIED",
+    "description" : "Apache Tika is a toolkit for detecting and extracting metadata and\n    structured text content from various documents using existing parser\n    libraries.",
+    "downloadLocation" : "NOASSERTION",
+    "externalRefs" : [ {
+      "referenceCategory" : "PACKAGE-MANAGER",
+      "referenceLocator" : "pkg:maven/org.apache.tika/tika-parser-html-module@3.2.2",
+      "referenceType" : "purl"
+    } ],
+    "filesAnalyzed" : false,
+    "homepage" : "https://tika.apache.org/tika-parser-html-module/",
+    "licenseConcluded" : "NOASSERTION",
+    "licenseDeclared" : "Apache-2.0",
+    "name" : "Apache Tika html parser module",
+    "originator" : "Organization:The Apache Software Foundation",
+    "summary" : "Apache Tika is a toolkit for detecting and extracting metadata and\n    structured text content from various documents using existing parser\n    libraries.",
+    "versionInfo" : "3.2.2"
+  }, {
+    "SPDXID" : "SPDXRef--5a982d410",
+    "copyrightText" : "UNSPECIFIED",
+    "description" : "Angus Mail Provider",
+    "downloadLocation" : "NOASSERTION",
+    "externalRefs" : [ {
+      "referenceCategory" : "PACKAGE-MANAGER",
+      "referenceLocator" : "pkg:maven/org.eclipse.angus/angus-mail@2.0.4",
+      "referenceType" : "purl"
+    } ],
+    "filesAnalyzed" : false,
+    "homepage" : "http://eclipse-ee4j.github.io/angus-mail/angus-mail",
+    "licenseConcluded" : "NOASSERTION",
+    "licenseDeclared" : "(BSD-3-Clause AND GPL-2.0-with-classpath-exception AND EPL-2.0)",
+    "name" : "Angus Mail Provider",
+    "originator" : "Organization:Eclipse Foundation",
+    "summary" : "Angus Mail Provider",
+    "versionInfo" : "2.0.4"
+  }, {
+    "SPDXID" : "SPDXRef--5c7ebc90",
+    "copyrightText" : "UNSPECIFIED",
+    "description" : "TXW is a library that allows you to write XML documents.",
+    "downloadLocation" : "NOASSERTION",
+    "externalRefs" : [ {
+      "referenceCategory" : "PACKAGE-MANAGER",
+      "referenceLocator" : "pkg:maven/org.glassfish.jaxb/txw2@4.0.5",
+      "referenceType" : "purl"
+    } ],
+    "filesAnalyzed" : false,
+    "homepage" : "https://eclipse-ee4j.github.io/jaxb-ri/",
+    "licenseConcluded" : "NOASSERTION",
+    "licenseDeclared" : "BSD-3-Clause",
+    "name" : "TXW2 Runtime",
+    "originator" : "Organization:Eclipse Foundation",
+    "summary" : "TXW is a library that allows you to write XML documents.",
+    "versionInfo" : "4.0.5"
+  }, {
+    "SPDXID" : "SPDXRef--5d8c0292",
+    "copyrightText" : "UNSPECIFIED",
+    "description" : "Module \"junit-jupiter-api\" of JUnit 5.",
+    "downloadLocation" : "NOASSERTION",
+    "externalRefs" : [ {
+      "referenceCategory" : "PACKAGE-MANAGER",
+      "referenceLocator" : "pkg:maven/org.junit.jupiter/junit-jupiter-api@5.13.4",
+      "referenceType" : "purl"
+    } ],
+    "filesAnalyzed" : false,
+    "homepage" : "https://junit.org/",
+    "licenseConcluded" : "NOASSERTION",
+    "licenseDeclared" : "EPL-2.0",
+    "name" : "JUnit Jupiter API",
+    "summary" : "Module \"junit-jupiter-api\" of JUnit 5.",
+    "versionInfo" : "5.13.4"
+  }, {
+    "SPDXID" : "SPDXRef--5e43215c0",
+    "copyrightText" : "UNSPECIFIED",
+    "description" : "An add-on to the Jackcess library for handling encryption in MS Access files.",
+    "downloadLocation" : "NOASSERTION",
+    "externalRefs" : [ {
+      "referenceCategory" : "PACKAGE-MANAGER",
+      "referenceLocator" : "pkg:maven/com.healthmarketscience.jackcess/jackcess-encrypt@4.0.3",
+      "referenceType" : "purl"
+    } ],
+    "filesAnalyzed" : false,
+    "homepage" : "http://jackcessencrypt.sf.net",
+    "licenseConcluded" : "NOASSERTION",
+    "licenseDeclared" : "Apache-2.0",
+    "name" : "Jackcess Encrypt",
+    "originator" : "Organization:OpenHMS",
+    "summary" : "An add-on to the Jackcess library for handling encryption in MS Access files.",
+    "versionInfo" : "4.0.3"
+  }, {
+    "SPDXID" : "SPDXRef--5fcdbbf80",
+    "copyrightText" : "UNSPECIFIED",
+    "description" : "Spring Expression Language (SpEL)",
+    "downloadLocation" : "NOASSERTION",
+    "externalRefs" : [ {
+      "referenceCategory" : "PACKAGE-MANAGER",
+      "referenceLocator" : "pkg:maven/org.springframework/spring-expression@6.2.10",
+      "referenceType" : "purl"
+    } ],
+    "filesAnalyzed" : false,
+    "homepage" : "https://github.com/spring-projects/spring-framework",
+    "licenseConcluded" : "NOASSERTION",
+    "licenseDeclared" : "Apache-2.0",
+    "name" : "Spring Expression Language (SpEL)",
+    "originator" : "Organization:Spring IO",
+    "summary" : "Spring Expression Language (SpEL)",
+    "versionInfo" : "6.2.10"
+  }, {
+    "SPDXID" : "SPDXRef--660eb82b0",
+    "copyrightText" : "UNSPECIFIED",
+    "description" : "XZ data compression",
+    "downloadLocation" : "NOASSERTION",
+    "externalRefs" : [ {
+      "referenceCategory" : "PACKAGE-MANAGER",
+      "referenceLocator" : "pkg:maven/org.tukaani/xz@1.10",
+      "referenceType" : "purl"
+    } ],
+    "filesAnalyzed" : false,
+    "homepage" : "https://tukaani.org/xz/java.html",
+    "licenseConcluded" : "NOASSERTION",
+    "licenseDeclared" : "NOASSERTION",
+    "name" : "XZ for Java",
+    "summary" : "XZ data compression",
+    "versionInfo" : "1.10"
+  }, {
+    "SPDXID" : "SPDXRef--6850d5f20",
+    "copyrightText" : "UNSPECIFIED",
+    "description" : "General data-binding functionality for Jackson: works on core streaming API",
+    "downloadLocation" : "NOASSERTION",
+    "externalRefs" : [ {
+      "referenceCategory" : "PACKAGE-MANAGER",
+      "referenceLocator" : "pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.19.2",
+      "referenceType" : "purl"
+    } ],
+    "filesAnalyzed" : false,
+    "homepage" : "https://github.com/FasterXML/jackson",
+    "licenseConcluded" : "NOASSERTION",
+    "licenseDeclared" : "Apache-2.0",
+    "name" : "jackson-databind",
+    "originator" : "Organization:FasterXML",
+    "summary" : "General data-binding functionality for Jackson: works on core streaming API",
+    "versionInfo" : "2.19.2"
+  }, {
+    "SPDXID" : "SPDXRef--6a2cf6ce0",
+    "copyrightText" : "UNSPECIFIED",
+    "description" : "Apache POI - Java API To Access Microsoft Format Files",
+    "downloadLocation" : "NOASSERTION",
+    "externalRefs" : [ {
+      "referenceCategory" : "PACKAGE-MANAGER",
+      "referenceLocator" : "pkg:maven/org.apache.poi/poi-ooxml@5.4.1",
+      "referenceType" : "purl"
+    } ],
+    "filesAnalyzed" : false,
+    "homepage" : "https://poi.apache.org/",
+    "licenseConcluded" : "NOASSERTION",
+    "licenseDeclared" : "Apache-2.0",
+    "name" : "Apache POI - API based on OPC and OOXML schemas",
+    "originator" : "Organization:Apache Software Foundation",
+    "summary" : "Apache POI - Java API To Access Microsoft Format Files",
+    "versionInfo" : "5.4.1"
+  }, {
+    "SPDXID" : "SPDXRef--6a552e470",
+    "copyrightText" : "UNSPECIFIED",
+    "description" : "Apache Tika is a toolkit for detecting and extracting metadata and\n    structured text content from various documents using existing parser\n    libraries.",
+    "downloadLocation" : "NOASSERTION",
+    "externalRefs" : [ {
+      "referenceCategory" : "PACKAGE-MANAGER",
+      "referenceLocator" : "pkg:maven/org.apache.tika/tika-parser-cad-module@3.2.2",
+      "referenceType" : "purl"
+    } ],
+    "filesAnalyzed" : false,
+    "homepage" : "https://tika.apache.org/tika-parser-cad-module/",
+    "licenseConcluded" : "NOASSERTION",
+    "licenseDeclared" : "Apache-2.0",
+    "name" : "Apache Tika cad parser module",
+    "originator" : "Organization:The Apache Software Foundation",
+    "summary" : "Apache Tika is a toolkit for detecting and extracting metadata and\n    structured text content from various documents using existing parser\n    libraries.",
+    "versionInfo" : "3.2.2"
+  }, {
+    "SPDXID" : "SPDXRef--6aec752f0",
+    "copyrightText" : "UNSPECIFIED",
+    "description" : "A Java library for reading and writing iCalendar (*.ics) files",
+    "downloadLocation" : "NOASSERTION",
+    "externalRefs" : [ {
+      "referenceCategory" : "PACKAGE-MANAGER",
+      "referenceLocator" : "pkg:maven/org.mnode.ical4j/ical4j@4.1.1",
+      "referenceType" : "purl"
+    } ],
+    "filesAnalyzed" : false,
+    "homepage" : "http://ical4j.github.io",
+    "licenseConcluded" : "NOASSERTION",
+    "licenseDeclared" : "NOASSERTION",
+    "name" : "ical4j",
+    "summary" : "A Java library for reading and writing iCalendar (*.ics) files",
+    "versionInfo" : "4.1.1"
+  }, {
+    "SPDXID" : "SPDXRef--6f503ec20",
+    "copyrightText" : "UNSPECIFIED",
+    "description" : "Apache Commons Exec is a library to reliably execute external processes from within the JVM.",
+    "downloadLocation" : "NOASSERTION",
+    "externalRefs" : [ {
+      "referenceCategory" : "PACKAGE-MANAGER",
+      "referenceLocator" : "pkg:maven/org.apache.commons/commons-exec@1.5.0",
+      "referenceType" : "purl"
+    } ],
+    "filesAnalyzed" : false,
+    "homepage" : "https://commons.apache.org/proper/commons-exec/",
+    "licenseConcluded" : "NOASSERTION",
+    "licenseDeclared" : "Apache-2.0",
+    "name" : "Apache Commons Exec",
+    "originator" : "Organization:The Apache Software Foundation",
+    "summary" : "Apache Commons Exec is a library to reliably execute external processes from within the JVM.",
+    "versionInfo" : "1.5.0"
+  }, {
+    "SPDXID" : "SPDXRef--70a6abc00",
+    "copyrightText" : "UNSPECIFIED",
+    "description" : "Module containing common code",
+    "downloadLocation" : "NOASSERTION",
+    "externalRefs" : [ {
+      "referenceCategory" : "PACKAGE-MANAGER",
+      "referenceLocator" : "pkg:maven/io.micrometer/micrometer-commons@1.14.10",
+      "referenceType" : "purl"
+    } ],
+    "filesAnalyzed" : false,
+    "homepage" : "https://github.com/micrometer-metrics/micrometer",
+    "licenseConcluded" : "NOASSERTION",
+    "licenseDeclared" : "Apache-2.0",
+    "name" : "micrometer-commons",
+    "summary" : "Module containing common code",
+    "versionInfo" : "1.14.10"
+  }, {
+    "SPDXID" : "SPDXRef--716f681e0",
+    "copyrightText" : "UNSPECIFIED",
+    "description" : "The Apache Commons Math project is a library of lightweight, self-contained mathematics and statistics components addressing the most common practical problems not immediately available in the Java programming language or commons-lang.",
+    "downloadLocation" : "NOASSERTION",
+    "externalRefs" : [ {
+      "referenceCategory" : "PACKAGE-MANAGER",
+      "referenceLocator" : "pkg:maven/org.apache.commons/commons-math3@3.6.1",
+      "referenceType" : "purl"
+    } ],
+    "filesAnalyzed" : false,
+    "homepage" : "http://commons.apache.org/proper/commons-math/",
+    "licenseConcluded" : "NOASSERTION",
+    "licenseDeclared" : "Apache-2.0",
+    "name" : "Apache Commons Math",
+    "originator" : "Organization:The Apache Software Foundation",
+    "summary" : "The Apache Commons Math project is a library of lightweight, self-contained mathematics and statistics components addressing the most common practical problems not immediately available in the Java programming language or commons-lang.",
+    "versionInfo" : "3.6.1"
+  }, {
+    "SPDXID" : "SPDXRef--718406e70",
+    "copyrightText" : "UNSPECIFIED",
+    "description" : "The Apache Commons Codec component contains encoders and decoders for\n     formats such as Base16, Base32, Base64, digest, and Hexadecimal. In addition to these\n     widely used encoders and decoders, the codec package also maintains a\n     collection of phonetic encoding utilities.",
+    "downloadLocation" : "NOASSERTION",
+    "externalRefs" : [ {
+      "referenceCategory" : "PACKAGE-MANAGER",
+      "referenceLocator" : "pkg:maven/commons-codec/commons-codec@1.19.0",
+      "referenceType" : "purl"
+    } ],
+    "filesAnalyzed" : false,
+    "homepage" : "https://commons.apache.org/proper/commons-codec/",
+    "licenseConcluded" : "NOASSERTION",
+    "licenseDeclared" : "Apache-2.0",
+    "name" : "Apache Commons Codec",
+    "originator" : "Organization:The Apache Software Foundation",
+    "summary" : "The Apache Commons Codec component contains encoders and decoders for\n     formats such as Base16, Base32, Base64, digest, and Hexadecimal. In addition to these\n     widely used encoders and decoders, the codec package also maintains a\n     collection of phonetic encoding utilities.",
+    "versionInfo" : "1.19.0"
+  }, {
+    "SPDXID" : "SPDXRef--71f333850",
+    "copyrightText" : "UNSPECIFIED",
+    "description" : "A clean-room Apache-licensed implementation of simple JSON processing",
+    "downloadLocation" : "NOASSERTION",
+    "externalRefs" : [ {
+      "referenceCategory" : "PACKAGE-MANAGER",
+      "referenceLocator" : "pkg:maven/com.github.openjson/openjson@1.0.13",
+      "referenceType" : "purl"
+    } ],
+    "filesAnalyzed" : false,
+    "homepage" : "https://github.com/openjson/openjson",
+    "licenseConcluded" : "NOASSERTION",
+    "licenseDeclared" : "Apache-2.0",
+    "name" : "Open JSON",
+    "summary" : "A clean-room Apache-licensed implementation of simple JSON processing",
+    "versionInfo" : "1.0.13"
+  }, {
+    "SPDXID" : "SPDXRef--755c9e390",
+    "copyrightText" : "UNSPECIFIED",
+    "description" : "property 'description'",
+    "downloadLocation" : "NOASSERTION",
+    "externalRefs" : [ {
+      "referenceCategory" : "PACKAGE-MANAGER",
+      "referenceLocator" : "pkg:maven/com.github.junrar/junrar@7.5.5",
+      "referenceType" : "purl"
+    } ],
+    "filesAnalyzed" : false,
+    "homepage" : "https://github.com/junrar/junrar",
+    "licenseConcluded" : "NOASSERTION",
+    "licenseDeclared" : "NOASSERTION",
+    "name" : "Java Unrar",
+    "summary" : "property 'description'",
+    "versionInfo" : "7.5.5"
+  }, {
+    "SPDXID" : "SPDXRef--7700b96b2",
+    "copyrightText" : "UNSPECIFIED",
+    "description" : "Module \"junit-platform-commons\" of JUnit 5.",
+    "downloadLocation" : "NOASSERTION",
+    "externalRefs" : [ {
+      "referenceCategory" : "PACKAGE-MANAGER",
+      "referenceLocator" : "pkg:maven/org.junit.platform/junit-platform-commons@1.13.4",
+      "referenceType" : "purl"
+    } ],
+    "filesAnalyzed" : false,
+    "homepage" : "https://junit.org/",
+    "licenseConcluded" : "NOASSERTION",
+    "licenseDeclared" : "EPL-2.0",
+    "name" : "JUnit Platform Commons",
+    "summary" : "Module \"junit-platform-commons\" of JUnit 5.",
+    "versionInfo" : "1.13.4"
+  }, {
+    "SPDXID" : "SPDXRef--7c881b110",
+    "copyrightText" : "UNSPECIFIED",
+    "description" : "The Apache Commons Collections package contains types that extend and augment the Java Collections Framework.",
+    "downloadLocation" : "NOASSERTION",
+    "externalRefs" : [ {
+      "referenceCategory" : "PACKAGE-MANAGER",
+      "referenceLocator" : "pkg:maven/org.apache.commons/commons-collections4@4.5.0",
+      "referenceType" : "purl"
+    } ],
+    "filesAnalyzed" : false,
+    "homepage" : "https://commons.apache.org/proper/commons-collections/",
+    "licenseConcluded" : "NOASSERTION",
+    "licenseDeclared" : "Apache-2.0",
+    "name" : "Apache Commons Collections",
+    "originator" : "Organization:The Apache Software Foundation",
+    "summary" : "The Apache Commons Collections package contains types that extend and augment the Java Collections Framework.",
+    "versionInfo" : "4.5.0"
+  }, {
+    "SPDXID" : "SPDXRef--7ca75e2f0",
+    "copyrightText" : "UNSPECIFIED",
+    "description" : "Apache Tika is a toolkit for detecting and extracting metadata and\n    structured text content from various documents using existing parser\n    libraries.",
+    "downloadLocation" : "NOASSERTION",
+    "externalRefs" : [ {
+      "referenceCategory" : "PACKAGE-MANAGER",
+      "referenceLocator" : "pkg:maven/org.apache.tika/tika-parser-microsoft-module@3.2.2",
+      "referenceType" : "purl"
+    } ],
+    "filesAnalyzed" : false,
+    "homepage" : "https://tika.apache.org/tika-parser-microsoft-module/",
+    "licenseConcluded" : "NOASSERTION",
+    "licenseDeclared" : "Apache-2.0",
+    "name" : "Apache Tika Microsoft parser module",
+    "originator" : "Organization:The Apache Software Foundation",
+    "summary" : "Apache Tika is a toolkit for detecting and extracting metadata and\n    structured text content from various documents using existing parser\n    libraries.",
+    "versionInfo" : "3.2.2"
+  }, {
+    "SPDXID" : "SPDXRef--7e35f250",
+    "copyrightText" : "UNSPECIFIED",
+    "description" : "jsoup is a Java library that simplifies working with real-world HTML and XML. It offers an easy-to-use API for URL fetching, data parsing, extraction, and manipulation using DOM API methods, CSS, and xpath selectors. jsoup implements the WHATWG HTML5 specification, and parses HTML to the same DOM as modern browsers.",
+    "downloadLocation" : "NOASSERTION",
+    "externalRefs" : [ {
+      "referenceCategory" : "PACKAGE-MANAGER",
+      "referenceLocator" : "pkg:maven/org.jsoup/jsoup@1.21.1",
+      "referenceType" : "purl"
+    } ],
+    "filesAnalyzed" : false,
+    "homepage" : "https://jsoup.org/",
+    "licenseConcluded" : "NOASSERTION",
+    "licenseDeclared" : "NOASSERTION",
+    "name" : "jsoup Java HTML Parser",
+    "originator" : "Organization:Jonathan Hedley",
+    "summary" : "jsoup is a Java library that simplifies working with real-world HTML and XML. It offers an easy-to-use API for URL fetching, data parsing, extraction, and manipulation using DOM API methods, CSS, and xpath selectors. jsoup implements the WHATWG HTML5 specification, and parses HTML to the same DOM as modern browsers.",
+    "versionInfo" : "1.21.1"
+  }, {
+    "SPDXID" : "SPDXRef--7ebde2fc0",
+    "copyrightText" : "UNSPECIFIED",
+    "description" : "Apache Tika is a toolkit for detecting and extracting metadata and\n    structured text content from various documents using existing parser\n    libraries.",
+    "downloadLocation" : "NOASSERTION",
+    "externalRefs" : [ {
+      "referenceCategory" : "PACKAGE-MANAGER",
+      "referenceLocator" : "pkg:maven/org.apache.tika/tika-parser-image-module@3.2.2",
+      "referenceType" : "purl"
+    } ],
+    "filesAnalyzed" : false,
+    "homepage" : "https://tika.apache.org/tika-parser-image-module/",
+    "licenseConcluded" : "NOASSERTION",
+    "licenseDeclared" : "Apache-2.0",
+    "name" : "Apache Tika image parser module",
+    "originator" : "Organization:The Apache Software Foundation",
+    "summary" : "Apache Tika is a toolkit for detecting and extracting metadata and\n    structured text content from various documents using existing parser\n    libraries.",
+    "versionInfo" : "3.2.2"
+  }, {
+    "SPDXID" : "SPDXRef--7f445e700",
+    "copyrightText" : "UNSPECIFIED",
+    "description" : "Parso is a lightweight Java library designed to read SAS7BDAT datasets. The Parso interfaces\n        are analogous to libraries designed to read table-storing files, for example, CSVReader library.\n        Despite its small size, the Parso library is the only full-featured open-source solution to process SAS7BDAT\n        datasets, both uncompressed, CHAR-compressed and BIN-compressed. It is effective in processing clinical and\n        statistical data often stored in SAS7BDAT format. Parso allows converting data into CSV format.",
+    "downloadLocation" : "NOASSERTION",
+    "externalRefs" : [ {
+      "referenceCategory" : "PACKAGE-MANAGER",
+      "referenceLocator" : "pkg:maven/com.epam/parso@2.0.14",
+      "referenceType" : "purl"
+    } ],
+    "filesAnalyzed" : false,
+    "homepage" : "https://github.com/epam/parso",
+    "licenseConcluded" : "NOASSERTION",
+    "licenseDeclared" : "NOASSERTION",
+    "name" : "parso",
+    "summary" : "Parso is a lightweight Java library designed to read SAS7BDAT datasets. The Parso interfaces\n        are analogous to libraries designed to read table-storing files, for example, CSVReader library.\n        Despite its small size, the Parso library is the only full-featured open-source solution to process SAS7BDAT\n        datasets, both uncompressed, CHAR-compressed and BIN-compressed. It is effective in processing clinical and\n        statistical data often stored in SAS7BDAT format. Parso allows converting data into CSV format.",
+    "versionInfo" : "2.0.14"
+  }, {
+    "SPDXID" : "SPDXRef--a5ec47a0",
+    "copyrightText" : "UNSPECIFIED",
+    "description" : "A library to read PST files with java, without need for external libraries.",
+    "downloadLocation" : "NOASSERTION",
+    "externalRefs" : [ {
+      "referenceCategory" : "PACKAGE-MANAGER",
+      "referenceLocator" : "pkg:maven/com.pff/java-libpst@0.9.3",
+      "referenceType" : "purl"
+    } ],
+    "filesAnalyzed" : false,
+    "homepage" : "https://github.com/rjohnsondev/java-libpst",
+    "licenseConcluded" : "NOASSERTION",
+    "licenseDeclared" : "Apache-2.0",
+    "name" : "java-libpst",
+    "summary" : "A library to read PST files with java, without need for external libraries.",
+    "versionInfo" : "0.9.3"
+  }, {
+    "SPDXID" : "SPDXRef-105687e60",
+    "copyrightText" : "UNSPECIFIED",
+    "description" : "XmlBeans main jar",
+    "downloadLocation" : "NOASSERTION",
+    "externalRefs" : [ {
+      "referenceCategory" : "PACKAGE-MANAGER",
+      "referenceLocator" : "pkg:maven/org.apache.xmlbeans/xmlbeans@5.3.0",
+      "referenceType" : "purl"
+    } ],
+    "filesAnalyzed" : false,
+    "homepage" : "https://xmlbeans.apache.org/",
+    "licenseConcluded" : "NOASSERTION",
+    "licenseDeclared" : "Apache-2.0",
+    "name" : "XmlBeans",
+    "originator" : "Organization:XmlBeans",
+    "summary" : "XmlBeans main jar",
+    "versionInfo" : "5.3.0"
+  }, {
+    "SPDXID" : "SPDXRef-14be34870",
+    "copyrightText" : "UNSPECIFIED",
+    "description" : "Configuration for Prometheus metrics and exposition formats.",
+    "downloadLocation" : "NOASSERTION",
+    "externalRefs" : [ {
+      "referenceCategory" : "PACKAGE-MANAGER",
+      "referenceLocator" : "pkg:maven/io.prometheus/prometheus-metrics-config@1.4.1",
+      "referenceType" : "purl"
+    } ],
+    "filesAnalyzed" : false,
+    "homepage" : "http://github.com/prometheus/client_java/client_java/prometheus-metrics-config",
+    "licenseConcluded" : "NOASSERTION",
+    "licenseDeclared" : "Apache-2.0",
+    "name" : "Prometheus Metrics Config",
+    "summary" : "Configuration for Prometheus metrics and exposition formats.",
+    "versionInfo" : "1.4.1"
+  }, {
+    "SPDXID" : "SPDXRef-1599de460",
+    "copyrightText" : "UNSPECIFIED",
+    "description" : "Apache POI - Java API To Access Microsoft Format Files (Scratchpad)",
+    "downloadLocation" : "NOASSERTION",
+    "externalRefs" : [ {
+      "referenceCategory" : "PACKAGE-MANAGER",
+      "referenceLocator" : "pkg:maven/org.apache.poi/poi-scratchpad@5.4.1",
+      "referenceType" : "purl"
+    } ],
+    "filesAnalyzed" : false,
+    "homepage" : "https://poi.apache.org/",
+    "licenseConcluded" : "NOASSERTION",
+    "licenseDeclared" : "Apache-2.0",
+    "name" : "Apache POI",
+    "originator" : "Organization:Apache Software Foundation",
+    "summary" : "Apache POI - Java API To Access Microsoft Format Files (Scratchpad)",
+    "versionInfo" : "5.4.1"
+  }, {
+    "SPDXID" : "SPDXRef-1670b73e0",
+    "copyrightText" : "UNSPECIFIED",
+    "description" : "Apache Tika is a toolkit for detecting and extracting metadata and\n    structured text content from various documents using existing parser\n    libraries.",
+    "downloadLocation" : "NOASSERTION",
+    "externalRefs" : [ {
+      "referenceCategory" : "PACKAGE-MANAGER",
+      "referenceLocator" : "pkg:maven/org.apache.tika/tika-parser-mail-module@3.2.2",
+      "referenceType" : "purl"
+    } ],
+    "filesAnalyzed" : false,
+    "homepage" : "https://tika.apache.org/tika-parser-mail-module/",
+    "licenseConcluded" : "NOASSERTION",
+    "licenseDeclared" : "Apache-2.0",
+    "name" : "Apache Tika mail parser module",
+    "originator" : "Organization:The Apache Software Foundation",
+    "summary" : "Apache Tika is a toolkit for detecting and extracting metadata and\n    structured text content from various documents using existing parser\n    libraries.",
+    "versionInfo" : "3.2.2"
+  }, {
+    "SPDXID" : "SPDXRef-1bae4edb0",
+    "copyrightText" : "UNSPECIFIED",
+    "description" : "The logging API of the Log4j project.\n    Library and application code can log through this API.\n    It contains a simple built-in implementation (`SimpleLogger`) for trivial use cases.\n    Production applications are recommended to use Log4j API in combination with a fully-fledged implementation, such as Log4j Core.",
+    "downloadLocation" : "NOASSERTION",
+    "externalRefs" : [ {
+      "referenceCategory" : "PACKAGE-MANAGER",
+      "referenceLocator" : "pkg:maven/org.apache.logging.log4j/log4j-api@2.24.3",
+      "referenceType" : "purl"
+    } ],
+    "filesAnalyzed" : false,
+    "homepage" : "https://logging.apache.org/log4j/2.x/log4j/log4j-api/",
+    "licenseConcluded" : "NOASSERTION",
+    "licenseDeclared" : "Apache-2.0",
+    "name" : "Apache Log4j API",
+    "originator" : "Organization:The Apache Software Foundation",
+    "summary" : "The logging API of the Log4j project.\n    Library and application code can log through this API.\n    It contains a simple built-in implementation (`SimpleLogger`) for trivial use cases.\n    Production applications are recommended to use Log4j API in combination with a fully-fledged implementation, such as Log4j Core.",
+    "versionInfo" : "2.24.3"
+  }, {
+    "SPDXID" : "SPDXRef-1d4ea42d0",
+    "copyrightText" : "UNSPECIFIED",
+    "description" : "Ogg and Vorbis toolkit and tools for Java",
+    "downloadLocation" : "NOASSERTION",
+    "externalRefs" : [ {
+      "referenceCategory" : "PACKAGE-MANAGER",
+      "referenceLocator" : "pkg:maven/org.gagravarr/vorbis-java-core@0.8",
+      "referenceType" : "purl"
+    } ],
+    "filesAnalyzed" : false,
+    "homepage" : "https://github.com/Gagravarr/VorbisJava",
+    "licenseConcluded" : "NOASSERTION",
+    "licenseDeclared" : "Apache-2.0",
+    "name" : "Ogg and Vorbis for Java, Core",
+    "summary" : "Ogg and Vorbis toolkit and tools for Java",
+    "versionInfo" : "0.8"
+  }, {
+    "SPDXID" : "SPDXRef-2056a6a40",
+    "copyrightText" : "UNSPECIFIED",
+    "description" : "The Apache Commons CSV library provides a simple interface for reading and writing CSV files of various types.",
+    "downloadLocation" : "NOASSERTION",
+    "externalRefs" : [ {
+      "referenceCategory" : "PACKAGE-MANAGER",
+      "referenceLocator" : "pkg:maven/org.apache.commons/commons-csv@1.14.1",
+      "referenceType" : "purl"
+    } ],
+    "filesAnalyzed" : false,
+    "homepage" : "https://commons.apache.org/proper/commons-csv/",
+    "licenseConcluded" : "NOASSERTION",
+    "licenseDeclared" : "Apache-2.0",
+    "name" : "Apache Commons CSV",
+    "originator" : "Organization:The Apache Software Foundation",
+    "summary" : "The Apache Commons CSV library provides a simple interface for reading and writing CSV files of various types.",
+    "versionInfo" : "1.14.1"
+  }, {
+    "SPDXID" : "SPDXRef-20adb0c60",
+    "copyrightText" : "UNSPECIFIED",
+    "description" : "Common Module for Prometheus integrations with distributed tracing libraries.",
+    "downloadLocation" : "NOASSERTION",
+    "externalRefs" : [ {
+      "referenceCategory" : "PACKAGE-MANAGER",
+      "referenceLocator" : "pkg:maven/io.prometheus/prometheus-metrics-tracer-common@1.4.1",
+      "referenceType" : "purl"
+    } ],
+    "filesAnalyzed" : false,
+    "homepage" : "http://github.com/prometheus/client_java/client_java/prometheus-metrics-tracer/prometheus-metrics-tracer-common",
+    "licenseConcluded" : "NOASSERTION",
+    "licenseDeclared" : "Apache-2.0",
+    "name" : "Prometheus Metrics Tracer Common",
+    "summary" : "Common Module for Prometheus integrations with distributed tracing libraries.",
+    "versionInfo" : "1.4.1"
+  }, {
+    "SPDXID" : "SPDXRef-219c71b80",
+    "copyrightText" : "UNSPECIFIED",
+    "description" : "Apache Tika is a toolkit for detecting and extracting metadata and\n    structured text content from various documents using existing parser\n    libraries.",
+    "downloadLocation" : "NOASSERTION",
+    "externalRefs" : [ {
+      "referenceCategory" : "PACKAGE-MANAGER",
+      "referenceLocator" : "pkg:maven/org.apache.tika/tika-parser-zip-commons@3.2.2",
+      "referenceType" : "purl"
+    } ],
+    "filesAnalyzed" : false,
+    "homepage" : "https://tika.apache.org/tika-parser-zip-commons/",
+    "licenseConcluded" : "NOASSERTION",
+    "licenseDeclared" : "Apache-2.0",
+    "name" : "Apache Tika ZIP commons",
+    "originator" : "Organization:The Apache Software Foundation",
+    "summary" : "Apache Tika is a toolkit for detecting and extracting metadata and\n    structured text content from various documents using existing parser\n    libraries.",
+    "versionInfo" : "3.2.2"
+  }, {
+    "SPDXID" : "SPDXRef-22188a270",
+    "copyrightText" : "UNSPECIFIED",
+    "description" : "Prometheus integration with the OpenTelemetry distributed tracing library.",
+    "downloadLocation" : "NOASSERTION",
+    "externalRefs" : [ {
+      "referenceCategory" : "PACKAGE-MANAGER",
+      "referenceLocator" : "pkg:maven/io.prometheus/prometheus-metrics-tracer-otel@1.4.1",
+      "referenceType" : "purl"
+    } ],
+    "filesAnalyzed" : false,
+    "homepage" : "http://github.com/prometheus/client_java/client_java/prometheus-metrics-tracer/prometheus-metrics-tracer-otel",
+    "licenseConcluded" : "NOASSERTION",
+    "licenseDeclared" : "Apache-2.0",
+    "name" : "Prometheus Metrics Tracer OpenTelemetry",
+    "summary" : "Prometheus integration with the OpenTelemetry distributed tracing library.",
+    "versionInfo" : "1.4.1"
+  }, {
+    "SPDXID" : "SPDXRef-223469b40",
+    "copyrightText" : "UNSPECIFIED",
+    "description" : "Apache Tika is a toolkit for detecting and extracting metadata and\n    structured text content from various documents using existing parser\n    libraries.",
+    "downloadLocation" : "NOASSERTION",
+    "externalRefs" : [ {
+      "referenceCategory" : "PACKAGE-MANAGER",
+      "referenceLocator" : "pkg:maven/org.apache.tika/tika-parser-crypto-module@3.2.2",
+      "referenceType" : "purl"
+    } ],
+    "filesAnalyzed" : false,
+    "homepage" : "https://tika.apache.org/tika-parser-crypto-module/",
+    "licenseConcluded" : "NOASSERTION",
+    "licenseDeclared" : "Apache-2.0",
+    "name" : "Apache Tika crypto parser module",
+    "originator" : "Organization:The Apache Software Foundation",
+    "summary" : "Apache Tika is a toolkit for detecting and extracting metadata and\n    structured text content from various documents using existing parser\n    libraries.",
+    "versionInfo" : "3.2.2"
+  }, {
+    "SPDXID" : "SPDXRef-2257584b0",
+    "copyrightText" : "UNSPECIFIED",
+    "description" : "Spring Context",
+    "downloadLocation" : "NOASSERTION",
+    "externalRefs" : [ {
+      "referenceCategory" : "PACKAGE-MANAGER",
+      "referenceLocator" : "pkg:maven/org.springframework/spring-context@6.2.10",
+      "referenceType" : "purl"
+    } ],
+    "filesAnalyzed" : false,
+    "homepage" : "https://github.com/spring-projects/spring-framework",
+    "licenseConcluded" : "NOASSERTION",
+    "licenseDeclared" : "Apache-2.0",
+    "name" : "Spring Context",
+    "originator" : "Organization:Spring IO",
+    "summary" : "Spring Context",
+    "versionInfo" : "6.2.10"
+  }, {
+    "SPDXID" : "SPDXRef-22e9ce910",
+    "copyrightText" : "UNSPECIFIED",
+    "description" : "The Apache JempBox library is an open source Java tool that implements Adobe's XMP(TM)\n    specification. JempBox is a subproject of Apache PDFBox.",
+    "downloadLocation" : "NOASSERTION",
+    "externalRefs" : [ {
+      "referenceCategory" : "PACKAGE-MANAGER",
+      "referenceLocator" : "pkg:maven/org.apache.pdfbox/jempbox@1.8.17",
+      "referenceType" : "purl"
+    } ],
+    "filesAnalyzed" : false,
+    "homepage" : "http://www.apache.org/pdfbox-parent/jempbox/",
+    "licenseConcluded" : "NOASSERTION",
+    "licenseDeclared" : "Apache-2.0",
+    "name" : "Apache JempBox",
+    "originator" : "Organization:The Apache Software Foundation",
+    "summary" : "The Apache JempBox library is an open source Java tool that implements Adobe's XMP(TM)\n    specification. JempBox is a subproject of Apache PDFBox.",
+    "versionInfo" : "1.8.17"
+  }, {
+    "SPDXID" : "SPDXRef-2426c7880",
+    "copyrightText" : "UNSPECIFIED",
+    "description" : "Apache Tika is a toolkit for detecting and extracting metadata and\n    structured text content from various documents using existing parser\n    libraries.",
+    "downloadLocation" : "NOASSERTION",
+    "externalRefs" : [ {
+      "referenceCategory" : "PACKAGE-MANAGER",
+      "referenceLocator" : "pkg:maven/org.apache.tika/tika-parser-text-module@3.2.2",
+      "referenceType" : "purl"
+    } ],
+    "filesAnalyzed" : false,
+    "homepage" : "https://tika.apache.org/tika-parser-text-module/",
+    "licenseConcluded" : "NOASSERTION",
+    "licenseDeclared" : "Apache-2.0",
+    "name" : "Apache Tika text parser module",
+    "originator" : "Organization:The Apache Software Foundation",
+    "summary" : "Apache Tika is a toolkit for detecting and extracting metadata and\n    structured text content from various documents using existing parser\n    libraries.",
+    "versionInfo" : "3.2.2"
+  }, {
+    "SPDXID" : "SPDXRef-254b55410",
+    "copyrightText" : "UNSPECIFIED",
+    "description" : "Java stream based MIME message parser",
+    "downloadLocation" : "NOASSERTION",
+    "externalRefs" : [ {
+      "referenceCategory" : "PACKAGE-MANAGER",
+      "referenceLocator" : "pkg:maven/org.apache.james/apache-mime4j-core@0.8.13",
+      "referenceType" : "purl"
+    } ],
+    "filesAnalyzed" : false,
+    "homepage" : "http://james.apache.org/mime4j/apache-mime4j-core",
+    "licenseConcluded" : "NOASSERTION",
+    "licenseDeclared" : "Apache-2.0",
+    "name" : "Apache James :: Mime4j :: Core",
+    "originator" : "Organization:The Apache Software Foundation",
+    "summary" : "Java stream based MIME message parser",
+    "versionInfo" : "0.8.13"
+  }, {
+    "SPDXID" : "SPDXRef-2a14e1c40",
+    "copyrightText" : "UNSPECIFIED",
+    "description" : "JAXB (JSR 222) Reference Implementation",
+    "downloadLocation" : "NOASSERTION",
+    "externalRefs" : [ {
+      "referenceCategory" : "PACKAGE-MANAGER",
+      "referenceLocator" : "pkg:maven/org.glassfish.jaxb/jaxb-runtime@4.0.5",
+      "referenceType" : "purl"
+    } ],
+    "filesAnalyzed" : false,
+    "homepage" : "https://eclipse-ee4j.github.io/jaxb-ri/",
+    "licenseConcluded" : "NOASSERTION",
+    "licenseDeclared" : "BSD-3-Clause",
+    "name" : "JAXB Runtime",
+    "originator" : "Organization:Eclipse Foundation",
+    "summary" : "JAXB (JSR 222) Reference Implementation",
+    "versionInfo" : "4.0.5"
+  }, {
+    "SPDXID" : "SPDXRef-2bf7d5032",
+    "copyrightText" : "UNSPECIFIED",
+    "description" : "Module \"junit-jupiter-engine\" of JUnit 5.",
+    "downloadLocation" : "NOASSERTION",
+    "externalRefs" : [ {
+      "referenceCategory" : "PACKAGE-MANAGER",
+      "referenceLocator" : "pkg:maven/org.junit.jupiter/junit-jupiter-engine@5.13.4",
+      "referenceType" : "purl"
+    } ],
+    "filesAnalyzed" : false,
+    "homepage" : "https://junit.org/",
+    "licenseConcluded" : "NOASSERTION",
+    "licenseDeclared" : "EPL-2.0",
+    "name" : "JUnit Jupiter Engine",
+    "summary" : "Module \"junit-jupiter-engine\" of JUnit 5.",
+    "versionInfo" : "5.13.4"
+  }, {
+    "SPDXID" : "SPDXRef-2c7474050",
+    "copyrightText" : "UNSPECIFIED",
+    "description" : "logback-core module",
+    "downloadLocation" : "NOASSERTION",
+    "externalRefs" : [ {
+      "referenceCategory" : "PACKAGE-MANAGER",
+      "referenceLocator" : "pkg:maven/ch.qos.logback/logback-core@1.5.18",
+      "referenceType" : "purl"
+    } ],
+    "filesAnalyzed" : false,
+    "homepage" : "http://logback.qos.ch/logback-core",
+    "licenseConcluded" : "NOASSERTION",
+    "licenseDeclared" : "NOASSERTION",
+    "name" : "Logback Core Module",
+    "originator" : "Organization:QOS.ch",
+    "summary" : "logback-core module",
+    "versionInfo" : "1.5.18"
+  }, {
+    "SPDXID" : "SPDXRef-2ebd4b510",
+    "copyrightText" : "UNSPECIFIED",
+    "description" : "The Apache PDFBox library is an open source Java tool for working with PDF documents. \n        This artefact contains IO related classes.",
+    "downloadLocation" : "NOASSERTION",
+    "externalRefs" : [ {
+      "referenceCategory" : "PACKAGE-MANAGER",
+      "referenceLocator" : "pkg:maven/org.apache.pdfbox/pdfbox-io@3.0.5",
+      "referenceType" : "purl"
+    } ],
+    "filesAnalyzed" : false,
+    "homepage" : "https://www.apache.org/pdfbox-parent/pdfbox-io/",
+    "licenseConcluded" : "NOASSERTION",
+    "licenseDeclared" : "Apache-2.0",
+    "name" : "Apache PDFBox io",
+    "originator" : "Organization:The Apache Software Foundation",
+    "summary" : "The Apache PDFBox library is an open source Java tool for working with PDF documents. \n        This artefact contains IO related classes.",
+    "versionInfo" : "3.0.5"
+  }, {
+    "SPDXID" : "SPDXRef-30da80070",
+    "copyrightText" : "UNSPECIFIED",
+    "description" : "Jakarta XML Binding API",
+    "downloadLocation" : "NOASSERTION",
+    "externalRefs" : [ {
+      "referenceCategory" : "PACKAGE-MANAGER",
+      "referenceLocator" : "pkg:maven/jakarta.xml.bind/jakarta.xml.bind-api@4.0.2",
+      "referenceType" : "purl"
+    } ],
+    "filesAnalyzed" : false,
+    "homepage" : "https://github.com/jakartaee/jaxb-api/jakarta.xml.bind-api",
+    "licenseConcluded" : "NOASSERTION",
+    "licenseDeclared" : "BSD-3-Clause",
+    "name" : "Jakarta XML Binding API",
+    "originator" : "Organization:Eclipse Foundation",
+    "summary" : "Jakarta XML Binding API",
+    "versionInfo" : "4.0.2"
+  }, {
+    "SPDXID" : "SPDXRef-323e99730",
+    "copyrightText" : "UNSPECIFIED",
+    "description" : "Apache Tika is a toolkit for detecting and extracting metadata and\n    structured text content from various documents using existing parser\n    libraries.",
+    "downloadLocation" : "NOASSERTION",
+    "externalRefs" : [ {
+      "referenceCategory" : "PACKAGE-MANAGER",
+      "referenceLocator" : "pkg:maven/org.apache.tika/tika-parser-pkg-module@3.2.2",
+      "referenceType" : "purl"
+    } ],
+    "filesAnalyzed" : false,
+    "homepage" : "https://tika.apache.org/tika-parser-pkg-module/",
+    "licenseConcluded" : "NOASSERTION",
+    "licenseDeclared" : "Apache-2.0",
+    "name" : "Apache Tika package parser module",
+    "originator" : "Organization:The Apache Software Foundation",
+    "summary" : "Apache Tika is a toolkit for detecting and extracting metadata and\n    structured text content from various documents using existing parser\n    libraries.",
+    "versionInfo" : "3.2.2"
+  }, {
+    "SPDXID" : "SPDXRef-3401be2a2",
+    "copyrightText" : "UNSPECIFIED",
+    "description" : "A library for instantiating Java objects",
+    "downloadLocation" : "NOASSERTION",
+    "externalRefs" : [ {
+      "referenceCategory" : "PACKAGE-MANAGER",
+      "referenceLocator" : "pkg:maven/org.objenesis/objenesis@3.3",
+      "referenceType" : "purl"
+    } ],
+    "filesAnalyzed" : false,
+    "homepage" : "http://objenesis.org/objenesis",
+    "licenseConcluded" : "NOASSERTION",
+    "licenseDeclared" : "Apache-2.0",
+    "name" : "Objenesis",
+    "originator" : "Organization:Joe Walnes, Henri Tremblay, Leonardo Mesquita",
+    "summary" : "A library for instantiating Java objects",
+    "versionInfo" : "3.3"
+  }, {
+    "SPDXID" : "SPDXRef-365913610",
+    "copyrightText" : "UNSPECIFIED",
+    "description" : "Apache Tika is a toolkit for detecting and extracting metadata and\n    structured text content from various documents using existing parser\n    libraries.",
+    "downloadLocation" : "NOASSERTION",
+    "externalRefs" : [ {
+      "referenceCategory" : "PACKAGE-MANAGER",
+      "referenceLocator" : "pkg:maven/org.apache.tika/tika-parser-ocr-module@3.2.2",
+      "referenceType" : "purl"
+    } ],
+    "filesAnalyzed" : false,
+    "homepage" : "https://tika.apache.org/tika-parser-ocr-module/",
+    "licenseConcluded" : "NOASSERTION",
+    "licenseDeclared" : "Apache-2.0",
+    "name" : "Apache Tika OCR parser module",
+    "originator" : "Organization:The Apache Software Foundation",
+    "summary" : "Apache Tika is a toolkit for detecting and extracting metadata and\n    structured text content from various documents using existing parser\n    libraries.",
+    "versionInfo" : "3.2.2"
+  }, {
+    "SPDXID" : "SPDXRef-367956110",
+    "copyrightText" : "UNSPECIFIED",
+    "description" : "A pure Java library for reading from and writing to MS Access databases.",
+    "downloadLocation" : "NOASSERTION",
+    "externalRefs" : [ {
+      "referenceCategory" : "PACKAGE-MANAGER",
+      "referenceLocator" : "pkg:maven/com.healthmarketscience.jackcess/jackcess@4.0.8",
+      "referenceType" : "purl"
+    } ],
+    "filesAnalyzed" : false,
+    "homepage" : "https://jackcess.sourceforge.io",
+    "licenseConcluded" : "NOASSERTION",
+    "licenseDeclared" : "Apache-2.0",
+    "name" : "Jackcess",
+    "originator" : "Organization:OpenHMS",
+    "summary" : "A pure Java library for reading from and writing to MS Access databases.",
+    "versionInfo" : "4.0.8"
+  }, {
+    "SPDXID" : "SPDXRef-377860b80",
+    "copyrightText" : "UNSPECIFIED",
+    "description" : "Apache Tika is a toolkit for detecting and extracting metadata and\n    structured text content from various documents using existing parser\n    libraries.",
+    "downloadLocation" : "NOASSERTION",
+    "externalRefs" : [ {
+      "referenceCategory" : "PACKAGE-MANAGER",
+      "referenceLocator" : "pkg:maven/org.apache.tika/tika-parser-mail-commons@3.2.2",
+      "referenceType" : "purl"
+    } ],
+    "filesAnalyzed" : false,
+    "homepage" : "https://tika.apache.org/tika-parser-mail-commons/",
+    "licenseConcluded" : "NOASSERTION",
+    "licenseDeclared" : "Apache-2.0",
+    "name" : "Apache Tika mail commons",
+    "originator" : "Organization:The Apache Software Foundation",
+    "summary" : "Apache Tika is a toolkit for detecting and extracting metadata and\n    structured text content from various documents using existing parser\n    libraries.",
+    "versionInfo" : "3.2.2"
+  }, {
+    "SPDXID" : "SPDXRef-3d3e96870",
+    "copyrightText" : "UNSPECIFIED",
+    "description" : "Java command line parser with both an annotations API and a programmatic API. Usage help with ANSI styles and colors. Autocomplete. Nested subcommands. Easily included as source to avoid adding a dependency.",
+    "downloadLocation" : "NOASSERTION",
+    "externalRefs" : [ {
+      "referenceCategory" : "PACKAGE-MANAGER",
+      "referenceLocator" : "pkg:maven/info.picocli/picocli@4.7.6",
+      "referenceType" : "purl"
+    } ],
+    "filesAnalyzed" : false,
+    "homepage" : "https://picocli.info",
+    "licenseConcluded" : "NOASSERTION",
+    "licenseDeclared" : "Apache-2.0",
+    "name" : "picocli",
+    "summary" : "Java command line parser with both an annotations API and a programmatic API. Usage help with ANSI styles and colors. Autocomplete. Nested subcommands. Easily included as source to avoid adding a dependency.",
+    "versionInfo" : "4.7.6"
+  }, {
+    "SPDXID" : "SPDXRef-3fed45aa0",
+    "copyrightText" : "UNSPECIFIED",
+    "description" : "flexible XML framework for Java",
+    "downloadLocation" : "NOASSERTION",
+    "externalRefs" : [ {
+      "referenceCategory" : "PACKAGE-MANAGER",
+      "referenceLocator" : "pkg:maven/org.dom4j/dom4j@2.2.0",
+      "referenceType" : "purl"
+    } ],
+    "filesAnalyzed" : false,
+    "homepage" : "http://dom4j.github.io/",
+    "licenseConcluded" : "NOASSERTION",
+    "licenseDeclared" : "NOASSERTION",
+    "name" : "dom4j",
+    "summary" : "flexible XML framework for Java",
+    "versionInfo" : "2.2.0"
+  }, {
+    "SPDXID" : "SPDXRef-41a63ea70",
+    "copyrightText" : "UNSPECIFIED",
+    "description" : "Initialize Prometheus integrations with distributed tracing libraries.",
+    "downloadLocation" : "NOASSERTION",
+    "externalRefs" : [ {
+      "referenceCategory" : "PACKAGE-MANAGER",
+      "referenceLocator" : "pkg:maven/io.prometheus/prometheus-metrics-tracer-initializer@1.4.1",
+      "referenceType" : "purl"
+    } ],
+    "filesAnalyzed" : false,
+    "homepage" : "http://github.com/prometheus/client_java/client_java/prometheus-metrics-tracer/prometheus-metrics-tracer-initializer",
+    "licenseConcluded" : "NOASSERTION",
+    "licenseDeclared" : "Apache-2.0",
+    "name" : "Prometheus Metrics Tracer Initializer",
+    "summary" : "Initialize Prometheus integrations with distributed tracing libraries.",
+    "versionInfo" : "1.4.1"
+  }, {
+    "SPDXID" : "SPDXRef-441f7620",
+    "copyrightText" : "UNSPECIFIED",
+    "description" : "Apache Commons Text is a set of utility functions and reusable components for processing\n    and manipulating text in a Java environment.",
+    "downloadLocation" : "NOASSERTION",
+    "externalRefs" : [ {
+      "referenceCategory" : "PACKAGE-MANAGER",
+      "referenceLocator" : "pkg:maven/org.apache.commons/commons-text@1.14.0",
+      "referenceType" : "purl"
+    } ],
+    "filesAnalyzed" : false,
+    "homepage" : "https://commons.apache.org/proper/commons-text",
+    "licenseConcluded" : "NOASSERTION",
+    "licenseDeclared" : "Apache-2.0",
+    "name" : "Apache Commons Text",
+    "originator" : "Organization:The Apache Software Foundation",
+    "summary" : "Apache Commons Text is a set of utility functions and reusable components for processing\n    and manipulating text in a Java environment.",
+    "versionInfo" : "1.14.0"
+  }, {
+    "SPDXID" : "SPDXRef-458604970",
+    "copyrightText" : "UNSPECIFIED",
+    "description" : "ASM, a very small and fast Java bytecode manipulation framework",
+    "downloadLocation" : "NOASSERTION",
+    "externalRefs" : [ {
+      "referenceCategory" : "PACKAGE-MANAGER",
+      "referenceLocator" : "pkg:maven/org.ow2.asm/asm@9.8",
+      "referenceType" : "purl"
+    } ],
+    "filesAnalyzed" : false,
+    "homepage" : "http://asm.ow2.io/",
+    "licenseConcluded" : "NOASSERTION",
+    "licenseDeclared" : "NOASSERTION",
+    "name" : "asm",
+    "originator" : "Organization:OW2",
+    "summary" : "ASM, a very small and fast Java bytecode manipulation framework",
+    "versionInfo" : "9.8"
+  }, {
+    "SPDXID" : "SPDXRef-45ec4deb0",
+    "copyrightText" : "UNSPECIFIED",
+    "description" : "The slf4j API",
+    "downloadLocation" : "NOASSERTION",
+    "externalRefs" : [ {
+      "referenceCategory" : "PACKAGE-MANAGER",
+      "referenceLocator" : "pkg:maven/org.slf4j/slf4j-api@2.0.17",
+      "referenceType" : "purl"
+    } ],
+    "filesAnalyzed" : false,
+    "homepage" : "http://www.slf4j.org",
+    "licenseConcluded" : "NOASSERTION",
+    "licenseDeclared" : "NOASSERTION",
+    "name" : "SLF4J API Module",
+    "originator" : "Organization:QOS.ch",
+    "summary" : "The slf4j API",
+    "versionInfo" : "2.0.17"
+  }, {
+    "SPDXID" : "SPDXRef-470ad5310",
+    "copyrightText" : "UNSPECIFIED",
+    "description" : "Apache POI - Java API To Access Microsoft Format Files",
+    "downloadLocation" : "NOASSERTION",
+    "externalRefs" : [ {
+      "referenceCategory" : "PACKAGE-MANAGER",
+      "referenceLocator" : "pkg:maven/org.apache.poi/poi-ooxml-lite@5.4.1",
+      "referenceType" : "purl"
+    } ],
+    "filesAnalyzed" : false,
+    "homepage" : "https://poi.apache.org/",
+    "licenseConcluded" : "NOASSERTION",
+    "licenseDeclared" : "Apache-2.0",
+    "name" : "Apache POI",
+    "originator" : "Organization:Apache Software Foundation",
+    "summary" : "Apache POI - Java API To Access Microsoft Format Files",
+    "versionInfo" : "5.4.1"
+  }, {
+    "SPDXID" : "SPDXRef-4725fa20",
+    "copyrightText" : "UNSPECIFIED",
+    "description" : "Apache Tika is a toolkit for detecting and extracting metadata and\n    structured text content from various documents using existing parser\n    libraries.",
+    "downloadLocation" : "NOASSERTION",
+    "externalRefs" : [ {
+      "referenceCategory" : "PACKAGE-MANAGER",
+      "referenceLocator" : "pkg:maven/org.apache.tika/tika-parser-news-module@3.2.2",
+      "referenceType" : "purl"
+    } ],
+    "filesAnalyzed" : false,
+    "homepage" : "https://tika.apache.org/tika-parser-news-module/",
+    "licenseConcluded" : "NOASSERTION",
+    "licenseDeclared" : "Apache-2.0",
+    "name" : "Apache Tika news parser module",
+    "originator" : "Organization:The Apache Software Foundation",
+    "summary" : "Apache Tika is a toolkit for detecting and extracting metadata and\n    structured text content from various documents using existing parser\n    libraries.",
+    "versionInfo" : "3.2.2"
+  }, {
+    "SPDXID" : "SPDXRef-4785b9650",
+    "copyrightText" : "UNSPECIFIED",
+    "description" : "Apache Tika is a toolkit for detecting and extracting metadata and\n    structured text content from various documents using existing parser\n    libraries.",
+    "downloadLocation" : "NOASSERTION",
+    "externalRefs" : [ {
+      "referenceCategory" : "PACKAGE-MANAGER",
+      "referenceLocator" : "pkg:maven/org.apache.tika/tika-parser-apple-module@3.2.2",
+      "referenceType" : "purl"
+    } ],
+    "filesAnalyzed" : false,
+    "homepage" : "https://tika.apache.org/tika-parser-apple-module/",
+    "licenseConcluded" : "NOASSERTION",
+    "licenseDeclared" : "Apache-2.0",
+    "name" : "Apache Tika Apple parser module",
+    "originator" : "Organization:The Apache Software Foundation",
+    "summary" : "Apache Tika is a toolkit for detecting and extracting metadata and\n    structured text content from various documents using existing parser\n    libraries.",
+    "versionInfo" : "3.2.2"
+  }, {
+    "SPDXID" : "SPDXRef-47da29860",
+    "copyrightText" : "UNSPECIFIED",
+    "description" : "Wicket Extensions is a rich component library for the Wicket framework.",
+    "downloadLocation" : "NOASSERTION",
+    "externalRefs" : [ {
+      "referenceCategory" : "PACKAGE-MANAGER",
+      "referenceLocator" : "pkg:maven/org.apache.wicket/wicket-extensions@10.6.0",
+      "referenceType" : "purl"
+    } ],
+    "filesAnalyzed" : false,
+    "homepage" : "http://wicket.apache.org/wicket-extensions",
+    "licenseConcluded" : "NOASSERTION",
+    "licenseDeclared" : "Apache-2.0",
+    "name" : "Wicket Extensions",
+    "originator" : "Organization:Apache Software Foundation",
+    "summary" : "Wicket Extensions is a rich component library for the Wicket framework.",
+    "versionInfo" : "10.6.0"
+  }, {
+    "SPDXID" : "SPDXRef-47e4edd30",
+    "copyrightText" : "UNSPECIFIED",
+    "description" : "AspectJ tools most notably contains the AspectJ compiler (AJC). AJC applies aspects to Java classes during\n\t\tcompilation, fully replacing Javac for plain Java classes and also compiling native AspectJ or annotation-based\n\t\t@AspectJ syntax. Furthermore, AJC can weave aspects into existing class files in a post-compile binary weaving step.\n\t\tThis library is a superset of AspectJ weaver and hence also of AspectJ runtime.",
+    "downloadLocation" : "NOASSERTION",
+    "externalRefs" : [ {
+      "referenceCategory" : "PACKAGE-MANAGER",
+      "referenceLocator" : "pkg:maven/org.aspectj/aspectjtools@1.9.24",
+      "referenceType" : "purl"
+    } ],
+    "filesAnalyzed" : false,
+    "homepage" : "https://www.eclipse.org/aspectj/",
+    "licenseConcluded" : "NOASSERTION",
+    "licenseDeclared" : "NOASSERTION",
+    "name" : "AspectJ Tools (Compiler)",
+    "summary" : "AspectJ tools most notably contains the AspectJ compiler (AJC). AJC applies aspects to Java classes during\n\t\tcompilation, fully replacing Javac for plain Java classes and also compiling native AspectJ or annotation-based\n\t\t@AspectJ syntax. Furthermore, AJC can weave aspects into existing class files in a post-compile binary weaving step.\n\t\tThis library is a superset of AspectJ weaver and hence also of AspectJ runtime.",
+    "versionInfo" : "1.9.24"
+  }, {
+    "SPDXID" : "SPDXRef-48744d700",
+    "copyrightText" : "UNSPECIFIED",
+    "description" : "Apache Commons Compress defines an API for working with\ncompression and archive formats. These include bzip2, gzip, pack200,\nLZMA, XZ, Snappy, traditional Unix Compress, DEFLATE, DEFLATE64, LZ4,\nBrotli, Zstandard and ar, cpio, jar, tar, zip, dump, 7z, arj.",
+    "downloadLocation" : "NOASSERTION",
+    "externalRefs" : [ {
+      "referenceCategory" : "PACKAGE-MANAGER",
+      "referenceLocator" : "pkg:maven/org.apache.commons/commons-compress@1.28.0",
+      "referenceType" : "purl"
+    } ],
+    "filesAnalyzed" : false,
+    "homepage" : "https://commons.apache.org/proper/commons-compress/",
+    "licenseConcluded" : "NOASSERTION",
+    "licenseDeclared" : "Apache-2.0",
+    "name" : "Apache Commons Compress",
+    "originator" : "Organization:The Apache Software Foundation",
+    "summary" : "Apache Commons Compress defines an API for working with\ncompression and archive formats. These include bzip2, gzip, pack200,\nLZMA, XZ, Snappy, traditional Unix Compress, DEFLATE, DEFLATE64, LZ4,\nBrotli, Zstandard and ar, cpio, jar, tar, zip, dump, 7z, arj.",
+    "versionInfo" : "1.28.0"
+  }, {
+    "SPDXID" : "SPDXRef-494d73df2",
+    "copyrightText" : "UNSPECIFIED",
+    "description" : "The Byte Buddy agent offers convenience for attaching an agent to the local or a remote VM.",
+    "downloadLocation" : "NOASSERTION",
+    "externalRefs" : [ {
+      "referenceCategory" : "PACKAGE-MANAGER",
+      "referenceLocator" : "pkg:maven/net.bytebuddy/byte-buddy-agent@1.17.6",
+      "referenceType" : "purl"
+    } ],
+    "filesAnalyzed" : false,
+    "homepage" : "https://bytebuddy.net/byte-buddy-agent",
+    "licenseConcluded" : "NOASSERTION",
+    "licenseDeclared" : "Apache-2.0",
+    "name" : "Byte Buddy agent",
+    "summary" : "The Byte Buddy agent offers convenience for attaching an agent to the local or a remote VM.",
+    "versionInfo" : "1.17.6"
+  }, {
+    "SPDXID" : "SPDXRef-4d5751f20",
+    "copyrightText" : "UNSPECIFIED",
+    "description" : "istack common utility code",
+    "downloadLocation" : "NOASSERTION",
+    "externalRefs" : [ {
+      "referenceCategory" : "PACKAGE-MANAGER",
+      "referenceLocator" : "pkg:maven/com.sun.istack/istack-commons-runtime@4.1.2",
+      "referenceType" : "purl"
+    } ],
+    "filesAnalyzed" : false,
+    "homepage" : "https://projects.eclipse.org/projects/ee4j/istack-commons/istack-commons-runtime",
+    "licenseConcluded" : "NOASSERTION",
+    "licenseDeclared" : "BSD-3-Clause",
+    "name" : "istack common utility code runtime",
+    "originator" : "Organization:Eclipse Foundation",
+    "summary" : "istack common utility code",
+    "versionInfo" : "4.1.2"
+  }, {
+    "SPDXID" : "SPDXRef-52ef5b070",
+    "copyrightText" : "UNSPECIFIED",
+    "description" : "Jakarta Activation API 2.1 Specification",
+    "downloadLocation" : "NOASSERTION",
+    "externalRefs" : [ {
+      "referenceCategory" : "PACKAGE-MANAGER",
+      "referenceLocator" : "pkg:maven/jakarta.activation/jakarta.activation-api@2.1.3",
+      "referenceType" : "purl"
+    } ],
+    "filesAnalyzed" : false,
+    "homepage" : "https://github.com/jakartaee/jaf-api",
+    "licenseConcluded" : "NOASSERTION",
+    "licenseDeclared" : "BSD-3-Clause",
+    "name" : "Jakarta Activation API",
+    "originator" : "Organization:Eclipse Foundation",
+    "summary" : "Jakarta Activation API 2.1 Specification",
+    "versionInfo" : "2.1.3"
+  }, {
+    "SPDXID" : "SPDXRef-576e96c80",
+    "copyrightText" : "UNSPECIFIED",
+    "description" : "Apache Tika is a toolkit for detecting and extracting metadata and\n    structured text content from various documents using existing parser\n    libraries.",
+    "downloadLocation" : "NOASSERTION",
+    "externalRefs" : [ {
+      "referenceCategory" : "PACKAGE-MANAGER",
+      "referenceLocator" : "pkg:maven/org.apache.tika/tika-parser-code-module@3.2.2",
+      "referenceType" : "purl"
+    } ],
+    "filesAnalyzed" : false,
+    "homepage" : "https://tika.apache.org/tika-parser-code-module/",
+    "licenseConcluded" : "NOASSERTION",
+    "licenseDeclared" : "Apache-2.0",
+    "name" : "Apache Tika code parser module",
+    "originator" : "Organization:The Apache Software Foundation",
+    "summary" : "Apache Tika is a toolkit for detecting and extracting metadata and\n    structured text content from various documents using existing parser\n    libraries.",
+    "versionInfo" : "3.2.2"
+  }, {
+    "SPDXID" : "SPDXRef-5958a5212",
+    "copyrightText" : "UNSPECIFIED",
+    "description" : "Mockito mock objects library core API and implementation",
+    "downloadLocation" : "NOASSERTION",
+    "externalRefs" : [ {
+      "referenceCategory" : "PACKAGE-MANAGER",
+      "referenceLocator" : "pkg:maven/org.mockito/mockito-core@5.19.0",
+      "referenceType" : "purl"
+    } ],
+    "filesAnalyzed" : false,
+    "homepage" : "https://github.com/mockito/mockito",
+    "licenseConcluded" : "NOASSERTION",
+    "licenseDeclared" : "MIT",
+    "name" : "mockito-core",
+    "summary" : "Mockito mock objects library core API and implementation",
+    "versionInfo" : "5.19.0"
+  }, {
+    "SPDXID" : "SPDXRef-5bd94d080",
+    "copyrightText" : "UNSPECIFIED",
+    "description" : "Apache Tika is a toolkit for detecting and extracting metadata and\n    structured text content from various documents using existing parser\n    libraries.",
+    "downloadLocation" : "NOASSERTION",
+    "externalRefs" : [ {
+      "referenceCategory" : "PACKAGE-MANAGER",
+      "referenceLocator" : "pkg:maven/org.apache.tika/tika-parser-xml-module@3.2.2",
+      "referenceType" : "purl"
+    } ],
+    "filesAnalyzed" : false,
+    "homepage" : "https://tika.apache.org/tika-parser-xml-module/",
+    "licenseConcluded" : "NOASSERTION",
+    "licenseDeclared" : "Apache-2.0",
+    "name" : "Apache Tika XML parser module",
+    "originator" : "Organization:The Apache Software Foundation",
+    "summary" : "Apache Tika is a toolkit for detecting and extracting metadata and\n    structured text content from various documents using existing parser\n    libraries.",
+    "versionInfo" : "3.2.2"
+  }, {
+    "SPDXID" : "SPDXRef-5c46779d0",
+    "copyrightText" : "UNSPECIFIED",
+    "description" : "Wicket is a Java-based open source component web application framework.",
+    "downloadLocation" : "NOASSERTION",
+    "externalRefs" : [ {
+      "referenceCategory" : "PACKAGE-MANAGER",
+      "referenceLocator" : "pkg:maven/org.apache.wicket/wicket-request@10.6.0",
+      "referenceType" : "purl"
+    } ],
+    "filesAnalyzed" : false,
+    "homepage" : "http://maven.apache.org",
+    "licenseConcluded" : "NOASSERTION",
+    "licenseDeclared" : "Apache-2.0",
+    "name" : "Wicket Request",
+    "originator" : "Organization:Apache Software Foundation",
+    "summary" : "Wicket is a Java-based open source component web application framework.",
+    "versionInfo" : "10.6.0"
+  }, {
+    "SPDXID" : "SPDXRef-5dab2b4f0",
+    "copyrightText" : "UNSPECIFIED",
+    "description" : "Java library for reading and writing WARC files with a typed API",
+    "downloadLocation" : "NOASSERTION",
+    "externalRefs" : [ {
+      "referenceCategory" : "PACKAGE-MANAGER",
+      "referenceLocator" : "pkg:maven/org.netpreserve/jwarc@0.32.0",
+      "referenceType" : "purl"
+    } ],
+    "filesAnalyzed" : false,
+    "homepage" : "https://github.com/iipc/jwarc",
+    "licenseConcluded" : "NOASSERTION",
+    "licenseDeclared" : "Apache-2.0",
+    "name" : "jwarc",
+    "summary" : "Java library for reading and writing WARC files with a typed API",
+    "versionInfo" : "0.32.0"
+  }, {
+    "SPDXID" : "SPDXRef-5dc3e9080",
+    "copyrightText" : "UNSPECIFIED",
+    "description" : "The Apache Commons FileUpload Jakarta component provides a simple yet flexible means of adding support for multipart\n    file upload functionality to Jakarta servlets and web applications.",
+    "downloadLocation" : "NOASSERTION",
+    "externalRefs" : [ {
+      "referenceCategory" : "PACKAGE-MANAGER",
+      "referenceLocator" : "pkg:maven/org.apache.commons/commons-fileupload2-jakarta-servlet5@2.0.0-M4",
+      "referenceType" : "purl"
+    } ],
+    "filesAnalyzed" : false,
+    "homepage" : "https://commons.apache.org/proper/commons-fileupload/commons-fileupload2-jakarta-servlet5/",
+    "licenseConcluded" : "NOASSERTION",
+    "licenseDeclared" : "Apache-2.0",
+    "name" : "Apache Commons FileUpload Jakarta Servlet 5",
+    "originator" : "Organization:The Apache Software Foundation",
+    "summary" : "The Apache Commons FileUpload Jakarta component provides a simple yet flexible means of adding support for multipart\n    file upload functionality to Jakarta servlets and web applications.",
+    "versionInfo" : "2.0.0-M4"
+  }, {
+    "SPDXID" : "SPDXRef-5e22ce7c0",
+    "copyrightText" : "UNSPECIFIED",
+    "description" : "Log4j implemented over SLF4J",
+    "downloadLocation" : "NOASSERTION",
+    "externalRefs" : [ {
+      "referenceCategory" : "PACKAGE-MANAGER",
+      "referenceLocator" : "pkg:maven/org.slf4j/log4j-over-slf4j@2.0.17",
+      "referenceType" : "purl"
+    } ],
+    "filesAnalyzed" : false,
+    "homepage" : "http://www.slf4j.org",
+    "licenseConcluded" : "NOASSERTION",
+    "licenseDeclared" : "Apache-2.0",
+    "name" : "Log4j Implemented Over SLF4J",
+    "originator" : "Organization:QOS.ch",
+    "summary" : "Log4j implemented over SLF4J",
+    "versionInfo" : "2.0.17"
+  }, {
+    "SPDXID" : "SPDXRef-5ef017c90",
+    "copyrightText" : "UNSPECIFIED",
+    "description" : "This is the core Apache Tika™ toolkit library from which all other modules inherit functionality. It\n    also\n    includes the core facades for the Tika API.",
+    "downloadLocation" : "NOASSERTION",
+    "externalRefs" : [ {
+      "referenceCategory" : "PACKAGE-MANAGER",
+      "referenceLocator" : "pkg:maven/org.apache.tika/tika-core@3.2.2",
+      "referenceType" : "purl"
+    } ],
+    "filesAnalyzed" : false,
+    "homepage" : "https://tika.apache.org/",
+    "licenseConcluded" : "NOASSERTION",
+    "licenseDeclared" : "Apache-2.0",
+    "name" : "Apache Tika core",
+    "originator" : "Organization:The Apache Software Foundation",
+    "summary" : "This is the core Apache Tika™ toolkit library from which all other modules inherit functionality. It\n    also\n    includes the core facades for the Tika API.",
+    "versionInfo" : "3.2.2"
+  }, {
+    "SPDXID" : "SPDXRef-60dab2ee2",
+    "copyrightText" : "UNSPECIFIED",
+    "description" : "Open Test Alliance for the JVM",
+    "downloadLocation" : "NOASSERTION",
+    "externalRefs" : [ {
+      "referenceCategory" : "PACKAGE-MANAGER",
+      "referenceLocator" : "pkg:maven/org.opentest4j/opentest4j@1.3.0",
+      "referenceType" : "purl"
+    } ],
+    "filesAnalyzed" : false,
+    "homepage" : "https://github.com/ota4j-team/opentest4j",
+    "licenseConcluded" : "NOASSERTION",
+    "licenseDeclared" : "Apache-2.0",
+    "name" : "org.opentest4j:opentest4j",
+    "summary" : "Open Test Alliance for the JVM",
+    "versionInfo" : "1.3.0"
+  }, {
+    "SPDXID" : "SPDXRef-61aec23c2",
+    "copyrightText" : "UNSPECIFIED",
+    "description" : "Mockito JUnit 5 support",
+    "downloadLocation" : "NOASSERTION",
+    "externalRefs" : [ {
+      "referenceCategory" : "PACKAGE-MANAGER",
+      "referenceLocator" : "pkg:maven/org.mockito/mockito-junit-jupiter@5.19.0",
+      "referenceType" : "purl"
+    } ],
+    "filesAnalyzed" : false,
+    "homepage" : "https://github.com/mockito/mockito",
+    "licenseConcluded" : "NOASSERTION",
+    "licenseDeclared" : "MIT",
+    "name" : "mockito-junit-jupiter",
+    "summary" : "Mockito JUnit 5 support",
+    "versionInfo" : "5.19.0"
+  }, {
+    "SPDXID" : "SPDXRef-61be0b262",
+    "copyrightText" : "UNSPECIFIED",
+    "description" : "Eclipse Enterprise for Java (EE4J) is an open source initiative to create standard APIs,\n        implementations of those APIs, and technology compatibility kits for Java runtimes\n        that enable development, deployment, and management of server-side and cloud-native applications.",
+    "downloadLocation" : "NOASSERTION",
+    "externalRefs" : [ {
+      "referenceCategory" : "PACKAGE-MANAGER",
+      "referenceLocator" : "pkg:maven/jakarta.servlet/jakarta.servlet-api@6.1.0",
+      "referenceType" : "purl"
+    } ],
+    "filesAnalyzed" : false,
+    "homepage" : "https://projects.eclipse.org/projects/ee4j.servlet",
+    "licenseConcluded" : "NOASSERTION",
+    "licenseDeclared" : "(GPL-2.0-with-classpath-exception AND EPL-2.0)",
+    "name" : "Jakarta Servlet",
+    "originator" : "Organization:Eclipse Foundation",
+    "summary" : "Eclipse Enterprise for Java (EE4J) is an open source initiative to create standard APIs,\n        implementations of those APIs, and technology compatibility kits for Java runtimes\n        that enable development, deployment, and management of server-side and cloud-native applications.",
+    "versionInfo" : "6.1.0"
+  }, {
+    "SPDXID" : "SPDXRef-6509cc410",
+    "copyrightText" : "UNSPECIFIED",
+    "description" : "Brotli is a generic-purpose lossless compression algorithm.",
+    "downloadLocation" : "NOASSERTION",
+    "externalRefs" : [ {
+      "referenceCategory" : "PACKAGE-MANAGER",
+      "referenceLocator" : "pkg:maven/org.brotli/dec@0.1.2",
+      "referenceType" : "purl"
+    } ],
+    "filesAnalyzed" : false,
+    "homepage" : "http://brotli.org/dec",
+    "licenseConcluded" : "NOASSERTION",
+    "licenseDeclared" : "MIT",
+    "name" : "org.brotli:dec",
+    "summary" : "Brotli is a generic-purpose lossless compression algorithm.",
+    "versionInfo" : "0.1.2"
+  }, {
+    "SPDXID" : "SPDXRef-659e2f5e0",
+    "copyrightText" : "UNSPECIFIED",
+    "description" : "Java MIME Document Object Model",
+    "downloadLocation" : "NOASSERTION",
+    "externalRefs" : [ {
+      "referenceCategory" : "PACKAGE-MANAGER",
+      "referenceLocator" : "pkg:maven/org.apache.james/apache-mime4j-dom@0.8.13",
+      "referenceType" : "purl"
+    } ],
+    "filesAnalyzed" : false,
+    "homepage" : "http://james.apache.org/mime4j/apache-mime4j-dom",
+    "licenseConcluded" : "NOASSERTION",
+    "licenseDeclared" : "Apache-2.0",
+    "name" : "Apache James :: Mime4j :: DOM",
+    "originator" : "Organization:The Apache Software Foundation",
+    "summary" : "Java MIME Document Object Model",
+    "versionInfo" : "0.8.13"
+  }, {
+    "SPDXID" : "SPDXRef-6902d320",
+    "copyrightText" : "UNSPECIFIED",
+    "description" : "Apache Tika is a toolkit for detecting and extracting metadata and\n    structured text content from various documents using existing parser\n    libraries.",
+    "downloadLocation" : "NOASSERTION",
+    "externalRefs" : [ {
+      "referenceCategory" : "PACKAGE-MANAGER",
+      "referenceLocator" : "pkg:maven/org.apache.tika/tika-parser-xmp-commons@3.2.2",
+      "referenceType" : "purl"
+    } ],
+    "filesAnalyzed" : false,
+    "homepage" : "https://tika.apache.org/tika-parser-xmp-commons/",
+    "licenseConcluded" : "NOASSERTION",
+    "licenseDeclared" : "Apache-2.0",
+    "name" : "Apache Tika XMP commons",
+    "originator" : "Organization:The Apache Software Foundation",
+    "summary" : "Apache Tika is a toolkit for detecting and extracting metadata and\n    structured text content from various documents using existing parser\n    libraries.",
+    "versionInfo" : "3.2.2"
+  }, {
+    "SPDXID" : "SPDXRef-699c0a040",
+    "copyrightText" : "UNSPECIFIED",
+    "description" : "Module containing Observation related code",
+    "downloadLocation" : "NOASSERTION",
+    "externalRefs" : [ {
+      "referenceCategory" : "PACKAGE-MANAGER",
+      "referenceLocator" : "pkg:maven/io.micrometer/micrometer-observation@1.14.10",
+      "referenceType" : "purl"
+    } ],
+    "filesAnalyzed" : false,
+    "homepage" : "https://github.com/micrometer-metrics/micrometer",
+    "licenseConcluded" : "NOASSERTION",
+    "licenseDeclared" : "Apache-2.0",
+    "name" : "micrometer-observation",
+    "summary" : "Module containing Observation related code",
+    "versionInfo" : "1.14.10"
+  }, {
+    "SPDXID" : "SPDXRef-6a8647572",
+    "copyrightText" : "UNSPECIFIED",
+    "description" : "Byte Buddy is a Java library for creating Java classes at run time.\n        This artifact is a build of Byte Buddy with all ASM dependencies repackaged into its own name space.",
+    "downloadLocation" : "NOASSERTION",
+    "externalRefs" : [ {
+      "referenceCategory" : "PACKAGE-MANAGER",
+      "referenceLocator" : "pkg:maven/net.bytebuddy/byte-buddy@1.17.6",
+      "referenceType" : "purl"
+    } ],
+    "filesAnalyzed" : false,
+    "homepage" : "https://bytebuddy.net/byte-buddy",
+    "licenseConcluded" : "NOASSERTION",
+    "licenseDeclared" : "Apache-2.0",
+    "name" : "Byte Buddy (without dependencies)",
+    "summary" : "Byte Buddy is a Java library for creating Java classes at run time.\n        This artifact is a build of Byte Buddy with all ASM dependencies repackaged into its own name space.",
+    "versionInfo" : "1.17.6"
+  }, {
+    "SPDXID" : "SPDXRef-6aa9e7270",
+    "copyrightText" : "UNSPECIFIED",
+    "description" : "Apache Tika is a toolkit for detecting and extracting metadata and\n    structured text content from various documents using existing parser\n    libraries.",
+    "downloadLocation" : "NOASSERTION",
+    "externalRefs" : [ {
+      "referenceCategory" : "PACKAGE-MANAGER",
+      "referenceLocator" : "pkg:maven/org.apache.tika/tika-parser-webarchive-module@3.2.2",
+      "referenceType" : "purl"
+    } ],
+    "filesAnalyzed" : false,
+    "homepage" : "https://tika.apache.org/tika-parser-webarchive-module/",
+    "licenseConcluded" : "NOASSERTION",
+    "licenseDeclared" : "Apache-2.0",
+    "name" : "Apache Tika WARC parser module",
+    "originator" : "Organization:The Apache Software Foundation",
+    "summary" : "Apache Tika is a toolkit for detecting and extracting metadata and\n    structured text content from various documents using existing parser\n    libraries.",
+    "versionInfo" : "3.2.2"
+  }, {
+    "SPDXID" : "SPDXRef-704cf4e00",
+    "copyrightText" : "UNSPECIFIED",
+    "description" : "The Bouncy Castle Crypto package is a Java implementation of cryptographic algorithms. This jar contains the JCA/JCE provider and low-level API for the BC Java version 1.81 for Java 8 and later.",
+    "downloadLocation" : "NOASSERTION",
+    "externalRefs" : [ {
+      "referenceCategory" : "PACKAGE-MANAGER",
+      "referenceLocator" : "pkg:maven/org.bouncycastle/bcprov-jdk18on@1.81",
+      "referenceType" : "purl"
+    } ],
+    "filesAnalyzed" : false,
+    "homepage" : "https://www.bouncycastle.org/download/bouncy-castle-java/",
+    "licenseConcluded" : "NOASSERTION",
+    "licenseDeclared" : "NOASSERTION",
+    "name" : "Bouncy Castle Provider",
+    "summary" : "The Bouncy Castle Crypto package is a Java implementation of cryptographic algorithms. This jar contains the JCA/JCE provider and low-level API for the BC Java version 1.81 for Java 8 and later.",
+    "versionInfo" : "1.81"
+  }, {
+    "SPDXID" : "SPDXRef-70af64640",
+    "copyrightText" : "UNSPECIFIED",
+    "description" : "Core Prometheus metric types",
+    "downloadLocation" : "NOASSERTION",
+    "externalRefs" : [ {
+      "referenceCategory" : "PACKAGE-MANAGER",
+      "referenceLocator" : "pkg:maven/io.prometheus/prometheus-metrics-core@1.4.1",
+      "referenceType" : "purl"
+    } ],
+    "filesAnalyzed" : false,
+    "homepage" : "http://github.com/prometheus/client_java/client_java/prometheus-metrics-core",
+    "licenseConcluded" : "NOASSERTION",
+    "licenseDeclared" : "Apache-2.0",
+    "name" : "Prometheus Metrics Core",
+    "summary" : "Core Prometheus metric types",
+    "versionInfo" : "1.4.1"
+  }, {
+    "SPDXID" : "SPDXRef-71d119d50",
+    "copyrightText" : "UNSPECIFIED",
+    "description" : "This library enables Java applications to work with property lists in various formats.\n        Supported formats for reading and writing are OS X/iOS binary and XML property lists.\n        ASCII property lists are also supported.\n        The library also provides access to basic functions of NeXTSTEP/Cocoa classes like\n        NSDictionary, NSArray, etc.",
+    "downloadLocation" : "NOASSERTION",
+    "externalRefs" : [ {
+      "referenceCategory" : "PACKAGE-MANAGER",
+      "referenceLocator" : "pkg:maven/com.googlecode.plist/dd-plist@1.28",
+      "referenceType" : "purl"
+    } ],
+    "filesAnalyzed" : false,
+    "homepage" : "http://www.github.com/3breadt/dd-plist",
+    "licenseConcluded" : "NOASSERTION",
+    "licenseDeclared" : "NOASSERTION",
+    "name" : "dd-plist",
+    "summary" : "This library enables Java applications to work with property lists in various formats.\n        Supported formats for reading and writing are OS X/iOS binary and XML property lists.\n        ASCII property lists are also supported.\n        The library also provides access to basic functions of NeXTSTEP/Cocoa classes like\n        NSDictionary, NSArray, etc.",
+    "versionInfo" : "1.28"
+  }, {
+    "SPDXID" : "SPDXRef-732fd52a0",
+    "copyrightText" : "UNSPECIFIED",
+    "description" : "An efficient sparse bitset implementation for Java",
+    "downloadLocation" : "NOASSERTION",
+    "externalRefs" : [ {
+      "referenceCategory" : "PACKAGE-MANAGER",
+      "referenceLocator" : "pkg:maven/com.zaxxer/SparseBitSet@1.3",
+      "referenceType" : "purl"
+    } ],
+    "filesAnalyzed" : false,
+    "homepage" : "https://github.com/brettwooldridge/SparseBitSet",
+    "licenseConcluded" : "NOASSERTION",
+    "licenseDeclared" : "Apache-2.0",
+    "name" : "SparseBitSet",
+    "originator" : "Organization:Zaxxer.com",
+    "summary" : "An efficient sparse bitset implementation for Java",
+    "versionInfo" : "1.3"
+  }, {
+    "SPDXID" : "SPDXRef-7b7aea70",
+    "copyrightText" : "UNSPECIFIED",
+    "description" : "Jakarta Mail API 2.1 Specification API",
+    "downloadLocation" : "NOASSERTION",
+    "externalRefs" : [ {
+      "referenceCategory" : "PACKAGE-MANAGER",
+      "referenceLocator" : "pkg:maven/jakarta.mail/jakarta.mail-api@2.1.3",
+      "referenceType" : "purl"
+    } ],
+    "filesAnalyzed" : false,
+    "homepage" : "https://projects.eclipse.org/projects/ee4j/jakarta.mail-api",
+    "licenseConcluded" : "NOASSERTION",
+    "licenseDeclared" : "(BSD-3-Clause AND GPL-2.0-with-classpath-exception AND EPL-2.0)",
+    "name" : "Jakarta Mail API",
+    "originator" : "Organization:Eclipse Foundation",
+    "summary" : "Jakarta Mail API 2.1 Specification API",
+    "versionInfo" : "2.1.3"
+  }, {
+    "SPDXID" : "SPDXRef-7c1d5b9b0",
+    "copyrightText" : "UNSPECIFIED",
+    "description" : "JHighlight is an embeddable pure Java syntax highlighting\n    library that supports Java, HTML, XHTML, XML and LZX\n    languages and outputs to XHTML.\n    \n    It also supports RIFE templates tags and highlights them\n    clearly so that you can easily identify the difference\n    between your RIFE markup and the actual marked up source.",
+    "downloadLocation" : "NOASSERTION",
+    "externalRefs" : [ {
+      "referenceCategory" : "PACKAGE-MANAGER",
+      "referenceLocator" : "pkg:maven/org.codelibs/jhighlight@1.1.0",
+      "referenceType" : "purl"
+    } ],
+    "filesAnalyzed" : false,
+    "homepage" : "https://github.com/codelibs/jhighlight",
+    "licenseConcluded" : "NOASSERTION",
+    "licenseDeclared" : "NOASSERTION",
+    "name" : "JHighlight",
+    "summary" : "JHighlight is an embeddable pure Java syntax highlighting\n    library that supports Java, HTML, XHTML, XML and LZX\n    languages and outputs to XHTML.\n    \n    It also supports RIFE templates tags and highlights them\n    clearly so that you can easily identify the difference\n    between your RIFE markup and the actual marked up source.",
+    "versionInfo" : "1.1.0"
+  }, {
+    "SPDXID" : "SPDXRef-7c598d380",
+    "copyrightText" : "UNSPECIFIED",
+    "description" : "logback-classic module",
+    "downloadLocation" : "NOASSERTION",
+    "externalRefs" : [ {
+      "referenceCategory" : "PACKAGE-MANAGER",
+      "referenceLocator" : "pkg:maven/ch.qos.logback/logback-classic@1.5.18",
+      "referenceType" : "purl"
+    } ],
+    "filesAnalyzed" : false,
+    "homepage" : "http://logback.qos.ch/logback-classic",
+    "licenseConcluded" : "NOASSERTION",
+    "licenseDeclared" : "NOASSERTION",
+    "name" : "Logback Classic Module",
+    "originator" : "Organization:QOS.ch",
+    "summary" : "logback-classic module",
+    "versionInfo" : "1.5.18"
+  }, {
+    "SPDXID" : "SPDXRef-7c7813d70",
+    "copyrightText" : "UNSPECIFIED",
+    "description" : "Utility classes for ROME projects",
+    "downloadLocation" : "NOASSERTION",
+    "externalRefs" : [ {
+      "referenceCategory" : "PACKAGE-MANAGER",
+      "referenceLocator" : "pkg:maven/com.rometools/rome-utils@2.1.0",
+      "referenceType" : "purl"
+    } ],
+    "filesAnalyzed" : false,
+    "homepage" : "http://rometools.com/rome-utils",
+    "licenseConcluded" : "NOASSERTION",
+    "licenseDeclared" : "Apache-2.0",
+    "name" : "rome-utils",
+    "summary" : "Utility classes for ROME projects",
+    "versionInfo" : "2.1.0"
+  }, {
+    "SPDXID" : "SPDXRef-7c9463160",
+    "copyrightText" : "UNSPECIFIED",
+    "description" : "Additional functionality that enhances JSR-310 dates and times in Java SE 8 and later",
+    "downloadLocation" : "NOASSERTION",
+    "externalRefs" : [ {
+      "referenceCategory" : "PACKAGE-MANAGER",
+      "referenceLocator" : "pkg:maven/org.threeten/threeten-extra@1.8.0",
+      "referenceType" : "purl"
+    } ],
+    "filesAnalyzed" : false,
+    "homepage" : "https://www.threeten.org/threeten-extra",
+    "licenseConcluded" : "NOASSERTION",
+    "licenseDeclared" : "NOASSERTION",
+    "name" : "ThreeTen-Extra",
+    "originator" : "Organization:ThreeTen.org",
+    "summary" : "Additional functionality that enhances JSR-310 dates and times in Java SE 8 and later",
+    "versionInfo" : "1.8.0"
+  }, {
+    "SPDXID" : "SPDXRef-7e0794860",
+    "copyrightText" : "UNSPECIFIED",
+    "description" : "Java library for extracting EXIF, IPTC, XMP, ICC and other metadata from image and video files.",
+    "downloadLocation" : "NOASSERTION",
+    "externalRefs" : [ {
+      "referenceCategory" : "PACKAGE-MANAGER",
+      "referenceLocator" : "pkg:maven/com.drewnoakes/metadata-extractor@2.19.0",
+      "referenceType" : "purl"
+    } ],
+    "filesAnalyzed" : false,
+    "homepage" : "https://drewnoakes.com/code/exif/",
+    "licenseConcluded" : "NOASSERTION",
+    "licenseDeclared" : "Apache-2.0",
+    "name" : "com.drewnoakes:metadata-extractor",
+    "summary" : "Java library for extracting EXIF, IPTC, XMP, ICC and other metadata from image and video files.",
+    "versionInfo" : "2.19.0"
+  }, {
+    "SPDXID" : "SPDXRef-7fcbdab30",
+    "copyrightText" : "UNSPECIFIED",
+    "description" : "All Roads Lead to ROME. ROME is a set of Atom/RSS Java utilities that make it\n        easy to work in Java with most syndication formats. Today it accepts all flavors of RSS\n        (0.90, 0.91, 0.92, 0.93, 0.94, 1.0 and 2.0), Atom 0.3 and Atom 1.0 feeds. Rome includes\n        a set of parsers and generators for the various flavors of feeds, as well as converters\n        to convert from one format to another. The parsers can give you back Java objects that\n        are either specific for the format you want to work with, or a generic normalized\n        SyndFeed object that lets you work on with the data without bothering about the\n        underlying format.",
+    "downloadLocation" : "NOASSERTION",
+    "externalRefs" : [ {
+      "referenceCategory" : "PACKAGE-MANAGER",
+      "referenceLocator" : "pkg:maven/com.rometools/rome@2.1.0",
+      "referenceType" : "purl"
+    } ],
+    "filesAnalyzed" : false,
+    "homepage" : "http://rometools.com/rome",
+    "licenseConcluded" : "NOASSERTION",
+    "licenseDeclared" : "Apache-2.0",
+    "name" : "rome",
+    "summary" : "All Roads Lead to ROME. ROME is a set of Atom/RSS Java utilities that make it\n        easy to work in Java with most syndication formats. Today it accepts all flavors of RSS\n        (0.90, 0.91, 0.92, 0.93, 0.94, 1.0 and 2.0), Atom 0.3 and Atom 1.0 feeds. Rome includes\n        a set of parsers and generators for the various flavors of feeds, as well as converters\n        to convert from one format to another. The parsers can give you back Java objects that\n        are either specific for the format you want to work with, or a generic normalized\n        SyndFeed object that lets you work on with the data without bothering about the\n        underlying format.",
+    "versionInfo" : "2.1.0"
+  }, {
+    "SPDXID" : "SPDXRef-7fd27a60",
+    "copyrightText" : "UNSPECIFIED",
+    "description" : "Apache Tika is a toolkit for detecting and extracting metadata and\n    structured text content from various documents using existing parser\n    libraries.",
+    "downloadLocation" : "NOASSERTION",
+    "externalRefs" : [ {
+      "referenceCategory" : "PACKAGE-MANAGER",
+      "referenceLocator" : "pkg:maven/org.apache.tika/tika-parser-font-module@3.2.2",
+      "referenceType" : "purl"
+    } ],
+    "filesAnalyzed" : false,
+    "homepage" : "https://tika.apache.org/tika-parser-font-module/",
+    "licenseConcluded" : "NOASSERTION",
+    "licenseDeclared" : "Apache-2.0",
+    "name" : "Apache Tika font parser module",
+    "originator" : "Organization:The Apache Software Foundation",
+    "summary" : "Apache Tika is a toolkit for detecting and extracting metadata and\n    structured text content from various documents using existing parser\n    libraries.",
+    "versionInfo" : "3.2.2"
+  }, {
+    "SPDXID" : "SPDXRef-a2158db0",
+    "copyrightText" : "UNSPECIFIED",
+    "description" : "Wicket is a Java web application framework that takes simplicity,\n\t\tseparation of concerns and ease of development to a whole new level.\n\t\tWicket pages can be mocked up, previewed and later revised using\n\t\tstandard WYSIWYG HTML design tools. Dynamic content processing and\n\t\tform handling is all handled in Java code using a first-class\n\t\tcomponent model backed by POJO data beans that can easily be\n\t\tpersisted using your favorite technology.",
+    "downloadLocation" : "NOASSERTION",
+    "externalRefs" : [ {
+      "referenceCategory" : "PACKAGE-MANAGER",
+      "referenceLocator" : "pkg:maven/org.apache.wicket/wicket-core@10.6.0",
+      "referenceType" : "purl"
+    } ],
+    "filesAnalyzed" : false,
+    "homepage" : "http://wicket.apache.org/wicket-core",
+    "licenseConcluded" : "NOASSERTION",
+    "licenseDeclared" : "Apache-2.0",
+    "name" : "Wicket Core",
+    "originator" : "Organization:Apache Software Foundation",
+    "summary" : "Wicket is a Java web application framework that takes simplicity,\n\t\tseparation of concerns and ease of development to a whole new level.\n\t\tWicket pages can be mocked up, previewed and later revised using\n\t\tstandard WYSIWYG HTML design tools. Dynamic content processing and\n\t\tform handling is all handled in Java code using a first-class\n\t\tcomponent model backed by POJO data beans that can easily be\n\t\tpersisted using your favorite technology.",
+    "versionInfo" : "10.6.0"
+  } ],
+  "files" : [ {
+    "SPDXID" : "SPDXRef--110e3490",
+    "checksums" : [ {
+      "algorithm" : "SHA1",
+      "checksumValue" : "8e5c304a5c49f49cbb0c1006b6f9c1b2b3817ac0"
+    } ],
+    "copyrightText" : "NOASSERTION",
+    "fileName" : "./src/main/java/org/apache/openmeetings/util/crypt/ICrypt.java",
+    "fileTypes" : [ "SOURCE" ],
+    "licenseConcluded" : "NOASSERTION",
+    "licenseInfoInFiles" : [ "NOASSERTION" ]
+  }, {
+    "SPDXID" : "SPDXRef--132a53c1",
+    "checksums" : [ {
+      "algorithm" : "SHA1",
+      "checksumValue" : "1eb64019a03e4e2ba243bf6102cdb7fd01d2278d"
+    } ],
+    "copyrightText" : "NOASSERTION",
+    "fileName" : "./src/main/java/module-info.java",
+    "fileTypes" : [ "SOURCE" ],
+    "licenseConcluded" : "NOASSERTION",
+    "licenseInfoInFiles" : [ "NOASSERTION" ]
+  }, {
+    "SPDXID" : "SPDXRef--181fbe372",
+    "checksums" : [ {
+      "algorithm" : "SHA1",
+      "checksumValue" : "2b8b815229aa8a61e483fb4ba0588b8b6c491890"
+    } ],
+    "copyrightText" : "NOASSERTION",
+    "fileName" : "./target/maven-shared-archive-resources/META-INF/LICENSE",
+    "fileTypes" : [ "OTHER" ],
+    "licenseConcluded" : "NOASSERTION",
+    "licenseInfoInFiles" : [ "NOASSERTION" ]
+  }, {
+    "SPDXID" : "SPDXRef--1994173a0",
+    "checksums" : [ {
+      "algorithm" : "SHA1",
+      "checksumValue" : "70f2cacaa2865c2498c3486bb7adb39421f72c27"
+    } ],
+    "copyrightText" : "NOASSERTION",
+    "fileName" : "./src/main/java/org/apache/openmeetings/util/process/ProcessHelper.java",
+    "fileTypes" : [ "SOURCE" ],
+    "licenseConcluded" : "NOASSERTION",
+    "licenseInfoInFiles" : [ "NOASSERTION" ]
+  }, {
+    "SPDXID" : "SPDXRef--1c7319d80",
+    "checksums" : [ {
+      "algorithm" : "SHA1",
+      "checksumValue" : "d236b4090af4d923679aab7152fbf493c81f8bad"
+    } ],
+    "copyrightText" : "NOASSERTION",
+    "fileName" : "./src/test/java/org/apache/openmeetings/util/crypt/TestSCrypt.java",
+    "fileTypes" : [ "SOURCE" ],
+    "licenseConcluded" : "NOASSERTION",
+    "licenseInfoInFiles" : [ "NOASSERTION" ]
+  }, {
+    "SPDXID" : "SPDXRef--1d0e12fd0",
+    "checksums" : [ {
+      "algorithm" : "SHA1",
+      "checksumValue" : "e780f2f8446a4af2e58bb418018f7da97a98f629"
+    } ],
+    "copyrightText" : "NOASSERTION",
+    "fileName" : "./src/main/java/org/apache/openmeetings/util/crypt/SHA256Implementation.java",
+    "fileTypes" : [ "SOURCE" ],
+    "licenseConcluded" : "NOASSERTION",
+    "licenseInfoInFiles" : [ "NOASSERTION" ]
+  }, {
+    "SPDXID" : "SPDXRef--27c8cfae0",
+    "checksums" : [ {
+      "algorithm" : "SHA1",
+      "checksumValue" : "85e1b035bf30ca0d0914b94975fe3e00e156b520"
+    } ],
+    "copyrightText" : "NOASSERTION",
+    "fileName" : "./src/main/java/org/apache/openmeetings/util/OmException.java",
+    "fileTypes" : [ "SOURCE" ],
+    "licenseConcluded" : "NOASSERTION",
+    "licenseInfoInFiles" : [ "NOASSERTION" ]
+  }, {
+    "SPDXID" : "SPDXRef--2b29350f0",
+    "checksums" : [ {
+      "algorithm" : "SHA1",
+      "checksumValue" : "05a0a245dfdeaf083f607a7cd96b8729e5eff549"
+    } ],
+    "copyrightText" : "NOASSERTION",
+    "fileName" : "./src/main/java/org/apache/openmeetings/util/CalendarHelper.java",
+    "fileTypes" : [ "SOURCE" ],
+    "licenseConcluded" : "NOASSERTION",
+    "licenseInfoInFiles" : [ "NOASSERTION" ]
+  }, {
+    "SPDXID" : "SPDXRef--2b8ca88b0",
+    "checksums" : [ {
+      "algorithm" : "SHA1",
+      "checksumValue" : "76e084732eb333403a27d9ea8d3344f2a330ed88"
+    } ],
+    "copyrightText" : "NOASSERTION",
+    "fileName" : "./src/main/java/org/apache/openmeetings/util/OmFileHelper.java",
+    "fileTypes" : [ "SOURCE" ],
+    "licenseConcluded" : "NOASSERTION",
+    "licenseInfoInFiles" : [ "NOASSERTION" ]
+  }, {
+    "SPDXID" : "SPDXRef--2c28e7500",
+    "checksums" : [ {
+      "algorithm" : "SHA1",
+      "checksumValue" : "8b53ab2dd77677d187732da7b485d1986b52e8b7"
+    } ],
+    "copyrightText" : "NOASSERTION",
+    "fileName" : "./src/main/java/org/apache/openmeetings/util/mail/IcalHandler.java",
+    "fileTypes" : [ "SOURCE" ],
+    "licenseConcluded" : "NOASSERTION",
+    "licenseInfoInFiles" : [ "NOASSERTION" ]
+  }, {
+    "SPDXID" : "SPDXRef--3d33dc4e0",
+    "checksums" : [ {
+      "algorithm" : "SHA1",
+      "checksumValue" : "287069a285184701164fa4c96fc98081e27c4234"
+    } ],
+    "copyrightText" : "NOASSERTION",
+    "fileName" : "./src/main/java/org/apache/openmeetings/util/mail/MailUtil.java",
+    "fileTypes" : [ "SOURCE" ],
+    "licenseConcluded" : "NOASSERTION",
+    "licenseInfoInFiles" : [ "NOASSERTION" ]
+  }, {
+    "SPDXID" : "SPDXRef--3f27e1530",
+    "checksums" : [ {
+      "algorithm" : "SHA1",
+      "checksumValue" : "a0ca41ee2b6b752194def9ded6f8d89cc2c06dfc"
+    } ],
+    "copyrightText" : "NOASSERTION",
+    "fileName" : "./src/test/java/org/apache/openmeetings/util/crypt/AbstractCryptTest.java",
+    "fileTypes" : [ "SOURCE" ],
+    "licenseConcluded" : "NOASSERTION",
+    "licenseInfoInFiles" : [ "NOASSERTION" ]
+  }, {
+    "SPDXID" : "SPDXRef--4f51e2920",
+    "checksums" : [ {
+      "algorithm" : "SHA1",
+      "checksumValue" : "6fa989fd303bac1299b8553846b80a2499603713"
+    } ],
+    "copyrightText" : "NOASSERTION",
+    "fileName" : "./src/main/java/org/apache/openmeetings/util/OpenmeetingsVariables.java",
+    "fileTypes" : [ "SOURCE" ],
+    "licenseConcluded" : "NOASSERTION",
+    "licenseInfoInFiles" : [ "NOASSERTION" ]
+  }, {
+    "SPDXID" : "SPDXRef--71eb311b0",
+    "checksums" : [ {
+      "algorithm" : "SHA1",
+      "checksumValue" : "121b1ae415f307d37e4d49893f25cf952820ebec"
+    } ],
+    "copyrightText" : "NOASSERTION",
+    "fileName" : "./src/main/java/org/apache/openmeetings/util/crypt/CryptProvider.java",
+    "fileTypes" : [ "SOURCE" ],
+    "licenseConcluded" : "NOASSERTION",
+    "licenseInfoInFiles" : [ "NOASSERTION" ]
+  }, {
+    "SPDXID" : "SPDXRef--742da13b0",
+    "checksums" : [ {
+      "algorithm" : "SHA1",
+      "checksumValue" : "3f8a37507139264b97b988ea95fdf7e680f98b83"
+    } ],
+    "copyrightText" : "NOASSERTION",
+    "fileName" : "./src/test/java/org/apache/openmeetings/util/TestStoredFile.java",
+    "fileTypes" : [ "SOURCE" ],
+    "licenseConcluded" : "NOASSERTION",
+    "licenseInfoInFiles" : [ "NOASSERTION" ]
+  }, {
+    "SPDXID" : "SPDXRef--b5f6e610",
+    "checksums" : [ {
+      "algorithm" : "SHA1",
+      "checksumValue" : "5abf5e663c09faa494f74427a002c173091e9542"
+    } ],
+    "copyrightText" : "NOASSERTION",
+    "fileName" : "./src/main/java/org/apache/openmeetings/util/mail/ByteArrayDataSource.java",
+    "fileTypes" : [ "SOURCE" ],
+    "licenseConcluded" : "NOASSERTION",
+    "licenseInfoInFiles" : [ "NOASSERTION" ]
+  }, {
+    "SPDXID" : "SPDXRef--d9178ec0",
+    "checksums" : [ {
+      "algorithm" : "SHA1",
+      "checksumValue" : "bf628f4acbb4abec5b2989dd9069071650abfe3d"
+    } ],
+    "copyrightText" : "NOASSERTION",
+    "fileName" : "./src/main/java/org/apache/openmeetings/util/logging/TimedApplication.java",
+    "fileTypes" : [ "SOURCE" ],
+    "licenseConcluded" : "NOASSERTION",
+    "licenseInfoInFiles" : [ "NOASSERTION" ]
+  }, {
+    "SPDXID" : "SPDXRef-1726e86b0",
+    "checksums" : [ {
+      "algorithm" : "SHA1",
+      "checksumValue" : "a5b96117b9a85b9b8352b0cfcbc27c1ad3e9e046"
+    } ],
+    "copyrightText" : "NOASSERTION",
+    "fileName" : "./src/main/java/org/apache/openmeetings/util/logging/PrometheusAspect.java",
+    "fileTypes" : [ "SOURCE" ],
+    "licenseConcluded" : "NOASSERTION",
+    "licenseInfoInFiles" : [ "NOASSERTION" ]
+  }, {
+    "SPDXID" : "SPDXRef-1c3fd1cb0",
+    "checksums" : [ {
+      "algorithm" : "SHA1",
+      "checksumValue" : "f10184df0d4eeb40ee252581a1a5028a18d3174b"
+    } ],
+    "copyrightText" : "NOASSERTION",
+    "fileName" : "./src/main/resources/org/apache/openmeetings/util/version.properties",
+    "fileTypes" : [ "OTHER" ],
+    "licenseConcluded" : "NOASSERTION",
+    "licenseInfoInFiles" : [ "NOASSERTION" ]
+  }, {
+    "SPDXID" : "SPDXRef-364078160",
+    "checksums" : [ {
+      "algorithm" : "SHA1",
+      "checksumValue" : "b52fe53b1cab759fc9803f56f8a10ab751e22216"
+    } ],
+    "copyrightText" : "NOASSERTION",
+    "fileName" : "./src/main/java/org/apache/openmeetings/util/ws/IClusterWsMessage.java",
+    "fileTypes" : [ "SOURCE" ],
+    "licenseConcluded" : "NOASSERTION",
+    "licenseInfoInFiles" : [ "NOASSERTION" ]
+  }, {
+    "SPDXID" : "SPDXRef-3bafec830",
+    "checksums" : [ {
+      "algorithm" : "SHA1",
+      "checksumValue" : "78d77ccdcf32f5313ef42d0153d1e8f91489a0ad"
+    } ],
+    "copyrightText" : "NOASSERTION",
+    "fileName" : "./src/test/java/org/apache/openmeetings/util/TestCalendarPatterns.java",
+    "fileTypes" : [ "SOURCE" ],
+    "licenseConcluded" : "NOASSERTION",
+    "licenseInfoInFiles" : [ "NOASSERTION" ]
+  }, {
+    "SPDXID" : "SPDXRef-3e5ff8be0",
+    "checksums" : [ {
+      "algorithm" : "SHA1",
+      "checksumValue" : "b6d83ef320e83d95163b3dec739400c684d182cd"
+    } ],
+    "copyrightText" : "NOASSERTION",
+    "fileName" : "./src/main/java/org/apache/openmeetings/util/OMContextListener.java",
+    "fileTypes" : [ "SOURCE" ],
+    "licenseConcluded" : "NOASSERTION",
+    "licenseInfoInFiles" : [ "NOASSERTION" ]
+  }, {
+    "SPDXID" : "SPDXRef-425236a0",
+    "checksums" : [ {
+      "algorithm" : "SHA1",
+      "checksumValue" : "39d50ebf7ada3ce115ac4275792998daeb682be2"
+    } ],
+    "copyrightText" : "NOASSERTION",
+    "fileName" : "./src/main/java/org/apache/openmeetings/util/ImportHelper.java",
+    "fileTypes" : [ "SOURCE" ],
+    "licenseConcluded" : "NOASSERTION",
+    "licenseInfoInFiles" : [ "NOASSERTION" ]
+  }, {
+    "SPDXID" : "SPDXRef-42551db70",
+    "checksums" : [ {
+      "algorithm" : "SHA1",
+      "checksumValue" : "3458b91b176e87bae3ac0a0698b12038a5a7d70c"
+    } ],
+    "copyrightText" : "NOASSERTION",
+    "fileName" : "./src/main/java/org/apache/openmeetings/util/process/ProcessResult.java",
+    "fileTypes" : [ "SOURCE" ],
+    "licenseConcluded" : "NOASSERTION",
+    "licenseInfoInFiles" : [ "NOASSERTION" ]
+  }, {
+    "SPDXID" : "SPDXRef-44df28210",
+    "checksums" : [ {
+      "algorithm" : "SHA1",
+      "checksumValue" : "449459d848bd80aa84add18538eea6476264ebf3"
+    } ],
+    "copyrightText" : "NOASSERTION",
+    "fileName" : "./src/main/java/org/apache/openmeetings/util/logging/TimedDatabase.java",
+    "fileTypes" : [ "SOURCE" ],
+    "licenseConcluded" : "NOASSERTION",
+    "licenseInfoInFiles" : [ "NOASSERTION" ]
+  }, {
+    "SPDXID" : "SPDXRef-485a94120",
+    "checksums" : [ {
+      "algorithm" : "SHA1",
+      "checksumValue" : "620e6aeafb1fddb46b04f14bd6130fa62bb751d0"
+    } ],
+    "copyrightText" : "NOASSERTION",
+    "fileName" : "./src/main/resources/ical4j.properties",
+    "fileTypes" : [ "OTHER" ],
+    "licenseConcluded" : "NOASSERTION",
+    "licenseInfoInFiles" : [ "NOASSERTION" ]
+  }, {
+    "SPDXID" : "SPDXRef-4a9f0a2c0",
+    "checksums" : [ {
+      "algorithm" : "SHA1",
+      "checksumValue" : "4bb72d1f34bf58fb6b7339246f43b7878b5030c0"
+    } ],
+    "copyrightText" : "NOASSERTION",
+    "fileName" : "./src/main/java/org/apache/openmeetings/util/ConnectionProperties.java",
+    "fileTypes" : [ "SOURCE" ],
+    "licenseConcluded" : "NOASSERTION",
+    "licenseInfoInFiles" : [ "NOASSERTION" ]
+  }, {
+    "SPDXID" : "SPDXRef-5cdeb4390",
+    "checksums" : [ {
+      "algorithm" : "SHA1",
+      "checksumValue" : "54eba09e67a98dafc49f4cacae122be271286b4a"
+    } ],
+    "copyrightText" : "NOASSERTION",
+    "fileName" : "./src/main/java/org/apache/openmeetings/util/process/ProcessResultList.java",
+    "fileTypes" : [ "SOURCE" ],
+    "licenseConcluded" : "NOASSERTION",
+    "licenseInfoInFiles" : [ "NOASSERTION" ]
+  }, {
+    "SPDXID" : "SPDXRef-5dd584302",
+    "checksums" : [ {
+      "algorithm" : "SHA1",
+      "checksumValue" : "b4a829c211a75b42abe0d75f7cce08e9808376a9"
+    } ],
+    "copyrightText" : "NOASSERTION",
+    "fileName" : "./target/maven-shared-archive-resources/META-INF/NOTICE",
+    "fileTypes" : [ "OTHER" ],
+    "licenseConcluded" : "NOASSERTION",
+    "licenseInfoInFiles" : [ "NOASSERTION" ]
+  }, {
+    "SPDXID" : "SPDXRef-5e3b99a90",
+    "checksums" : [ {
+      "algorithm" : "SHA1",
+      "checksumValue" : "a28d288c4f7854dadde8174d50ab4b676a4dcd40"
+    } ],
+    "copyrightText" : "NOASSERTION",
+    "fileName" : "./src/main/java/org/apache/openmeetings/util/OmVersion.java",
+    "fileTypes" : [ "SOURCE" ],
+    "licenseConcluded" : "NOASSERTION",
+    "licenseInfoInFiles" : [ "NOASSERTION" ]
+  }, {
+    "SPDXID" : "SPDXRef-5e673e240",
+    "checksums" : [ {
+      "algorithm" : "SHA1",
+      "checksumValue" : "acadae788aa3d1916dd8f00a2a7ece270d4b49e6"
+    } ],
+    "copyrightText" : "NOASSERTION",
+    "fileName" : "./src/test/java/org/apache/openmeetings/util/TestVersion.java",
+    "fileTypes" : [ "SOURCE" ],
+    "licenseConcluded" : "NOASSERTION",
+    "licenseInfoInFiles" : [ "NOASSERTION" ]
+  }, {
+    "SPDXID" : "SPDXRef-607563460",
+    "checksums" : [ {
+      "algorithm" : "SHA1",
+      "checksumValue" : "a157ddcde13f1a026f7747e088b7b7e7d5546d5c"
+    } ],
+    "copyrightText" : "NOASSERTION",
+    "fileName" : "./src/main/resources/custom-mimetypes.xml",
+    "fileTypes" : [ "SOURCE" ],
+    "licenseConcluded" : "NOASSERTION",
+    "licenseInfoInFiles" : [ "NOASSERTION" ]
+  }, {
+    "SPDXID" : "SPDXRef-6af43db80",
+    "checksums" : [ {
+      "algorithm" : "SHA1",
+      "checksumValue" : "bffb204382e96440adb1b5ba53d6a21c22e3f88f"
+    } ],
+    "copyrightText" : "NOASSERTION",
+    "fileName" : "./src/main/java/org/apache/openmeetings/util/site/BlogIndexGenerator.java",
+    "fileTypes" : [ "SOURCE" ],
+    "licenseConcluded" : "NOASSERTION",
+    "licenseInfoInFiles" : [ "NOASSERTION" ]
+  }, {
+    "SPDXID" : "SPDXRef-70d7bab80",
+    "checksums" : [ {
+      "algorithm" : "SHA1",
+      "checksumValue" : "8ed650e3db87a9f439daa6e0696b4d28cf20ea85"
+    } ],
+    "copyrightText" : "NOASSERTION",
+    "fileName" : "./src/main/java/org/apache/openmeetings/util/XmlExport.java",
+    "fileTypes" : [ "SOURCE" ],
+    "licenseConcluded" : "NOASSERTION",
+    "licenseInfoInFiles" : [ "NOASSERTION" ]
+  }, {
+    "SPDXID" : "SPDXRef-7569fb380",
+    "checksums" : [ {
+      "algorithm" : "SHA1",
+      "checksumValue" : "83b97a392cf4e5babf625ea2b8e135dd4759fdf6"
+    } ],
+    "copyrightText" : "NOASSERTION",
+    "fileName" : "./src/main/java/org/apache/openmeetings/util/NullStringer.java",
+    "fileTypes" : [ "SOURCE" ],
+    "licenseConcluded" : "NOASSERTION",
+    "licenseInfoInFiles" : [ "NOASSERTION" ]
+  }, {
+    "SPDXID" : "SPDXRef-79f1b9ef0",
+    "checksums" : [ {
+      "algorithm" : "SHA1",
+      "checksumValue" : "845b632a92a0d16ad4d5b4499ee59a01a2ed121c"
+    } ],
+    "copyrightText" : "NOASSERTION",
+    "fileName" : "./src/main/java/org/apache/openmeetings/util/crypt/SCryptImplementation.java",
+    "fileTypes" : [ "SOURCE" ],
+    "licenseConcluded" : "NOASSERTION",
+    "licenseInfoInFiles" : [ "NOASSERTION" ]
+  }, {
+    "SPDXID" : "SPDXRef-7a67c812",
+    "checksums" : [ {
+      "algorithm" : "SHA1",
+      "checksumValue" : "1551cf51ffa4d1cd874b2e7273f6a0ca97b054d7"
+    } ],
+    "copyrightText" : "NOASSERTION",
+    "fileName" : "./target/maven-shared-archive-resources/META-INF/DEPENDENCIES",
+    "fileTypes" : [ "OTHER" ],
+    "licenseConcluded" : "NOASSERTION",
+    "licenseInfoInFiles" : [ "NOASSERTION" ]
+  }, {
+    "SPDXID" : "SPDXRef-8be3e1e0",
+    "checksums" : [ {
+      "algorithm" : "SHA1",
+      "checksumValue" : "162fc5eacbbfd555b8a0249ff6bbd92926308b29"
+    } ],
+    "copyrightText" : "NOASSERTION",
+    "fileName" : "./src/main/java/org/apache/openmeetings/util/StoredFile.java",
+    "fileTypes" : [ "SOURCE" ],
+    "licenseConcluded" : "NOASSERTION",
+    "licenseInfoInFiles" : [ "NOASSERTION" ]
+  }, {
+    "SPDXID" : "SPDXRef-e03251c0",
+    "checksums" : [ {
+      "algorithm" : "SHA1",
+      "checksumValue" : "ee775a2a5187a7ff3174897eab5568fcd9d0026c"
+    } ],
+    "copyrightText" : "NOASSERTION",
+    "fileName" : "./src/main/java/org/apache/openmeetings/util/CalendarPatterns.java",
+    "fileTypes" : [ "SOURCE" ],
+    "licenseConcluded" : "NOASSERTION",
+    "licenseInfoInFiles" : [ "NOASSERTION" ]
+  } ],
+  "relationships" : [ {
+    "spdxElementId" : "SPDXRef-DOCUMENT",
+    "relationshipType" : "DESCRIBES",
+    "relatedSpdxElement" : "SPDXRef--4b3779bf2",
+    "comment" : ""
+  }, {
+    "spdxElementId" : "SPDXRef--110e3490",
+    "relationshipType" : "GENERATES",
+    "relatedSpdxElement" : "SPDXRef--4b3779bf2",
+    "comment" : ""
+  }, {
+    "spdxElementId" : "SPDXRef--132a53c1",
+    "relationshipType" : "GENERATES",
+    "relatedSpdxElement" : "SPDXRef--4b3779bf2",
+    "comment" : ""
+  }, {
+    "spdxElementId" : "SPDXRef--181fbe372",
+    "relationshipType" : "GENERATES",
+    "relatedSpdxElement" : "SPDXRef--4b3779bf2",
+    "comment" : ""
+  }, {
+    "spdxElementId" : "SPDXRef--1994173a0",
+    "relationshipType" : "GENERATES",
+    "relatedSpdxElement" : "SPDXRef--4b3779bf2",
+    "comment" : ""
+  }, {
+    "spdxElementId" : "SPDXRef--1c7319d80",
+    "relationshipType" : "GENERATES",
+    "relatedSpdxElement" : "SPDXRef--4b3779bf2",
+    "comment" : ""
+  }, {
+    "spdxElementId" : "SPDXRef--1d0e12fd0",
+    "relationshipType" : "GENERATES",
+    "relatedSpdxElement" : "SPDXRef--4b3779bf2",
+    "comment" : ""
+  }, {
+    "spdxElementId" : "SPDXRef--27c8cfae0",
+    "relationshipType" : "GENERATES",
+    "relatedSpdxElement" : "SPDXRef--4b3779bf2",
+    "comment" : ""
+  }, {
+    "spdxElementId" : "SPDXRef--2b29350f0",
+    "relationshipType" : "GENERATES",
+    "relatedSpdxElement" : "SPDXRef--4b3779bf2",
+    "comment" : ""
+  }, {
+    "spdxElementId" : "SPDXRef--2b8ca88b0",
+    "relationshipType" : "GENERATES",
+    "relatedSpdxElement" : "SPDXRef--4b3779bf2",
+    "comment" : ""
+  }, {
+    "spdxElementId" : "SPDXRef--2c28e7500",
+    "relationshipType" : "GENERATES",
+    "relatedSpdxElement" : "SPDXRef--4b3779bf2",
+    "comment" : ""
+  }, {
+    "spdxElementId" : "SPDXRef--3d33dc4e0",
+    "relationshipType" : "GENERATES",
+    "relatedSpdxElement" : "SPDXRef--4b3779bf2",
+    "comment" : ""
+  }, {
+    "spdxElementId" : "SPDXRef--3f27e1530",
+    "relationshipType" : "GENERATES",
+    "relatedSpdxElement" : "SPDXRef--4b3779bf2",
+    "comment" : ""
+  }, {
+    "spdxElementId" : "SPDXRef--4f51e2920",
+    "relationshipType" : "GENERATES",
+    "relatedSpdxElement" : "SPDXRef--4b3779bf2",
+    "comment" : ""
+  }, {
+    "spdxElementId" : "SPDXRef--71eb311b0",
+    "relationshipType" : "GENERATES",
+    "relatedSpdxElement" : "SPDXRef--4b3779bf2",
+    "comment" : ""
+  }, {
+    "spdxElementId" : "SPDXRef--742da13b0",
+    "relationshipType" : "GENERATES",
+    "relatedSpdxElement" : "SPDXRef--4b3779bf2",
+    "comment" : ""
+  }, {
+    "spdxElementId" : "SPDXRef--b5f6e610",
+    "relationshipType" : "GENERATES",
+    "relatedSpdxElement" : "SPDXRef--4b3779bf2",
+    "comment" : ""
+  }, {
+    "spdxElementId" : "SPDXRef--d9178ec0",
+    "relationshipType" : "GENERATES",
+    "relatedSpdxElement" : "SPDXRef--4b3779bf2",
+    "comment" : ""
+  }, {
+    "spdxElementId" : "SPDXRef-1726e86b0",
+    "relationshipType" : "GENERATES",
+    "relatedSpdxElement" : "SPDXRef--4b3779bf2",
+    "comment" : ""
+  }, {
+    "spdxElementId" : "SPDXRef-1c3fd1cb0",
+    "relationshipType" : "GENERATES",
+    "relatedSpdxElement" : "SPDXRef--4b3779bf2",
+    "comment" : ""
+  }, {
+    "spdxElementId" : "SPDXRef-364078160",
+    "relationshipType" : "GENERATES",
+    "relatedSpdxElement" : "SPDXRef--4b3779bf2",
+    "comment" : ""
+  }, {
+    "spdxElementId" : "SPDXRef-3bafec830",
+    "relationshipType" : "GENERATES",
+    "relatedSpdxElement" : "SPDXRef--4b3779bf2",
+    "comment" : ""
+  }, {
+    "spdxElementId" : "SPDXRef-3e5ff8be0",
+    "relationshipType" : "GENERATES",
+    "relatedSpdxElement" : "SPDXRef--4b3779bf2",
+    "comment" : ""
+  }, {
+    "spdxElementId" : "SPDXRef-425236a0",
+    "relationshipType" : "GENERATES",
+    "relatedSpdxElement" : "SPDXRef--4b3779bf2",
+    "comment" : ""
+  }, {
+    "spdxElementId" : "SPDXRef-42551db70",
+    "relationshipType" : "GENERATES",
+    "relatedSpdxElement" : "SPDXRef--4b3779bf2",
+    "comment" : ""
+  }, {
+    "spdxElementId" : "SPDXRef-44df28210",
+    "relationshipType" : "GENERATES",
+    "relatedSpdxElement" : "SPDXRef--4b3779bf2",
+    "comment" : ""
+  }, {
+    "spdxElementId" : "SPDXRef-485a94120",
+    "relationshipType" : "GENERATES",
+    "relatedSpdxElement" : "SPDXRef--4b3779bf2",
+    "comment" : ""
+  }, {
+    "spdxElementId" : "SPDXRef-4a9f0a2c0",
+    "relationshipType" : "GENERATES",
+    "relatedSpdxElement" : "SPDXRef--4b3779bf2",
+    "comment" : ""
+  }, {
+    "spdxElementId" : "SPDXRef-5cdeb4390",
+    "relationshipType" : "GENERATES",
+    "relatedSpdxElement" : "SPDXRef--4b3779bf2",
+    "comment" : ""
+  }, {
+    "spdxElementId" : "SPDXRef-5dd584302",
+    "relationshipType" : "GENERATES",
+    "relatedSpdxElement" : "SPDXRef--4b3779bf2",
+    "comment" : ""
+  }, {
+    "spdxElementId" : "SPDXRef-5e3b99a90",
+    "relationshipType" : "GENERATES",
+    "relatedSpdxElement" : "SPDXRef--4b3779bf2",
+    "comment" : ""
+  }, {
+    "spdxElementId" : "SPDXRef-5e673e240",
+    "relationshipType" : "GENERATES",
+    "relatedSpdxElement" : "SPDXRef--4b3779bf2",
+    "comment" : ""
+  }, {
+    "spdxElementId" : "SPDXRef-607563460",
+    "relationshipType" : "GENERATES",
+    "relatedSpdxElement" : "SPDXRef--4b3779bf2",
+    "comment" : ""
+  }, {
+    "spdxElementId" : "SPDXRef-6af43db80",
+    "relationshipType" : "GENERATES",
+    "relatedSpdxElement" : "SPDXRef--4b3779bf2",
+    "comment" : ""
+  }, {
+    "spdxElementId" : "SPDXRef-70d7bab80",
+    "relationshipType" : "GENERATES",
+    "relatedSpdxElement" : "SPDXRef--4b3779bf2",
+    "comment" : ""
+  }, {
+    "spdxElementId" : "SPDXRef-7569fb380",
+    "relationshipType" : "GENERATES",
+    "relatedSpdxElement" : "SPDXRef--4b3779bf2",
+    "comment" : ""
+  }, {
+    "spdxElementId" : "SPDXRef-79f1b9ef0",
+    "relationshipType" : "GENERATES",
+    "relatedSpdxElement" : "SPDXRef--4b3779bf2",
+    "comment" : ""
+  }, {
+    "spdxElementId" : "SPDXRef-7a67c812",
+    "relationshipType" : "GENERATES",
+    "relatedSpdxElement" : "SPDXRef--4b3779bf2",
+    "comment" : ""
+  }, {
+    "spdxElementId" : "SPDXRef-8be3e1e0",
+    "relationshipType" : "GENERATES",
+    "relatedSpdxElement" : "SPDXRef--4b3779bf2",
+    "comment" : ""
+  }, {
+    "spdxElementId" : "SPDXRef-e03251c0",
+    "relationshipType" : "GENERATES",
+    "relatedSpdxElement" : "SPDXRef--4b3779bf2",
+    "comment" : ""
+  }, {
+    "spdxElementId" : "SPDXRef--4b3779bf2",
+    "relationshipType" : "DYNAMIC_LINK",
+    "relatedSpdxElement" : "SPDXRef--1013d0e80",
+    "comment" : "Relationship based on Maven POM file dependency information"
+  }, {
+    "spdxElementId" : "SPDXRef--17be38fe0",
+    "relationshipType" : "DYNAMIC_LINK",
+    "relatedSpdxElement" : "SPDXRef--121906810",
+    "comment" : "Relationship based on Maven POM file dependency information"
+  }, {
+    "spdxElementId" : "SPDXRef--4b3779bf2",
+    "relationshipType" : "DYNAMIC_LINK",
+    "relatedSpdxElement" : "SPDXRef--122e773a0",
+    "comment" : "Relationship based on Maven POM file dependency information"
+  }, {
+    "spdxElementId" : "SPDXRef--2d393ca70",
+    "relationshipType" : "DYNAMIC_LINK",
+    "relatedSpdxElement" : "SPDXRef--137e28ab0",
+    "comment" : "Relationship based on Maven POM file dependency information"
+  }, {
+    "spdxElementId" : "SPDXRef-2257584b0",
+    "relationshipType" : "DYNAMIC_LINK",
+    "relatedSpdxElement" : "SPDXRef--13c154090",
+    "comment" : "Relationship based on Maven POM file dependency information"
+  }, {
+    "spdxElementId" : "SPDXRef--4b3779bf2",
+    "relationshipType" : "DYNAMIC_LINK",
+    "relatedSpdxElement" : "SPDXRef--179a8ce80",
+    "comment" : "Relationship based on Maven POM file dependency information"
+  }, {
+    "spdxElementId" : "SPDXRef--7ebde2fc0",
+    "relationshipType" : "DYNAMIC_LINK",
+    "relatedSpdxElement" : "SPDXRef--17b5d9fa0",
+    "comment" : "Relationship based on Maven POM file dependency information"
+  }, {
+    "spdxElementId" : "SPDXRef-223469b40",
+    "relationshipType" : "DYNAMIC_LINK",
+    "relatedSpdxElement" : "SPDXRef--17be38fe0",
+    "comment" : "Relationship based on Maven POM file dependency information"
+  }, {
+    "spdxElementId" : "SPDXRef--4b3779bf2",
+    "relationshipType" : "DYNAMIC_LINK",
+    "relatedSpdxElement" : "SPDXRef--182756f0",
+    "comment" : "Relationship based on Maven POM file dependency information"
+  }, {
+    "spdxElementId" : "SPDXRef-5dc3e9080",
+    "relationshipType" : "DYNAMIC_LINK",
+    "relatedSpdxElement" : "SPDXRef--18dc780c0",
+    "comment" : "Relationship based on Maven POM file dependency information"
+  }, {
+    "spdxElementId" : "SPDXRef--2d393ca70",
+    "relationshipType" : "DYNAMIC_LINK",
+    "relatedSpdxElement" : "SPDXRef--1907d73b0",
+    "comment" : "Relationship based on Maven POM file dependency information"
+  }, {
+    "spdxElementId" : "SPDXRef--7ca75e2f0",
+    "relationshipType" : "DYNAMIC_LINK",
+    "relatedSpdxElement" : "SPDXRef--1aab56780",
+    "comment" : "Relationship based on Maven POM file dependency information"
+  }, {
+    "spdxElementId" : "SPDXRef-41a63ea70",
+    "relationshipType" : "DYNAMIC_LINK",
+    "relatedSpdxElement" : "SPDXRef--224662210",
+    "comment" : "Relationship based on Maven POM file dependency information"
+  }, {
+    "spdxElementId" : "SPDXRef--2d393ca70",
+    "relationshipType" : "DYNAMIC_LINK",
+    "relatedSpdxElement" : "SPDXRef--23a94e530",
+    "comment" : "Relationship based on Maven POM file dependency information"
+  }, {
+    "spdxElementId" : "SPDXRef--2d393ca70",
+    "relationshipType" : "DYNAMIC_LINK",
+    "relatedSpdxElement" : "SPDXRef--249f17f30",
+    "comment" : "Relationship based on Maven POM file dependency information"
+  }, {
+    "spdxElementId" : "SPDXRef-2a14e1c40",
+    "relationshipType" : "DYNAMIC_LINK",
+    "relatedSpdxElement" : "SPDXRef--25e074670",
+    "comment" : "Relationship based on Maven POM file dependency information"
+  }, {
+    "spdxElementId" : "SPDXRef--121906810",
+    "relationshipType" : "DYNAMIC_LINK",
+    "relatedSpdxElement" : "SPDXRef--270c57190",
+    "comment" : "Relationship based on Maven POM file dependency information"
+  }, {
+    "spdxElementId" : "SPDXRef-6902d320",
+    "relationshipType" : "DYNAMIC_LINK",
+    "relatedSpdxElement" : "SPDXRef--2aa74b830",
+    "comment" : "Relationship based on Maven POM file dependency information"
+  }, {
+    "spdxElementId" : "SPDXRef--7ebde2fc0",
+    "relationshipType" : "DYNAMIC_LINK",
+    "relatedSpdxElement" : "SPDXRef--2b347c090",
+    "comment" : "Relationship based on Maven POM file dependency information"
+  }, {
+    "spdxElementId" : "SPDXRef--6a2cf6ce0",
+    "relationshipType" : "DYNAMIC_LINK",
+    "relatedSpdxElement" : "SPDXRef--2bc374740",
+    "comment" : "Relationship based on Maven POM file dependency information"
+  }, {
+    "spdxElementId" : "SPDXRef--4b3779bf2",
+    "relationshipType" : "DYNAMIC_LINK",
+    "relatedSpdxElement" : "SPDXRef--2d393ca70",
+    "comment" : "Relationship based on Maven POM file dependency information"
+  }, {
+    "spdxElementId" : "SPDXRef--249f17f30",
+    "relationshipType" : "DYNAMIC_LINK",
+    "relatedSpdxElement" : "SPDXRef--2f1d2a7a0",
+    "comment" : "Relationship based on Maven POM file dependency information"
+  }, {
+    "spdxElementId" : "SPDXRef-7fd27a60",
+    "relationshipType" : "DYNAMIC_LINK",
+    "relatedSpdxElement" : "SPDXRef--2f1f1dad0",
+    "comment" : "Relationship based on Maven POM file dependency information"
+  }, {
+    "spdxElementId" : "SPDXRef--5a982d410",
+    "relationshipType" : "DYNAMIC_LINK",
+    "relatedSpdxElement" : "SPDXRef--30821b240",
+    "comment" : "Relationship based on Maven POM file dependency information"
+  }, {
+    "spdxElementId" : "SPDXRef-2426c7880",
+    "relationshipType" : "DYNAMIC_LINK",
+    "relatedSpdxElement" : "SPDXRef--374c81c50",
+    "comment" : "Relationship based on Maven POM file dependency information"
+  }, {
+    "spdxElementId" : "SPDXRef-70af64640",
+    "relationshipType" : "DYNAMIC_LINK",
+    "relatedSpdxElement" : "SPDXRef--41171b7c0",
+    "comment" : "Relationship based on Maven POM file dependency information"
+  }, {
+    "spdxElementId" : "SPDXRef-576e96c80",
+    "relationshipType" : "DYNAMIC_LINK",
+    "relatedSpdxElement" : "SPDXRef--4279492c0",
+    "comment" : "Relationship based on Maven POM file dependency information"
+  }, {
+    "spdxElementId" : "SPDXRef--6850d5f20",
+    "relationshipType" : "DYNAMIC_LINK",
+    "relatedSpdxElement" : "SPDXRef--443a61950",
+    "comment" : "Relationship based on Maven POM file dependency information"
+  }, {
+    "spdxElementId" : "SPDXRef--2d393ca70",
+    "relationshipType" : "DYNAMIC_LINK",
+    "relatedSpdxElement" : "SPDXRef--453ffef00",
+    "comment" : "Relationship based on Maven POM file dependency information"
+  }, {
+    "spdxElementId" : "SPDXRef--2d393ca70",
+    "relationshipType" : "DYNAMIC_LINK",
+    "relatedSpdxElement" : "SPDXRef--464d0ee70",
+    "comment" : "Relationship based on Maven POM file dependency information"
+  }, {
+    "spdxElementId" : "SPDXRef--6a552e470",
+    "relationshipType" : "DYNAMIC_LINK",
+    "relatedSpdxElement" : "SPDXRef--46c0242a0",
+    "comment" : "Relationship based on Maven POM file dependency information"
+  }, {
+    "spdxElementId" : "SPDXRef--4b3779bf2",
+    "relationshipType" : "DYNAMIC_LINK",
+    "relatedSpdxElement" : "SPDXRef--4744c6a40",
+    "comment" : "Relationship based on Maven POM file dependency information"
+  }, {
+    "spdxElementId" : "SPDXRef-7fcbdab30",
+    "relationshipType" : "DYNAMIC_LINK",
+    "relatedSpdxElement" : "SPDXRef--4ad807f90",
+    "comment" : "Relationship based on Maven POM file dependency information"
+  }, {
+    "spdxElementId" : "SPDXRef-2257584b0",
+    "relationshipType" : "DYNAMIC_LINK",
+    "relatedSpdxElement" : "SPDXRef--4c38649f2",
+    "comment" : "Relationship based on Maven POM file dependency information"
+  }, {
+    "spdxElementId" : "SPDXRef-a2158db0",
+    "relationshipType" : "DYNAMIC_LINK",
+    "relatedSpdxElement" : "SPDXRef--522aaa9d0",
+    "comment" : "Relationship based on Maven POM file dependency information"
+  }, {
+    "spdxElementId" : "SPDXRef-7e0794860",
+    "relationshipType" : "DYNAMIC_LINK",
+    "relatedSpdxElement" : "SPDXRef--5398b3a00",
+    "comment" : "Relationship based on Maven POM file dependency information"
+  }, {
+    "spdxElementId" : "SPDXRef--249f17f30",
+    "relationshipType" : "DYNAMIC_LINK",
+    "relatedSpdxElement" : "SPDXRef--551c422c0",
+    "comment" : "Relationship based on Maven POM file dependency information"
+  }, {
+    "spdxElementId" : "SPDXRef--2d393ca70",
+    "relationshipType" : "DYNAMIC_LINK",
+    "relatedSpdxElement" : "SPDXRef--579f7e360",
+    "comment" : "Relationship based on Maven POM file dependency information"
+  }, {
+    "spdxElementId" : "SPDXRef--4b3779bf2",
+    "relationshipType" : "DYNAMIC_LINK",
+    "relatedSpdxElement" : "SPDXRef--5a982d410",
+    "comment" : "Relationship based on Maven POM file dependency information"
+  }, {
+    "spdxElementId" : "SPDXRef--25e074670",
+    "relationshipType" : "DYNAMIC_LINK",
+    "relatedSpdxElement" : "SPDXRef--5c7ebc90",
+    "comment" : "Relationship based on Maven POM file dependency information"
+  }, {
+    "spdxElementId" : "SPDXRef--7ca75e2f0",
+    "relationshipType" : "DYNAMIC_LINK",
+    "relatedSpdxElement" : "SPDXRef--5e43215c0",
+    "comment" : "Relationship based on Maven POM file dependency information"
+  }, {
+    "spdxElementId" : "SPDXRef-2257584b0",
+    "relationshipType" : "DYNAMIC_LINK",
+    "relatedSpdxElement" : "SPDXRef--5fcdbbf80",
+    "comment" : "Relationship based on Maven POM file dependency information"
+  }, {
+    "spdxElementId" : "SPDXRef-323e99730",
+    "relationshipType" : "DYNAMIC_LINK",
+    "relatedSpdxElement" : "SPDXRef--660eb82b0",
+    "comment" : "Relationship based on Maven POM file dependency information"
+  }, {
+    "spdxElementId" : "SPDXRef--6a552e470",
+    "relationshipType" : "DYNAMIC_LINK",
+    "relatedSpdxElement" : "SPDXRef--6850d5f20",
+    "comment" : "Relationship based on Maven POM file dependency information"
+  }, {
+    "spdxElementId" : "SPDXRef--7ca75e2f0",
+    "relationshipType" : "DYNAMIC_LINK",
+    "relatedSpdxElement" : "SPDXRef--6a2cf6ce0",
+    "comment" : "Relationship based on Maven POM file dependency information"
+  }, {
+    "spdxElementId" : "SPDXRef--2d393ca70",
+    "relationshipType" : "DYNAMIC_LINK",
+    "relatedSpdxElement" : "SPDXRef--6a552e470",
+    "comment" : "Relationship based on Maven POM file dependency information"
+  }, {
+    "spdxElementId" : "SPDXRef--4b3779bf2",
+    "relationshipType" : "DYNAMIC_LINK",
+    "relatedSpdxElement" : "SPDXRef--6aec752f0",
+    "comment" : "Relationship based on Maven POM file dependency information"
+  }, {
+    "spdxElementId" : "SPDXRef-365913610",
+    "relationshipType" : "DYNAMIC_LINK",
+    "relatedSpdxElement" : "SPDXRef--6f503ec20",
+    "comment" : "Relationship based on Maven POM file dependency information"
+  }, {
+    "spdxElementId" : "SPDXRef-699c0a040",
+    "relationshipType" : "DYNAMIC_LINK",
+    "relatedSpdxElement" : "SPDXRef--70a6abc00",
+    "comment" : "Relationship based on Maven POM file dependency information"
+  }, {
+    "spdxElementId" : "SPDXRef--1aab56780",
+    "relationshipType" : "DYNAMIC_LINK",
+    "relatedSpdxElement" : "SPDXRef--716f681e0",
+    "comment" : "Relationship based on Maven POM file dependency information"
+  }, {
+    "spdxElementId" : "SPDXRef--4b3779bf2",
+    "relationshipType" : "DYNAMIC_LINK",
+    "relatedSpdxElement" : "SPDXRef--718406e70",
+    "comment" : "Relationship based on Maven POM file dependency information"
+  }, {
+    "spdxElementId" : "SPDXRef-a2158db0",
+    "relationshipType" : "DYNAMIC_LINK",
+    "relatedSpdxElement" : "SPDXRef--71f333850",
+    "comment" : "Relationship based on Maven POM file dependency information"
+  }, {
+    "spdxElementId" : "SPDXRef-323e99730",
+    "relationshipType" : "DYNAMIC_LINK",
+    "relatedSpdxElement" : "SPDXRef--755c9e390",
+    "comment" : "Relationship based on Maven POM file dependency information"
+  }, {
+    "spdxElementId" : "SPDXRef--179a8ce80",
+    "relationshipType" : "DYNAMIC_LINK",
+    "relatedSpdxElement" : "SPDXRef--7c881b110",
+    "comment" : "Relationship based on Maven POM file dependency information"
+  }, {
+    "spdxElementId" : "SPDXRef--2d393ca70",
+    "relationshipType" : "DYNAMIC_LINK",
+    "relatedSpdxElement" : "SPDXRef--7ca75e2f0",
+    "comment" : "Relationship based on Maven POM file dependency information"
+  }, {
+    "spdxElementId" : "SPDXRef-576e96c80",
+    "relationshipType" : "DYNAMIC_LINK",
+    "relatedSpdxElement" : "SPDXRef--7e35f250",
+    "comment" : "Relationship based on Maven POM file dependency information"
+  }, {
+    "spdxElementId" : "SPDXRef--2d393ca70",
+    "relationshipType" : "DYNAMIC_LINK",
+    "relatedSpdxElement" : "SPDXRef--7ebde2fc0",
+    "comment" : "Relationship based on Maven POM file dependency information"
+  }, {
+    "spdxElementId" : "SPDXRef-576e96c80",
+    "relationshipType" : "DYNAMIC_LINK",
+    "relatedSpdxElement" : "SPDXRef--7f445e700",
+    "comment" : "Relationship based on Maven POM file dependency information"
+  }, {
+    "spdxElementId" : "SPDXRef--7ca75e2f0",
+    "relationshipType" : "DYNAMIC_LINK",
+    "relatedSpdxElement" : "SPDXRef--a5ec47a0",
+    "comment" : "Relationship based on Maven POM file dependency information"
+  }, {
+    "spdxElementId" : "SPDXRef--6a2cf6ce0",
+    "relationshipType" : "DYNAMIC_LINK",
+    "relatedSpdxElement" : "SPDXRef-105687e60",
+    "comment" : "Relationship based on Maven POM file dependency information"
+  }, {
+    "spdxElementId" : "SPDXRef-70af64640",
+    "relationshipType" : "DYNAMIC_LINK",
+    "relatedSpdxElement" : "SPDXRef-14be34870",
+    "comment" : "Relationship based on Maven POM file dependency information"
+  }, {
+    "spdxElementId" : "SPDXRef--7ca75e2f0",
+    "relationshipType" : "DYNAMIC_LINK",
+    "relatedSpdxElement" : "SPDXRef-1599de460",
+    "comment" : "Relationship based on Maven POM file dependency information"
+  }, {
+    "spdxElementId" : "SPDXRef--2d393ca70",
+    "relationshipType" : "DYNAMIC_LINK",
+    "relatedSpdxElement" : "SPDXRef-1670b73e0",
+    "comment" : "Relationship based on Maven POM file dependency information"
+  }, {
+    "spdxElementId" : "SPDXRef--1aab56780",
+    "relationshipType" : "DYNAMIC_LINK",
+    "relatedSpdxElement" : "SPDXRef-1bae4edb0",
+    "comment" : "Relationship based on Maven POM file dependency information"
+  }, {
+    "spdxElementId" : "SPDXRef--2d393ca70",
+    "relationshipType" : "DYNAMIC_LINK",
+    "relatedSpdxElement" : "SPDXRef-1d4ea42d0",
+    "comment" : "Relationship based on Maven POM file dependency information"
+  }, {
+    "spdxElementId" : "SPDXRef-2426c7880",
+    "relationshipType" : "DYNAMIC_LINK",
+    "relatedSpdxElement" : "SPDXRef-2056a6a40",
+    "comment" : "Relationship based on Maven POM file dependency information"
+  }, {
+    "spdxElementId" : "SPDXRef-41a63ea70",
+    "relationshipType" : "DYNAMIC_LINK",
+    "relatedSpdxElement" : "SPDXRef-20adb0c60",
+    "comment" : "Relationship based on Maven POM file dependency information"
+  }, {
+    "spdxElementId" : "SPDXRef-4785b9650",
+    "relationshipType" : "DYNAMIC_LINK",
+    "relatedSpdxElement" : "SPDXRef-219c71b80",
+    "comment" : "Relationship based on Maven POM file dependency information"
+  }, {
+    "spdxElementId" : "SPDXRef-41a63ea70",
+    "relationshipType" : "DYNAMIC_LINK",
+    "relatedSpdxElement" : "SPDXRef-22188a270",
+    "comment" : "Relationship based on Maven POM file dependency information"
+  }, {
+    "spdxElementId" : "SPDXRef--2d393ca70",
+    "relationshipType" : "DYNAMIC_LINK",
+    "relatedSpdxElement" : "SPDXRef-223469b40",
+    "comment" : "Relationship based on Maven POM file dependency information"
+  }, {
+    "spdxElementId" : "SPDXRef--4b3779bf2",
+    "relationshipType" : "DYNAMIC_LINK",
+    "relatedSpdxElement" : "SPDXRef-2257584b0",
+    "comment" : "Relationship based on Maven POM file dependency information"
+  }, {
+    "spdxElementId" : "SPDXRef--249f17f30",
+    "relationshipType" : "DYNAMIC_LINK",
+    "relatedSpdxElement" : "SPDXRef-22e9ce910",
+    "comment" : "Relationship based on Maven POM file dependency information"
+  }, {
+    "spdxElementId" : "SPDXRef--2d393ca70",
+    "relationshipType" : "DYNAMIC_LINK",
+    "relatedSpdxElement" : "SPDXRef-2426c7880",
+    "comment" : "Relationship based on Maven POM file dependency information"
+  }, {
+    "spdxElementId" : "SPDXRef-377860b80",
+    "relationshipType" : "DYNAMIC_LINK",
+    "relatedSpdxElement" : "SPDXRef-254b55410",
+    "comment" : "Relationship based on Maven POM file dependency information"
+  }, {
+    "spdxElementId" : "SPDXRef--23a94e530",
+    "relationshipType" : "DYNAMIC_LINK",
+    "relatedSpdxElement" : "SPDXRef-2a14e1c40",
+    "comment" : "Relationship based on Maven POM file dependency information"
+  }, {
+    "spdxElementId" : "SPDXRef-7c598d380",
+    "relationshipType" : "DYNAMIC_LINK",
+    "relatedSpdxElement" : "SPDXRef-2c7474050",
+    "comment" : "Relationship based on Maven POM file dependency information"
+  }, {
+    "spdxElementId" : "SPDXRef--2f1f1dad0",
+    "relationshipType" : "DYNAMIC_LINK",
+    "relatedSpdxElement" : "SPDXRef-2ebd4b510",
+    "comment" : "Relationship based on Maven POM file dependency information"
+  }, {
+    "spdxElementId" : "SPDXRef--25e074670",
+    "relationshipType" : "DYNAMIC_LINK",
+    "relatedSpdxElement" : "SPDXRef-30da80070",
+    "comment" : "Relationship based on Maven POM file dependency information"
+  }, {
+    "spdxElementId" : "SPDXRef--2d393ca70",
+    "relationshipType" : "DYNAMIC_LINK",
+    "relatedSpdxElement" : "SPDXRef-323e99730",
+    "comment" : "Relationship based on Maven POM file dependency information"
+  }, {
+    "spdxElementId" : "SPDXRef--2d393ca70",
+    "relationshipType" : "DYNAMIC_LINK",
+    "relatedSpdxElement" : "SPDXRef-365913610",
+    "comment" : "Relationship based on Maven POM file dependency information"
+  }, {
+    "spdxElementId" : "SPDXRef--7ca75e2f0",
+    "relationshipType" : "DYNAMIC_LINK",
+    "relatedSpdxElement" : "SPDXRef-367956110",
+    "comment" : "Relationship based on Maven POM file dependency information"
+  }, {
+    "spdxElementId" : "SPDXRef-1670b73e0",
+    "relationshipType" : "DYNAMIC_LINK",
+    "relatedSpdxElement" : "SPDXRef-377860b80",
+    "comment" : "Relationship based on Maven POM file dependency information"
+  }, {
+    "spdxElementId" : "SPDXRef--551c422c0",
+    "relationshipType" : "DYNAMIC_LINK",
+    "relatedSpdxElement" : "SPDXRef-3d3e96870",
+    "comment" : "Relationship based on Maven POM file dependency information"
+  }, {
+    "spdxElementId" : "SPDXRef--4b3779bf2",
+    "relationshipType" : "DYNAMIC_LINK",
+    "relatedSpdxElement" : "SPDXRef-3fed45aa0",
+    "comment" : "Relationship based on Maven POM file dependency information"
+  }, {
+    "spdxElementId" : "SPDXRef-70af64640",
+    "relationshipType" : "DYNAMIC_LINK",
+    "relatedSpdxElement" : "SPDXRef-41a63ea70",
+    "comment" : "Relationship based on Maven POM file dependency information"
+  }, {
+    "spdxElementId" : "SPDXRef--4b3779bf2",
+    "relationshipType" : "DYNAMIC_LINK",
+    "relatedSpdxElement" : "SPDXRef-441f7620",
+    "comment" : "Relationship based on Maven POM file dependency information"
+  }, {
+    "spdxElementId" : "SPDXRef-576e96c80",
+    "relationshipType" : "DYNAMIC_LINK",
+    "relatedSpdxElement" : "SPDXRef-458604970",
+    "comment" : "Relationship based on Maven POM file dependency information"
+  }, {
+    "spdxElementId" : "SPDXRef--4b3779bf2",
+    "relationshipType" : "DYNAMIC_LINK",
+    "relatedSpdxElement" : "SPDXRef-45ec4deb0",
+    "comment" : "Relationship based on Maven POM file dependency information"
+  }, {
+    "spdxElementId" : "SPDXRef--6a2cf6ce0",
+    "relationshipType" : "DYNAMIC_LINK",
+    "relatedSpdxElement" : "SPDXRef-470ad5310",
+    "comment" : "Relationship based on Maven POM file dependency information"
+  }, {
+    "spdxElementId" : "SPDXRef--2d393ca70",
+    "relationshipType" : "DYNAMIC_LINK",
+    "relatedSpdxElement" : "SPDXRef-4725fa20",
+    "comment" : "Relationship based on Maven POM file dependency information"
+  }, {
+    "spdxElementId" : "SPDXRef--2d393ca70",
+    "relationshipType" : "DYNAMIC_LINK",
+    "relatedSpdxElement" : "SPDXRef-4785b9650",
+    "comment" : "Relationship based on Maven POM file dependency information"
+  }, {
+    "spdxElementId" : "SPDXRef--4b3779bf2",
+    "relationshipType" : "DYNAMIC_LINK",
+    "relatedSpdxElement" : "SPDXRef-47da29860",
+    "comment" : "Relationship based on Maven POM file dependency information"
+  }, {
+    "spdxElementId" : "SPDXRef--4b3779bf2",
+    "relationshipType" : "DYNAMIC_LINK",
+    "relatedSpdxElement" : "SPDXRef-47e4edd30",
+    "comment" : "Relationship based on Maven POM file dependency information"
+  }, {
+    "spdxElementId" : "SPDXRef-6aa9e7270",
+    "relationshipType" : "DYNAMIC_LINK",
+    "relatedSpdxElement" : "SPDXRef-48744d700",
+    "comment" : "Relationship based on Maven POM file dependency information"
+  }, {
+    "spdxElementId" : "SPDXRef--25e074670",
+    "relationshipType" : "DYNAMIC_LINK",
+    "relatedSpdxElement" : "SPDXRef-4d5751f20",
+    "comment" : "Relationship based on Maven POM file dependency information"
+  }, {
+    "spdxElementId" : "SPDXRef--5a982d410",
+    "relationshipType" : "DYNAMIC_LINK",
+    "relatedSpdxElement" : "SPDXRef-52ef5b070",
+    "comment" : "Relationship based on Maven POM file dependency information"
+  }, {
+    "spdxElementId" : "SPDXRef--2d393ca70",
+    "relationshipType" : "DYNAMIC_LINK",
+    "relatedSpdxElement" : "SPDXRef-576e96c80",
+    "comment" : "Relationship based on Maven POM file dependency information"
+  }, {
+    "spdxElementId" : "SPDXRef--2d393ca70",
+    "relationshipType" : "DYNAMIC_LINK",
+    "relatedSpdxElement" : "SPDXRef-5bd94d080",
+    "comment" : "Relationship based on Maven POM file dependency information"
+  }, {
+    "spdxElementId" : "SPDXRef-a2158db0",
+    "relationshipType" : "DYNAMIC_LINK",
+    "relatedSpdxElement" : "SPDXRef-5c46779d0",
+    "comment" : "Relationship based on Maven POM file dependency information"
+  }, {
+    "spdxElementId" : "SPDXRef-6aa9e7270",
+    "relationshipType" : "DYNAMIC_LINK",
+    "relatedSpdxElement" : "SPDXRef-5dab2b4f0",
+    "comment" : "Relationship based on Maven POM file dependency information"
+  }, {
+    "spdxElementId" : "SPDXRef--179a8ce80",
+    "relationshipType" : "DYNAMIC_LINK",
+    "relatedSpdxElement" : "SPDXRef-5dc3e9080",
+    "comment" : "Relationship based on Maven POM file dependency information"
+  }, {
+    "spdxElementId" : "SPDXRef--4b3779bf2",
+    "relationshipType" : "DYNAMIC_LINK",
+    "relatedSpdxElement" : "SPDXRef-5e22ce7c0",
+    "comment" : "Relationship based on Maven POM file dependency information"
+  }, {
+    "spdxElementId" : "SPDXRef--4b3779bf2",
+    "relationshipType" : "DYNAMIC_LINK",
+    "relatedSpdxElement" : "SPDXRef-5ef017c90",
+    "comment" : "Relationship based on Maven POM file dependency information"
+  }, {
+    "spdxElementId" : "SPDXRef--4b3779bf2",
+    "relationshipType" : "OTHER",
+    "relatedSpdxElement" : "SPDXRef-61be0b262",
+    "comment" : "Relationship based on Maven POM file dependency information"
+  }, {
+    "spdxElementId" : "SPDXRef-323e99730",
+    "relationshipType" : "DYNAMIC_LINK",
+    "relatedSpdxElement" : "SPDXRef-6509cc410",
+    "comment" : "Relationship based on Maven POM file dependency information"
+  }, {
+    "spdxElementId" : "SPDXRef-377860b80",
+    "relationshipType" : "DYNAMIC_LINK",
+    "relatedSpdxElement" : "SPDXRef-659e2f5e0",
+    "comment" : "Relationship based on Maven POM file dependency information"
+  }, {
+    "spdxElementId" : "SPDXRef--2d393ca70",
+    "relationshipType" : "DYNAMIC_LINK",
+    "relatedSpdxElement" : "SPDXRef-6902d320",
+    "comment" : "Relationship based on Maven POM file dependency information"
+  }, {
+    "spdxElementId" : "SPDXRef-2257584b0",
+    "relationshipType" : "DYNAMIC_LINK",
+    "relatedSpdxElement" : "SPDXRef-699c0a040",
+    "comment" : "Relationship based on Maven POM file dependency information"
+  }, {
+    "spdxElementId" : "SPDXRef--2d393ca70",
+    "relationshipType" : "DYNAMIC_LINK",
+    "relatedSpdxElement" : "SPDXRef-6aa9e7270",
+    "comment" : "Relationship based on Maven POM file dependency information"
+  }, {
+    "spdxElementId" : "SPDXRef-223469b40",
+    "relationshipType" : "DYNAMIC_LINK",
+    "relatedSpdxElement" : "SPDXRef-704cf4e00",
+    "comment" : "Relationship based on Maven POM file dependency information"
+  }, {
+    "spdxElementId" : "SPDXRef--4b3779bf2",
+    "relationshipType" : "DYNAMIC_LINK",
+    "relatedSpdxElement" : "SPDXRef-70af64640",
+    "comment" : "Relationship based on Maven POM file dependency information"
+  }, {
+    "spdxElementId" : "SPDXRef-4785b9650",
+    "relationshipType" : "DYNAMIC_LINK",
+    "relatedSpdxElement" : "SPDXRef-71d119d50",
+    "comment" : "Relationship based on Maven POM file dependency information"
+  }, {
+    "spdxElementId" : "SPDXRef--1aab56780",
+    "relationshipType" : "DYNAMIC_LINK",
+    "relatedSpdxElement" : "SPDXRef-732fd52a0",
+    "comment" : "Relationship based on Maven POM file dependency information"
+  }, {
+    "spdxElementId" : "SPDXRef--5a982d410",
+    "relationshipType" : "DYNAMIC_LINK",
+    "relatedSpdxElement" : "SPDXRef-7b7aea70",
+    "comment" : "Relationship based on Maven POM file dependency information"
+  }, {
+    "spdxElementId" : "SPDXRef-576e96c80",
+    "relationshipType" : "DYNAMIC_LINK",
+    "relatedSpdxElement" : "SPDXRef-7c1d5b9b0",
+    "comment" : "Relationship based on Maven POM file dependency information"
+  }, {
+    "spdxElementId" : "SPDXRef--4b3779bf2",
+    "relationshipType" : "DYNAMIC_LINK",
+    "relatedSpdxElement" : "SPDXRef-7c598d380",
+    "comment" : "Relationship based on Maven POM file dependency information"
+  }, {
+    "spdxElementId" : "SPDXRef-7fcbdab30",
+    "relationshipType" : "DYNAMIC_LINK",
+    "relatedSpdxElement" : "SPDXRef-7c7813d70",
+    "comment" : "Relationship based on Maven POM file dependency information"
+  }, {
+    "spdxElementId" : "SPDXRef--6aec752f0",
+    "relationshipType" : "DYNAMIC_LINK",
+    "relatedSpdxElement" : "SPDXRef-7c9463160",
+    "comment" : "Relationship based on Maven POM file dependency information"
+  }, {
+    "spdxElementId" : "SPDXRef--453ffef00",
+    "relationshipType" : "DYNAMIC_LINK",
+    "relatedSpdxElement" : "SPDXRef-7e0794860",
+    "comment" : "Relationship based on Maven POM file dependency information"
+  }, {
+    "spdxElementId" : "SPDXRef-4725fa20",
+    "relationshipType" : "DYNAMIC_LINK",
+    "relatedSpdxElement" : "SPDXRef-7fcbdab30",
+    "comment" : "Relationship based on Maven POM file dependency information"
+  }, {
+    "spdxElementId" : "SPDXRef--2d393ca70",
+    "relationshipType" : "DYNAMIC_LINK",
+    "relatedSpdxElement" : "SPDXRef-7fd27a60",
+    "comment" : "Relationship based on Maven POM file dependency information"
+  }, {
+    "spdxElementId" : "SPDXRef--182756f0",
+    "relationshipType" : "DYNAMIC_LINK",
+    "relatedSpdxElement" : "SPDXRef-a2158db0",
+    "comment" : "Relationship based on Maven POM file dependency information"
+  }, {
+    "spdxElementId" : "SPDXRef--4b3779bf2",
+    "relationshipType" : "TEST_DEPENDENCY_OF",
+    "relatedSpdxElement" : "SPDXRef--14a796450",
+    "comment" : "Relationship created based on Maven POM information"
+  }, {
+    "spdxElementId" : "SPDXRef-2bf7d5032",
+    "relationshipType" : "TEST_DEPENDENCY_OF",
+    "relatedSpdxElement" : "SPDXRef--3c6658412",
+    "comment" : "Relationship created based on Maven POM information"
+  }, {
+    "spdxElementId" : "SPDXRef-2bf7d5032",
+    "relationshipType" : "TEST_DEPENDENCY_OF",
+    "relatedSpdxElement" : "SPDXRef--4831b1a32",
+    "comment" : "Relationship created based on Maven POM information"
+  }, {
+    "spdxElementId" : "SPDXRef--4b3779bf2",
+    "relationshipType" : "TEST_DEPENDENCY_OF",
+    "relatedSpdxElement" : "SPDXRef--4970e0f22",
+    "comment" : "Relationship created based on Maven POM information"
+  }, {
+    "spdxElementId" : "SPDXRef--14a796450",
+    "relationshipType" : "TEST_DEPENDENCY_OF",
+    "relatedSpdxElement" : "SPDXRef--5d8c0292",
+    "comment" : "Relationship created based on Maven POM information"
+  }, {
+    "spdxElementId" : "SPDXRef--5d8c0292",
+    "relationshipType" : "TEST_DEPENDENCY_OF",
+    "relatedSpdxElement" : "SPDXRef--7700b96b2",
+    "comment" : "Relationship created based on Maven POM information"
+  }, {
+    "spdxElementId" : "SPDXRef--4b3779bf2",
+    "relationshipType" : "TEST_DEPENDENCY_OF",
+    "relatedSpdxElement" : "SPDXRef-2bf7d5032",
+    "comment" : "Relationship created based on Maven POM information"
+  }, {
+    "spdxElementId" : "SPDXRef-5958a5212",
+    "relationshipType" : "TEST_DEPENDENCY_OF",
+    "relatedSpdxElement" : "SPDXRef-3401be2a2",
+    "comment" : "Relationship created based on Maven POM information"
+  }, {
+    "spdxElementId" : "SPDXRef-5958a5212",
+    "relationshipType" : "TEST_DEPENDENCY_OF",
+    "relatedSpdxElement" : "SPDXRef-494d73df2",
+    "comment" : "Relationship created based on Maven POM information"
+  }, {
+    "spdxElementId" : "SPDXRef--4b3779bf2",
+    "relationshipType" : "TEST_DEPENDENCY_OF",
+    "relatedSpdxElement" : "SPDXRef-5958a5212",
+    "comment" : "Relationship created based on Maven POM information"
+  }, {
+    "spdxElementId" : "SPDXRef--5d8c0292",
+    "relationshipType" : "TEST_DEPENDENCY_OF",
+    "relatedSpdxElement" : "SPDXRef-60dab2ee2",
+    "comment" : "Relationship created based on Maven POM information"
+  }, {
+    "spdxElementId" : "SPDXRef--4b3779bf2",
+    "relationshipType" : "TEST_DEPENDENCY_OF",
+    "relatedSpdxElement" : "SPDXRef-61aec23c2",
+    "comment" : "Relationship created based on Maven POM information"
+  }, {
+    "spdxElementId" : "SPDXRef-5958a5212",
+    "relationshipType" : "TEST_DEPENDENCY_OF",
+    "relatedSpdxElement" : "SPDXRef-6a8647572",
+    "comment" : "Relationship created based on Maven POM information"
+  }, {
+    "spdxElementId" : "SPDXRef--4b3779bf2",
+    "relationshipType" : "CONTAINS",
+    "relatedSpdxElement" : "SPDXRef--110e3490"
+  }, {
+    "spdxElementId" : "SPDXRef--4b3779bf2",
+    "relationshipType" : "CONTAINS",
+    "relatedSpdxElement" : "SPDXRef--132a53c1"
+  }, {
+    "spdxElementId" : "SPDXRef--4b3779bf2",
+    "relationshipType" : "CONTAINS",
+    "relatedSpdxElement" : "SPDXRef--181fbe372"
+  }, {
+    "spdxElementId" : "SPDXRef--4b3779bf2",
+    "relationshipType" : "CONTAINS",
+    "relatedSpdxElement" : "SPDXRef--1994173a0"
+  }, {
+    "spdxElementId" : "SPDXRef--4b3779bf2",
+    "relationshipType" : "CONTAINS",
+    "relatedSpdxElement" : "SPDXRef--1c7319d80"
+  }, {
+    "spdxElementId" : "SPDXRef--4b3779bf2",
+    "relationshipType" : "CONTAINS",
+    "relatedSpdxElement" : "SPDXRef--1d0e12fd0"
+  }, {
+    "spdxElementId" : "SPDXRef--4b3779bf2",
+    "relationshipType" : "CONTAINS",
+    "relatedSpdxElement" : "SPDXRef--27c8cfae0"
+  }, {
+    "spdxElementId" : "SPDXRef--4b3779bf2",
+    "relationshipType" : "CONTAINS",
+    "relatedSpdxElement" : "SPDXRef--2b29350f0"
+  }, {
+    "spdxElementId" : "SPDXRef--4b3779bf2",
+    "relationshipType" : "CONTAINS",
+    "relatedSpdxElement" : "SPDXRef--2b8ca88b0"
+  }, {
+    "spdxElementId" : "SPDXRef--4b3779bf2",
+    "relationshipType" : "CONTAINS",
+    "relatedSpdxElement" : "SPDXRef--2c28e7500"
+  }, {
+    "spdxElementId" : "SPDXRef--4b3779bf2",
+    "relationshipType" : "CONTAINS",
+    "relatedSpdxElement" : "SPDXRef--3d33dc4e0"
+  }, {
+    "spdxElementId" : "SPDXRef--4b3779bf2",
+    "relationshipType" : "CONTAINS",
+    "relatedSpdxElement" : "SPDXRef--3f27e1530"
+  }, {
+    "spdxElementId" : "SPDXRef--4b3779bf2",
+    "relationshipType" : "CONTAINS",
+    "relatedSpdxElement" : "SPDXRef--4f51e2920"
+  }, {
+    "spdxElementId" : "SPDXRef--4b3779bf2",
+    "relationshipType" : "CONTAINS",
+    "relatedSpdxElement" : "SPDXRef--71eb311b0"
+  }, {
+    "spdxElementId" : "SPDXRef--4b3779bf2",
+    "relationshipType" : "CONTAINS",
+    "relatedSpdxElement" : "SPDXRef--742da13b0"
+  }, {
+    "spdxElementId" : "SPDXRef--4b3779bf2",
+    "relationshipType" : "CONTAINS",
+    "relatedSpdxElement" : "SPDXRef--b5f6e610"
+  }, {
+    "spdxElementId" : "SPDXRef--4b3779bf2",
+    "relationshipType" : "CONTAINS",
+    "relatedSpdxElement" : "SPDXRef--d9178ec0"
+  }, {
+    "spdxElementId" : "SPDXRef--4b3779bf2",
+    "relationshipType" : "CONTAINS",
+    "relatedSpdxElement" : "SPDXRef-1726e86b0"
+  }, {
+    "spdxElementId" : "SPDXRef--4b3779bf2",
+    "relationshipType" : "CONTAINS",
+    "relatedSpdxElement" : "SPDXRef-1c3fd1cb0"
+  }, {
+    "spdxElementId" : "SPDXRef--4b3779bf2",
+    "relationshipType" : "CONTAINS",
+    "relatedSpdxElement" : "SPDXRef-364078160"
+  }, {
+    "spdxElementId" : "SPDXRef--4b3779bf2",
+    "relationshipType" : "CONTAINS",
+    "relatedSpdxElement" : "SPDXRef-3bafec830"
+  }, {
+    "spdxElementId" : "SPDXRef--4b3779bf2",
+    "relationshipType" : "CONTAINS",
+    "relatedSpdxElement" : "SPDXRef-3e5ff8be0"
+  }, {
+    "spdxElementId" : "SPDXRef--4b3779bf2",
+    "relationshipType" : "CONTAINS",
+    "relatedSpdxElement" : "SPDXRef-425236a0"
+  }, {
+    "spdxElementId" : "SPDXRef--4b3779bf2",
+    "relationshipType" : "CONTAINS",
+    "relatedSpdxElement" : "SPDXRef-42551db70"
+  }, {
+    "spdxElementId" : "SPDXRef--4b3779bf2",
+    "relationshipType" : "CONTAINS",
+    "relatedSpdxElement" : "SPDXRef-44df28210"
+  }, {
+    "spdxElementId" : "SPDXRef--4b3779bf2",
+    "relationshipType" : "CONTAINS",
+    "relatedSpdxElement" : "SPDXRef-485a94120"
+  }, {
+    "spdxElementId" : "SPDXRef--4b3779bf2",
+    "relationshipType" : "CONTAINS",
+    "relatedSpdxElement" : "SPDXRef-4a9f0a2c0"
+  }, {
+    "spdxElementId" : "SPDXRef--4b3779bf2",
+    "relationshipType" : "CONTAINS",
+    "relatedSpdxElement" : "SPDXRef-5cdeb4390"
+  }, {
+    "spdxElementId" : "SPDXRef--4b3779bf2",
+    "relationshipType" : "CONTAINS",
+    "relatedSpdxElement" : "SPDXRef-5dd584302"
+  }, {
+    "spdxElementId" : "SPDXRef--4b3779bf2",
+    "relationshipType" : "CONTAINS",
+    "relatedSpdxElement" : "SPDXRef-5e3b99a90"
+  }, {
+    "spdxElementId" : "SPDXRef--4b3779bf2",
+    "relationshipType" : "CONTAINS",
+    "relatedSpdxElement" : "SPDXRef-5e673e240"
+  }, {
+    "spdxElementId" : "SPDXRef--4b3779bf2",
+    "relationshipType" : "CONTAINS",
+    "relatedSpdxElement" : "SPDXRef-607563460"
+  }, {
+    "spdxElementId" : "SPDXRef--4b3779bf2",
+    "relationshipType" : "CONTAINS",
+    "relatedSpdxElement" : "SPDXRef-6af43db80"
+  }, {
+    "spdxElementId" : "SPDXRef--4b3779bf2",
+    "relationshipType" : "CONTAINS",
+    "relatedSpdxElement" : "SPDXRef-70d7bab80"
+  }, {
+    "spdxElementId" : "SPDXRef--4b3779bf2",
+    "relationshipType" : "CONTAINS",
+    "relatedSpdxElement" : "SPDXRef-7569fb380"
+  }, {
+    "spdxElementId" : "SPDXRef--4b3779bf2",
+    "relationshipType" : "CONTAINS",
+    "relatedSpdxElement" : "SPDXRef-79f1b9ef0"
+  }, {
+    "spdxElementId" : "SPDXRef--4b3779bf2",
+    "relationshipType" : "CONTAINS",
+    "relatedSpdxElement" : "SPDXRef-7a67c812"
+  }, {
+    "spdxElementId" : "SPDXRef--4b3779bf2",
+    "relationshipType" : "CONTAINS",
+    "relatedSpdxElement" : "SPDXRef-8be3e1e0"
+  }, {
+    "spdxElementId" : "SPDXRef--4b3779bf2",
+    "relationshipType" : "CONTAINS",
+    "relatedSpdxElement" : "SPDXRef-e03251c0"
+  } ]
+}
