@@ -10,8 +10,11 @@ iframe {
 .apachecon-banner {
 	margin: 5px;
 }
-.bannerRight img, .bannerLeft img {
+.header--banner-left.banner-left img, .header--banner-right.banner-right img {
 	height: 80px !important;
+}
+.carousel-caption {
+	background-color: color-mix(in srgb, var(--gray-dark) 60%, transparent);
 }
 .header {
   padding-top: .5rem;
@@ -41,7 +44,7 @@ iframe {
 	height: 130px;
 	width: 130px;
 	top: 37px;
-	left: 37px;
+	inset-inline-start: 37px;
 }
 .example-image-link {
 	display: block;
@@ -50,7 +53,7 @@ iframe {
 	font-size: 20px;
 	background: linear-gradient(to right, lime, green);
 	color: white !important;
-	max-width: 385px;
+	max-width: 485px;
 	font-weight: bold;
 }
 .install-steps a {
@@ -62,7 +65,7 @@ iframe {
 }
 .install-steps .step {
 	background-repeat: no-repeat;
-	padding-left: 40px;
+	padding-inline-start: 40px;
 }
 .install-steps .step.unpack {
 	background-image: url(../images/box_open.png);
@@ -73,49 +76,21 @@ iframe {
 .copyright {
 	text-align: center;
 }
-/*
-// Callouts
-// https://github.com/twbs/bootstrap/blob/6589408a4b91c0f58fa4ac1508d69e3e9e4345e1/site/docs/4.1/assets/scss/_callouts.scss
-*/
-.bd-callout {
-	position: relative;
-	padding: 1.25rem;
-	margin-top: 1.25rem;
-	margin-bottom: 1.25rem;
-	border: 1px solid #eee;
+.om-callout {
+	border: 1px solid rgba(0, 0, 0, .125);
+	padding: .5rem !important;
 	border-left-width: .25rem;
 	border-radius: .25rem;
-}
-.bd-callout h4, .bd-callout .h4 {
-	margin-top: 0;
-	margin-bottom: .25rem;
-}
-.bd-callout p:last-child {
-	margin-bottom: 0;
-}
-.bd-callout code {
-	border-radius: .25rem;
-}
-.bd-callout + .bd-callout {
-	margin-top: -.25rem;
-}
-.bd-callout-info { border-left-color: var(--info); }
-.bd-callout-info h4 { color: var(--info); }
-.bd-callout-warning { border-left-color: var(--warning); }
-.bd-callout-warning h4 { color: var(--warning); }
-.bd-callout-danger { border-left-color: var(--danger); }
-.bd-callout-danger h4 { color: var(--danger); }
-
-/*DATE*/
-.bd-callout .date {
-	font-size: smaller;
-	display: inline-block;
-	position: absolute;
-	top: 10px;
-	right: 20px;
-	font-weight: bold;
-	color: var(--info);
 }
 .grid-striped .row:nth-of-type(odd) {
 	background-color: rgba(0,0,0,.05);
 }
+/**
+ * commented for now
+ **
+@media (prefers-color-scheme: dark) {
+	.bannerLeft img {
+		content:url("../images/logo-dark.svg");
+	}
+}
+*/
