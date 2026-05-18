@@ -1,9 +1,23 @@
 publish:
-  whoami:   master
+  whoami: master
 
 notifications:
-  commits:      commits@openmeetings.apache.org
-  issues:       dev@openmeetings.apache.org
+  commits: commits@openmeetings.apache.org
+  issues: dev@openmeetings.apache.org
   pullrequests: dev@openmeetings.apache.org
   jira_options: link label
 
+github:
+  rulesets:
+    - name: "Default Branch Protection"
+      type: branch
+      branches:
+        includes:
+          - "~DEFAULT_BRANCH"
+          - "release/*"
+          - "rel/*"
+        excludes: []
+      bypass_teams:
+        - root
+      restrict_deletion: true
+      restrict_force_push: true
