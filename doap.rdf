@@ -32,9 +32,9 @@
     </shortdesc>
 
     <description xml:lang="en">
-      The Apache OpenMeetings provides video conferencing, instant messaging, white board, 
-      collaborative document editing and other groupware tools using API functions 
-      of the Red5 Streaming Server for Remoting and Streaming.
+      The Apache OpenMeetings provides video conferencing, instant messaging, white board,
+      collaborative document editing and other groupware tools. Kurento Media Server is
+      used or audio/video communication.
     </description>
 
     <bug-database rdf:resource="https://issues.apache.org/jira/browse/OPENMEETINGS"/>
@@ -58,12 +58,12 @@
         <foaf:mbox rdf:resource="mailto:dev@openmeetings.apache.org"/>
       </foaf:Person>
     </maintainer>
-     
+
     <release>
       <Version>
         <name>Latest WebRTC 9.x.x release</name>
-        <created>2026-03-31</created>
-        <revision>9.0.0</revision>
+        <created>2026-07-08</created>
+        <revision>9.1.0</revision>
       </Version>
     </release>
     <release>
@@ -103,4 +103,3 @@
     </release>
   </Project>
 </rdf:RDF>
-
